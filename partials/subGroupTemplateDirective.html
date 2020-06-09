@@ -1,0 +1,182 @@
+<style>
+    .allInTD {
+        display: block;
+        line-height: 1;
+}
+</style>
+<style>
+    .subgroup-section {
+        padding: 2px;
+        border: 1px solid;
+    }
+</style>
+
+<label>
+    <input ng-model="displaySubgroups" type="checkbox">
+    <span>Display subgroups</span>
+</label>
+
+<div ng-if="displaySubgroups" class="allInTD">
+    <div ng-repeat="subgroup in data">
+        <section class="subgroup-section">
+        {{subgroup.id}}: {{subgroup.name}} (Details <input ng-model="showDetails" type="checkbox">)
+        <button class="TDButton" ng-click="removeSubgroup($index)">Remove</button>
+        <div ng-show="showDetails">
+            <label>
+                <span class="input-label">Subgroup ID</span>
+                <input type="text" ng-model="subgroup.id">
+            </label>
+
+            <label>
+                <span class="input-label">Subgroup Description</span>
+                <input type="text" ng-model="subgroup.name">
+            </label>
+
+            <label>
+                <input type="checkbox" ng-model="subgroup.enabled">
+                <span>Enabled</span>
+            </label>
+
+            <label>
+                <input type="checkbox" ng-model="subgroup.distributionEnabled">
+                <span>Distribute to Random NPCs</span>
+            </label>
+
+            <label>
+                <input type="checkbox" ng-model="subgroup.allowUnique">
+                <span>Allow Unique NPCs</span>
+            </label>
+
+            <label>
+                <input type="checkbox" ng-model="subgroup.allowNonUnique">
+                <span>Allow Non-Unique NPCs</span>
+            </label>
+
+            <label>
+                <span>Distribution Probability Weight</span>
+                <input type="number" ng-model="subgroup.probabilityWeighting">
+            </label>
+
+            <strong>Allowed Races
+                <button class="TDButton" ng-click="addAllowedRace($index)">Add New</button>
+            </strong>
+            <ul>
+                <div class="allowedRaces" ng-repeat="a in subgroup.allowedRaces track by $index">
+                    <input type="text" ng-model="subgroup.allowedRaces[$index]">
+                    <button class="TDButton" ng-click="removeAllowedRace(subgroup, $index)">Remove</button>
+                </div>
+            </ul>
+
+            <strong>Disallowed Races
+                <button class="TDButton" ng-click="addDisallowedRace($index)">Add New</button>
+            </strong>
+            <ul>
+                <div class="disallowedRaces" ng-repeat="d in subgroup.disallowedRaces track by $index">
+                    <input type="text" ng-model="subgroup.disallowedRaces[$index]">
+                    <button class="TDButton" ng-click="removeDisallowedRace(subgroup, $index)">Remove</button>
+                </div>
+            </ul>
+
+            <strong>Allowed Attributes
+                <button class="TDButton" ng-click="addAllowedAttribute($index)">Add New</button>
+            </strong>
+
+            <ul>
+                <div class="allowedAttributes" ng-repeat="allowedAttributePair in subgroup.allowedAttributes track by $index">
+                    <input type="text" ng-model="subgroup.allowedAttributes[$index][0]">
+                    <input type="text" ng-model="subgroup.allowedAttributes[$index][1]">
+                    <button class="TDButton" ng-click="removeAllowedAttribute(subgroup, $index)">Remove</button>
+                </div>
+            </ul>
+
+            <strong>Disallowed Attributes
+                <button class="TDButton" ng-click="addDisallowedAttribute($index)">Add New</button>
+            </strong>
+            <ul>
+                <div class="disallowedAttributes" ng-repeat="disallowedAttributePair in subgroup.disallowedAttributes track by $index">
+                    <input type="text" ng-model="subgroup.disallowedAttributes[$index][0]">
+                    <input type="text" ng-model="subgroup.disallowedAttributes[$index][1]">
+                    <button class="TDButton" ng-click="removeDisallowedAttribute(subgroup, $index)">Remove</button>
+                </div>
+            </ul>
+
+            <strong>Force if NPC Attributes have Values
+                <button class="TDButton" ng-click="addForceIfAttribute($index)">Add New</button>
+            </strong>
+            <ul>
+                <div class="forceIfAttributes" ng-repeat="forcedAttributePair in subgroup.forceIfAttributes track by $index">
+                    <input type="text" ng-model="subgroup.forceIfAttributes[$index][0]">
+                    <input type="text" ng-model="subgroup.forceIfAttributes[$index][1]">
+                    <button class="TDButton" ng-click="removeForceIfAttribute(subgroup, $index)">Remove</button>
+                </div>
+            </ul>
+
+            <strong>Require Subgroups:
+                <button class="TDButton" ng-click="addRequiredSubgroup($index)">Add New</button>
+            </strong>
+            <ul>
+                <div class="requiredSubgroups" ng-repeat="subgroupR in subgroup.requiredSubgroups track by $index">
+                    <input type="text" ng-model="subgroup.requiredSubgroups[$index]">
+                    <button class="TDButton" ng-click="removeRequiredSubgroup(subgroup, $index)">Remove</button>
+                </div>
+            </ul>
+            <strong>Exclude Subgroups:
+                <button class="TDButton" ng-click="addExcludedSubgroup($index)">Add New</button>
+            </strong>
+            <ul>
+                <div class="excludedSubgroups" ng-repeat="subgroupE in subgroup.excludedSubgroups track by $index">
+                    <input type="text" ng-model="subgroup.excludedSubgroups[$index]">
+                    <button class="TDButton" ng-click="removeExcludedSubgroup(subgroup, $index)">Remove</button>
+                </div>
+            </ul>
+
+            <strong>Add Keywords to NPC Record:
+                <button class="TDButton" ng-click="addAddKeywords($index)">Add New</button>
+            </strong>
+            <ul>
+                <div class="AddKeywords" ng-repeat="keyword in subgroup.addKeywords track by $index">
+                    <input type="text" ng-model="subgroup.addKeywords[$index]">
+                    <button class="TDButton" ng-click="removeAddKeywords(subgroup, $index)">Remove</button>
+                </div>
+            </ul>
+
+            <strong>Asset Paths:
+                <button class="TDButton" ng-click="addPath($index)" droppable=true>Add New</button>
+            </strong>
+            <ul>
+                <div class="assetPaths" ng-repeat="path in subgroup.paths track by $index">
+                    <input type="text" ng-model="subgroup.paths[$index][0]">
+                    <input type="text" ng-model="subgroup.paths[$index][1]">
+                    <button class="TDButton" ng-click="removePath(subgroup, $index)">Remove</button>
+                </div>
+            </ul>
+
+            <div ng-if="bgintegration">
+                <strong>Allowed BodyGen Presets
+                    <button class="TDButton" ng-click="addAllowedBodyGenPreset($index)">Add New</button>
+                </strong>
+                <ul>
+                    <div class="allowedBodyGen" ng-repeat="allowedPreset in subgroup.allowedBodyGenPresets track by $index">
+                        <select ng-model="subgroup.allowedBodyGenPresets[$index]" ng-options="x.name for x in bgtemplates"></select>
+                        <button class="TDButton" ng-click="removeAllowedBodyGenPreset(subgroup, $index)">Remove</button>
+                    </div>
+                </ul>
+
+                <strong>Disallowed BodyGen Presets
+                    <button class="TDButton" ng-click="addDisallowedBodyGenPreset($index)">Add New</button>
+                </strong>
+                <ul>
+                    <div class="disallowedBodyGen" ng-repeat="disallowedPreset in subgroup.disalloweBodyGenPresets track by $index">
+                        <select ng-model="subgroup.disallowedBodyGenPresets[$index]" ng-options="x.name for x in bgtemplates"></select>
+                        <button class="TDButton" ng-click="removeDisallowedBodyGenPreset(subgroup, $index)">Remove</button>
+                    </div>
+                </ul>
+            </div>
+
+            <button class="TDButton" ng-click="addSubgroup($index)">Add New Subgroup</button>
+
+            <display-subgroups ng-if="subgroup.subgroups.length" data="subgroup.subgroups"></display-subgroups>
+        </div>
+    </section>
+    </div>
+</div>

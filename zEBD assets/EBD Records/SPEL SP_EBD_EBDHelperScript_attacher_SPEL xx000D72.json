@@ -1,0 +1,41 @@
+{
+  "Record Header": {
+    "Signature": "SPEL",
+    "Record Flags": {},
+    "FormID": "40000D72"
+  },
+  "EDID - Editor ID": "SP_EBD_EBDHelperScript_attacher_SPEL",
+  "OBND - Object Bounds": {
+    "X1": 0,
+    "Y1": 0,
+    "Z1": 0,
+    "X2": 0,
+    "Y2": 0,
+    "Z2": 0
+  },
+  "KSIZ - Keyword Count": 0,
+  "KWDA - Keywords": "",
+  "ETYP - Equipment Type": "EitherHand",
+  "DESC - Description": "",
+  "SPIT - Data": {
+    "Base Cost": 0,
+    "Flags": {},
+    "Type": 4,
+    "Charge Time": 0,
+    "Cast Type": 0,
+    "Target Type": 0,
+    "Cast Duration": 0,
+    "Range": 0,
+    "Half-cost Perk": 0
+  },
+  "Effects": [
+    {
+      "EFID - Base Effect": "SP_EBD_EBDHelperScript_attacher_MGEF",
+      "EFIT - ": {
+        "Magnitude": 0,
+        "Area": 0,
+        "Duration": 0
+      }
+    }
+  ]
+}

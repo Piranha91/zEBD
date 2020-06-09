@@ -1,0 +1,270 @@
+{
+  "records": [
+    {
+      "zEBDUniqueID": "MaleBodyArmor",
+      "zEBDPosition": "WNAM",
+      "zEBDPositionisArray": false,
+      "zEBDSignature": "ARMO",
+      "zEBDgender": "male",
+      "zEBDsupportedRaces": "humanoid",
+      "EDID": "MaleBody",
+      "OBND - Object Bounds": {
+        "X1": 0,
+        "Y1": 0,
+        "Z1": 0,
+        "X2": 0,
+        "Y2": 0,
+        "Z2": 0
+      },
+      "BOD2": {
+        "First Person Flags": [
+          "30 - Head",
+          "32 - Body",
+          "33 - Hands",
+          "37 - Feet"
+        ],
+        "Armor Type": "Clothing"
+      },
+      "RNAM - Race": "DefaultRace \"Default Race\" [RACE:00000019]",
+      "DATA - Data": {
+        "Value": 0,
+        "Weight": 0
+      },
+      "DNAM - Armor Rating": 0,
+      "Armature": [
+        {
+          "zEBDUniqueID": "MaleTorso",
+          "zEBDPosition": "MODL",
+          "zEBDSignature": "ARMA",
+          "zEBDAddValidRaces": [
+            "Additional Races"
+          ],
+          "zEBDsupportedRaces": "humanoid",
+          "EDID": "MaleTorso",
+          "BOD2 - Biped Body Template": {
+            "First Person Flags": [
+              "32 - Body",
+              "34 - Forearms",
+              "35 - Amulet",
+              "36 - Ring",
+              "38 - Calves"
+            ],
+            "Armor Type": "Clothing"
+          },
+          "RNAM - Race": "DefaultRace \"Default Race\" [RACE:00000019]",
+          "DNAM - Data": {
+            "Male Priority": 0,
+            "Female Priority": 0,
+            "Weight slider - Male": [
+              "Enabled"
+            ],
+            "Weight slider - Female": [
+              "Enabled"
+            ],
+            "Unknown": "02 00",
+            "Detection Sound Value": 0,
+            "Unknown": 17,
+            "Weapon Adjust": 0
+          },
+          "Male world model": {
+            "MOD2 - Model FileName": "Actors\\Character\\Character Assets\\MaleBody_1.NIF"
+          },
+          "Female world model": {
+            "MOD3 - Model FileName": "Actors\\Character\\Character Assets\\FemaleBody_1.NIF"
+          },
+          "Male 1st Person": {
+            "MOD4 - Model FileName": "Actors\\Character\\Character Assets\\1stPersonMaleBody_1.NIF"
+          },
+          "Female 1st Person": {
+            "MOD5 - Model FileName": "Actors\\Character\\Character Assets\\1stPersonFemaleBody_1.nif"
+          },
+          "NAM0 - Male Skin Texture": {
+            "zEBDUniqueID": "SkinMaleTorso",
+            "EDID": "SkinMaleTorso",
+            "zEBDPosition": "NAM0 - Male Skin Texture",
+            "zEBDSignature": "TXST",
+            "OBND - Object Bounds": {
+              "X1": 0,
+              "Y1": 0,
+              "Z1": 0,
+              "X2": 0,
+              "Y2": 0,
+              "Z2": 0
+            },
+            "Textures (RGB/A)": {
+              "TX00 - Difuse": "Actors\\Character\\Male\\MaleBody_1.dds",
+              "TX01 - Normal/Gloss": "Actors\\Character\\Male\\MaleBody_1_msn.dds",
+              "TX03 - Glow/Detail Map": "Actors\\Character\\Male\\MaleBody_1_sk.dds",
+              "TX07 - Backlight Mask/Specular": "Actors\\Character\\Male\\MaleBody_1_S.dds"
+            },
+            "DNAM - Flags": [
+              "Facegen Textures",
+              "Has Model Space Normal Map"
+            ]
+          },
+          "NAM1 - Female Skin Texture": "SkinBodyFemale_1 [TXST:0003EDE7]"
+        },
+        {
+          "zEBDUniqueID": "MaleHands",
+          "zEBDPosition": "MODL",
+          "zEBDSignature": "ARMA",
+          "zEBDAddValidRaces": [
+            "Additional Races"
+          ],
+          "zEBDsupportedRaces": "humanoid",
+          "EDID": "MaleHands",
+          "BOD2 - Biped Body Template": {
+            "First Person Flags": [
+              "33 - Hands"
+            ],
+            "Armor Type": "Clothing"
+          },
+          "RNAM - Race": "DefaultRace \"Default Race\" [RACE:00000019]",
+          "DNAM - Data": {
+            "Male Priority": 0,
+            "Female Priority": 0,
+            "Weight slider - Male": [
+              "Enabled"
+            ],
+            "Weight slider - Female": [
+              "Enabled"
+            ],
+            "Unknown": "02 00",
+            "Detection Sound Value": 0,
+            "Unknown": 17,
+            "Weapon Adjust": 0
+          },
+          "Male world model": {
+            "MOD2 - Model FileName": "Actors\\Character\\Character Assets\\MaleHands_1.NIF"
+          },
+          "Female world model": {
+            "MOD3 - Model FileName": "Actors\\Character\\Character Assets\\FemaleHands_1.NIF"
+          },
+          "Male 1st Person": {
+            "MOD4 - Model FileName": "Actors\\Character\\Character Assets\\1stPersonMaleHands_1.NIF"
+          },
+          "Female 1st Person": {
+            "MOD5 - Model FileName": "Actors\\Character\\Character Assets\\1stPersonFemaleHands_1.nif"
+          },
+          "NAM0 - Male Skin Texture": {
+            "zEBDUniqueID": "SkinMaleHands",
+            "EDID": "SkinMaleHands",
+            "zEBDPosition": "NAM0 - Male Skin Texture",
+            "zEBDSignature": "TXST",
+            "OBND - Object Bounds": {
+              "X1": 0,
+              "Y1": 0,
+              "Z1": 0,
+              "X2": 0,
+              "Y2": 0,
+              "Z2": 0
+            },
+            "Textures (RGB/A)": {
+              "TX00 - Difuse": "Actors\\Character\\Male\\malehands_1.dds",
+              "TX01 - Normal/Gloss": "Actors\\Character\\Male\\malehands_1_msn.dds",
+              "TX03 - Glow/Detail Map": "Actors\\Character\\Male\\malehands_1_sk.dds",
+              "TX07 - Backlight Mask/Specular": "Actors\\Character\\Male\\malehands_1_s.dds"
+            },
+            "DNAM - Flags": [
+              "Facegen Textures",
+              "Has Model Space Normal Map"
+            ]
+          },
+          "NAM1 - Female Skin Texture": "SkinHandFemale_1 [TXST:0003EDE9]"
+        },
+        {
+          "zEBDUniqueID": "MaleFeet",
+          "zEBDPosition": "MODL",
+          "zEBDSignature": "ARMA",
+          "zEBDAddValidRaces": [
+            "Additional Races"
+          ],
+          "zEBDsupportedRaces": "humanoid",
+          "EDID": "MaleFeet",
+          "BOD2 - Biped Body Template": {
+            "First Person Flags": [
+              "37 - Feet"
+            ],
+            "Armor Type": "Clothing"
+          },
+          "RNAM - Race": "DefaultRace \"Default Race\" [RACE:00000019]",
+          "DNAM - Data": {
+            "Male Priority": 0,
+            "Female Priority": 0,
+            "Weight slider - Male": [
+              "Enabled"
+            ],
+            "Weight slider - Female": [
+              "Enabled"
+            ],
+            "Unknown": "02 00",
+            "Detection Sound Value": 0,
+            "Unknown": 17,
+            "Weapon Adjust": 0
+          },
+          "Male world model": {
+            "MOD2 - Model FileName": "Actors\\Character\\Character Assets\\MaleFeet_1.NIF"
+          },
+          "Female world model": {
+            "MOD3 - Model FileName": "Actors\\Character\\Character Assets\\FemaleFeet_1.NIF"
+          },
+          "NAM0 - Male Skin Texture": {
+            "zEBDUniqueID": "SkinMaleFeet",
+            "zEBDzEBDPosition": "NAM0 - Male Skin Texture",
+            "zEBDSignature": "TXST",
+            "EDID": "SkinMaleFeet",
+            "OBND - Object Bounds": {
+              "X1": 0,
+              "Y1": 0,
+              "Z1": 0,
+              "X2": 0,
+              "Y2": 0,
+              "Z2": 0
+            },
+            "Textures (RGB/A)": {
+              "TX00 - Difuse": "actors\\character\\male\\malebody_1_feet.dds",
+              "TX01 - Normal/Gloss": "actors\\character\\male\\malebody_1_feet_msn.dds",
+              "TX03 - Glow/Detail Map": "actors\\character\\male\\malebody_1_feet_sk.dds",
+              "TX07 - Backlight Mask/Specular": "actors\\character\\male\\malebody_1_feet_s.dds"
+            },
+            "DNAM - Flags": [
+              "Facegen Textures",
+              "Has Model Space Normal Map"
+            ]
+          },
+          "NAM1 - Female Skin Texture": "SkinBodyFemale_1 [TXST:0003EDE7]",
+          "SNDD - Footstep Sound": "FSTBarefootFootstepSet [FSTS:00021468]"
+        }
+      ]
+    },
+    {
+      "zEBDUniqueID": "SkinMaleHead",
+      "zEBDPosition": "FTST - Head Texture",
+      "zEBDPositionisArray": false,
+      "zEBDSignature": "TXST",
+      "zEBDAddKeywords": ["EBDValidScriptRace", "EBDProcessFace"],
+      "zEBDgender": "male",
+      "zEBDsupportedRaces": "humanoid",
+      "EDID": "SkinMaleHead",
+      "OBND - Object Bounds": {
+        "X1": 0,
+        "Y1": 0,
+        "Z1": 0,
+        "X2": 0,
+        "Y2": 0,
+        "Z2": 0
+      },
+      "Textures (RGB/A)": {
+        "TX00 - Difuse": "Actors\\Character\\Male\\MaleHead.dds",
+        "TX01 - Normal/Gloss": "Actors\\Character\\Male\\MaleHead_msn.dds",
+        "TX03 - Glow/Detail Map": "Actors\\Character\\Male\\MaleHead_sk.dds",
+        "TX04 - Height": "Actors\\Character\\Male\\BlankDetailmap.dds",
+        "TX07 - Backlight Mask/Specular": "Actors\\Character\\Male\\MaleHead_S.dds"
+      },
+      "DNAM - Flags": [
+        "Facegen Textures",
+        "Has Model Space Normal Map"
+      ]
+    }
+  ]
+}

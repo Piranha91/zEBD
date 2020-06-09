@@ -1,0 +1,331 @@
+{
+  "records": [
+    {
+      "zEBDUniqueID": "FemaleBodyArgonian",
+      "zEBDPosition": "WNAM",
+      "zEBDPositionisArray": false,
+      "zEBDSignature": "ARMO",
+      "zEBDgender": "female",
+      "zEBDsupportedRaces": "argonian",
+      "EDID": "FemaleBodyArgonian",
+      "OBND - Object Bounds": {
+        "X1": 0,
+        "Y1": 0,
+        "Z1": 0,
+        "X2": 0,
+        "Y2": 0,
+        "Z2": 0
+      },
+      "BOD2": {
+        "First Person Flags": [
+          "32 - Body",
+          "33 - Hands",
+          "37 - Feet",
+          "40 - Tail"
+        ],
+        "Armor Type": "Clothing"
+      },
+      "RNAM - Race": "DefaultRace \"Default Race\" [RACE:00000019]",
+      "DATA - Data": {
+        "Value": 0,
+        "Weight": 0
+      },
+      "DNAM - Armor Rating": 0,
+      "Armature": [
+        {
+          "zEBDUniqueID": "FemaleTorsoArgonian",
+          "zEBDPosition": "MODL",
+          "zEBDSignature": "ARMA",
+          "zEBDAddValidRaces": [
+            "Additional Races"
+          ],
+          "zEBDsupportedRaces": "argonian",
+          "EDID": "FemaleTorsoArgonian",
+          "BOD2 - Biped Body Template": {
+            "First Person Flags": [
+              "32 - Body",
+              "34 - Forearms",
+              "35 - Amulet",
+              "36 - Ring",
+              "38 - Calves"
+            ],
+            "Armor Type": "Clothing"
+          },
+          "RNAM - Race": "DefaultRace \"Default Race\" [RACE:00000019]",
+          "DNAM - Data": {
+            "Male Priority": 0,
+            "Female Priority": 0,
+            "Weight slider - Male": [
+              "Enabled"
+            ],
+            "Weight slider - Female": [
+              "Enabled"
+            ],
+            "Unknown": "00 00",
+            "Detection Sound Value": 0,
+            "Unknown": 17,
+            "Weapon Adjust": 0
+          },
+          "Male world model": {
+            "MOD2 - Model FileName": "Actors\\Character\\Character Assets\\MaleBody_1.NIF"
+          },
+          "Female world model": {
+            "MOD3 - Model FileName": "Actors\\Character\\Character Assets\\FemaleBody_1.NIF"
+          },
+          "Male 1st Person": {
+            "MOD4 - Model FileName": "Actors\\Character\\Character Assets\\1stPersonMaleBody_1.NIF"
+          },
+          "Female 1st Person": {
+            "MOD5 - Model FileName": "Actors\\Character\\Character Assets\\1stPersonFemaleBody_1.nif"
+          },
+          "NAM0 - Male Skin Texture": "SkinBodyMaleArgonian [TXST:0004E86F]",
+          "NAM1 - Female Skin Texture":
+          {
+            "zEBDUniqueID": "SkinFemaleTorsoArgonian",
+            "EDID": "SkinFemaleTorsoArgonian",
+            "zEBDPosition": "NAM1 - Female Skin Texture",
+            "zEBDSignature": "TXST",
+            "OBND - Object Bounds": {
+              "X1": 0,
+              "Y1": 0,
+              "Z1": 0,
+              "X2": 0,
+              "Y2": 0,
+              "Z2": 0
+            },
+            "Textures (RGB/A)": {
+              "TX00 - Difuse": "Actors\\Character\\ArgonianFemale\\ArgonianFemaleBody.dds",
+              "TX01 - Normal/Gloss": "Actors\\Character\\ArgonianFemale\\ArgonianFemaleBody_msn.dds",
+              "TX03 - Glow/Detail Map": "Actors\\Character\\Female\\FemaleBody_1_sk.dds",
+              "TX07 - Backlight Mask/Specular": "Actors\\Character\\ArgonianFemale\\ArgonianFemaleBody_s.dds"
+            },
+            "DNAM - Flags": [
+              "Facegen Textures",
+              "Has Model Space Normal Map"
+            ]
+          }
+        },
+        {
+          "zEBDUniqueID": "FemaleHandsArgonian",
+          "zEBDPosition": "MODL",
+          "zEBDSignature": "ARMA",
+          "zEBDAddValidRaces": [
+            "Additional Races"
+          ],
+          "zEBDsupportedRaces": "argonian",
+          "EDID": "FemaleHandsArgonian",
+          "BOD2 - Biped Body Template": {
+            "First Person Flags": [
+              "33 - Hands"
+            ],
+            "Armor Type": "Clothing"
+          },
+          "RNAM - Race": "DefaultRace \"Default Race\" [RACE:00000019]",
+          "DNAM - Data": {
+            "Male Priority": 0,
+            "Female Priority": 0,
+            "Weight slider - Male": [
+              "Enabled"
+            ],
+            "Weight slider - Female": [
+              "Enabled"
+            ],
+            "Unknown": "00 00",
+            "Detection Sound Value": 0,
+            "Unknown": 17,
+            "Weapon Adjust": 0
+          },
+          "Male world model": {
+            "MOD2 - Model FileName": "Actors\\Character\\Character Assets\\MaleHandsArgonian_1.nif"
+          },
+          "Female world model": {
+            "MOD3 - Model FileName": "Actors\\Character\\Character Assets\\FemaleHandsArgonian_1.nif"
+          },
+          "Male 1st Person": {
+            "MOD4 - Model FileName": "Actors\\Character\\Character Assets\\1stpersonMaleHandsArgonian_1.nif"
+          },
+          "Female 1st Person": {
+            "MOD5 - Model FileName": "Actors\\Character\\Character Assets\\1stPersonFemaleHandsArgonian_1.nif"
+          },
+          "NAM0 - Male Skin Texture": "SkinHandMaleArgonian [TXST:0007C716]",
+          "NAM1 - Female Skin Texture":
+          {
+            "zEBDUniqueID": "SkinFemaleHandsArgonian",
+            "EDID": "SkinFemaleHandsArgonian",
+            "zEBDPosition": "NAM1 - Female Skin Texture",
+            "zEBDSignature": "TXST",
+            "OBND - Object Bounds": {
+              "X1": 0,
+              "Y1": 0,
+              "Z1": 0,
+              "X2": 0,
+              "Y2": 0,
+              "Z2": 0
+            },
+            "Textures (RGB/A)": {
+              "TX00 - Difuse": "Actors\\Character\\ArgonianFemale\\ArgonianFemaleHands.dds",
+              "TX01 - Normal/Gloss": "Actors\\Character\\ArgonianFemale\\ArgonianFemaleHands_msn.dds",
+              "TX03 - Glow/Detail Map": "Actors\\Character\\Female\\FemaleHands_1_sk.dds",
+              "TX07 - Backlight Mask/Specular": "Actors\\Character\\ArgonianFemale\\ArgonianFemaleHands_s.dds"
+            },
+            "DNAM - Flags": [
+              "Facegen Textures",
+              "Has Model Space Normal Map"
+            ]
+          }
+        },
+        {
+          "zEBDUniqueID": "FemaleFeetArgonian",
+          "zEBDPosition": "MODL",
+          "zEBDSignature": "ARMA",
+          "zEBDAddValidRaces": [
+            "Additional Races"
+          ],
+          "zEBDsupportedRaces": "argonian",
+          "EDID": "FemaleFeetArgonian",
+          "BOD2 - Biped Body Template": {
+            "First Person Flags": [
+              "37 - Feet"
+            ],
+            "Armor Type": "Clothing"
+          },
+          "RNAM - Race": "DefaultRace \"Default Race\" [RACE:00000019]",
+          "DNAM - Data": {
+            "Male Priority": 0,
+            "Female Priority": 0,
+            "Weight slider - Male": [
+              "Enabled"
+            ],
+            "Weight slider - Female": [
+              "Enabled"
+            ],
+            "Unknown": "00 00",
+            "Detection Sound Value": 0,
+            "Unknown": 17,
+            "Weapon Adjust": 0
+          },
+          "Male world model": {
+            "MOD2 - Model FileName": "Actors\\Character\\Character Assets\\MaleFeet_1.NIF"
+          },
+          "Female world model": {
+            "MOD3 - Model FileName": "Actors\\Character\\Character Assets\\FemaleFeet_1.NIF"
+          },
+          "NAM0 - Male Skin Texture": "SkinBodyMaleArgonian [TXST:0004E86F]",
+          "NAM1 - Female Skin Texture":
+          {
+            "zEBDUniqueID": "SkinFemaleFeetArgonian",
+            "zEBDzEBDPosition": "NAM1 - Female Skin Texture",
+            "zEBDSignature": "TXST",
+            "EDID": "SkinFemaleFeetArgonian",
+            "OBND - Object Bounds": {
+              "X1": 0,
+              "Y1": 0,
+              "Z1": 0,
+              "X2": 0,
+              "Y2": 0,
+              "Z2": 0
+            },
+            "Textures (RGB/A)": {
+              "TX00 - Difuse": "actors\\character\\ArgonianFemale\\ArgonianFemaleBody_feet.dds",
+              "TX01 - Normal/Gloss": "actors\\character\\ArgonianFemale\\ArgonianFemaleBody_feet_msn.dds",
+              "TX03 - Glow/Detail Map": "actors\\character\\Female\\FemaleBody_1_feet_sk.dds",
+              "TX07 - Backlight Mask/Specular": "actors\\ArgonianFemale\\ArgonianFemaleBody_s_feet.dds"
+            },
+            "DNAM - Flags": [
+              "Facegen Textures",
+              "Has Model Space Normal Map"
+            ]
+          }
+        ,
+          "SNDD - Footstep Sound": "FSTBarefootFootstepSet [FSTS:00021468]"
+        },
+        {
+          "zEBDUniqueID": "FemaleTailArgonian",
+          "zEBDPosition": "MODL",
+          "zEBDSignature": "ARMA",
+          "zEBDAddValidRaces": [
+            "Additional Races"
+          ],
+          "zEBDsupportedRaces": "argonian",
+          "EDID": "FemaleTailArgonian",
+          "BOD2 - Biped Body Template": {
+            "First Person Flags": [
+              "40 - Tail"
+            ],
+            "Armor Type": "Clothing"
+          },
+          "RNAM - Race": "DefaultRace \"Default Race\" [RACE:00000019]",
+          "DNAM - Data": {
+            "Male Priority": 0,
+            "Female Priority": 0,
+            "Unknown": "00 00",
+            "Detection Sound Value": 0,
+            "Unknown": 17,
+            "Weapon Adjust": 0
+          },
+          "Male world model": {
+            "MOD2 - Model FileName": "Actors\\Character\\Character Assets\\MaleTailArgonian.nif"
+          },
+          "Female world model": {
+            "MOD3 - Model FileName": "Actors\\Character\\Character Assets\\FemaleTailArgonian.nif"
+          },
+          "NAM0 - Male Skin Texture": "SkinBodyMaleArgonian [TXST:0004E86F]",
+          "NAM1 - Female Skin Texture":
+          {
+            "zEBDUniqueID": "SkinFemaleTail",
+            "zEBDzEBDPosition": "NAM1 - Female Skin Texture",
+            "zEBDSignature": "TXST",
+            "EDID": "SkinFemaleFeet",
+            "OBND - Object Bounds": {
+              "X1": 0,
+              "Y1": 0,
+              "Z1": 0,
+              "X2": 0,
+              "Y2": 0,
+              "Z2": 0
+            },
+            "Textures (RGB/A)": {
+              "TX00 - Difuse": "Actors\\Character\\ArgonianFemale\\ArgonianFemaleBody_tail.dds",
+              "TX01 - Normal/Gloss": "Actors\\Character\\ArgonianFemale\\ArgonianFemaleBody_tail_msn.dds",
+              "TX03 - Glow/Detail Map": "Actors\\Character\\Female\\FemaleBody_1_tail_sk.dds",
+              "TX07 - Backlight Mask/Specular": "Actors\\Character\\ArgonianFemale\\ArgonianFemaleBody_tail_s.dds"
+            },
+            "DNAM - Flags": [
+              "Facegen Textures",
+              "Has Model Space Normal Map"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "zEBDUniqueID": "SkinFemaleHeadArgonian",
+      "zEBDPosition": "FTST - Head Texture",
+      "zEBDPositionisArray": false,
+      "zEBDSignature": "TXST",
+      "zEBDAddKeywords": ["EBDValidScriptRace", "EBDProcessFace"],
+      "zEBDgender": "female",
+      "zEBDsupportedRaces": "argonian",
+      "EDID": "SkinFemaleHeadArgonian",
+      "OBND - Object Bounds": {
+        "X1": 0,
+        "Y1": 0,
+        "Z1": 0,
+        "X2": 0,
+        "Y2": 0,
+        "Z2": 0
+      },
+      "Textures (RGB/A)": {
+        "TX00 - Difuse": "Actors\\Character\\ArgonianFemale\\ArgonianFemaleHead.dds",
+        "TX01 - Normal/Gloss": "Actors\\Character\\ArgonianFemale\\ArgonianFemaleHead_msn.dds",
+        "TX03 - Glow/Detail Map": "Actors\\Character\\Female\\FemaleHead_sk.dds",
+        "TX04 - Height": "Actors\\Character\\ArgonianFemale\\BlankDetailmap.dds",
+        "TX07 - Backlight Mask/Specular": "Actors\\Character\\ArgonianFemale\\ArgonianFemaleHead_s.dds"
+      },
+      "DNAM - Flags": [
+        "Facegen Textures",
+        "Has Model Space Normal Map"
+      ]
+    }
+  ]
+}

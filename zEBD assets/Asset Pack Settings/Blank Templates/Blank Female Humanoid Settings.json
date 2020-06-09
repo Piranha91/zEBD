@@ -1,0 +1,1314 @@
+{
+  "groupName": "Blank Female Humanoid Settings",
+  "gender": "female",
+  "displayAlerts": true,
+  "userAlert": "Message to user goes here",
+  "subgroups": [
+    {
+      "id": "HD",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Diffuse",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HD.H",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Non-vampire",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\female\\femalehead.dds",
+              "femalehead.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5535"
+        },
+        {
+          "id": "HD.V",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoidVampire"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Vampire",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\female\\femaleheadvampire.dds",
+              "femalehead.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5547"
+        }
+      ],
+      "$$hashKey": "object:4409"
+    },
+    {
+      "id": "HN",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Normals",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HN.Y",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Younger",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HN.Y.B",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "BretonRace",
+                "DA13AfflictedRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Breton",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\actors\\character\\bretonfemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4544"
+            },
+            {
+              "id": "HN.Y.D",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "DarkElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Dark Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\actors\\character\\darkelffemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4558"
+            },
+            {
+              "id": "HN.Y.N",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "NordRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Nord",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\actors\\character\\female\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4571"
+            },
+            {
+              "id": "HN.Y.H",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "HighElfRace",
+                "SnowElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "High Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\actors\\character\\highelffemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4595"
+            },
+            {
+              "id": "HN.Y.O",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "OrcRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Orc",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\actors\\character\\femaleorc\\femaleheadorc_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4608"
+            },
+            {
+              "id": "HN.Y.I",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "ImperialRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Imperial",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\actors\\character\\imperialfemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4619"
+            },
+            {
+              "id": "HN.Y.R",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "RedguardRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Redguard",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\actors\\character\\redguardfemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4634"
+            },
+            {
+              "id": "HN.Y.V",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoidVampire"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [],
+              "subgroups": [
+                {
+                  "id": "HN.Y.V.D",
+                  "enabled": true,
+                  "distributionEnabled": true,
+                  "allowedRaces": [],
+                  "disallowedRaces": [],
+                  "allowedAttributes": [],
+                  "disallowedAttributes": [],
+                  "forceIfAttributes": [],
+                  "allowUnique": true,
+                  "allowNonUnique": true,
+                  "name": "Default Vampire",
+                  "requiredSubgroups": [],
+                  "excludedSubgroups": [],
+                  "addKeywords": [],
+                  "probabilityWeighting": 1,
+                  "paths": [
+                    [
+                      "Skyrim.esm\\actors\\character\\female\\femaleheadvampire_msn.dds",
+                      "femalehead_msn.dds"
+                    ]
+                  ],
+                  "subgroups": [],
+                  "$$hashKey": "object:4999"
+                },
+                {
+                  "id": "HN.Y.V.DE",
+                  "enabled": true,
+                  "distributionEnabled": false,
+                  "allowedRaces": [],
+                  "disallowedRaces": [],
+                  "allowedAttributes": [
+                    [
+                      "FTST",
+                      "SkinHeadFemaleDarkElfVampire [TXST:02006F91]"
+                    ]
+                  ],
+                  "disallowedAttributes": [],
+                  "forceIfAttributes": [
+                    [
+                      "FTST",
+                      "SkinHeadFemaleDarkElfVampire [TXST:02006F91]"
+                    ]
+                  ],
+                  "allowUnique": true,
+                  "allowNonUnique": true,
+                  "name": "Dark Elf Vampire",
+                  "requiredSubgroups": [],
+                  "excludedSubgroups": [],
+                  "addKeywords": [],
+                  "probabilityWeighting": 1,
+                  "paths": [
+                    [
+                      "Skyrim.esm\\actors\\character\\darkelffemale\\femalehead_msn.dds",
+                      "femalehead_msn.dds"
+                    ]
+                  ],
+                  "subgroups": [],
+                  "$$hashKey": "object:9518"
+                },
+                {
+                  "id": "HN.Y.V.O",
+                  "enabled": true,
+                  "distributionEnabled": false,
+                  "allowedRaces": [],
+                  "disallowedRaces": [],
+                  "allowedAttributes": [
+                    [
+                      "FTST",
+                      "SkinHeadFemaleOrcVampire [TXST:02006F94]"
+                    ]
+                  ],
+                  "disallowedAttributes": [],
+                  "forceIfAttributes": [
+                    [
+                      "FTST",
+                      "SkinHeadFemaleOrcVampire [TXST:02006F94]"
+                    ]
+                  ],
+                  "allowUnique": true,
+                  "allowNonUnique": true,
+                  "name": "Orc Vampire",
+                  "requiredSubgroups": [],
+                  "excludedSubgroups": [],
+                  "addKeywords": [],
+                  "probabilityWeighting": 1,
+                  "paths": [
+                    [
+                      "Skyrim.esm\\actors\\character\\femaleorc\\femaleheadorc_msn.dds",
+                      "femalehead_msn.dds"
+                    ]
+                  ],
+                  "subgroups": [],
+                  "$$hashKey": "object:9519"
+                }
+              ],
+              "$$hashKey": "object:3582"
+            },
+            {
+              "id": "HN.Y.W",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "WoodElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Wood Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\textures\\actors\\character\\highelffemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4185"
+            }
+          ],
+          "$$hashKey": "object:1933"
+        },
+        {
+          "id": "HN.E",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "elder"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Elder",
+          "requiredSubgroups": [
+            "BN.E"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\femaleold\\femalehead_msn.dds",
+              "femalehead_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4584"
+        }
+      ],
+      "$$hashKey": "object:4780"
+    },
+    {
+      "id": "HS",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Subsurface",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "Skyrim.esm\\actors\\character\\female\\femalehead_sk.dds",
+          "femalehead_sk.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:4649"
+    },
+    {
+      "id": "HSP",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Specular",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "Skyrim.esm\\actors\\character\\female\\femalehead_s.dds",
+          "femalehead_s.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:4686"
+    },
+    {
+      "id": "HDE",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Detail",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HDE.BDM",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "BlankDetailMap",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\male\\blankdetailmap.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4737"
+        },
+        {
+          "id": "HDE.A40",
+          "enabled": true,
+          "distributionEnabled": false,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Age40 [TXST:000F2058]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Age40 [TXST:000F205C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Age40 [TXST:000F2060]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Age40 [TXST:000F2064]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Age40 [TXST:000F2068]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Age40 [TXST:000F206C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Age40 [TXST:000F2070]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Age40 [TXST:000EAFA3]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Age40 [TXST:000F2058]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Age40 [TXST:000F205C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Age40 [TXST:000F2060]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Age40 [TXST:000F2064]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Age40 [TXST:000F2068]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Age40 [TXST:000F206C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Age40 [TXST:000F2070]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Age40 [TXST:000EAFA3]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Age 40",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\Actors\\Character\\Female\\FemaleHeadDetail_Age40.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:2728"
+        },
+        {
+          "id": "HDE.A50",
+          "enabled": true,
+          "distributionEnabled": false,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Age50 [TXST:000F2059]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Age50 [TXST:000F205D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Age50 [TXST:000F2061]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Age50 [TXST:000F2065]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Age50 [TXST:000F2069]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Age50 [TXST:000F206D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Age50 [TXST:000F2071]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Age50 [TXST:000645DB]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Age50 [TXST:000F2059]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Age50 [TXST:000F205D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Age50 [TXST:000F2061]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Age50 [TXST:000F2065]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Age50 [TXST:000F2069]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Age50 [TXST:000F206D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Age50 [TXST:000F2071]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Age50 [TXST:000645DB]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Age 50",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\Actors\\Character\\Female\\FemaleHeadDetail_Age50.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:2729"
+        },
+        {
+          "id": "HDE.R",
+          "enabled": true,
+          "distributionEnabled": false,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Rough01 [TXST:000F2057]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Rough01 [TXST:000F205B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Rough01 [TXST:000F205F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Rough [TXST:000F2063]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Rough01 [TXST:000F2067]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Rough01 [TXST:000F206B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Rough01 [TXST:000F206F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordRough [TXST:000EAFA4]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOldComplexion_Rough [TXST:000FFF42]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Rough01 [TXST:000F2057]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Rough01 [TXST:000F205B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Rough01 [TXST:000F205F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Rough [TXST:000F2063]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Rough01 [TXST:000F2067]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Rough01 [TXST:000F206B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Rough01 [TXST:000F206F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordRough [TXST:000EAFA4]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOldComplexion_Rough [TXST:000FFF42]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Rough",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\female\\femaleheaddetail_rough.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4752"
+        },
+        {
+          "id": "HDE.F",
+          "enabled": true,
+          "distributionEnabled": false,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Frekles [TXST:000F205A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Frekles [TXST:000F205E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Frekles [TXST:000F2062]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Frekles [TXST:000F2066]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Frekles [TXST:000EAFA5]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Frekles [TXST:000F206A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Frekles [TXST:000F206E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Frekles [TXST:000F2072]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOldComplexion_Frekles [TXST:000FFF41]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Frekles [TXST:000EAFA5]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Frekles [TXST:000F205A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Frekles [TXST:000F205E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Frekles [TXST:000F2062]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Frekles [TXST:000F2066]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Frekles [TXST:000EAFA5]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Frekles [TXST:000F206A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Frekles [TXST:000F206E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Frekles [TXST:000F2072]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOldComplexion_Frekles [TXST:000FFF41]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Freckles",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\female\\femaleheaddetail_frekles.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4766"
+        }
+      ],
+      "$$hashKey": "object:4723"
+    },
+    {
+      "id": "BD",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Diffuse",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "Skyrim.esm\\actors\\character\\female\\femalebody_1.dds",
+          "femalebody_1.dds"
+        ],
+        [
+          "Skyrim.esm\\actors\\character\\female\\femalebody_1.dds",
+          "femalebody_1_feet.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:4741"
+    },
+    {
+      "id": "BN",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Normal",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "BN.Y",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Not Elder",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\female\\femalebody_1_msn.dds",
+              "femalebody_1_msn.dds"
+            ],
+            [
+              "Skyrim.esm\\actors\\character\\female\\femalebody_1_msn.dds",
+              "femalebody_1_feet_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:2278"
+        },
+        {
+          "id": "BN.E",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Elder",
+          "requiredSubgroups": [
+            "HN.E"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\femaleold\\femalebody_1_msn.dds",
+              "femalebody_1_msn.dds"
+            ],
+            [
+              "Skyrim.esm\\actors\\character\\femaleold\\femalebody_1_msn.dds",
+              "femalebody_1_feet_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5112"
+        }
+      ],
+      "$$hashKey": "object:4753"
+    },
+    {
+      "id": "BS",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Subsurface",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "Skyrim.esm\\Actors\\Character\\Female\\FemaleBody_1_sk.dds",
+          "FemaleBody_1_sk.dds"
+        ],
+        [
+          "Skyrim.esm\\Actors\\Character\\Female\\FemaleBody_1_sk.dds",
+          "femalebody_1_feet_sk.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:4764"
+    },
+    {
+      "id": "BSP",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Specular",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "Skyrim.esm\\actors\\character\\female\\femalebody_1_s.dds",
+          "femalebody_1_s.dds"
+        ],
+        [
+          "Skyrim.esm\\actors\\character\\female\\femalebody_1_s.dds",
+          "femalebody_1_feet_s.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:1541"
+    },
+    {
+      "id": "HAD",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Diffuse",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "Skyrim.esm\\actors\\character\\female\\femalehands_1.dds",
+          "femalehands_1.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:4802"
+    },
+    {
+      "id": "HAN",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Normal",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "Skyrim.esm\\actors\\character\\female\\femalehands_1_msn.dds",
+          "femalehands_1_msn.dds"
+        ]
+      ],
+      "subgroups": [
+        {
+          "id": "HAN.Y",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid"
+          ],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Young",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\female\\femalehands_1_msn.dds",
+              "femalehands_1_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:3255"
+        },
+        {
+          "id": "HAN.E",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "elder"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Elder",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\femaleold\\femalehands_1_msn.dds",
+              "femalehands_1_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:3267"
+        }
+      ],
+      "$$hashKey": "object:4814"
+    },
+    {
+      "id": "HAS",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Subsurface",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "Skyrim.esm\\actors\\character\\female\\femalehands_1_sk.dds",
+          "femalehands_1_sk.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:4825"
+    },
+    {
+      "id": "HASP",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Specular",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "Skyrim.esm\\actors\\character\\female\\femalehands_1_s.dds",
+          "femalehands_1_s.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:1542"
+    }
+  ],
+  "displayAssetPackAlerts": true
+}

@@ -1,0 +1,12 @@
+{
+  "Record Header": {
+    "Signature": "GLOB",
+    "Record Flags": {
+      "Constant": true
+    },
+    "FormID": "40000D6E"
+  },
+  "EDID - Editor ID": "EBDHeadEnabled",
+  "FNAM - Type": 115,
+  "FLTV - Value": 0
+}

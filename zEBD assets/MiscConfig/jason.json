@@ -1,0 +1,7 @@
+{
+    "early": ["I'm warming up to this patching business.", "This will take but a moment.", "Turnin' up the heat on these records!", "This is going to be so much fun!", "You're gonna love the way these NPCs look. Unless you screwed up the settings. Then you won't.", "ASSUMING DIRECT CONTROL."],
+	"middle": ["Pilin' those records on.", "Where the hell did you get all these records from?", "Can you go somewhere else and give me some privacy for this?", "I'm working here. Go away.", "Why do you need all these textures anyway?", "I hope you appreciate how hard I'm working for you.", "Wow, there are more of these records than I thought!"],
+    "late": ["Hold your damn horses; I'm still patching.", "Seriously, maybe you should spend less time installing plugins and more time playing. You have too many NPCs.", "I'm almost done, I promise", "Just a bit more.", "This is exhausting.", "I warned you this would take a while, didn't I?", "You think I'm slow? Let's see how long it takes you to compute pi to even three decimal places!"],
+	"last": ["I have to go.", "We're done here.", "I should be going.", "I should get back to my duties.", "Thanks for your time."],
+    "frequency": 0.0003	
+}

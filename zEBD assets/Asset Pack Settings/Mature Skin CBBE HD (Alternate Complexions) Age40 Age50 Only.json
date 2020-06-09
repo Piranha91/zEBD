@@ -1,0 +1,2052 @@
+{
+  "groupName": "Mature Skin CBBE HD (Alternate Complexions) Age40 Age50 Only",
+  "gender": "female",
+  "displayAlerts": true,
+  "userAlert": "",
+  "subgroups": [
+    {
+      "id": "HD",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Diffuse",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HD.MaN",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Age40 [TXST:000F2058]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Age40 [TXST:000F205C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Age40 [TXST:000F2060]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Age40 [TXST:000F2064]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Age40 [TXST:000F2068]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Age40 [TXST:000F206C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Age40 [TXST:000F2070]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Age40 [TXST:000EAFA3]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Age40 [TXST:000F2058]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Age40 [TXST:000F205C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Age40 [TXST:000F2060]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Age40 [TXST:000F2064]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Age40 [TXST:000F2068]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Age40 [TXST:000F206C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Age40 [TXST:000F2070]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Age40 [TXST:000EAFA3]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Mature (Age40), No Blemish",
+          "requiredSubgroups": [
+            "HN.Ma"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HD.MaN.NMNS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "No Moles, No Scars",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Diffuse\\mature\\no_moles_no_scars\\Textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:2429"
+            },
+            {
+              "id": "HD.MaN.NMWS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "No Moles, With Scars",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Diffuse\\mature\\no_moles_scars\\Textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:2430"
+            },
+            {
+              "id": "HD.MaN.WMNS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "With Moles, No Scars",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Diffuse\\mature\\moles_no_scars\\Textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:2431"
+            },
+            {
+              "id": "HD.MaN.WMWS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "With Moles, With Scars",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Diffuse\\mature\\moles_scars\\Textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:2432"
+            }
+          ],
+          "$$hashKey": "object:8843"
+        },
+        {
+          "id": "HD.MaB",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Age40 [TXST:000F2058]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Age40 [TXST:000F205C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Age40 [TXST:000F2060]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Age40 [TXST:000F2064]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Age40 [TXST:000F2068]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Age40 [TXST:000F206C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Age40 [TXST:000F2070]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Age40 [TXST:000EAFA3]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Age40 [TXST:000F2058]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Age40 [TXST:000F205C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Age40 [TXST:000F2060]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Age40 [TXST:000F2064]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Age40 [TXST:000F2068]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Age40 [TXST:000F206C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Age40 [TXST:000F2070]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Age40 [TXST:000EAFA3]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Mature (Age40), With Blemish",
+          "requiredSubgroups": [
+            "HN.Ma"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HD.MaB.NMNS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "No Moles, No Scars",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Diffuse\\mature_blemish\\no_moles_no_scars\\Textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:2487"
+            },
+            {
+              "id": "HD.MaB.NMWS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "No Moles, With Scars",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Diffuse\\mature_blemish\\no_moles_scars\\Textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:2488"
+            },
+            {
+              "id": "HD.MaB.WMNS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "With Moles, No Scars",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Diffuse\\mature_blemish\\moles_no_scars\\Textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:2489"
+            },
+            {
+              "id": "HD.MaB.WMWS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "With Moles, With Scars",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Diffuse\\mature_blemish\\moles_scars\\Textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:2490"
+            }
+          ],
+          "$$hashKey": "object:8844"
+        },
+        {
+          "id": "HD.ON",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Age50 [TXST:000F2059]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Age50 [TXST:000F205D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Age50 [TXST:000F2061]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Age50 [TXST:000F2065]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Age50 [TXST:000F2069]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Age50 [TXST:000F206D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Age50 [TXST:000F2071]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Age50 [TXST:000645DB]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Age50 [TXST:000F2059]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Age50 [TXST:000F205D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Age50 [TXST:000F2061]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Age50 [TXST:000F2065]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Age50 [TXST:000F2069]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Age50 [TXST:000F206D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Age50 [TXST:000F2071]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Age50 [TXST:000645DB]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Old (Age50), No Blemish",
+          "requiredSubgroups": [
+            "HN.Ma"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HD.ON.NMNS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "No Moles, No Scars",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Diffuse\\old\\no_moles_no_scars\\Textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:2545"
+            },
+            {
+              "id": "HD.ON.NMWS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "No Moles, With Scars",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Diffuse\\old\\no_moles_scars\\Textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:2546"
+            },
+            {
+              "id": "HD.ON.WMNS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "With Moles, No Scars",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Diffuse\\old\\moles_no_scars\\Textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:2547"
+            },
+            {
+              "id": "HD.ON.WMWS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "With Moles, With Scars",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Diffuse\\old\\moles_scars\\Textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:2548"
+            }
+          ],
+          "$$hashKey": "object:8845"
+        },
+        {
+          "id": "HD.OB",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Age50 [TXST:000F2059]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Age50 [TXST:000F205D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Age50 [TXST:000F2061]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Age50 [TXST:000F2065]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Age50 [TXST:000F2069]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Age50 [TXST:000F206D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Age50 [TXST:000F2071]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Age50 [TXST:000645DB]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Age50 [TXST:000F2059]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Age50 [TXST:000F205D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Age50 [TXST:000F2061]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Age50 [TXST:000F2065]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Age50 [TXST:000F2069]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Age50 [TXST:000F206D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Age50 [TXST:000F2071]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Age50 [TXST:000645DB]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Old (Age50), With Blemish",
+          "requiredSubgroups": [
+            "HN.Ma"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HD.OB.NMNS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "No Moles, No Scars",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Diffuse\\old_blemish\\no_moles_no_scars\\Textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:2603"
+            },
+            {
+              "id": "HD.OB.NMWS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "No Moles, With Scars",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Diffuse\\old_blemish\\no_moles_scars\\Textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:2604"
+            },
+            {
+              "id": "HD.OB.WMNS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "With Moles, No Scars",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Diffuse\\old_blemish\\moles_no_scars\\Textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:2605"
+            },
+            {
+              "id": "HD.OB.WMWS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "With Moles, With Scars",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Diffuse\\old_blemish\\moles_scars\\Textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:2606"
+            }
+          ],
+          "$$hashKey": "object:8846"
+        }
+      ],
+      "$$hashKey": "object:4409"
+    },
+    {
+      "id": "HN",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Normals",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HN.Ma",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Mature",
+          "requiredSubgroups": [
+            "BN.M"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HN.Ma.B",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "BretonRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Breton",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Normal Maps\\mature\\Textures\\actors\\character\\bretonfemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4269"
+            },
+            {
+              "id": "HN.Ma.D",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "DarkElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Dark Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Normal Maps\\mature\\Textures\\actors\\character\\darkelffemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4270"
+            },
+            {
+              "id": "HN.Ma.N",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "NordRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Nord",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Normal Maps\\mature\\Textures\\actors\\character\\female\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4271"
+            },
+            {
+              "id": "HN.Ma.H",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "HighElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "High Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Normal Maps\\mature\\Textures\\actors\\character\\highelffemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4272"
+            },
+            {
+              "id": "HN.Ma.O",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "OrcRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Orc",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Normal Maps\\mature\\Textures\\actors\\character\\femaleorc\\femaleheadorc_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4273"
+            },
+            {
+              "id": "HN.Ma.I",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "ImperialRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Imperial",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Normal Maps\\mature\\Textures\\actors\\character\\imperialfemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4274"
+            },
+            {
+              "id": "HN.Ma.R",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "RedguardRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Redguard",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Normal Maps\\mature\\Textures\\actors\\character\\redguardfemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4275"
+            },
+            {
+              "id": "HN.Ma.V",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoidVampire"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": false,
+              "allowNonUnique": true,
+              "name": "Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [],
+              "subgroups": [
+                {
+                  "id": "HN.Ma.V.D",
+                  "enabled": true,
+                  "distributionEnabled": true,
+                  "allowedRaces": [],
+                  "disallowedRaces": [],
+                  "allowedAttributes": [],
+                  "disallowedAttributes": [],
+                  "forceIfAttributes": [],
+                  "allowUnique": true,
+                  "allowNonUnique": true,
+                  "name": "Default Vampire",
+                  "requiredSubgroups": [],
+                  "excludedSubgroups": [],
+                  "addKeywords": [],
+                  "probabilityWeighting": 1,
+                  "paths": [
+                    [
+                      "textures\\MSHC\\HD\\Face\\Normal Maps\\mature\\Textures\\actors\\character\\female\\femaleheadvampire_msn.dds",
+                      "femalehead_msn.dds"
+                    ]
+                  ],
+                  "subgroups": [],
+                  "$$hashKey": "object:4532"
+                },
+                {
+                  "id": "HN.Ma.V.DE",
+                  "enabled": true,
+                  "distributionEnabled": false,
+                  "allowedRaces": [],
+                  "disallowedRaces": [],
+                  "allowedAttributes": [
+                    [
+                      "FTST",
+                      "SkinHeadFemaleDarkElfVampire [TXST:02006F91]"
+                    ]
+                  ],
+                  "disallowedAttributes": [],
+                  "forceIfAttributes": [
+                    [
+                      "FTST",
+                      "SkinHeadFemaleDarkElfVampire [TXST:02006F91]"
+                    ]
+                  ],
+                  "allowUnique": true,
+                  "allowNonUnique": true,
+                  "name": "Dark Elf Vampire",
+                  "requiredSubgroups": [],
+                  "excludedSubgroups": [],
+                  "addKeywords": [],
+                  "probabilityWeighting": 1,
+                  "paths": [
+                    [
+                      "textures\\MSHC\\HD\\Face\\Normal Maps\\mature\\Textures\\actors\\character\\darkelffemale\\femalehead_msn.dds",
+                      "femalehead_msn.dds"
+                    ]
+                  ],
+                  "subgroups": [],
+                  "$$hashKey": "object:4533"
+                },
+                {
+                  "id": "HN.Ma.V.O",
+                  "enabled": true,
+                  "distributionEnabled": false,
+                  "allowedRaces": [],
+                  "disallowedRaces": [],
+                  "allowedAttributes": [
+                    [
+                      "FTST",
+                      "SkinHeadFemaleOrcVampire [TXST:02006F94]"
+                    ]
+                  ],
+                  "disallowedAttributes": [],
+                  "forceIfAttributes": [
+                    [
+                      "FTST",
+                      "SkinHeadFemaleOrcVampire [TXST:02006F94]"
+                    ]
+                  ],
+                  "allowUnique": true,
+                  "allowNonUnique": true,
+                  "name": "Orc Vampire",
+                  "requiredSubgroups": [],
+                  "excludedSubgroups": [],
+                  "addKeywords": [],
+                  "probabilityWeighting": 1,
+                  "paths": [
+                    [
+                      "textures\\MSHC\\HD\\Face\\Normal Maps\\mature\\Textures\\actors\\character\\femaleorc\\femaleheadorc_msn.dds",
+                      "femalehead_msn.dds"
+                    ]
+                  ],
+                  "subgroups": [],
+                  "$$hashKey": "object:4534"
+                }
+              ],
+              "$$hashKey": "object:4276"
+            },
+            {
+              "id": "HN.Ma.W",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "WoodElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Wood Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\Face\\Normal Maps\\mature\\Textures\\actors\\character\\highelffemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4277"
+            }
+          ],
+          "$$hashKey": "object:3128"
+        }
+      ],
+      "$$hashKey": "object:2842"
+    },
+    {
+      "id": "HS",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Subsurface",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "textures\\MSHC\\HD\\Face\\Common\\Textures\\actors\\character\\female\\femalehead_sk.dds",
+          "femalehead_sk.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:4649"
+    },
+    {
+      "id": "HSP",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Specular",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "textures\\MSHC\\HD\\Face\\Specular\\Textures\\actors\\character\\female\\femalehead_s.DDS",
+          "femalehead_s.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:4686"
+    },
+    {
+      "id": "HDE",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Detail",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HDE.BDM",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Frekles [TXST:000F205A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Frekles [TXST:000F205E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Frekles [TXST:000F2062]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Frekles [TXST:000F2066]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Frekles [TXST:000EAFA5]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Frekles [TXST:000F206A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Frekles [TXST:000F206E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Frekles [TXST:000F2072]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOldComplexion_Frekles [TXST:000FFF41]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Frekles [TXST:000EAFA5]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Rough01 [TXST:000F2057]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Rough01 [TXST:000F205B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Rough01 [TXST:000F205F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Rough [TXST:000F2063]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Rough01 [TXST:000F2067]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Rough01 [TXST:000F206B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Rough01 [TXST:000F206F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordRough [TXST:000EAFA4]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOldComplexion_Rough [TXST:000FFF42]"
+            ]
+          ],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "BlankDetailMap",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\MSHC\\HD\\Face\\Complexion\\Textures\\actors\\character\\male\\blankdetailmap.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4737"
+        }
+      ],
+      "$$hashKey": "object:4723"
+    },
+    {
+      "id": "BD",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Diffuse",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "BD.M",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Mature",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "BD.M.N_NMNS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Body Natural No Moles No Scars",
+              "requiredSubgroups": [
+                "HD.MaN.NMNS",
+                "HD.MaB.NMNS",
+                "HD.ON.NMNS",
+                "HD.OB.NMNS"
+              ],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Natural No Moles No Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Natural No Moles No Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:3342"
+            },
+            {
+              "id": "BD.M.N_NMWS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Body Natural No Moles With Scars",
+              "requiredSubgroups": [
+                "HD.MaN.NMWS",
+                "HD.MaB.NMWS",
+                "HD.ON.NMWS",
+                "HD.OB.NMWS"
+              ],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Natural No Moles Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Natural No Moles Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:3343"
+            },
+            {
+              "id": "BD.M.N_WMNS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Body Natural With Moles No Scars",
+              "requiredSubgroups": [
+                "HD.MaN.WMNS",
+                "HD.MaB.WMNS",
+                "HD.ON.WMNS",
+                "HD.OB.WMNS"
+              ],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Natural Moles No Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Natural Moles No Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:3344"
+            },
+            {
+              "id": "BD.M.N_WMWS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Body Natural With Moles With Scars",
+              "requiredSubgroups": [
+                "HD.MaN.WMWS",
+                "HD.MaB.WMWS",
+                "HD.ON.WMWS",
+                "HD.OB.WMWS"
+              ],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Natural Moles Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Natural Moles Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:3345"
+            },
+            {
+              "id": "BD.M.T_NMNS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Body Trimmed No Moles No Scars",
+              "requiredSubgroups": [
+                "HD.MaN.NMNS",
+                "HD.MaB.NMNS",
+                "HD.ON.NMNS",
+                "HD.OB.NMNS"
+              ],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Trimmed No Moles No Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Trimmed No Moles No Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:3346"
+            },
+            {
+              "id": "BD.M.T_NMWS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Body Trimmed No Moles With Scars",
+              "requiredSubgroups": [
+                "HD.MaN.NMWS",
+                "HD.MaB.NMWS",
+                "HD.ON.NMWS",
+                "HD.OB.NMWS"
+              ],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Trimmed No Moles Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Trimmed No Moles Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:3347"
+            },
+            {
+              "id": "BD.M.T_WMNS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Body Trimmed With Moles No Scars",
+              "requiredSubgroups": [
+                "HD.MaN.WMNS",
+                "HD.MaB.WMNS",
+                "HD.ON.WMNS",
+                "HD.OB.WMNS"
+              ],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Trimmed Moles No Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Trimmed Moles No Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:3348"
+            },
+            {
+              "id": "BD.M.T_WMWS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Body Trimmed With Moles With Scars",
+              "requiredSubgroups": [
+                "HD.MaN.WMWS",
+                "HD.MaB.WMWS",
+                "HD.ON.WMWS",
+                "HD.OB.WMWS"
+              ],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Trimmed Moles Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Trimmed Moles Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:3349"
+            },
+            {
+              "id": "BD.M.S_NMNS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Body Shaved No Moles No Scars",
+              "requiredSubgroups": [
+                "HD.MaN.NMNS",
+                "HD.MaB.NMNS",
+                "HD.ON.NMNS",
+                "HD.OB.NMNS"
+              ],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Shaved No Moles No Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Shaved No Moles No Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:3350"
+            },
+            {
+              "id": "BD.M.S_NMWS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Body Shaved No Moles With Scars",
+              "requiredSubgroups": [
+                "HD.MaN.NMWS",
+                "HD.MaB.NMWS",
+                "HD.ON.NMWS",
+                "HD.OB.NMWS"
+              ],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Shaved No Moles Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Shaved No Moles Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:3351"
+            },
+            {
+              "id": "BD.M.S_WMNS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Body Shaved With Moles No Scars",
+              "requiredSubgroups": [
+                "HD.MaN.WMNS",
+                "HD.MaB.WMNS",
+                "HD.ON.WMNS",
+                "HD.OB.WMNS"
+              ],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Shaved Moles No Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Shaved Moles No Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:3352"
+            },
+            {
+              "id": "BD.M.S_WMWS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Body Shaved With Moles With Scars",
+              "requiredSubgroups": [
+                "HD.MaN.WMWS",
+                "HD.MaB.WMWS",
+                "HD.ON.WMWS",
+                "HD.OB.WMWS"
+              ],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Shaved Moles Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\MSHC\\HD\\CBBE\\Mature\\Body Shaved Moles Scars\\Textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:3353"
+            }
+          ],
+          "$$hashKey": "object:13590"
+        }
+      ],
+      "$$hashKey": "object:4741"
+    },
+    {
+      "id": "BN",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Normal",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "BN.M",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Mature",
+          "requiredSubgroups": [
+            "BD.M"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\MSHC\\HD\\CBBE\\Mature\\Body Normal Maps\\CBBE\\Textures\\actors\\character\\female\\femalebody_1_msn.dds",
+              "femalebody_1_msn.dds"
+            ],
+            [
+              "textures\\MSHC\\HD\\CBBE\\Mature\\Body Normal Maps\\CBBE\\Textures\\actors\\character\\female\\femalebody_1_msn.dds",
+              "femalebody_1_feet_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5112"
+        }
+      ],
+      "$$hashKey": "object:4753"
+    },
+    {
+      "id": "BS",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Subsurface",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "textures\\MSHC\\HD\\CBBE\\Body Common\\Textures\\actors\\character\\female\\femalebody_1_sk.dds",
+          "FemaleBody_1_sk.dds"
+        ],
+        [
+          "textures\\MSHC\\HD\\CBBE\\Body Common\\Textures\\actors\\character\\female\\femalebody_1_sk.dds",
+          "femalebody_1_feet_sk.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:4764"
+    },
+    {
+      "id": "BSP",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Specular",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "textures\\MSHC\\HD\\CBBE\\Body Specular Maps\\Textures\\actors\\character\\female\\femalebody_1_s.dds",
+          "femalebody_1_s.dds"
+        ],
+        [
+          "textures\\MSHC\\HD\\CBBE\\Body Specular Maps\\Textures\\actors\\character\\female\\femalebody_1_s.dds",
+          "femalebody_1_feet_s.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:1541"
+    },
+    {
+      "id": "HAD",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Diffuse",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HAD.M",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Mature",
+          "allowedSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\MSHC\\HD\\CBBE\\Mature\\Body Common\\Textures\\actors\\character\\female\\femalehands_1.dds",
+              "femalehands_1.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:3948",
+          "requiredSubgroups": [
+            "BD.M"
+          ]
+        }
+      ],
+      "$$hashKey": "object:4802"
+    },
+    {
+      "id": "HAN",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Normal",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HAN.M",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid"
+          ],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Mature",
+          "requiredSubgroups": [
+            "HAD.M"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\MSHC\\HD\\CBBE\\Mature\\Body Normal Maps\\CBBE\\Textures\\actors\\character\\female\\femalehands_1_msn.dds",
+              "femalehands_1_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:3267"
+        }
+      ],
+      "$$hashKey": "object:4814"
+    },
+    {
+      "id": "HAS",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Subsurface",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "textures\\MSHC\\HD\\CBBE\\Body Common\\Textures\\actors\\character\\female\\femalehands_1_sk.dds",
+          "femalehands_1_sk.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:4825"
+    },
+    {
+      "id": "HASP",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Specular",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "textures\\MSHC\\HD\\CBBE\\Body Specular Maps\\Textures\\actors\\character\\female\\femalehands_1_s.dds",
+          "femalehands_1_s.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:1542"
+    }
+  ],
+  "displayAssetPackAlerts": true
+}

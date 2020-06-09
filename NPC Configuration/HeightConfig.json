@@ -1,0 +1,194 @@
+[
+  {
+    "EDID": "BretonRace",
+    "heightMale": "0.985000",
+    "heightFemale": "0.950000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "BretonRaceVampire",
+    "heightMale": "0.985000",
+    "heightFemale": "0.950000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "DarkElfRace",
+    "heightMale": "1.045000",
+    "heightFemale": "1.015000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "DarkElfRaceVampire",
+    "heightMale": "1.045000",
+    "heightFemale": "1.015000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "HighElfRace",
+    "heightMale": "1.160000",
+    "heightFemale": "1.120000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "HighElfRaceVampire",
+    "heightMale": "1.160000",
+    "heightFemale": "1.120000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "ImperialRace",
+    "heightMale": "1.015000",
+    "heightFemale": "0.980000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "ImperialRaceVampire",
+    "heightMale": "1.015000",
+    "heightFemale": "0.980000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "NordRace",
+    "heightMale": "1.080000",
+    "heightFemale": "1.045000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "NordRaceVampire",
+    "heightMale": "1.080000",
+    "heightFemale": "1.045000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "OrcRace",
+    "heightMale": "1.120000",
+    "heightFemale": "1.080000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "OrcRaceVampire",
+    "heightMale": "1.120000",
+    "heightFemale": "1.080000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "RedguardRace",
+    "heightMale": "1.060000",
+    "heightFemale": "1.020000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "RedguardRaceVampire",
+    "heightMale": "1.060000",
+    "heightFemale": "1.020000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "WoodElfRace",
+    "heightMale": "0.960000",
+    "heightFemale": "0.920000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "WoodElfRaceVampire",
+    "heightMale": "0.960000",
+    "heightFemale": "0.920000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "ElderRace",
+    "heightMale": "1.000000",
+    "heightFemale": "1.000000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "ElderRaceVampire",
+    "heightMale": "1.000000",
+    "heightFemale": "1.000000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "ArgonianRace",
+    "heightMale": "1.070000",
+    "heightFemale": "1.030000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "ArgonianRaceVampire",
+    "heightMale": "1.070000",
+    "heightFemale": "1.030000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "KhajiitRace",
+    "heightMale": "0.980000",
+    "heightFemale": "0.940000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "KhajiitRaceVampire",
+    "heightMale": "0.980000",
+    "heightFemale": "0.940000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "SnowElfRace",
+    "heightMale": "1.080000",
+    "heightFemale": "1.080000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  },
+  {
+    "EDID": "DA13AfflictedRace",
+    "heightMale": "1.000000",
+    "heightFemale": "0.950000",
+    "heightMaleRange": "0.025000",
+    "heightFemaleRange": "0.025000",
+    "distMode": "uniform"
+  }
+]

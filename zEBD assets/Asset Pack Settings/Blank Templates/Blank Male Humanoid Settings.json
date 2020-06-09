@@ -1,0 +1,1311 @@
+{
+  "groupName": "Blank Male Humanoid Settings",
+  "gender": "male",
+  "displayAlerts": true,
+  "userAlert": "Message to user goes here",
+  "subgroups": [
+    {
+      "id": "HD",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Diffuse",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HD.H",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Non-vampire",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\male\\malehead.dds",
+              "malehead.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5570"
+        },
+        {
+          "id": "HD.V",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoidVampire"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Vampire",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\male\\maleheadvampire.dds",
+              "malehead.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5582"
+        }
+      ],
+      "$$hashKey": "object:4409"
+    },
+    {
+      "id": "HN",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Normals",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HN.Y",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Younger",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HN.Y.B",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "BretonRace",
+                "DA13AfflictedRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Breton",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\actors\\character\\bretonmale\\malehead_msn.dds",
+                  "malehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4544"
+            },
+            {
+              "id": "HN.Y.D",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "DarkElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Dark Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\actors\\character\\darkelfmale\\malehead_msn.dds",
+                  "malehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4558"
+            },
+            {
+              "id": "HN.Y.N",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "NordRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Nord",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\actors\\character\\male\\malehead_msn.dds",
+                  "malehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4571"
+            },
+            {
+              "id": "HN.Y.H",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "HighElfRace",
+                "SnowElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "High Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\actors\\character\\highelfmale\\malehead_msn.dds",
+                  "malehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4595"
+            },
+            {
+              "id": "HN.Y.O",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "OrcRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Orc",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\actors\\character\\maleorc\\maleheadorc_msn.dds",
+                  "malehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4608"
+            },
+            {
+              "id": "HN.Y.I",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "ImperialRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Imperial",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\actors\\character\\imperialmale\\malehead_msn.dds",
+                  "malehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4619"
+            },
+            {
+              "id": "HN.Y.R",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "RedguardRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Redguard",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\actors\\character\\redguardmale\\malehead_msn.dds",
+                  "malehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4634"
+            },
+            {
+              "id": "HN.Y.V",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoidVampire"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": false,
+              "allowNonUnique": true,
+              "name": "Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\actors\\character\\male\\maleheadvampire_msn.dds",
+                  "malehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:3582"
+            },
+            {
+              "id": "HN.Y.W",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "WoodElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Wood Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\textures\\actors\\character\\woodelfmale\\malehead_msn.dds",
+                  "malehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4185"
+            }
+          ],
+          "$$hashKey": "object:1933"
+        },
+        {
+          "id": "HN.E",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "elder"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Elder",
+          "requiredSubgroups": [
+            "BN.E"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\maleold\\malehead_msn.dds",
+              "malehead_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4584"
+        }
+      ],
+      "$$hashKey": "object:4780"
+    },
+    {
+      "id": "HS",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Subsurface",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "Skyrim.esm\\actors\\character\\male\\malehead_sk.dds",
+          "malehead_sk.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:4649"
+    },
+    {
+      "id": "HSP",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Specular",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "Skyrim.esm\\actors\\character\\male\\malehead_s.dds",
+          "malehead_s.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:4686"
+    },
+    {
+      "id": "HDE",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Detail",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HDE.BDM",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "BlankDetailMap",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\male\\blankdetailmap.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4737"
+        },
+        {
+          "id": "HDE.A40",
+          "enabled": true,
+          "distributionEnabled": false,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadMaleBretonComplexion_Age40 [TXST:000D0721]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleDarkElfComplexion_Age40 [TXST:000F204F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleHighElfComplexion_Age40 [TXST:000F204B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleImperialComplexion_Age40 [TXST:000D0725]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleNordComplexion_Age40 [TXST:000D071D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOrcComplexion_Age40 [TXST:000D072E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleRedGuardComplexion_Age40 [TXST:000D0729]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleWoodElfComplexion_Age40 [TXST:000F2054]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadMaleBretonComplexion_Age40 [TXST:000D0721]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleDarkElfComplexion_Age40 [TXST:000F204F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleHighElfComplexion_Age40 [TXST:000F204B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleImperialComplexion_Age40 [TXST:000D0725]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleNordComplexion_Age40 [TXST:000D071D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOrcComplexion_Age40 [TXST:000D072E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleRedGuardComplexion_Age40 [TXST:000D0729]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleWoodElfComplexion_Age40 [TXST:000F2054]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Age 40",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\Actors\\Character\\Male\\MaleHeadDetail_Age40.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:2728"
+        },
+        {
+          "id": "HDE.A40R",
+          "enabled": true,
+          "distributionEnabled": false,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadMaleBretonComplexion_Age40Rough [TXST:000D0722]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleDarkElfComplexion_Age40Rough [TXST:000F204E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleHighElfComplexion_Age40Rough [TXST:000F2049]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleImperialComplexion_Age40Rough [TXST:000D0726]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleNordComplexion_Age40Rough [TXST:000D071E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOrcComplexion_Age40Rough [TXST:000D072F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleRedGuardComplexion_Age40Rough [TXST:000D072A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleWoodElfComplexion_Age40Rough [TXST:000F2053]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadMaleBretonComplexion_Age40Rough [TXST:000D0722]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleDarkElfComplexion_Age40Rough [TXST:000F204E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleHighElfComplexion_Age40Rough [TXST:000F2049]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleImperialComplexion_Age40Rough [TXST:000D0726]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleNordComplexion_Age40Rough [TXST:000D071E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOrcComplexion_Age40Rough [TXST:000D072F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleRedGuardComplexion_Age40Rough [TXST:000D072A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleWoodElfComplexion_Age40Rough [TXST:000F2053]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Age 40 Rough",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\Actors\\Character\\Male\\MaleHeadDetail_Age40rough.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:1838"
+        },
+        {
+          "id": "HDE.A50",
+          "enabled": true,
+          "distributionEnabled": false,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadMaleBretonComplexion_Age50 [TXST:000D0731]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleDarkElfComplexion_Age50 [TXST:000F2050]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleHighElfComplexion_Age50 [TXST:000F204A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleImperialComplexion_Age50 [TXST:0009F0CD]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleNordComplexion_Age50 [TXST:0007325B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOrcComplexion_Age50 [TXST:000D0730]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleRedGuardComplexion_Age50 [TXST:000D072B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleWoodElfComplexion_Age50 [TXST:000F2055]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadMaleBretonComplexion_Age50 [TXST:000D0731]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleDarkElfComplexion_Age50 [TXST:000F2050]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleHighElfComplexion_Age50 [TXST:000F204A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleImperialComplexion_Age50 [TXST:0009F0CD]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleNordComplexion_Age50 [TXST:0007325B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOrcComplexion_Age50 [TXST:000D0730]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleRedGuardComplexion_Age50 [TXST:000D072B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleWoodElfComplexion_Age50 [TXST:000F2055]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Age 50",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\male\\MaleHeadDetail_Age50.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:2729"
+        },
+        {
+          "id": "HDE.R01",
+          "enabled": true,
+          "distributionEnabled": false,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadMaleBretonComplexion_Rough01 [TXST:000D071F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleDarkElfComplexion_Rough01 [TXST:000F204C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleHighElfComplexion_Rough01 [TXST:000F2047]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleImperialComplexion_Rough01 [TXST:000D0723]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleNordComplexion_Rough01 [TXST:00073259]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOrcComplexion_Rough01 [TXST:000D072C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleRedGuardComplexion_Rough01 [TXST:000D0727]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleWoodElfComplexion_Rough01 [TXST:000F2051]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOldComplexion_Rough01 [TXST:000FFF3F]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadMaleBretonComplexion_Rough01 [TXST:000D071F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleDarkElfComplexion_Rough01 [TXST:000F204C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleHighElfComplexion_Rough01 [TXST:000F2047]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleImperialComplexion_Rough01 [TXST:000D0723]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleNordComplexion_Rough01 [TXST:00073259]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOrcComplexion_Rough01 [TXST:000D072C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleRedGuardComplexion_Rough01 [TXST:000D0727]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleWoodElfComplexion_Rough01 [TXST:000F2051]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOldComplexion_Rough01 [TXST:000FFF3F]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Rough01",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\male\\maleheaddetail_rough01.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4752"
+        },
+        {
+          "id": "HDE.R02",
+          "enabled": true,
+          "distributionEnabled": false,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadMaleBretonComplexion_Rough02 [TXST:000D0720]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleDarkElfComplexion_Rough02 [TXST:000F204D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleHighElfComplexion_Rough02 [TXST:000F2048]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleImperialComplexion_Rough02 [TXST:000D0724]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleNordComplexion_Rough02 [TXST:0007325A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOrcComplexion_Rough02 [TXST:000D072D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleRedGuardComplexion_Rough02 [TXST:000D0728]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleWoodElfComplexion_Rough02 [TXST:000F2052]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOldComplexion_Rough02 [TXST:000FFF40]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadMaleBretonComplexion_Rough02 [TXST:000D0720]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleDarkElfComplexion_Rough02 [TXST:000F204D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleHighElfComplexion_Rough02 [TXST:000F2048]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleImperialComplexion_Rough02 [TXST:000D0724]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleNordComplexion_Rough02 [TXST:0007325A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOrcComplexion_Rough02 [TXST:000D072D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleRedGuardComplexion_Rough02 [TXST:000D0728]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleWoodElfComplexion_Rough02 [TXST:000F2052]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOldComplexion_Rough02 [TXST:000FFF40]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Rough02",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\male\\maleheaddetail_rough02.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4766"
+        }
+      ],
+      "$$hashKey": "object:4723"
+    },
+    {
+      "id": "BD",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Diffuse",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "Skyrim.esm\\actors\\character\\male\\malebody_1.dds",
+          "malebody_1.dds"
+        ],
+        [
+          "Skyrim.esm\\actors\\character\\male\\malebody_1.dds",
+          "malebody_1_feet.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:4741"
+    },
+    {
+      "id": "BN",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Normal",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "BN.Y",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Not Elder",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\male\\malebody_1_msn.dds",
+              "malebody_1_msn.dds"
+            ],
+            [
+              "Skyrim.esm\\actors\\character\\male\\malebody_1_msn.dds",
+              "malebody_1_feet_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:2278"
+        },
+        {
+          "id": "BN.E",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Elder",
+          "requiredSubgroups": [
+            "HN.E"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\maleold\\malebody_1_msn.dds",
+              "malebody_1_msn.dds"
+            ],
+            [
+              "Skyrim.esm\\actors\\character\\maleold\\malebody_1_msn.dds",
+              "malebody_1_feet_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5112"
+        }
+      ],
+      "$$hashKey": "object:4753"
+    },
+    {
+      "id": "BS",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Subsurface",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "Skyrim.esm\\actors\\character\\male\\malebody_1_sk.dds",
+          "malebody_1_sk.dds"
+        ],
+        [
+          "Skyrim.esm\\actors\\character\\male\\malebody_1_sk.dds",
+          "malebody_1_feet_sk.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:4764"
+    },
+    {
+      "id": "BSP",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Specular",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "Skyrim.esm\\actors\\character\\male\\malebody_1_s.dds",
+          "malebody_1_s.dds"
+        ],
+        [
+          "Skyrim.esm\\actors\\character\\male\\malebody_1_s.dds",
+          "malebody_1_feet_s.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:1541"
+    },
+    {
+      "id": "HAD",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Diffuse",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "Skyrim.esm\\actors\\character\\male\\malehands_1.dds",
+          "malehands_1.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:4802"
+    },
+    {
+      "id": "HAN",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Normal",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HAN.Y",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid"
+          ],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Young",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\male\\malehands_1_msn.dds",
+              "malehands_1_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:3255"
+        },
+        {
+          "id": "HAN.E",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "elder"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Elder",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\maleold\\malehands_1_msn.dds",
+              "malehands_1_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:3267"
+        }
+      ],
+      "$$hashKey": "object:4814"
+    },
+    {
+      "id": "HAS",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Subsurface",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "Skyrim.esm\\actors\\character\\male\\malehands_1_sk.dds",
+          "malehands_1_sk.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:4825"
+    },
+    {
+      "id": "HASP",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Specular",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "Skyrim.esm\\actors\\character\\male\\malehands_1_s.dds",
+          "malehands_1_s.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:1542"
+    }
+  ],
+  "sourcePath": "S:\\DP NPC Appearance Merge\\Tools\\zEdit\\modules\\EBDExtender\\EBDE Assets\\ResourcePackSettings\\Blank Male Humanoid Settings.json"
+}

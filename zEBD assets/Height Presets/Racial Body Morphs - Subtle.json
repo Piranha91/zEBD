@@ -1,0 +1,102 @@
+[  
+    {
+        "EDID": "BretonRace",
+        "Male Height": "1.000000",
+        "Female Height": "0.950000"    
+    },
+    {
+        "EDID": "DarkElfRace",
+        "Male Height": "1.030000",
+        "Female Height": "1.010000"    
+    },
+    {
+        "EDID": "HighElfRace",
+        "Male Height": "1.120000",
+        "Female Height": "1.100000"    
+    },
+    {
+        "EDID": "ImperialRace",
+        "Male Height": "1.010000",
+        "Female Height": "0.985000"    
+    },
+    {
+        "EDID": "NordRace",
+        "Male Height": "1.060000",
+        "Female Height": "1.030000"    
+    },
+    {
+        "EDID": "OrcRace",
+        "Male Height": "1.080000",
+        "Female Height": "1.060000"    
+    },
+    {
+        "EDID": "RedguardRace",
+        "Male Height": "1.045000",
+        "Female Height": "1.015000" 
+    },
+    {
+        "EDID": "WoodElfRace",
+        "Male Height": "0.975000",
+        "Female Height": "0.940000"    
+    },
+    {
+        "EDID": "ArgonianRace",
+        "Male Height": "1.050000",
+        "Female Height": "1.020000"    
+    },
+    {
+        "EDID": "KhajiitRace",
+        "Male Height": "0.985000",
+        "Female Height": "0.950000"    
+    },
+    {
+        "EDID": "BretonRaceVampire",
+        "Male Height": "1.000000",
+        "Female Height": "0.950000"    
+    },
+    {
+        "EDID": "DarkElfRaceVampire",
+        "Male Height": "1.030000",
+        "Female Height": "1.010000"    
+    },
+    {
+        "EDID": "HighElfRaceVampire",
+        "Male Height": "1.120000",
+        "Female Height": "1.100000"    
+    },
+    {
+        "EDID": "ImperialRaceVampire",
+        "Male Height": "1.010000",
+        "Female Height": "0.985000"    
+    },
+    {
+        "EDID": "NordRaceVampire",
+        "Male Height": "1.060000",
+        "Female Height": "1.030000"    
+    },
+    {
+        "EDID": "OrcRaceVampire",
+        "Male Height": "1.080000",
+        "Female Height": "1.060000"    
+    },
+    {
+        "EDID": "RedguardRaceVampire",
+        "Male Height": "1.045000",
+        "Female Height": "1.015000" 
+    },
+    {
+        "EDID": "WoodElfRaceVampire",
+        "Male Height": "0.975000",
+        "Female Height": "0.940000"    
+    },
+    {
+        "EDID": "ArgonianRaceVampire",
+        "Male Height": "1.050000",
+        "Female Height": "1.020000"    
+    },
+    {
+        "EDID": "KhajiitRaceVampire",
+        "Male Height": "0.985000",
+        "Female Height": "0.950000"    
+    }
+]

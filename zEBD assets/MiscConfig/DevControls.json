@@ -1,0 +1,6 @@
+{
+    "verboseLogger": false,
+    "permutationBuildupLogger": false,
+    "savePermutations": false,
+    "loadPermutations": false
+}

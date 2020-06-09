@@ -1,0 +1,17 @@
+{
+  "trimPaths":
+          [
+            {
+              "extension": "dds",
+              "pathToTrim": "textures"
+            },
+
+            {
+              "extension": "nif",
+              "pathToTrim": "meshes"
+            }
+          ]
+
+}
+
+

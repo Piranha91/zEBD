@@ -1,0 +1,214 @@
+{
+  "Record Header": {
+    "Signature": "MGEF",
+    "Record Flags": {},
+    "FormID": "40000D71"
+  },
+  "EDID - Editor ID": "SP_EBD_EBDHelperScript_attacher_MGEF",
+  "VMAD - Virtual Machine Adapter": {
+    "Version": 5,
+    "Object Format": 2,
+    "Scripts": [
+      {
+        "scriptName": "EBDHelperScript",
+        "Flags": 0,
+        "Properties": [
+          {
+            "propertyName": "EBDHeadPartKeyWord",
+            "Type": 1,
+            "Flags": 1,
+            "Value": {
+              "Object Union": {
+                "Object v2": {
+                  "FormID": "EBDValidHeadPartActor",
+                  "Alias": -1,
+                  "Unused": 0
+                }
+              }
+            }
+          },
+          {
+            "propertyName": "EBDHelperMagicEffect",
+            "Type": 1,
+            "Flags": 1,
+            "Value": {
+              "Object Union": {
+                "Object v2": {
+                  "FormID": "SP_EBD_EBDHelperScript_attacher_MGEF",
+                  "Alias": -1,
+                  "Unused": 0
+                }
+              }
+            }
+          },
+          {
+            "propertyName": "EBDHelperSpell",
+            "Type": 1,
+            "Flags": 1,
+            "Value": {
+              "Object Union": {
+                "Object v2": {
+                  "FormID": "SP_EBD_EBDHelperScript_attacher_SPEL",
+                  "Alias": -1,
+                  "Unused": 0
+                }
+              }
+            }
+          },
+          {
+            "propertyName": "EBDProcessFace",
+            "Type": 1,
+            "Flags": 1,
+            "Value": {
+              "Object Union": {
+                "Object v2": {
+                  "FormID": "EBDProcessFace",
+                  "Alias": -1,
+                  "Unused": 0
+                }
+              }
+            }
+          },
+          {
+            "propertyName": "EBDScriptKeyWord",
+            "Type": 1,
+            "Flags": 1,
+            "Value": {
+              "Object Union": {
+                "Object v2": {
+                  "FormID": "EBDValidScriptRace",
+                  "Alias": -1,
+                  "Unused": 0
+                }
+              }
+            }
+          },
+          {
+            "propertyName": "isHeadEnabled",
+            "Type": 1,
+            "Flags": 1,
+            "Value": {
+              "Object Union": {
+                "Object v2": {
+                  "FormID": "EBDHeadEnabled",
+                  "Alias": -1,
+                  "Unused": 0
+                }
+              }
+            }
+          },
+          {
+            "propertyName": "isHeadInCombatDisabled",
+            "Type": 1,
+            "Flags": 1,
+            "Value": {
+              "Object Union": {
+                "Object v2": {
+                  "FormID": "EBDHeadInCombatDisabled",
+                  "Alias": -1,
+                  "Unused": 0
+                }
+              }
+            }
+          },
+          {
+            "propertyName": "isHeadSpellsEnabled",
+            "Type": 1,
+            "Flags": 1,
+            "Value": {
+              "Object Union": {
+                "Object v2": {
+                  "FormID": "EBDHeadSpellsEnabled",
+                  "Alias": -1,
+                  "Unused": 0
+                }
+              }
+            }
+          },
+          {
+            "propertyName": "isScriptEnabled",
+            "Type": 1,
+            "Flags": 1,
+            "Value": {
+              "Object Union": {
+                "Object v2": {
+                  "FormID": "EBDHelperScriptEnabled",
+                  "Alias": -1,
+                  "Unused": 0
+                }
+              }
+            }
+          },
+          {
+            "propertyName": "PlayerREF",
+            "Type": 1,
+            "Flags": 1,
+            "Value": {
+              "Object Union": {
+                "Object v2": {
+                  "FormID": "PlayerRef [PLYR:00000014]",
+                  "Alias": -1,
+                  "Unused": 0
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "FULL - Name": "SP_EBD_EBDHelperScript_attacher_MGEF",
+  "KSIZ - Keyword Count": 0,
+  "Magic Effect Data": {
+    "DATA - Data": {
+      "Flags": {
+        "Hide in UI": true,
+        "No Death Dispel": true
+      },
+      "Base Cost": 0,
+      "Assoc. Item": 0,
+      "Magic Skill": -1,
+      "Resist Value": -1,
+      "Counter Effect count": 0,
+      "Unused": "00 00",
+      "Casting Light": 0,
+      "Taper Weight": 0,
+      "Hit Shader": 0,
+      "Enchant Shader": 0,
+      "Minimum Skill Level": 0,
+      "Spellmaking": {
+        "Area": 0,
+        "Casting Time": 0
+      },
+      "Taper Curve": 0,
+      "Taper Duration": 0,
+      "Second AV Weight": 0,
+      "Archtype": 0,
+      "Actor Value": 24,
+      "Projectile": 0,
+      "Explosion": 0,
+      "Casting Type": 0,
+      "Delivery": 0,
+      "Second Actor Value": -1,
+      "Casting Art": 0,
+      "Hit Effect Art": 0,
+      "Impact Data": 0,
+      "Skill Usage Multiplier": 0,
+      "Dual Casting": {
+        "Art": 0,
+        "Scale": 0.999999997475243
+      },
+      "Enchant Art": 0,
+      "Unknown": 0,
+      "Equip Ability": 0,
+      "Image Space Modifier": 0,
+      "Perk to Apply": 0,
+      "Casting Sound Level": 1,
+      "Script Effect AI": {
+        "Score": 0,
+        "Delay Time": 0
+      }
+    }
+  },
+  "DNAM - Magic Item Description": ""
+}
