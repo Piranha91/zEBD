@@ -338,6 +338,11 @@ ngapp.run(function(patcherService) {
 						}
 					};
 
+					$scope.deleteSavedPermutations = function()
+					{
+						IO.deleteSavedPermutationsRecords(modulePath);
+					}
+
 					// FUNCTIONS FOR HEIGHT CONFIGURATION
 					$scope.saveHeightConfig = function()
 					{
@@ -822,7 +827,7 @@ ngapp.run(function(patcherService) {
 
 											if (settings.changeNPCHeight === true)
 											{
-												locals.assignedHeights[NPCinfo.formID] = PO.assignNPCheight(record, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, settings.heightConfiguration);
+												locals.assignedHeights[NPCinfo.formID] = PO.assignNPCheight(record, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, settings.heightConfiguration, userForcedAssignment);
 												if (locals.assignedHeights[NPCinfo.formID] === undefined) // if there are no height settings for the given NPC's race
 												{
 													bApplyHeightSettingsToCurrentNPC = false;

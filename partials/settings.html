@@ -270,6 +270,7 @@
         <span>Save generated permutations to file</span>
         <span class="tooltiptext">Saves the permutations generated from the config files to a set of files located in zEBD\NPC Configuration. Files: GeneratedPermutations.json, GeneratedRecords.json, GeneratedRecordsMaxPriority.json, GeneratedLinkageList.json</span>
     </label>
+    <button ng-click="deleteSavedPermutations()">Delete Saved Permutations</button>
     <br>
     <label class="tooltip">
         <input type="checkbox" ng-model="settings.zEBD.loadPermutations"/>
