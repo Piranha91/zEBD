@@ -6,13 +6,7 @@
     "rootPlugin": "Dawnguard.esm",
     "gender": "female",
     "forcedAssetPack": "Bijin Skins 4K CBBE Director's Cut",
-    "forcedSubgroups": [
-      {
-        "id": "HD",
-        "description": "HD: Head Diffuse",
-        "$$hashKey": "object:6287"
-      }
-    ],
+    "forcedSubgroups": [],
     "forcedHeight": "1.000000",
     "forcedBodyGenPresets": [],
     "forcedBodyGenGroups": [],

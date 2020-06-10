@@ -674,7 +674,6 @@ ngapp.run(function(patcherService) {
 						locals.EBDassets = IO.loadEBDAssets(modulePath);
 						locals.consistencyAssignments  = IO.loadConsistency(modulePath, settings.bEnableConsistency);
 						locals.LinkedNPCNameExclusions = IO.loadLinkedNPCNameExclusions(modulePath);
-						IO.loadDevControls(modulePath, settings);
 
 						// generate permutations to assign to NPCs
 						if (settings.changeNPCappearance === true)
