@@ -155,17 +155,8 @@ ngapp.run(function(patcherService) {
 							{
 								if (patcherSettings.patchableRaces.includes(xelib.GetRefEditorID(NPClist[i], 'RNAM')))
 								{
-									NPC = {};
-									NPC.name = xelib.FullName(NPClist[i]);
-									NPC.formID = xelib.GetHexFormID(NPClist[i]);
-									NPC.EDID = xelib.EditorID(NPClist[i]);
-									NPC.masterRecordFile = xelib.GetFileName(xelib.GetElementFile(xelib.GetMasterRecord(NPClist[i])));
-									NPC.gender = "male";
-									if (xelib.GetIsFemale(NPClist[i]) === true)
-									{
-										NPC.gender = "female";
-									}
-									NPC.displayString = NPC.name + " | " + NPC.EDID + " | " + NPC.formID + " | " + NPC.masterRecordFile;
+									NPC = PO.getNPCinfo(NPClist[i], [], xelib);
+									NPC.displayString = NPC.name + " | " + NPC.EDID + " | " + NPC.formID + " | " + NPC.race + " | " + NPC.masterRecordFile;
 									$scope.availableNPCs.push(NPC);
 								}
 							}
@@ -611,6 +602,7 @@ ngapp.run(function(patcherService) {
 						heightConfiguration: [],
 						changeNPCHeight: false,
 						changeRaceHeight: false,
+						changeNonDefaultHeight: true,
 						currentHeightPreset: "Skyrim Default",
 						bEnableBodyGenIntegration: false,
 						patchableRaces: ["NordRace", "BretonRace", "DarkElfRace", "HighElfRace", "ImperialRace", "OrcRace", "RedguardRace", "WoodElfRace", "ElderRace", "NordRaceVampire", "BretonRaceVampire", "DarkElfRaceVampire", "HighElfRaceVampire", "ImperialRaceVampire", "OrcRaceVampire", "RedguardRaceVampire", "WoodElfRaceVampire", "ElderRaceVampire", "SnowElfRace", "DA13AfflictedRace", "KhajiitRace", "KhajiitRaceVampire", "ArgonianRace", "ArgonianRaceVampire"]
@@ -713,9 +705,8 @@ ngapp.run(function(patcherService) {
 
 							// create lists to narrow down permutation search space (speeds up patching)
 							helpers.logMessage("Optimizing permutation distribution");
-							locals.patchableRaces = PO.generatePatchableRaceList(locals.permutations, settings.raceGroupDefinitions);
 							locals.patchableGenders = PO.generatePatchableGenderList(locals.permutations);
-							locals.permutationsByRaceGender = PG.permutationByRaceGender(locals.permutations, locals.patchableGenders, locals.patchableRaces);
+							locals.permutationsByRaceGender = PG.permutationByRaceGender(locals.permutations, locals.patchableGenders, settings.patchableRaces);
 
 							// create EDID -> FormID dictionary to speed up patching
 							locals.RNAMdict = PO.generateRaceEDIDFormIDdict(helpers.loadRecords);
@@ -731,14 +722,16 @@ ngapp.run(function(patcherService) {
 
 							// write the generated asset records
 							helpers.logMessage("Writing the new NPC asset records to plugin");
-							PO.writeAssets(RG, patchFile, helpers.logMessage, locals.patchableRaces, locals.RNAMdict);
+							PO.writeAssets(RG, patchFile, helpers.logMessage, settings.patchableRaces, locals.RNAMdict);
 						}
 						// set up object to store permutations
 						locals.assignedPermutations = {};
 						locals.assignedHeights = {};
 						locals.assignedBodyGen = {};
 						locals.NPCinfoDict = {};
-						locals.RGtracker = [];
+						locals.linkedNPCpermutations = [];
+						locals.linkedNPCheights = [];
+						locals.linkedNPCbodygen = [];
 
 						// fix height formats if necessary
 						if (settings.changeRaceHeight === true)
@@ -782,7 +775,7 @@ ngapp.run(function(patcherService) {
 
 											if (settings.changeNPCappearance === true)
 											{
-												let bRGvalid = bCheckNPCRaceGenderValid(NPCinfo, locals.patchableRaces, locals.patchableGenders, locals.permutationsByRaceGender);
+												let bRGvalid = bCheckNPCRaceGenderValid(NPCinfo, settings.patchableRaces, locals.patchableGenders, locals.permutationsByRaceGender);
 												if (bRGvalid === false)
 												{
 													bApplyPermutationToCurrentNPC = false;
@@ -817,7 +810,7 @@ ngapp.run(function(patcherService) {
 												//if all the above don't fail, assign a permutation.
 												if (bApplyPermutationToCurrentNPC === true)
 												{
-													locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation(record, NPCinfo, locals.permutationsByRaceGender, locals.consistencyAssignments, settings.bEnableConsistency, userForcedAssignment, settings.bLinkNPCsWithSameName, locals.RGtracker, locals.LinkedNPCNameExclusions, attributeCache, helpers.logMessage);
+													locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation(record, NPCinfo, locals.permutationsByRaceGender, locals.consistencyAssignments, settings.bEnableConsistency, userForcedAssignment, settings.bLinkNPCsWithSameName, locals.linkedNPCpermutations, locals.LinkedNPCNameExclusions, attributeCache, helpers.logMessage);
 												}
 												if (locals.assignedPermutations[NPCinfo.formID] === undefined) // occurs if the NPC is incompatible with the assignment criteria for all generated permutations.
 												{
@@ -827,7 +820,7 @@ ngapp.run(function(patcherService) {
 
 											if (settings.changeNPCHeight === true)
 											{
-												locals.assignedHeights[NPCinfo.formID] = PO.assignNPCheight(record, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, settings.heightConfiguration, userForcedAssignment);
+												locals.assignedHeights[NPCinfo.formID] = PO.assignNPCheight(record, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, settings.heightConfiguration, userForcedAssignment, settings.changeNonDefaultHeight, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCheights);
 												if (locals.assignedHeights[NPCinfo.formID] === undefined) // if there are no height settings for the given NPC's race
 												{
 													bApplyHeightSettingsToCurrentNPC = false;
@@ -882,7 +875,7 @@ ngapp.run(function(patcherService) {
 										{
 											locals.filtered++;
 											let raceEDID = xelib.EditorID(record);
-											if((locals.patchableRaces !== undefined && locals.patchableRaces.includes(raceEDID)) || (settings.changeRaceHeight === true && Aux.heightConfigIncludesRace(settings.heightConfiguration, raceEDID)))
+											if(settings.patchableRaces.includes(raceEDID))
 											{
 												return true;
 											}
@@ -896,7 +889,7 @@ ngapp.run(function(patcherService) {
 								patch: function (record)
 								{
 									let raceEDID = xelib.EditorID(record);
-									if (settings.changeNPCappearance === true && locals.patchableRaces.includes(raceEDID))
+									if (settings.changeNPCappearance === true)
 									{
 										xelib.AddArrayItem(record, "Actor Effects", "", locals.EBDeffect);
 									}

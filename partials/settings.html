@@ -171,7 +171,13 @@
             <span>Enable Consistency</span>
         </label>
         <button ng-click="clearConsistency()">Clear Consistency Data</button>  
-    </label>  
+    </label>
+    <label class="tooltip">
+        <input type="checkbox" ng-model="settings.zEBD.bLinkNPCsWithSameName"/>
+        <span>Link multiple instances of the same NPC</span>
+        <span class="tooltiptext">Apply the same settings to NPC records with the same name, race, and gender (e.g. the different NPC records for Cicero).</span>
+    </label>
+    <br>  
     <br>
     <label>
         <span>Patchable Races</span>
@@ -239,12 +245,6 @@
         <input type="checkbox" ng-model="settings.zEBD.changeNPCsWithFaceParts"/>
         <span>Apply to NPCs with custom faces</span>
         <span class="tooltiptext">If disabled, NPCs with assigned Head Parts\*\Face records will be skipped. Note that if enabled, the NPC's face shape will not be affected; only the texture will be updated to match the assigned body texture.</span>
-    </label>
-    <br>
-    <label class="tooltip">
-        <input type="checkbox" ng-model="settings.zEBD.bLinkNPCsWithSameName"/>
-        <span>Link NPCs with the same Name/Race/Gender</span>
-        <span class="tooltiptext">Apply the same textures and/or meshes to NPC records with the same name and gender (e.g. the different NPC records for Cicero).</span>
     </label>
     <br>
     <label class="tooltip">
@@ -327,6 +327,11 @@
         <span class="tooltiptext">Changes base racial heights to the values configured in the menu below.</span>
     </label>
     <br>
+    <label class="tooltip">
+        <input type = "checkbox" ng-model="settings.zEBD.changeNonDefaultHeight"/>
+        <span>Overwrite Non-Default NPC Heights</span>
+        <span class="tooltiptext">Some NPCs already have a height that is not "1.000000". If unchecked, the height of such NPCs will not be altered."</span>
+    </label>
     <div>
         <label>
             <span>Racial Height Presets:</span>
@@ -595,8 +600,9 @@
     </section>
 
     <br>
-    <label>
+    <label class="tooltip">
         <button ng-click="loadNPCs()">Load NPCs from Mods</button>
+        <span class="tooltiptext">This can take a minute or so.</span>
     </label>
     <span>
         <select class="NPCselect" ng-model="currentNPC" ng-options="NPC.displayString for NPC in availableNPCs" size="5"></select>
@@ -624,7 +630,10 @@
     <br>
     <label>
         <label>Available NPCs</label>
-        <button ng-click="loadNPCs()">Load NPCs from Mods</button>
+        <label class="tooltip">
+            <button ng-click="loadNPCs()">Load NPCs from Mods</button>
+            <span class="tooltiptext">This can take a minute or so.</span>
+        </label>
     </label>
     <span>
         <select class="NPCselect" ng-model="currentNPC" ng-options="NPC.displayString for NPC in availableNPCs" size="5"></select>

@@ -12,5 +12,19 @@
     "forcedBodyGenGroups": [],
     "displayString": "Serana (xx002B6C)",
     "$$hashKey": "object:4279"
+  },
+  {
+    "name": "Sven",
+    "formID": "xx01347F",
+    "EDID": "Sven",
+    "rootPlugin": "Skyrim.esm",
+    "gender": "male",
+    "forcedAssetPack": "",
+    "forcedSubgroups": [],
+    "forcedHeight": "4",
+    "forcedBodyGenPresets": [],
+    "forcedBodyGenGroups": [],
+    "displayString": "Sven (xx01347F)",
+    "$$hashKey": "object:6196"
   }
 ]
