@@ -126,18 +126,18 @@
     
 <section>
     <section class="menuButtonRow">
-        <button class="menuButton" ng-click="toggleDisplayTo('main')">Main Menu</button>
-        <button class="menuButton" ng-click="toggleDisplayTo('assetPack')">Texture & Mesh Settings</button>
-        <button class="menuButton" ng-click="toggleDisplayTo('height')">Height Randomization Settings</button>
+        <button class="menuButton" ng-click="currentSettingsDisplay = 'main'">Main Menu</button>
+        <button class="menuButton" ng-click="currentSettingsDisplay = 'assetPack'">Texture & Mesh Settings</button>
+        <button class="menuButton" ng-click="currentSettingsDisplay = 'height'">Height Randomization Settings</button>
     </section>
     <section class="menuButtonRow">       
-        <button class="menuButton" ng-click="toggleDisplayTo('bodygen')">BodyGen Integration Settings</button>
-        <button class="menuButton" ng-click="toggleDisplayTo('forcedNPCs')">Specific NPC Assignments</button>
-        <button class="menuButton" ng-click="toggleDisplayTo('blockList')">Block List</button>
+        <button class="menuButton" ng-click="currentSettingsDisplay = 'bodygen'">BodyGen Integration Settings</button>
+        <button class="menuButton" ng-click="currentSettingsDisplay = 'forcedNPCs'">Specific NPC Assignments</button>
+        <button class="menuButton" ng-click="currentSettingsDisplay = 'blockList'">Block List</button>
     </section>
 </section>
 
-<section class="global-section" id="main-section" ng-if="currentSettingsDisplay.main">
+<section class="global-section" id="main-section" ng-if="currentSettingsDisplay === 'main'">
     <h3>Main Menu</h3>
 
     <label class="tooltip">
@@ -221,7 +221,7 @@
 
 <!-- ASSET PACK CONFIG -->
 
-<section ng-if="currentSettingsDisplay.assetPack" class="ebd-section">
+<section ng-if="currentSettingsDisplay === 'assetPack'" class="ebd-section">
     <h3>General Settings</h3>
     <label class="tooltip">
         <input type="checkbox" ng-model="settings.zEBD.changeTextures"/>
@@ -311,7 +311,7 @@
 
 <!-- HEIGHT CONFIG -->
 
-<section class="height-section" ng-if="currentSettingsDisplay.height" >
+<section class="height-section" ng-if="currentSettingsDisplay === 'height'" >
     <h3>Height Configuration Menu</h3>
     <button ng-click="saveHeightConfig()">Save Height Configuration</button>
     <br>
@@ -396,7 +396,7 @@
 
 <!-- BODYGEN CONFIG -->
 
-<section ng-if="currentSettingsDisplay.bodygen">
+<section ng-if="currentSettingsDisplay === 'bodygen'">
     <h3>BodyGen Integration Menu</h3>
     <button ng-click="saveBodyGenConfig()">Save Current Configuration</button>
     <br>
@@ -561,7 +561,7 @@
     
 </section>
 
-<section ng-if="currentSettingsDisplay.forcedNPCs">
+<section ng-if="currentSettingsDisplay === 'forcedNPCs'">
     <h3>Forced Assignment Menu</h3>
     <label>
         <button ng-click="saveForceList()">Save Forced NPC List</button>
@@ -570,7 +570,7 @@
     <label>
         <span>Forced NPC Settings: </span>
         <span>
-            <select class="forceNPCselect" ng-model="currentForcedNPC" ng-options="NPC.displayString for NPC in settings.zEBD.forcedNPCAssignments" ng-change="choosePacksForNPC(currentForcedNPC); chooseSubgroupsForPack(currentForcedNPC.forcedAssetPack)"></select>
+            <select class="forceNPCselect" ng-model="currentForcedNPC" ng-options="NPC.displayString for NPC in settings.zEBD.forcedNPCAssignments" ng-change="choosePacksForNPC(currentForcedNPC); chooseSubgroupsForPack(currentForcedNPC.forcedAssetPack, currentForcedNPC.forcedSubgroups); chooseBodyGenForCurrentNPC(currentForcedNPC)"></select>
         </span>
     </label>
 
@@ -579,23 +579,33 @@
         <label>Editor ID: {{currentForcedNPC.EDID}}</label>
         <label>FormID: {{currentForcedNPC.formID}}</label>
         <label>Root Plugin: {{currentForcedNPC.rootPlugin}}</label>
-        <label>
-            <span>Forced Asset Pack</span>
-            <select class="forceNPCAssetPackselect" ng-model="currentForcedNPC.forcedAssetPack" ng-options="name for name in availableAssetPackNames" ng-change="chooseSubgroupsForPack(currentForcedNPC.forcedAssetPack)"></select>
-        </label>
-        <label>
-            <span>Forced Subgroups</span>
-            <div ng-repeat="forcedSub in currentForcedNPC.forcedSubgroups track by $index">
-                <select ng-model="currentForcedNPC.forcedSubgroups[$index]" ng-options="subgroup.description for subgroup in availableSubgroups"></select>
-                <button ng-click="removeForcedSubgroup(currentForcedNPC, $index)">Remove</button>
-            </div>
-            <button ng-click="AddForcedSubgroup(currentForcedNPC)">Add Subgroup</button>
-        </label>
-        <label>
+        <div ng-if="settings.zEBD.changeNPCappearance">
+            <label>
+                <span>Forced Asset Pack</span>
+                <select class="forceNPCAssetPackselect" ng-model="currentForcedNPC.forcedAssetPack" ng-options="name for name in availableAssetPackNames" ng-change="chooseSubgroupsForPack(currentForcedNPC.forcedAssetPack, currentForcedNPC.forcedSubgroups)"></select>
+            </label>
+            <label>
+                <span>Forced Subgroups</span>
+                <div ng-repeat="forcedSub in currentForcedNPC.forcedSubgroups track by $index">
+                    <select ng-model="currentForcedNPC.forcedSubgroups[$index]" ng-options="subgroup.description for subgroup in availableSubgroups"></select>
+                    <button ng-click="removeForcedSubgroup(currentForcedNPC, $index)">Remove</button>
+                </div>
+                <button ng-click="AddForcedSubgroup(currentForcedNPC)">Add Subgroup</button>
+            </label>
+        </div>
+        <label ng-if="settings.zEBD.changeHeight">
             <span>Forced Height</span>
             <input type="text" ng-model="currentForcedNPC.forcedHeight" ng-change="validateHeightString(currentForcedNPC.forcedHeight)">
         </label>
+        <div ng-if="settings.zEBD.bEnableBodyGenIntegration">
+             <span>Forced BodyGen Morphs</span>
+            <button ng-click="AddForcedMorph(currentForcedNPC)">Add Morph</button>
+            <div ng-repeat="forcedMorph in currentForcedNPC.forcedBodyGenMorphs track by $index">
+                <select ng-model="currentForcedNPC.forcedBodyGenMorphs[$index]" ng-options="morph for morph in availableBodyGenMorphs"></select>
+                <button ng-click="removeForcedMorph(currentForcedNPC, $index)">Remove</button>
+            </div>               
 
+        </div>
         <button ng-click="removeNPCfromForceList(currentForcedNPC.formID, currentForcedNPC.rootPlugin)">Remove</button>
     </section>
 
@@ -613,7 +623,7 @@
     </label>
 </section>
 
-<section ng-if="currentSettingsDisplay.blockList">
+<section ng-if="currentSettingsDisplay === 'blockList'">
     <label>
         <button ng-click="saveBlockList()">Save Block List</button>
     </label>

@@ -4,27 +4,91 @@
     "formID": "xx002B6C",
     "EDID": "DLC1Serana",
     "rootPlugin": "Dawnguard.esm",
+    "race": "NordRace",
     "gender": "female",
     "forcedAssetPack": "Bijin Skins 4K CBBE Director's Cut",
-    "forcedSubgroups": [],
+    "forcedSubgroups": [
+      {
+        "id": "BN.Y.D",
+        "description": "BN.Y.D: Default",
+        "topLevelSubgroup": "BN"
+      }
+    ],
     "forcedHeight": "1.000000",
-    "forcedBodyGenPresets": [],
-    "forcedBodyGenGroups": [],
+    "forcedBodyGenMorphs": [],
     "displayString": "Serana (xx002B6C)",
-    "$$hashKey": "object:4279"
+    "$$hashKey": "object:9664"
   },
   {
-    "name": "Sven",
-    "formID": "xx01347F",
-    "EDID": "Sven",
+    "name": "Hadvar",
+    "formID": "xx02BF9F",
+    "EDID": "Hadvar",
     "rootPlugin": "Skyrim.esm",
+    "race": "NordRace",
     "gender": "male",
-    "forcedAssetPack": "",
-    "forcedSubgroups": [],
-    "forcedHeight": "4",
-    "forcedBodyGenPresets": [],
-    "forcedBodyGenGroups": [],
-    "displayString": "Sven (xx01347F)",
-    "$$hashKey": "object:6196"
+    "forcedAssetPack": "Tempered Skins for Males - Dressed - Director's Cut",
+    "forcedSubgroups": [
+      {
+        "id": "HD.H.D4",
+        "description": "HD.H.D4: Geonox Stubbled",
+        "topLevelSubgroup": "HD"
+      },
+      {
+        "id": "HAD.B4",
+        "description": "HAD.B4: B4 - Clean bear",
+        "topLevelSubgroup": "HAD"
+      }
+    ],
+    "forcedHeight": "1.000000",
+    "forcedBodyGenMorphs": [],
+    "displayString": "Hadvar (xx02BF9F)",
+    "$$hashKey": "object:9667"
+  },
+  {
+    "name": "Ralof",
+    "formID": "xx02BF9D",
+    "EDID": "Ralof",
+    "rootPlugin": "Skyrim.esm",
+    "race": "NordRace",
+    "gender": "male",
+    "forcedAssetPack": "Tempered Skins for Males - Dressed - Director's Cut",
+    "forcedSubgroups": [
+      {
+        "id": "HD.H.D4",
+        "description": "HD.H.D4: Geonox Stubbled",
+        "topLevelSubgroup": "HD",
+        "$$hashKey": "object:6344"
+      },
+      {
+        "id": "BD.B1",
+        "description": "BD.B1: B1 - Clean hairless",
+        "topLevelSubgroup": "BD",
+        "$$hashKey": "object:6413"
+      }
+    ],
+    "forcedHeight": "1.000000",
+    "forcedBodyGenMorphs": [],
+    "displayString": "Ralof (xx02BF9D)",
+    "$$hashKey": "object:9671"
+  },
+  {
+    "name": "Aela the Huntress",
+    "formID": "xx01A696",
+    "EDID": "AelaTheHuntress",
+    "rootPlugin": "Skyrim.esm",
+    "race": "NordRace",
+    "gender": "female",
+    "forcedAssetPack": "Bijin Skins 4K CBBE Director's Cut",
+    "forcedSubgroups": [
+      {
+        "id": "BN.M",
+        "description": "BN.M: Muscular",
+        "topLevelSubgroup": "BN"
+      }
+    ],
+    "forcedHeight": "1.000000",
+    "forcedBodyGenMorphs": [],
+    "displayString": "Aela the Huntress (xx01A696)",
+    "$$hashKey": "object:9674"
   }
 ]

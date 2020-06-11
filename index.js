@@ -6,7 +6,7 @@ let PG = require(modulePath + '\\lib\\PermutationGenerator.js')(logDir, fh);
 let RG = require(modulePath + '\\lib\\RecordGenerator.js')(logDir, fh);
 let deserializer = require(modulePath + "\\lib\\ObjectToRecord.js")(logDir, fh, xelib);
 let PO = require(modulePath + '\\lib\\PatcherOps.js')(logDir, fh, xelib);
-let BGI = require(modulePath + '\\lib\\BodyGenIntegration.js')(Aux);
+let BGI = require(modulePath + '\\lib\\BodyGenIntegration.js')(Aux, PO);
 
 ngapp.run(function(patcherService) {
 	patcherService.registerPatcher({
@@ -33,7 +33,7 @@ ngapp.run(function(patcherService) {
 					$scope.availableAssetPackNames = [];
 					$scope.availableSubgroups = [];
 					$scope.loadedPlugins = xelib.GetLoadedFileNames(true);
-					patcherSettings.forcedNPCAssignments = IO.loadForceList(modulePath, patcherSettings.assetPackSettings);
+					patcherSettings.forcedNPCAssignments = IO.loadForceList(modulePath);
 					patcherSettings.blockList = IO.loadBlockList(modulePath);
 
 					if (patcherSettings.bVerboseMode === true)
@@ -48,27 +48,13 @@ ngapp.run(function(patcherService) {
 					$scope.bodyGenBool = ["AND", "OR"];
 					$scope.availableNPCs = fh.loadJsonFile(modulePath + "\\zEBD assets\\Base NPC List\\NPClist.json");
 					$scope.currentNPC = {};
-					$scope.currentForcedNPC = {};
 					$scope.currentPlugin = "";
 					$scope.availableRaces = patcherSettings.patchableRaces.slice(); // shallow copy intentional
 					$scope.displayRGmembers = initializeRGmembers(patcherSettings.raceGroupDefinitions);
 
-					initializeDisplay($scope.currentSettingsDisplay);
+					$scope.currentSettingsDisplay = "main";
 
-					$scope.toggleDisplayTo = function(targetMenu)
-					{
-						for (menu in $scope.currentSettingsDisplay)
-						{
-							if (menu === targetMenu)
-							{
-								$scope.currentSettingsDisplay[menu] = true;
-							}
-							else
-							{
-								$scope.currentSettingsDisplay[menu] = false;
-							}
-						}
-					};
+					$scope.categorizedMorphs = BGI.categorizeMorphs(patcherSettings.bodyGenConfig, patcherSettings.raceGroupDefinitions);
 
 					// patchable races
 					$scope.removePatchableRace = function(index)
@@ -171,12 +157,12 @@ ngapp.run(function(patcherService) {
 						obj.formID = "xx" + obj.formID.substring(2, 9);
 						obj.EDID = currentNPC.EDID;
 						obj.rootPlugin = currentNPC.masterRecordFile;
+						obj.race = currentNPC.race;
 						obj.gender = currentNPC.gender;
 						obj.forcedAssetPack = "";
 						obj.forcedSubgroups = [];
 						obj.forcedHeight = "1.000000";
-						obj.forcedBodyGenPresets = [];
-						obj.forcedBodyGenGroups = [];
+						obj.forcedBodyGenMorphs = [];
 						obj.displayString = obj.name + " (" + obj.formID + ")";
 
 						let bFound = false;
@@ -205,8 +191,6 @@ ngapp.run(function(patcherService) {
 								patcherSettings.forcedNPCAssignments.splice(i, 1);
 							}
 						}
-
-						$scope.currentForcedNPC = null;
 					};
 
 					$scope.choosePacksForNPC = function(currentNPC)
@@ -229,13 +213,26 @@ ngapp.run(function(patcherService) {
 						}
 					};
 
-					$scope.chooseSubgroupsForPack = function(currentAssetPackName)
+					$scope.chooseSubgroupsForPack = function(currentAssetPackName, currentForcedSubgroups)
 					{
 						for (let i = 0; i < $scope.availableAssetPacks.length; i++)
 						{
 							if ($scope.availableAssetPacks[i].name === currentAssetPackName)
 							{
-								$scope.availableSubgroups = $scope.availableAssetPacks[i].subgroups;
+								$scope.availableSubgroups = $scope.availableAssetPacks[i].subgroups.slice(); // shallow copy intentional
+
+								for (let j = 0; j < $scope.availableSubgroups.length; j++) // replace subgroups that are already in currentForcedSubgroups so that they appear in the dropdown menu
+								{
+									for (let k = 0; k < currentForcedSubgroups.length; k++)
+									{
+										if ($scope.availableSubgroups[j].id === currentForcedSubgroups[k].id && $scope.availableSubgroups[j].description === currentForcedSubgroups[k].description && $scope.availableSubgroups[j].topLevelSubgroup === currentForcedSubgroups[k].topLevelSubgroup)
+										{
+											$scope.availableSubgroups[j] = currentForcedSubgroups[k];
+										}
+									}
+								}
+
+								break;
 							}
 						}
 					};
@@ -248,6 +245,37 @@ ngapp.run(function(patcherService) {
 					$scope.removeForcedSubgroup = function(forcedNPC, index)
 					{
 						forcedNPC.forcedSubgroups.splice(index, 1);
+					};
+					
+					$scope.chooseBodyGenForCurrentNPC = function(forcedNPC)
+					{
+						if (forcedNPC === null)
+						{
+							return [];
+						}
+
+						let rgMorphs = $scope.categorizedMorphs[forcedNPC.gender][forcedNPC.race]
+
+						$scope.availableBodyGenMorphs = [];
+						for (let group in rgMorphs)
+						{
+							for (let i = 0; i < rgMorphs[group].length; i++)
+							{
+								$scope.availableBodyGenMorphs.push(rgMorphs[group][i].name);
+							}
+						}
+
+						Aux.getArrayUniques($scope.availableBodyGenMorphs);
+					}
+
+					$scope.AddForcedMorph = function(forcedNPC)
+					{
+						forcedNPC.forcedBodyGenMorphs.push("");
+					};
+
+					$scope.removeForcedMorph = function(forcedNPC, index)
+					{
+						forcedNPC.forcedBodyGenMorphs.splice(index, 1);
 					};
 
 					// FUNCTIONS FOR CONFIG FILES
@@ -741,7 +769,7 @@ ngapp.run(function(patcherService) {
 
 						if (settings.bEnableBodyGenIntegration === true)
 						{
-							locals.BGcategorizedPresets = BGI.categorizePresets(settings.bodyGenConfig, settings.raceGroupDefinitions);
+							locals.BGcategorizedMorphs = BGI.categorizeMorphs(settings.bodyGenConfig, settings.raceGroupDefinitions);
 						}
 
 						//just for fun
@@ -838,7 +866,7 @@ ngapp.run(function(patcherService) {
 
 											if (settings.bEnableBodyGenIntegration === true)
 											{
-												let genMorph = BGI.assignPresets(record, settings.bodyGenConfig, locals.BGcategorizedPresets, NPCinfo, locals.assignedPermutations[NPCinfo.formID], attributeCache, helpers.logMessage);
+												let genMorph = BGI.assignMorphs(record, settings.bodyGenConfig, locals.BGcategorizedMorphs, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, locals.assignedPermutations[NPCinfo.formID], attributeCache, helpers.logMessage);
 												if (genMorph !== undefined)
 												{
 													locals.assignedBodyGen[NPCinfo.formID] = genMorph;
@@ -997,16 +1025,6 @@ function jasonSays (fraction, logMessage, jason)
 
 }
 
-function initializeDisplay(currentSettingsDisplay)
-{
-	currentSettingsDisplay["main"] = true;
-	currentSettingsDisplay["assetPack"] = false;
-	currentSettingsDisplay["height"] = false;
-	currentSettingsDisplay["bodygen"] = false;
-	currentSettingsDisplay["forcedNPCs"] = false;
-	currentSettingsDisplay["blockList"] = false;
-}
-
 function generateBodyGenTemplateDisplay(bodyGenConfig)
 {
 	let bBodyGenDisplay = [];
@@ -1050,7 +1068,7 @@ function generateAvailableAssetPacks(assetPacks)
 		obj.name = assetPacks[i].groupName;
 		obj.gender = assetPacks[i].gender;
 		obj.subgroups = [];
-		getAllSubgroups(assetPacks[i].subgroups, obj.subgroups);
+		getAllSubgroups(assetPacks[i].subgroups, obj.subgroups, assetPacks[i].subgroups);
 
 		switch(obj.gender)
 		{
@@ -1068,15 +1086,16 @@ function generateAvailableAssetPacks(assetPacks)
 	return packs;
 }
 
-function getAllSubgroups(subgroupArray, allSubgroupsList)
+function getAllSubgroups(subgroupArray, allSubgroupsList, topLevelSubgroups)
 {
 	for (let i = 0; i < subgroupArray.length; i++)
 	{
 		let obj = {};
 		obj.id = subgroupArray[i].id;
 		obj.description = subgroupArray[i].id + ": " + subgroupArray[i].name;
+		obj.topLevelSubgroup = Aux.getTopLevelSubgroup(topLevelSubgroups, subgroupArray[i].id);
 		allSubgroupsList.push(obj);
-		getAllSubgroups(subgroupArray[i].subgroups, allSubgroupsList);
+		getAllSubgroups(subgroupArray[i].subgroups, allSubgroupsList, topLevelSubgroups);
 	}
 }
 
