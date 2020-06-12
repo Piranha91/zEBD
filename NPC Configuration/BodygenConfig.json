@@ -259,6 +259,10 @@
       "groups": [
         "Bottom"
       ],
+      "descriptors": [
+        "build: normal",
+        "secondary: wide hips"
+      ],
       "allowedRaces": [
         "HighElfRace",
         "HighElfRaceVampire"
@@ -274,6 +278,9 @@
       "gender": "female",
       "groups": [
         "Bottom"
+      ],
+      "descriptors": [
+        "build: normal"
       ],
       "allowedRaces": [
         "HighElfRace",
@@ -291,6 +298,10 @@
       "groups": [
         "Bottom"
       ],
+      "descriptors": [
+        "build: normal",
+        "secondary: hourglass"
+      ],
       "allowedRaces": [
         "HighElfRace",
         "HighElfRaceVampire"
@@ -306,6 +317,9 @@
       "gender": "female",
       "groups": [
         "Bottom"
+      ],
+      "descriptors": [
+        "build: thick"
       ],
       "allowedRaces": [
         "HighElfRace",
@@ -323,6 +337,7 @@
       "groups": [
         "Nipples"
       ],
+      "descriptors": [],
       "allowedRaces": [
         "HighElfRace",
         "HighElfRaceVampire"
@@ -338,6 +353,10 @@
       "gender": "female",
       "groups": [
         "Top"
+      ],
+      "descriptors": [
+        "build: normal",
+        "secondary: busty"
       ],
       "allowedRaces": [
         "HighElfRace",
@@ -355,6 +374,10 @@
       "groups": [
         "Top"
       ],
+      "descriptors": [
+        "build: normal",
+        "secondary: busty"
+      ],
       "allowedRaces": [
         "HighElfRace",
         "HighElfRaceVampire"
@@ -370,6 +393,10 @@
       "gender": "female",
       "groups": [
         "Bottom"
+      ],
+      "descriptors": [
+        "build: curvy",
+        "secondary: wide hips"
       ],
       "allowedRaces": [
         "ArgonianRace",
@@ -387,6 +414,10 @@
       "groups": [
         "Bottom"
       ],
+      "descriptors": [
+        "build: curvy",
+        "secondary: wide hips"
+      ],
       "allowedRaces": [
         "ArgonianRace",
         "ArgonianRaceVampire"
@@ -402,6 +433,9 @@
       "gender": "female",
       "groups": [
         "Bottom"
+      ],
+      "descriptors": [
+        "build: thick"
       ],
       "allowedRaces": [
         "ArgonianRace",
@@ -419,6 +453,9 @@
       "groups": [
         "Top"
       ],
+      "descriptors": [
+        "build: petite"
+      ],
       "allowedRaces": [
         "ArgonianRace",
         "ArgonianRaceVampire"
@@ -434,6 +471,9 @@
       "gender": "female",
       "groups": [
         "Bottom"
+      ],
+      "descriptors": [
+        "build: petite"
       ],
       "allowedRaces": [
         "WoodElfRace",
@@ -451,6 +491,9 @@
       "groups": [
         "Bottom"
       ],
+      "descriptors": [
+        "build: petite"
+      ],
       "allowedRaces": [
         "WoodElfRace",
         "WoodElfRaceVampire"
@@ -466,6 +509,9 @@
       "gender": "female",
       "groups": [
         "Bottom"
+      ],
+      "descriptors": [
+        "build: petite"
       ],
       "allowedRaces": [
         "WoodElfRace",
@@ -483,6 +529,7 @@
       "groups": [
         "Nipples"
       ],
+      "descriptors": [],
       "allowedRaces": [
         "WoodElfRace",
         "WoodElfRaceVampire"
@@ -499,6 +546,7 @@
       "groups": [
         "Top"
       ],
+      "descriptors": [],
       "allowedRaces": [
         "WoodElfRace",
         "WoodElfRaceVampire"
@@ -515,6 +563,7 @@
       "groups": [
         "Top"
       ],
+      "descriptors": [],
       "allowedRaces": [
         "WoodElfRace",
         "WoodElfRaceVampire"
@@ -530,6 +579,9 @@
       "gender": "female",
       "groups": [
         "Bottom"
+      ],
+      "descriptors": [
+        "build: normal"
       ],
       "allowedRaces": [
         "BretonRace",
@@ -547,6 +599,10 @@
       "groups": [
         "Bottom"
       ],
+      "descriptors": [
+        "build: normal",
+        "secondary: wide hips"
+      ],
       "allowedRaces": [
         "BretonRace",
         "BretonRaceVampire"
@@ -562,6 +618,9 @@
       "gender": "female",
       "groups": [
         "Bottom"
+      ],
+      "descriptors": [
+        "build: normal"
       ],
       "allowedRaces": [
         "BretonRace",
@@ -579,6 +638,9 @@
       "groups": [
         "Top"
       ],
+      "descriptors": [
+        "build: normal"
+      ],
       "allowedRaces": [
         "BretonRace",
         "BretonRaceVampire"
@@ -594,6 +656,10 @@
       "gender": "female",
       "groups": [
         "Top"
+      ],
+      "descriptors": [
+        "build: curvy",
+        "secondary: busty"
       ],
       "allowedRaces": [
         "BretonRace",
@@ -611,6 +677,9 @@
       "groups": [
         "Top"
       ],
+      "descriptors": [
+        "build: normal"
+      ],
       "allowedRaces": [
         "BretonRace",
         "BretonRaceVampire"
@@ -626,6 +695,9 @@
       "gender": "female",
       "groups": [
         "Bottom"
+      ],
+      "descriptors": [
+        "build: normal"
       ],
       "allowedRaces": [
         "DarkElfRace",
@@ -643,6 +715,10 @@
       "groups": [
         "Bottom"
       ],
+      "descriptors": [
+        "build: normal",
+        "secondary: wide hips"
+      ],
       "allowedRaces": [
         "DarkElfRace",
         "DarkElfRaceVampire"
@@ -658,6 +734,10 @@
       "gender": "female",
       "groups": [
         "Bottom"
+      ],
+      "descriptors": [
+        "build: normal",
+        "secondary: wide hips"
       ],
       "allowedRaces": [
         "DarkElfRace",
@@ -675,6 +755,9 @@
       "groups": [
         "Top"
       ],
+      "descriptors": [
+        "build: petite"
+      ],
       "allowedRaces": [
         "DarkElfRace",
         "DarkElfRaceVampire"
@@ -690,6 +773,9 @@
       "gender": "female",
       "groups": [
         "Top"
+      ],
+      "descriptors": [
+        "build: normal"
       ],
       "allowedRaces": [
         "DarkElfRace",
@@ -707,6 +793,9 @@
       "groups": [
         "Top"
       ],
+      "descriptors": [
+        "build: normal"
+      ],
       "allowedRaces": [
         "DarkElfRace",
         "DarkElfRaceVampire"
@@ -722,6 +811,9 @@
       "gender": "female",
       "groups": [
         "Bottom"
+      ],
+      "descriptors": [
+        "build: chubby"
       ],
       "allowedRaces": [
         "ElderRace",
@@ -739,6 +831,10 @@
       "groups": [
         "Bottom"
       ],
+      "descriptors": [
+        "build: normal",
+        "secondary: straight sides"
+      ],
       "allowedRaces": [
         "ElderRace",
         "ElderRaceVampire"
@@ -754,6 +850,9 @@
       "gender": "female",
       "groups": [
         "Bottom"
+      ],
+      "descriptors": [
+        "build: normal"
       ],
       "allowedRaces": [
         "ElderRace",
@@ -771,6 +870,7 @@
       "groups": [
         "Nipples"
       ],
+      "descriptors": [],
       "allowedRaces": [
         "ElderRace",
         "ElderRaceVampire"
@@ -786,6 +886,10 @@
       "gender": "female",
       "groups": [
         "Top"
+      ],
+      "descriptors": [
+        "build: normal",
+        "secondary: saggy"
       ],
       "allowedRaces": [
         "ElderRace",
@@ -803,6 +907,10 @@
       "groups": [
         "Top"
       ],
+      "descriptors": [
+        "build: normal",
+        "secondary: saggy"
+      ],
       "allowedRaces": [
         "ElderRace",
         "ElderRaceVampire"
@@ -818,6 +926,10 @@
       "gender": "female",
       "groups": [
         "Top"
+      ],
+      "descriptors": [
+        "build: normal",
+        "secondary: saggy"
       ],
       "allowedRaces": [
         "ElderRace",
@@ -835,6 +947,10 @@
       "groups": [
         "Whole"
       ],
+      "descriptors": [
+        "build: normal",
+        "secondary: busty"
+      ],
       "allowedRaces": [
         "ImperialRace",
         "ImperialRaceVampire"
@@ -850,6 +966,9 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: petite"
       ],
       "allowedRaces": [
         "ImperialRace",
@@ -867,6 +986,10 @@
       "groups": [
         "Whole"
       ],
+      "descriptors": [
+        "build: normal",
+        "secondary: straight sides"
+      ],
       "allowedRaces": [
         "ImperialRace",
         "ImperialRaceVampire"
@@ -882,6 +1005,10 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: normal",
+        "secondary: straight sides"
       ],
       "allowedRaces": [
         "ImperialRace",
@@ -899,6 +1026,9 @@
       "groups": [
         "Whole"
       ],
+      "descriptors": [
+        "build: petite"
+      ],
       "allowedRaces": [
         "ImperialRace",
         "ImperialRaceVampire"
@@ -914,6 +1044,10 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: normal",
+        "secondary: straight sides"
       ],
       "allowedRaces": [
         "ImperialRace",
@@ -931,6 +1065,10 @@
       "groups": [
         "Whole"
       ],
+      "descriptors": [
+        "build: petite",
+        "secondary: straight sides"
+      ],
       "allowedRaces": [
         "ImperialRace",
         "ImperialRaceVampire"
@@ -946,6 +1084,10 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: normal",
+        "secondary: straight sides"
       ],
       "allowedRaces": [
         "ImperialRace",
@@ -963,6 +1105,10 @@
       "groups": [
         "Whole"
       ],
+      "descriptors": [
+        "build: normal",
+        "secondary: straight sides"
+      ],
       "allowedRaces": [
         "ImperialRace",
         "ImperialRaceVampire"
@@ -978,6 +1124,10 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: normal",
+        "secondary: saggy"
       ],
       "allowedRaces": [
         "ImperialRace",
@@ -995,6 +1145,10 @@
       "groups": [
         "Whole"
       ],
+      "descriptors": [
+        "build: normal",
+        "secondary: hourglass"
+      ],
       "allowedRaces": [
         "ImperialRace",
         "ImperialRaceVampire"
@@ -1010,6 +1164,9 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: normal"
       ],
       "allowedRaces": [
         "ImperialRace",
@@ -1027,6 +1184,7 @@
       "groups": [
         "Nipples"
       ],
+      "descriptors": [],
       "allowedRaces": [
         "ImperialRace",
         "ImperialRaceVampire"
@@ -1042,6 +1200,10 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: petite",
+        "secondary: hourglass"
       ],
       "allowedRaces": [
         "ImperialRace",
@@ -1059,6 +1221,10 @@
       "groups": [
         "Whole"
       ],
+      "descriptors": [
+        "build: petite",
+        "secondary: hourglass"
+      ],
       "allowedRaces": [
         "ImperialRace",
         "ImperialRaceVampire"
@@ -1074,6 +1240,10 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: normal",
+        "secondary: hourglass"
       ],
       "allowedRaces": [
         "ImperialRace",
@@ -1091,6 +1261,9 @@
       "groups": [
         "Bottom"
       ],
+      "descriptors": [
+        "build: normal"
+      ],
       "allowedRaces": [
         "KhajiitRace",
         "KhajiitRaceVampire"
@@ -1106,6 +1279,9 @@
       "gender": "female",
       "groups": [
         "Bottom"
+      ],
+      "descriptors": [
+        "build: petite"
       ],
       "allowedRaces": [
         "KhajiitRace",
@@ -1123,6 +1299,10 @@
       "groups": [
         "Bottom"
       ],
+      "descriptors": [
+        "build: petite",
+        "secondary: wide hips"
+      ],
       "allowedRaces": [
         "KhajiitRace",
         "KhajiitRaceVampire"
@@ -1139,6 +1319,7 @@
       "groups": [
         "Nipples"
       ],
+      "descriptors": [],
       "allowedRaces": [
         "KhajiitRace",
         "KhajiitRaceVampire"
@@ -1154,6 +1335,10 @@
       "gender": "female",
       "groups": [
         "Top"
+      ],
+      "descriptors": [
+        "build: curvy",
+        "secondary: busty"
       ],
       "allowedRaces": [
         "KhajiitRace",
@@ -1171,6 +1356,9 @@
       "groups": [
         "Top"
       ],
+      "descriptors": [
+        "build: normal"
+      ],
       "allowedRaces": [
         "KhajiitRace",
         "KhajiitRaceVampire"
@@ -1186,6 +1374,10 @@
       "gender": "female",
       "groups": [
         "Top"
+      ],
+      "descriptors": [
+        "build: curvy",
+        "secondary: busty"
       ],
       "allowedRaces": [
         "KhajiitRace",
@@ -1203,6 +1395,9 @@
       "groups": [
         "Whole"
       ],
+      "descriptors": [
+        "build: normal"
+      ],
       "allowedRaces": [
         "NordRace",
         "NordRaceVampire"
@@ -1218,6 +1413,9 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: normal"
       ],
       "allowedRaces": [
         "NordRace",
@@ -1235,6 +1433,9 @@
       "groups": [
         "Whole"
       ],
+      "descriptors": [
+        "build: normal"
+      ],
       "allowedRaces": [
         "NordRace",
         "NordRaceVampire"
@@ -1250,6 +1451,9 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: normal"
       ],
       "allowedRaces": [
         "NordRace",
@@ -1267,6 +1471,10 @@
       "groups": [
         "Whole"
       ],
+      "descriptors": [
+        "build: curvy",
+        "secondary: busty"
+      ],
       "allowedRaces": [
         "NordRace",
         "NordRaceVampire"
@@ -1282,6 +1490,10 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: curvy",
+        "secondary: busty"
       ],
       "allowedRaces": [
         "NordRace",
@@ -1299,6 +1511,11 @@
       "groups": [
         "Whole"
       ],
+      "descriptors": [
+        "build: curvy",
+        "secondary: busty",
+        "secondary: hourglass"
+      ],
       "allowedRaces": [
         "NordRace",
         "NordRaceVampire"
@@ -1314,6 +1531,11 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: curvy",
+        "secondary: busty",
+        "secondary: hourglass"
       ],
       "allowedRaces": [
         "NordRace",
@@ -1331,6 +1553,9 @@
       "groups": [
         "Whole"
       ],
+      "descriptors": [
+        "build: normal"
+      ],
       "allowedRaces": [
         "NordRace",
         "NordRaceVampire"
@@ -1346,6 +1571,9 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: normal"
       ],
       "allowedRaces": [
         "NordRace",
@@ -1363,6 +1591,9 @@
       "groups": [
         "Whole"
       ],
+      "descriptors": [
+        "build: normal"
+      ],
       "allowedRaces": [
         "NordRace",
         "NordRaceVampire"
@@ -1378,6 +1609,10 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: normal",
+        "secondary: wide hips"
       ],
       "allowedRaces": [
         "NordRace",
@@ -1395,6 +1630,10 @@
       "groups": [
         "Whole"
       ],
+      "descriptors": [
+        "build: normal",
+        "secondary: wide hips"
+      ],
       "allowedRaces": [
         "NordRace",
         "NordRaceVampire"
@@ -1410,6 +1649,10 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: normal",
+        "secondary: hourglass"
       ],
       "allowedRaces": [
         "NordRace",
@@ -1427,6 +1670,11 @@
       "groups": [
         "Whole"
       ],
+      "descriptors": [
+        "build: curvy",
+        "secondary: busty",
+        "secondary: hourglass"
+      ],
       "allowedRaces": [
         "NordRace",
         "NordRaceVampire"
@@ -1443,6 +1691,7 @@
       "groups": [
         "Nipples"
       ],
+      "descriptors": [],
       "allowedRaces": [
         "NordRace",
         "NordRaceVampire"
@@ -1458,6 +1707,9 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: petite"
       ],
       "allowedRaces": [
         "NordRace",
@@ -1475,6 +1727,10 @@
       "groups": [
         "Whole"
       ],
+      "descriptors": [
+        "build: normal",
+        "secondary: hourglass"
+      ],
       "allowedRaces": [
         "NordRace",
         "NordRaceVampire"
@@ -1490,6 +1746,9 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: normal"
       ],
       "allowedRaces": [
         "NordRace",
@@ -1507,6 +1766,10 @@
       "groups": [
         "Whole"
       ],
+      "descriptors": [
+        "build: curvy",
+        "secondary: busty"
+      ],
       "allowedRaces": [
         "NordRace",
         "NordRaceVampire"
@@ -1522,6 +1785,9 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: normal"
       ],
       "allowedRaces": [
         "NordRace",
@@ -1539,6 +1805,10 @@
       "groups": [
         "Whole"
       ],
+      "descriptors": [
+        "build: curvy",
+        "secondary: busty"
+      ],
       "allowedRaces": [
         "NordRace",
         "NordRaceVampire"
@@ -1554,6 +1824,9 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: normal"
       ],
       "allowedRaces": [
         "NordRace",
@@ -1571,6 +1844,9 @@
       "groups": [
         "Whole"
       ],
+      "descriptors": [
+        "build: normal"
+      ],
       "allowedRaces": [
         "NordRace",
         "NordRaceVampire"
@@ -1586,6 +1862,11 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: curvy",
+        "secondary: busty",
+        "secondary: wide hips"
       ],
       "allowedRaces": [
         "NordRace",
@@ -1603,6 +1884,10 @@
       "groups": [
         "Whole"
       ],
+      "descriptors": [
+        "build: thick",
+        "secondary: busty"
+      ],
       "allowedRaces": [
         "NordRace",
         "NordRaceVampire"
@@ -1618,6 +1903,10 @@
       "gender": "female",
       "groups": [
         "Whole"
+      ],
+      "descriptors": [
+        "build: thick",
+        "secondary: busty"
       ],
       "allowedRaces": [
         "NordRace",
@@ -1635,6 +1924,9 @@
       "groups": [
         "Bottom"
       ],
+      "descriptors": [
+        "build: normal"
+      ],
       "allowedRaces": [
         "OrcRace",
         "OrcRaceVampire"
@@ -1650,6 +1942,9 @@
       "gender": "female",
       "groups": [
         "Bottom"
+      ],
+      "descriptors": [
+        "build: normal"
       ],
       "allowedRaces": [
         "OrcRace",
@@ -1667,6 +1962,10 @@
       "groups": [
         "Bottom"
       ],
+      "descriptors": [
+        "build: thick",
+        "secondary: busty"
+      ],
       "allowedRaces": [
         "OrcRace",
         "OrcRaceVampire"
@@ -1682,6 +1981,10 @@
       "gender": "female",
       "groups": [
         "Top"
+      ],
+      "descriptors": [
+        "build: curvy",
+        "secondary: busty"
       ],
       "allowedRaces": [
         "OrcRace",
@@ -1699,6 +2002,10 @@
       "groups": [
         "Top"
       ],
+      "descriptors": [
+        "build: curvy",
+        "secondary: busty"
+      ],
       "allowedRaces": [
         "OrcRace",
         "OrcRaceVampire"
@@ -1714,6 +2021,10 @@
       "gender": "female",
       "groups": [
         "Top"
+      ],
+      "descriptors": [
+        "build: curvy",
+        "secondary: busty"
       ],
       "allowedRaces": [
         "OrcRace",
@@ -1731,6 +2042,11 @@
       "groups": [
         "Bottom"
       ],
+      "descriptors": [
+        "build: thick",
+        "secondary: wide hips",
+        "secondary: busty"
+      ],
       "allowedRaces": [
         "RedguardRace",
         "RedguardRaceVampire"
@@ -1746,6 +2062,9 @@
       "gender": "female",
       "groups": [
         "Bottom"
+      ],
+      "descriptors": [
+        "build: normal"
       ],
       "allowedRaces": [
         "RedguardRace",
@@ -1763,6 +2082,10 @@
       "groups": [
         "Bottom"
       ],
+      "descriptors": [
+        "build: thick",
+        "secondary: busty"
+      ],
       "allowedRaces": [
         "RedguardRace",
         "RedguardRaceVampire"
@@ -1779,6 +2102,7 @@
       "groups": [
         "Nipples"
       ],
+      "descriptors": [],
       "allowedRaces": [
         "RedguardRace",
         "RedguardRaceVampire"
@@ -1794,6 +2118,10 @@
       "gender": "female",
       "groups": [
         "Top"
+      ],
+      "descriptors": [
+        "build: curvy",
+        "secondary: busty"
       ],
       "allowedRaces": [
         "RedguardRace",
@@ -1811,6 +2139,10 @@
       "groups": [
         "Top"
       ],
+      "descriptors": [
+        "build: curvy",
+        "secondary: busty"
+      ],
       "allowedRaces": [
         "RedguardRace",
         "RedguardRaceVampire"
@@ -1826,6 +2158,10 @@
       "gender": "female",
       "groups": [
         "Top"
+      ],
+      "descriptors": [
+        "build: curvy",
+        "secondary: busty"
       ],
       "allowedRaces": [
         "RedguardRace",
@@ -1843,6 +2179,10 @@
       "groups": [
         "Vampire"
       ],
+      "descriptors": [
+        "build: curvy",
+        "secondary: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -1856,5 +2196,17 @@
     "Nipples",
     "Vampire",
     "Whole"
+  ],
+  "templateDescriptors": [
+    "build: normal",
+    "build: curvy",
+    "build: petite",
+    "build: thick",
+    "build: chubby",
+    "secondary: wide hips",
+    "secondary: hourglass",    
+    "secondary: busty",    
+    "secondary: straight sides",
+    "secondary: saggy"
   ]
 }

@@ -152,30 +152,30 @@
             </ul>
 
             <div ng-if="bgintegration">
-                <strong>Allowed BodyGen Presets
-                    <button class="TDButton" ng-click="addAllowedBodyGenPreset($index)">Add New</button>
+                <strong>Allowed BodyGen Descriptors
+                    <button class="TDButton" ng-click="addAllowedBodyGenDescriptor($index)">Add New</button>
                 </strong>
                 <ul>
-                    <div class="allowedBodyGen" ng-repeat="allowedPreset in subgroup.allowedBodyGenPresets track by $index">
-                        <select ng-model="subgroup.allowedBodyGenPresets[$index]" ng-options="x.name for x in bgtemplates"></select>
-                        <button class="TDButton" ng-click="removeAllowedBodyGenPreset(subgroup, $index)">Remove</button>
+                    <div class="allowedBodyGen" ng-repeat="allowedPreset in subgroup.allowedBodyGenDescriptors track by $index">
+                        <select ng-model="subgroup.allowedBodyGenDescriptors[$index]" ng-options="x for x in bgdescriptors"></select>
+                        <button class="TDButton" ng-click="removeAllowedBodyGenDescriptor(subgroup, $index)">Remove</button>
                     </div>
                 </ul>
 
-                <strong>Disallowed BodyGen Presets
-                    <button class="TDButton" ng-click="addDisallowedBodyGenPreset($index)">Add New</button>
+                <strong>Disallowed BodyGen Descriptors
+                    <button class="TDButton" ng-click="addDisallowedBodyGenDescriptor($index)">Add New</button>
                 </strong>
                 <ul>
-                    <div class="disallowedBodyGen" ng-repeat="disallowedPreset in subgroup.disalloweBodyGenPresets track by $index">
-                        <select ng-model="subgroup.disallowedBodyGenPresets[$index]" ng-options="x.name for x in bgtemplates"></select>
-                        <button class="TDButton" ng-click="removeDisallowedBodyGenPreset(subgroup, $index)">Remove</button>
+                    <div class="disallowedBodyGen" ng-repeat="disallowedPreset in subgroup.disallowedBodyGenDescriptors track by $index">
+                        <select ng-model="subgroup.disallowedBodyGenDescriptors[$index]" ng-options="x for x in bgdescriptors"></select>
+                        <button class="TDButton" ng-click="removeDisallowedBodyGenDescriptor(subgroup, $index)">Remove</button>
                     </div>
                 </ul>
             </div>
 
             <button class="TDButton" ng-click="addSubgroup($index)">Add New Subgroup</button>
 
-            <display-subgroups ng-if="subgroup.subgroups.length" data="subgroup.subgroups"></display-subgroups>
+            <display-subgroups ng-if="subgroup.subgroups.length" data="subgroup.subgroups" bgintegration = "bgintegration" bgdescriptors = "bgdescriptors"></display-subgroups>
         </div>
     </section>
     </div>

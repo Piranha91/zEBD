@@ -26,7 +26,6 @@ ngapp.run(function(patcherService) {
 					patcherSettings.bodyGenConfig = IO.loadBodyGenConfig(modulePath) // first load the patcher's main BodyGen config file
 					IO.loadExtraBodyGenConfigs(modulePath, 11); // next import other exported config files if they exist
 					IO.loadNewBodyGenTemplates(modulePath, patcherSettings.bodyGenConfig.templates); // finally import BodyGen presets in .ini format if they exist
-					$scope.BodyGenTemplateDisplay = generateBodyGenTemplateDisplay(patcherSettings.bodyGenConfig); 
 					$scope.BodyGenItemDisplay = updateBodyGenItemDisplay(patcherSettings.bodyGenConfig);
 					$scope.allAssetPacks = generateAvailableAssetPacks(patcherSettings.assetPackSettings);
 					$scope.availableAssetPacks = [];
@@ -501,12 +500,27 @@ ngapp.run(function(patcherService) {
 						patcherSettings.bodyGenConfig.templateGroups.splice(arrayIndex, 1);
 					};
 
+					$scope.addTemplateDescriptorBodyGen = function () 
+					{ 
+						patcherSettings.bodyGenConfig.templateDescriptors.push("");
+					};
+					$scope.removeTemplateDescriptorBodyGen = function(arrayIndex)
+					{
+						patcherSettings.bodyGenConfig.templateDescriptors.splice(arrayIndex, 1);
+					};
+
 					$scope.addBodyGenItem = function(combination) { combination.push("") };
 					$scope.removeBodyGenItem = function(combination, index) { combination.splice(index, 1); };
 
 					$scope.addBodyGenCombo = function(RGconfig) { RGconfig.push([]); };
 					$scope.removeBodyGenCombo = function(RGconfig, index) { 
 						RGconfig.combinations.splice(index, 1); 
+					};
+
+					$scope.addBodyGenDescriptor = function (index) { patcherSettings.bodyGenConfig.templates[index].descriptors.push(""); };
+					$scope.removeBodyGenDescriptor = function(template, arrayIndex)
+					{
+						template.descriptors.splice(arrayIndex, 1);
 					};
 
 					$scope.updateBodyGenItemDisplay = function()
@@ -564,7 +578,7 @@ ngapp.run(function(patcherService) {
 						obj.formID = "xx" + obj.formID.substring(2, 9);
 						obj.EDID = currentNPC.EDID;
 						obj.rootPlugin = currentNPC.masterRecordFile;
-						obj.displayString = obj.name + " (" + obj.formID + ")";
+						obj.displayString = obj.name + " (" + obj.formID + ") | " + obj.rootPlugin;
 
 						let bFound = false;
 						for (let i = 0; i < patcherSettings.blockList.blockedNPCs.length; i++)
@@ -1025,22 +1039,6 @@ function jasonSays (fraction, logMessage, jason)
 
 }
 
-function generateBodyGenTemplateDisplay(bodyGenConfig)
-{
-	let bBodyGenDisplay = [];
-	let displayObj = {};
-
-	for (let i = 0; i < bodyGenConfig.templates.length; i++)
-	{
-		displayObj = {};
-		displayObj.name = bodyGenConfig.templates[i].name;
-		displayObj.showDetails = false;
-		bBodyGenDisplay.push(displayObj);
-	}
-
-	return bBodyGenDisplay;
-}
-
 function updateBodyGenItemDisplay(bodyGenConfig)
 {
 	let items = [];
@@ -1116,7 +1114,7 @@ ngapp.directive('displaySubgroups', function()
 		scope: {
 			data: '=',
 			bgintegration: '=',
-			bgtemplates: '='
+			bgdescriptors: '='
 		},
 		templateUrl: `${moduleUrl}/partials/subGroupTemplateDirective.html`,
 		controller: 'subgroupController'
@@ -1183,11 +1181,11 @@ ngapp.controller('subgroupController', function($scope)
 	$scope.addPath = function (index) { $scope.data[index].paths.push(["",""]);}
 	$scope.removePath = function(subgroup, arrayIndex) {subgroup.paths.splice(arrayIndex, 1);}
 
-	$scope.addAllowedBodyGenPreset = function (index) { $scope.data[index].allowedBodyGenPresets.push("");}
-	$scope.removeAllowedBodyGenPreset = function(subgroup, arrayIndex) {subgroup.allowedBodyGenPresets.splice(arrayIndex, 1);}
+	$scope.addAllowedBodyGenDescriptor = function (index) { $scope.data[index].allowedBodyGenDescriptors.push("");}
+	$scope.removeAllowedBodyGenDescriptor = function(subgroup, arrayIndex) {subgroup.allowedBodyGenDescriptors.splice(arrayIndex, 1);}
 
-	$scope.addDisallowedBodyGenPreset = function (index) { $scope.data[index].disalloweBodyGenPresets.push("");}
-	$scope.removeDisallowedBodyGenPreset = function(subgroup, arrayIndex) {subgroup.disalloweBodyGenPresets.splice(arrayIndex, 1);}
+	$scope.addDisallowedBodyGenDescriptor = function (index) { $scope.data[index].disallowedBodyGenDescriptors.push("");}
+	$scope.removeDisallowedBodyGenDescriptor = function(subgroup, arrayIndex) {subgroup.disallowedBodyGenDescriptors.splice(arrayIndex, 1);}
 
 	$scope.handleDrop = function(e){
         e.preventDefault();

@@ -1,5 +1,5 @@
 {
-  "groupName": "Bijin Skins 4K CBBE Director's Cut",
+  "groupName": "Bijin Skins 4K CBBE Director's Cut (for BodyGen)",
   "gender": "female",
   "displayAlerts": true,
   "userAlert": "Bijin Skins: Age40 and Age50 NPCs will be skipped due to neck seam.",
@@ -112,7 +112,9 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:4424"
+          "$$hashKey": "object:4424",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         },
         {
           "id": "HD.D4KNM",
@@ -139,7 +141,9 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:4436"
+          "$$hashKey": "object:4436",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         },
         {
           "id": "HD.D4KV",
@@ -166,7 +170,9 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:4447"
+          "$$hashKey": "object:4447",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         },
         {
           "id": "HD.D4KNMV",
@@ -193,7 +199,9 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:4460"
+          "$$hashKey": "object:4460",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         },
         {
           "id": "HD.R4K",
@@ -220,7 +228,9 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:4473"
+          "$$hashKey": "object:4473",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         },
         {
           "id": "HD.R4KNM",
@@ -247,7 +257,9 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:4484"
+          "$$hashKey": "object:4484",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         },
         {
           "id": "HD.R4KV",
@@ -274,7 +286,9 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:4495"
+          "$$hashKey": "object:4495",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         },
         {
           "id": "HD.R4KNMV",
@@ -301,10 +315,14 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:4508"
+          "$$hashKey": "object:4508",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         }
       ],
-      "$$hashKey": "object:4409"
+      "$$hashKey": "object:4409",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
     },
     {
       "id": "HN",
@@ -369,7 +387,9 @@
                 ]
               ],
               "subgroups": [],
-              "$$hashKey": "object:4544"
+              "$$hashKey": "object:4544",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
             },
             {
               "id": "HN.Y.D",
@@ -396,7 +416,9 @@
                 ]
               ],
               "subgroups": [],
-              "$$hashKey": "object:4558"
+              "$$hashKey": "object:4558",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
             },
             {
               "id": "HN.Y.N",
@@ -441,7 +463,9 @@
                     ]
                   ],
                   "subgroups": [],
-                  "$$hashKey": "object:4973"
+                  "$$hashKey": "object:4973",
+                  "allowedBodyGenDescriptors": [],
+                  "disallowedBodyGenDescriptors": []
                 },
                 {
                   "id": "HN.Y.N.A",
@@ -466,10 +490,14 @@
                     ]
                   ],
                   "subgroups": [],
-                  "$$hashKey": "object:4985"
+                  "$$hashKey": "object:4985",
+                  "allowedBodyGenDescriptors": [],
+                  "disallowedBodyGenDescriptors": []
                 }
               ],
-              "$$hashKey": "object:4571"
+              "$$hashKey": "object:4571",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
             },
             {
               "id": "HN.Y.H",
@@ -496,7 +524,9 @@
                 ]
               ],
               "subgroups": [],
-              "$$hashKey": "object:4595"
+              "$$hashKey": "object:4595",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
             },
             {
               "id": "HN.Y.O",
@@ -523,7 +553,9 @@
                 ]
               ],
               "subgroups": [],
-              "$$hashKey": "object:4608"
+              "$$hashKey": "object:4608",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
             },
             {
               "id": "HN.Y.I",
@@ -550,7 +582,9 @@
                 ]
               ],
               "subgroups": [],
-              "$$hashKey": "object:4619"
+              "$$hashKey": "object:4619",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
             },
             {
               "id": "HN.Y.R",
@@ -577,7 +611,9 @@
                 ]
               ],
               "subgroups": [],
-              "$$hashKey": "object:4634"
+              "$$hashKey": "object:4634",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
             },
             {
               "id": "HN.Y.V",
@@ -622,7 +658,9 @@
                     ]
                   ],
                   "subgroups": [],
-                  "$$hashKey": "object:4999"
+                  "$$hashKey": "object:4999",
+                  "allowedBodyGenDescriptors": [],
+                  "disallowedBodyGenDescriptors": []
                 },
                 {
                   "id": "HN.Y.V.A",
@@ -647,7 +685,9 @@
                     ]
                   ],
                   "subgroups": [],
-                  "$$hashKey": "object:5011"
+                  "$$hashKey": "object:5011",
+                  "allowedBodyGenDescriptors": [],
+                  "disallowedBodyGenDescriptors": []
                 },
                 {
                   "id": "HN.Y.V.DE",
@@ -682,7 +722,9 @@
                     ]
                   ],
                   "subgroups": [],
-                  "$$hashKey": "object:9518"
+                  "$$hashKey": "object:9518",
+                  "allowedBodyGenDescriptors": [],
+                  "disallowedBodyGenDescriptors": []
                 },
                 {
                   "id": "HN.Y.V.O",
@@ -717,10 +759,14 @@
                     ]
                   ],
                   "subgroups": [],
-                  "$$hashKey": "object:9519"
+                  "$$hashKey": "object:9519",
+                  "allowedBodyGenDescriptors": [],
+                  "disallowedBodyGenDescriptors": []
                 }
               ],
-              "$$hashKey": "object:3582"
+              "$$hashKey": "object:3582",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
             },
             {
               "id": "HN.Y.W",
@@ -747,13 +793,19 @@
                 ]
               ],
               "subgroups": [],
-              "$$hashKey": "object:4185"
+              "$$hashKey": "object:4185",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
             }
           ],
-          "$$hashKey": "object:1933"
+          "$$hashKey": "object:1933",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         }
       ],
-      "$$hashKey": "object:4780"
+      "$$hashKey": "object:4780",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
     },
     {
       "id": "HS",
@@ -799,7 +851,9 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:4663"
+          "$$hashKey": "object:4663",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         },
         {
           "id": "HS.B",
@@ -827,10 +881,14 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:4675"
+          "$$hashKey": "object:4675",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         }
       ],
-      "$$hashKey": "object:4649"
+      "$$hashKey": "object:4649",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
     },
     {
       "id": "HSP",
@@ -876,7 +934,9 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:4700"
+          "$$hashKey": "object:4700",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         },
         {
           "id": "HSP.W",
@@ -921,10 +981,14 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:4712"
+          "$$hashKey": "object:4712",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         }
       ],
-      "$$hashKey": "object:4686"
+      "$$hashKey": "object:4686",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
     },
     {
       "id": "HDE",
@@ -967,7 +1031,9 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:4737"
+          "$$hashKey": "object:4737",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         },
         {
           "id": "HDE.R",
@@ -1068,7 +1134,9 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:4752"
+          "$$hashKey": "object:4752",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         },
         {
           "id": "HDE.F",
@@ -1173,10 +1241,14 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:4766"
+          "$$hashKey": "object:4766",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         }
       ],
-      "$$hashKey": "object:4723"
+      "$$hashKey": "object:4723",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
     },
     {
       "id": "BD",
@@ -1223,7 +1295,9 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:4899"
+          "$$hashKey": "object:4899",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         },
         {
           "id": "BD.4KS",
@@ -1252,10 +1326,14 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:4911"
+          "$$hashKey": "object:4911",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         }
       ],
-      "$$hashKey": "object:4741"
+      "$$hashKey": "object:4741",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
     },
     {
       "id": "BN",
@@ -1322,7 +1400,12 @@
                 ]
               ],
               "subgroups": [],
-              "$$hashKey": "object:4925"
+              "$$hashKey": "object:4925",
+              "allowedBodyGenDescriptors": [
+                "build: normal",
+                "build: petite"
+              ],
+              "disallowedBodyGenDescriptors": []
             },
             {
               "id": "BN.Y.DC",
@@ -1351,7 +1434,13 @@
                 ]
               ],
               "subgroups": [],
-              "$$hashKey": "object:4937"
+              "$$hashKey": "object:4937",
+              "allowedBodyGenDescriptors": [
+                "build: curvy",
+                "build: thick",
+                "build: chubby"
+              ],
+              "disallowedBodyGenDescriptors": []
             },
             {
               "id": "BN.M",
@@ -1502,7 +1591,12 @@
                 ]
               ],
               "subgroups": [],
-              "$$hashKey": "object:4948"
+              "$$hashKey": "object:4948",
+              "allowedBodyGenDescriptors": [
+                "build: normal",
+                "build: petite"
+              ],
+              "disallowedBodyGenDescriptors": []
             },
             {
               "id": "BN.MC",
@@ -1531,13 +1625,21 @@
                 ]
               ],
               "subgroups": [],
-              "$$hashKey": "object:4959"
+              "$$hashKey": "object:4959",
+              "allowedBodyGenDescriptors": [
+                "build: curvy"
+              ],
+              "disallowedBodyGenDescriptors": []
             }
           ],
-          "$$hashKey": "object:2278"
+          "$$hashKey": "object:2278",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         }
       ],
-      "$$hashKey": "object:4753"
+      "$$hashKey": "object:4753",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
     },
     {
       "id": "BS",
@@ -1587,7 +1689,9 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:5025"
+          "$$hashKey": "object:5025",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         },
         {
           "id": "BS.D",
@@ -1619,10 +1723,14 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:5037"
+          "$$hashKey": "object:5037",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         }
       ],
-      "$$hashKey": "object:4764"
+      "$$hashKey": "object:4764",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
     },
     {
       "id": "BSP",
@@ -1672,7 +1780,9 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:5051"
+          "$$hashKey": "object:5051",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         },
         {
           "id": "BSP.W",
@@ -1704,10 +1814,14 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:5063"
+          "$$hashKey": "object:5063",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         }
       ],
-      "$$hashKey": "object:1541"
+      "$$hashKey": "object:1541",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
     },
     {
       "id": "HAD",
@@ -1732,7 +1846,9 @@
         ]
       ],
       "subgroups": [],
-      "$$hashKey": "object:4802"
+      "$$hashKey": "object:4802",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
     },
     {
       "id": "HAN",
@@ -1757,7 +1873,9 @@
         ]
       ],
       "subgroups": [],
-      "$$hashKey": "object:4814"
+      "$$hashKey": "object:4814",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
     },
     {
       "id": "HAS",
@@ -1803,7 +1921,9 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:5089"
+          "$$hashKey": "object:5089",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         },
         {
           "id": "HAS.D",
@@ -1831,10 +1951,14 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:5101"
+          "$$hashKey": "object:5101",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         }
       ],
-      "$$hashKey": "object:4825"
+      "$$hashKey": "object:4825",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
     },
     {
       "id": "HASP",
@@ -1880,7 +2004,9 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:5063"
+          "$$hashKey": "object:5063",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         },
         {
           "id": "HASP.W",
@@ -1908,10 +2034,14 @@
             ]
           ],
           "subgroups": [],
-          "$$hashKey": "object:5075"
+          "$$hashKey": "object:5075",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
         }
       ],
-      "$$hashKey": "object:1542"
+      "$$hashKey": "object:1542",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
     }
   ],
   "displayAssetPackAlerts": true

@@ -5,28 +5,28 @@
       "formID": "xx01367B",
       "EDID": "Hern",
       "rootPlugin": "Skyrim.esm",
-      "displayString": "Hern (xx01367B)"
+      "displayString": "Hern (xx01367B) | Skyrim.esm"
     },
     {
       "name": "Vingalmo",
       "formID": "xx003360",
       "EDID": "DLC1Vingalmo",
       "rootPlugin": "Dawnguard.esm",
-      "displayString": "Vingalmo (xx003360)"
+      "displayString": "Vingalmo (xx003360) | Dawnguard.esm"
     },
     {
       "name": "Orthjolf",
       "formID": "xx003361",
       "EDID": "DLC1Orthjolf",
       "rootPlugin": "Dawnguard.esm",
-      "displayString": "Orthjolf (xx003361)"
+      "displayString": "Orthjolf (xx003361) | Dawnguard.esm"
     },
     {
       "name": "Ronthil",
       "formID": "xx003367",
       "EDID": "DLC1Ronthil",
       "rootPlugin": "Dawnguard.esm",
-      "displayString": "Ronthil (xx003367)"
+      "displayString": "Ronthil (xx003367) | Dawnguard.esm"
     }
   ],
   "blockedPlugins": []

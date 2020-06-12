@@ -300,7 +300,7 @@
             <input style="width:60%" type="text" ng-model="assetPackSetting.userAlert">
         </label>
 
-        <display-subgroups data="assetPackSetting.subgroups" bgintegration = "settings.zEBD.bEnableBodyGenIntegration" bgtemplates = BodyGenTemplateDisplay></display-subgroups>
+        <display-subgroups data="assetPackSetting.subgroups" bgintegration = "settings.zEBD.bEnableBodyGenIntegration" bgdescriptors = settings.zEBD.bodyGenConfig.templateDescriptors></display-subgroups>
         <button ng-click="addSubgroupTop($index)">Add New Subgroup</button>
 
         <button ng-click="saveAssetPackSetting(assetPackSetting)">Save</button>
@@ -490,6 +490,17 @@
             </ul>
             <br>
 
+            <strong>Descriptors
+                <button class="TDButton" ng-click="addBodyGenDescriptor($index)">Add New</button>
+            </strong>
+            <ul>
+                <div class="Descriptors" ng-repeat="desc in template.descriptors track by $index">
+                    <select ng-model="template.descriptors[$index]" ng-options="td for td in settings.zEBD.bodyGenConfig.templateDescriptors"></select>
+                    <button class="TDButton" ng-click="removeBodyGenDescriptor(template, $index)">Remove</button>
+                </div>
+            </ul>
+            <br>
+
             <strong>Allowed Races
                 <button class="TDButton" ng-click="addAllowedRaceBodyGen($index)">Add New</button>
             </strong>
@@ -548,7 +559,7 @@
 
     <br>
     <label>
-    Show Group Settings
+    Show Template Group List
     <input type="checkbox" ng-model="displayTemplateGroups"/>
     </label>
     <div ng-if="displayTemplateGroups">
@@ -557,6 +568,19 @@
             <button class="TDButton" ng-click="removeTemplateGroupBodyGen($index)">Remove</button>
         </div>
         <button class="TDButton" ng-click="addTemplateGroupBodyGen()">Add New Template Group</button>
+    </div>
+
+    <br>
+    <label>
+    Show Template Descriptor List
+    <input type="checkbox" ng-model="displayTemplateDescriptors"/>
+    </label>
+    <div ng-if="displayTemplateDescriptors">
+        <div class="templateDescriptors" ng-repeat="tD in settings.zEBD.bodyGenConfig.templateDescriptors track by $index" >
+            <input type="text" ng-model="settings.zEBD.bodyGenConfig.templateDescriptors[$index]">
+            <button class="TDButton" ng-click="removeTemplateDescriptorBodyGen($index)">Remove</button>
+        </div>
+        <button class="TDButton" ng-click="addTemplateDescriptorBodyGen()">Add New Template Descriptor</button>
     </div>
     
 </section>
