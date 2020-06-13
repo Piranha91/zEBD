@@ -3,239 +3,305 @@
     {
       "EDID": "BretonRace",
       "combinations": [
-        [
-          "Top",
-          "Bottom"
-        ]
+        {
+          "members": [
+            "Top",
+            "Bottom"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1692"
     },
     {
       "EDID": "BretonRaceVampire",
       "combinations": [
-        [
-          "Top",
-          "Bottom",
-          "Vampire"
-        ]
+        {
+          "members": [
+            "Top",
+            "Bottom",
+            "Vampire"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1693"
     },
     {
       "EDID": "DarkElfRace",
       "combinations": [
-        [
-          "Top",
-          "Bottom"
-        ]
+        {
+          "members": [
+            "Top",
+            "Bottom"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1694"
     },
     {
       "EDID": "DarkElfRaceVampire",
       "combinations": [
-        [
-          "Top",
-          "Bottom",
-          "Vampire"
-        ]
+        {
+          "members": [
+            "Top",
+            "Bottom",
+            "Vampire"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1695"
     },
     {
       "EDID": "HighElfRace",
       "combinations": [
-        [
-          "Top",
-          "Bottom",
-          "Nipples"
-        ]
+        {
+          "members": [
+            "Top",
+            "Bottom",
+            "Nipples"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1696"
     },
     {
       "EDID": "HighElfRaceVampire",
       "combinations": [
-        [
-          "Top",
-          "Bottom",
-          "Nipples",
-          "Vampire"
-        ]
+        {
+          "members": [
+            "Top",
+            "Bottom",
+            "Nipples",
+            "Vampire"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1697"
     },
     {
       "EDID": "ImperialRace",
       "combinations": [
-        [
-          "Whole",
-          "Nipples"
-        ]
+        {
+          "members": [
+            "Whole",
+            "Nipples"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1698"
     },
     {
       "EDID": "ImperialRaceVampire",
       "combinations": [
-        [
-          "Whole",
-          "Nipples",
-          "Vampire"
-        ]
+        {
+          "members": [
+            "Whole",
+            "Nipples",
+            "Vampire"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1699"
     },
     {
       "EDID": "NordRace",
       "combinations": [
-        [
-          "Whole",
-          "Nipples"
-        ]
+        {
+          "members": [
+            "Whole",
+            "Nipples"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1700"
     },
     {
       "EDID": "NordRaceVampire",
       "combinations": [
-        [
-          "Whole",
-          "Nipples",
-          "Vampire"
-        ]
+        {
+          "members": [
+            "Whole",
+            "Nipples",
+            "Vampire"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1701"
     },
     {
       "EDID": "OrcRace",
       "combinations": [
-        [
-          "Top",
-          "Bottom"
-        ]
+        {
+          "members": [
+            "Top",
+            "Bottom"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1702"
     },
     {
       "EDID": "OrcRaceVampire",
       "combinations": [
-        [
-          "Top",
-          "Bottom",
-          "Vampire"
-        ]
+        {
+          "members": [
+            "Top",
+            "Bottom",
+            "Vampire"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1703"
     },
     {
       "EDID": "RedguardRace",
       "combinations": [
-        [
-          "Top",
-          "Bottom",
-          "Nipples"
-        ]
+        {
+          "members": [
+            "Top",
+            "Bottom",
+            "Nipples"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1704"
     },
     {
       "EDID": "RedguardRaceVampire",
       "combinations": [
-        [
-          "Top",
-          "Bottom",
-          "Nipples",
-          "Vampire"
-        ]
+        {
+          "members": [
+            "Top",
+            "Bottom",
+            "Nipples",
+            "Vampire"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1705"
     },
     {
       "EDID": "WoodElfRace",
       "combinations": [
-        [
-          "Top",
-          "Bottom",
-          "Nipples"
-        ]
+        {
+          "members": [
+            "Top",
+            "Bottom",
+            "Nipples"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1706"
     },
     {
       "EDID": "WoodElfRaceVampire",
       "combinations": [
-        [
-          "Top",
-          "Bottom",
-          "Nipples",
-          "Vampire"
-        ]
+        {
+          "members": [
+            "Top",
+            "Bottom",
+            "Nipples",
+            "Vampire"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1707"
     },
     {
       "EDID": "ElderRace",
       "combinations": [
-        [
-          "Top",
-          "Bottom",
-          "Nipples"
-        ]
+        {
+          "members": [
+            "Top",
+            "Bottom",
+            "Nipples"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1708"
     },
     {
       "EDID": "ElderRaceVampire",
       "combinations": [
-        [
-          "Top",
-          "Bottom",
-          "Nipples",
-          "Vampire"
-        ]
+        {
+          "members": [
+            "Top",
+            "Bottom",
+            "Nipples",
+            "Vampire"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1709"
     },
     {
       "EDID": "ArgonianRace",
       "combinations": [
-        [
-          "Top",
-          "Bottom"
-        ]
+        {
+          "members": [
+            "Top",
+            "Bottom"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1710"
     },
     {
       "EDID": "ArgonianRaceVampire",
       "combinations": [
-        [
-          "Top",
-          "Bottom"
-        ]
+        {
+          "members": [
+            "Top",
+            "Bottom"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1711"
     },
     {
       "EDID": "KhajiitRace",
       "combinations": [
-        [
-          "Top",
-          "Bottom",
-          "Nipples"
-        ]
+        {
+          "members": [
+            "Top",
+            "Bottom",
+            "Nipples"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1712"
     },
     {
       "EDID": "KhajiitRaceVampire",
       "combinations": [
-        [
-          "Top",
-          "Bottom",
-          "Nipples"
-        ]
+        {
+          "members": [
+            "Top",
+            "Bottom",
+            "Nipples"
+          ],
+          "probabilityWeighting": 1
+        }
       ],
       "$$hashKey": "object:1713"
     },
@@ -270,7 +336,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ALT_B_Perfect80100",
@@ -289,7 +356,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ALT_B_PrincessBody0030",
@@ -309,7 +377,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ALT_B_samsbodypreset70100",
@@ -328,7 +397,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ALT_Nipples",
@@ -345,7 +415,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ALT_T_DB0050",
@@ -365,7 +436,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ALT_T_Ken0035",
@@ -385,7 +457,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ARG_B_BBW6090",
@@ -405,7 +478,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ARG_B_Seductive60100",
@@ -425,7 +499,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ARG_B_THICC_0080",
@@ -444,7 +519,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ARG_T_Petite",
@@ -463,7 +539,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "BOS_B_Petite",
@@ -482,7 +559,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "BOS_B_skinny",
@@ -501,7 +579,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "BOS_B_Superslim",
@@ -520,7 +599,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "BOS_Nipples",
@@ -537,7 +617,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "BOS_T_Skinny",
@@ -554,7 +635,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "BOS_T_SuperSlim",
@@ -571,7 +653,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "BRE_B_Mage",
@@ -590,7 +673,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "BRE_B_SAB",
@@ -610,7 +694,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "BRE_B_UNP",
@@ -629,7 +714,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "BRE_T_Anime5080",
@@ -648,7 +734,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "BRE_T_Juno_40100",
@@ -668,7 +755,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "BRE_T_RS35100",
@@ -687,7 +775,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "DUN_B_DarkElf",
@@ -706,7 +795,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "DUN_B_Dva",
@@ -726,7 +816,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "DUN_B_SkCurvy",
@@ -746,7 +837,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "DUN_T_Athletic",
@@ -765,7 +857,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "DUN_T_DreamBody",
@@ -784,7 +877,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "DUN_T_Thief",
@@ -803,7 +897,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ELD_B_Olivia",
@@ -822,7 +917,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ELD_B_RDTP_OLD5075",
@@ -842,7 +938,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ELD_B_RDTP_OLD25",
@@ -861,7 +958,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ELD_Nipples",
@@ -878,7 +976,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ELD_T_DB-P2B2",
@@ -898,7 +997,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ELD_T_LF_172_1040",
@@ -918,7 +1018,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ELD_T_LF_172_70100",
@@ -938,7 +1039,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "IMP_Diff_Ave1550",
@@ -958,7 +1060,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "IMP_Emily1030",
@@ -977,7 +1080,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "IMP_Erica25",
@@ -997,7 +1101,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "IMP_Erica70",
@@ -1017,7 +1122,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "IMP_Isla10",
@@ -1036,7 +1142,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "IMP_Isla55",
@@ -1056,7 +1163,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "IMP_Jessica25",
@@ -1076,7 +1184,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "IMP_Jessica70",
@@ -1096,7 +1205,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "IMP_Liara40",
@@ -1116,7 +1226,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "IMP_Liara65",
@@ -1136,7 +1247,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "IMP_Natural25",
@@ -1156,7 +1268,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "IMP_Natural70",
@@ -1175,7 +1288,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "IMP_Nipples",
@@ -1192,7 +1306,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "IMP_Slim20",
@@ -1212,7 +1327,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "IMP_Slim70",
@@ -1232,7 +1348,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "IMP_StC2040",
@@ -1252,7 +1369,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "KHA_B_Natural",
@@ -1271,7 +1389,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "KHA_B_skinny",
@@ -1290,7 +1409,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "KHA_B_Thief",
@@ -1310,7 +1430,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "KHA_Nipples",
@@ -1327,7 +1448,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "KHA_T_AMJ_Heavy",
@@ -1347,7 +1469,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "KHA_T_DM_Athletic",
@@ -1366,7 +1489,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "KHA_T_Mage",
@@ -1386,7 +1510,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_Ave40",
@@ -1405,7 +1530,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_Ave55",
@@ -1424,7 +1550,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_Ave70",
@@ -1443,7 +1570,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_B&S20",
@@ -1462,7 +1590,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_B&S50",
@@ -1482,7 +1611,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_B&S80",
@@ -1502,7 +1632,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_Busty2_0025",
@@ -1523,7 +1654,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_Busty2_3560",
@@ -1544,7 +1676,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_FAB30",
@@ -1563,7 +1696,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_FAB60",
@@ -1582,7 +1716,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_FAB90",
@@ -1601,7 +1736,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_NBoddi10",
@@ -1621,7 +1757,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_NBoddi35",
@@ -1641,7 +1778,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_NBoddi55",
@@ -1661,7 +1799,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_NBoddi80",
@@ -1682,7 +1821,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_Nipples",
@@ -1699,7 +1839,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_Perfect20",
@@ -1718,7 +1859,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_Perfect40",
@@ -1738,7 +1880,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_Reina3060",
@@ -1757,7 +1900,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_RS100",
@@ -1777,7 +1921,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_RS40",
@@ -1796,7 +1941,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_RS70",
@@ -1816,7 +1962,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_SB2_0020",
@@ -1835,7 +1982,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_SB2_3050",
@@ -1854,7 +2002,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_SB2_6080",
@@ -1875,7 +2024,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_Seductive00",
@@ -1895,7 +2045,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "NOR_Seductive30",
@@ -1915,7 +2066,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ORC_B_SB50100",
@@ -1934,7 +2086,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ORC_B_Strong2080",
@@ -1953,7 +2106,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ORC_B_Warrior50100",
@@ -1973,7 +2127,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ORC_T_Fetish30100",
@@ -1993,7 +2148,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ORC_T_Fetish_Enh00100",
@@ -2013,7 +2169,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "ORC_T_Ken0050",
@@ -2033,7 +2190,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "RED_B_BBW4075",
@@ -2054,7 +2212,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "RED_B_Greek5080",
@@ -2073,7 +2232,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "RED_B_Seductive_3080",
@@ -2093,7 +2253,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "RED_Nipples",
@@ -2110,7 +2271,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "RED_T_BS_3090",
@@ -2130,7 +2292,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "RED_T_LF-18_60100",
@@ -2150,7 +2313,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "RED_T_Seductive_4080",
@@ -2170,7 +2334,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     },
     {
       "name": "VAMPIRE",
@@ -2187,7 +2352,8 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": []
+      "forceIfAttributes": [],
+      "probabilityWeighting": 1
     }
   ],
   "templateGroups": [
@@ -2204,8 +2370,8 @@
     "build: thick",
     "build: chubby",
     "secondary: wide hips",
-    "secondary: hourglass",    
-    "secondary: busty",    
+    "secondary: hourglass",
+    "secondary: busty",
     "secondary: straight sides",
     "secondary: saggy"
   ]

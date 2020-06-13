@@ -223,6 +223,39 @@
     </div>
     <br>
     <button ng-click="addNewGroupDef()">Add New Group</button>
+    <br>
+    <br>
+    <label class="tooltip">
+        <input type="checkbox" ng-model="settings.zEBD.showMiscSettings"/>
+        <span>Show Miscellaneous Settings</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">You probably don't need to touch these settings, but if you insist...</span>
+    </label>
+
+    <section ng-if="settings.zEBD.showMiscSettings">
+        <label class="tooltip">
+            <span>Path Trimming</span>
+            <button ng-click = "saveTrimPaths()">Save Path Trimming Settings</button>
+            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">For each asset file path that contains the file extension in box 1, the text in box 2 will be removed from its path when it is added to a record. This is because (i.e.) for a texture, Skyrim assumes the file path starts with \"data\textures\".</span>
+        </label>
+        <div ng-repeat="trimpath in trimPaths track by $index">
+            <input type="text" ng-model="trimPaths[$index].extension">
+            <input type="text" ng-model="trimPaths[$index].pathToTrim">
+            <button ng-click="removeTrimPath($index)">Remove</button>
+        </div>
+        <button ng-click="addTrimPath()">Add new trim path</button>
+        <br>
+        <br>
+        <label class="tooltip">
+            <span>Exclusions to NPC Linkage</span>
+            <button ng-click = "saveNPCLinkageExclusions()">Save NPC Linkage Exclusions</button>
+            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">The NPCs with the following names will not be linked together by name/race/gender even if their unique flag is set to true.</span>
+        </label>
+        <div ng-repeat="exlusion in LinkedNPCNameExclusions track by $index">
+            <input type="text" ng-model="LinkedNPCNameExclusions[$index]">
+            <button ng-click="removeLinkedNPCExclusion($index)">Remove</button>
+        </div>
+        <button ng-click="addLinkedNPCExclusion()">Add new excluded name</button>
+    </section>
 </section>
 
 <!-- ASSET PACK CONFIG -->
@@ -405,31 +438,51 @@
 
 <section ng-if="currentSettingsDisplay === 'bodygen'">
     <h3>BodyGen Integration Menu</h3>
-    <button ng-click="saveBodyGenConfig()">Save Current Configuration</button>
+    <label class = "tooltip">
+        <button ng-click="saveBodyGenConfig()">Save Current Configuration</button>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Saves current BodyGen settings (body morph group assignments, template settings, group list, and descriptor list). These settings can be imported by another user.</span>
+    </label>
     <br>
     <br>
-    <button ng-click="setRaceMenuConfig()">Set RaceMenu BodyGen ini file</button>
-    <label>
+    <label class = "tooltip">
+        <button ng-click="setRaceMenuConfig()">Set RaceMenu BodyGen ini file</button>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Edits the RaceMenu skee64.ini to the correct settings for BodyGen.</span>
+    </label>
+    <label class = "tooltip">
         <span>Show Body Morph Assignments For: </span>
         Male <input type="checkbox" ng-model="displayMaleConfig"/> Female <input type="checkbox" ng-model="displayFemaleConfig"/>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">These settings dictate (per-race) which BodyGen morphs can be assigned to a given NPC. In this menu you can select the assigned morph groups.</span>
     </label>
 
     <div ng-if="displayMaleConfig">
         <div class="bgTemplate" ng-repeat="maleAssignment in settings.zEBD.bodyGenConfig.racialSettingsMale" >
-            <label>
+            <label class = "tooltip">
                 <span>Race </span>
                 <select ng-model="settings.zEBD.bodyGenConfig.racialSettingsMale[$index].EDID" ng-options="rOption for rOption in availableRaces"></select>
                 <button class="TDButton" ng-click="removeBodyGenMaleConfig($index)">Remove</button>
+                <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Race for which the morph groups below will be used.</span>
             </label>
             <div>
-                <span>Assigned Template Groups</span>
+                <label class = "tooltip">
+                    <span>Assigned Template Group Combinations</span>
+                    <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">One of the group combinations below will be selected for each given NPC. For each group within the combination, a morph belonging to that group will be picked at random.</span>
+                </label>
                 <div class="Combinations" ng-repeat="combination in maleAssignment.combinations track by $index">
-                    {{$index + 1}}: 
-                    <span class = "Combination" ng-repeat="item in combination track by $index">
-                        <select class="smallSelect" ng-model="combination[$index]" ng-options="x for x in BodyGenItemDisplay"></select>
-                    </span>
-                    <button class="TDButton" ng-click="addBodyGenItem(combination)">Add Item</button>
-                    <button class="TDButton" ng-click="removeBodyGenCombo(maleAssignment, $index)">Remove Combo</button>
+                    <ul>
+                        {{$index + 1}}: 
+                        <span class = "Combination" ng-repeat="item in combination.members track by $index">
+                            <select class="smallSelect" ng-model="combination.members[$index]" ng-options="x for x in BodyGenItemDisplay"></select>
+                        </span>
+                        <button class="TDButton" ng-click="addBodyGenItem(combination)">Add Group</button>
+                        <br>
+                        <label class="tooltip">
+                            <span>Distribution Probability Weight</span>
+                            <input style="width:7%" type="number" ng-model="combination.probabilityWeighting">
+                            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Relative chance that this template group gets picked relative to the other choices.</span>
+                        </label>
+                        <br>
+                        <button class="TDButton" ng-click="removeBodyGenCombo(maleAssignment, $index)">Remove Combo</button>
+                    </ul>
                 </div>
                 <button class="TDButton" ng-click="addBodyGenCombo(maleAssignment.combinations)">Add New Combination</button>
             </div>
@@ -439,20 +492,33 @@
 
     <div ng-if="displayFemaleConfig">
         <div class="bgTemplate" ng-repeat="femaleAssignment in settings.zEBD.bodyGenConfig.racialSettingsFemale" >
-            <label>
+            <label class = "tooltip">
                 <span>Race </span>
                 <select ng-model="settings.zEBD.bodyGenConfig.racialSettingsFemale[$index].EDID" ng-options="rOption for rOption in availableRaces"></select>
                 <button class="TDButton" ng-click="removeBodyGenFemaleConfig($index)">Remove</button>
+                <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Race for which the morph groups below will be used.</span>
             </label>
             <div>
-                <span>Assigned Template Groups</span>
+                <label class = "tooltip">
+                    <span>Assigned Template Group Combinations</span>
+                    <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">One of the group combinations below will be selected for each given NPC. For each group within the combination, a morph belonging to that group will be picked at random.</span>
+                </label>
                 <div class="Combinations" ng-repeat="combination in femaleAssignment.combinations track by $index">
-                    {{$index + 1}}: 
-                    <span class = "Combination" ng-repeat="item in combination track by $index">
-                        <select class="smallSelect" ng-model="combination[$index]" ng-options="x for x in BodyGenItemDisplay"></select>
-                    </span>
-                    <button class="TDButton" ng-click="addBodyGenItem(combination)">Add Item</button>
-                    <button class="TDButton" ng-click="removeBodyGenCombo(femaleAssignment, $index)">Remove Combo</button>
+                    <ul>
+                        {{$index + 1}}: 
+                        <span class = "Combination" ng-repeat="item in combination.members track by $index">
+                            <select class="smallSelect" ng-model="combination.members[$index]" ng-options="x for x in BodyGenItemDisplay"></select>
+                        </span>
+                        <button class="TDButton" ng-click="addBodyGenItem(combination)">Add Group</button>
+                        <br>
+                        <label class="tooltip">
+                            <span>Distribution Probability Weight</span>
+                            <input style="width:7%" type="number" ng-model="combination.probabilityWeighting">
+                            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Relative chance that this template group gets picked relative to the other choices.</span>
+                        </label>
+                        <br>
+                        <button class="TDButton" ng-click="removeBodyGenCombo(femaleAssignment, $index)">Remove Combo</button>
+                    </ul>
                 </div>
                 <button class="TDButton" ng-click="addBodyGenCombo(femaleAssignment.combinations)">Add New Combination</button>
             </div>
@@ -461,14 +527,18 @@
     </div>
 
     <br>
-    <label>
-    Show Template Settings <input type="checkbox" ng-model="displayTemplates"/>
+    <label class = "tooltip">
+        Show Template Settings <input type="checkbox" ng-model="displayTemplates"/>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">These settings allow you to customize the distribution rules for each available BodyGen morph.</span>
     </label>
-    <label>
+    <br>
+    <label class = "tooltip">
         <button class="TDButton" ng-click="selectBodyGenTemplateFile()">Import a BodyGen Template INI File</button>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Imports BodyGen morphs from a RaceMenu templates.ini file.</span>
     </label>
-    <label>
+    <label class = "tooltip">
         <button class="TDButton" ng-click="selectBodyGenConfigFile()">Import a BodyGen zEBD Config File</button>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Imports zEBD group assignments, morphs/rulesets, groups, and descriptors from a zEBD BodygenConfig.json file.</span>
     </label>
     <div class="bgTemplate" ng-repeat="template in settings.zEBD.bodyGenConfig.templates track by $index" ng-if="displayTemplates">
         <label>
@@ -477,18 +547,26 @@
         </label>
         <label>
         <section ng-if="BodyGenTemplateDisplay[$index].showDetails">
-            <strong>Gender</strong>
-            <select ng-model="settings.zEBD.bodyGenConfig.templates[$index].gender" ng-options="x for x in genderOptions"></select>
-            <br>
-
-            <label>
-                <strong>Morph</strong>
-                <textarea class="inputLarge" ng-model="settings.zEBD.bodyGenConfig.templates[$index].params"></textarea>
+            <label class = "tooltip">
+                <span>Gender</span>
+                <select ng-model="settings.zEBD.bodyGenConfig.templates[$index].gender" ng-options="x for x in genderOptions"></select>
+                <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Gender to which this morph can be applied.</span>
             </label>
+            <br>
+            <br>
+            <label class = "tooltip">
+                <span>Morph</span>
+                <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Slider settings for this morph.</span>
+            </label>
+            <textarea class="inputLarge" ng-model="settings.zEBD.bodyGenConfig.templates[$index].params"></textarea>
 
-            <strong>Belongs to Groups
-                <button class="TDButton" ng-click="addBelongGroupBodyGen($index)">Add New</button>
-            </strong>
+            <br>
+            <label class = "tooltip">
+                <span>Belongs to Groups
+                    <button class="TDButton" ng-click="addBelongGroupBodyGen($index)">Add New</button>
+                </span>
+                <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">The groups to which this morph belongs. When an NPC receives a morph group combination that contains this group, this morph will be eligible for selection.</span>
+            </label>
             <ul>
                 <div class="belongGroups" ng-repeat="BG in template.groups track by $index">
                     <select ng-model="template.groups[$index]" ng-options="tg for tg in settings.zEBD.bodyGenConfig.templateGroups"></select>
@@ -497,9 +575,12 @@
             </ul>
             <br>
 
-            <strong>Descriptors
-                <button class="TDButton" ng-click="addBodyGenDescriptor($index)">Add New</button>
-            </strong>
+            <label class = "tooltip">
+                <span>Descriptors
+                    <button class="TDButton" ng-click="addBodyGenDescriptor($index)">Add New</button>
+                    <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Descriptors that describe this morph. This is how the texture selection process can communicate with the BodyGen selection process. Texture subgroups can require or exclude specific descriptors.</span>
+                </span>
+            </label>
             <ul>
                 <div class="Descriptors" ng-repeat="desc in template.descriptors track by $index">
                     <select ng-model="template.descriptors[$index]" ng-options="td for td in settings.zEBD.bodyGenConfig.templateDescriptors"></select>
@@ -508,9 +589,12 @@
             </ul>
             <br>
 
-            <strong>Allowed Races
-                <button class="TDButton" ng-click="addAllowedRaceBodyGen($index)">Add New</button>
-            </strong>
+            <label class = "tooltip">
+                <span>Allowed Races
+                    <button class="TDButton" ng-click="addAllowedRaceBodyGen($index)">Add New</button>
+                </span>
+                <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Races to which this morph can be assigned. If empty, morph can be assigned to all races.</span>
+            </label>
             <ul>
                 <div class="allowedRaces" ng-repeat="a in template.allowedRaces track by $index">
                     <select ng-model="template.allowedRaces[$index]" ng-options="rOption for rOption in racesAndGroups"></select>
@@ -518,9 +602,12 @@
                 </div>
             </ul>
 
-            <strong>Disallowed Races
-                <button class="TDButton" ng-click="addDisallowedRaceBodyGen($index)">Add New</button>
-            </strong>
+            <label class = "tooltip">
+                <span>Disallowed Races
+                    <button class="TDButton" ng-click="addDisallowedRaceBodyGen($index)">Add New</button>
+                </span>
+                <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Races to which this morph cannot be assigned. Dominant over Allowed Races.</span>
+            </label>
             <ul>
                 <div class="disallowedRaces" ng-repeat="a in template.disallowedRaces track by $index">
                     <select ng-model="template.disallowedRaces[$index]" ng-options="rOption for rOption in racesAndGroups"></select>
@@ -528,9 +615,12 @@
                 </div>
             </ul>
 
-            <strong>Allowed Attributes
-                <button class="TDButton" ng-click="addAllowedAttributeBodyGen($index)">Add New</button>
-            </strong>
+            <label class = "tooltip">
+                <span>Allowed Attributes
+                    <button class="TDButton" ng-click="addAllowedAttributeBodyGen($index)">Add New</button>
+                </span>
+                <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Elements (box 1) and element values (box 2) that NPCs must possess to be assigned this morph. See documentation for details.</span>
+            </label>
             <ul>
                 <div class="allowedAttributes" ng-repeat="a in template.allowedAttributes track by $index">
                     <input type="text" ng-model="template.allowedAttributes[$index][0]">
@@ -539,9 +629,12 @@
                 </div>
             </ul>
 
-            <strong>Disallowed Attributes
-                <button class="TDButton" ng-click="addDisallowedAttributeBodyGen($index)">Add New</button>
-            </strong>
+            <label class = "tooltip">
+                <span>Disallowed Attributes
+                    <button class="TDButton" ng-click="addDisallowedAttributeBodyGen($index)">Add New</button>
+                </span>
+                <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Elements (box 1) and element values (box 2) that NPCs may not possess to be assigned this morph. See documentation for details.</span>
+            </label>
             <ul>
                 <div class="disallowedAttributes" ng-repeat="a in template.disallowedAttributes track by $index">
                     <input type="text" ng-model="template.disallowedAttributes[$index][0]">
@@ -550,9 +643,12 @@
                 </div>
             </ul>
 
-            <strong>ForceIf Attributes
-                <button class="TDButton" ng-click="addForceIfAttributeBodyGen($index)">Add New</button>
-            </strong>
+            <label class = "tooltip">
+                <span>ForceIf Attributes
+                    <button class="TDButton" ng-click="addForceIfAttributeBodyGen($index)">Add New</button>
+                </span>
+                <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Elements (box 1) and element values (box 2) that, if an NPC possesses, will force this morph to be assigned. See documentation for details.</span>
+            </label>
             <ul>
                 <div class="allowedAttributes" ng-repeat="a in template.forceIfAttributes track by $index">
                     <input type="text" ng-model="template.forceIfAttributes[$index][0]">
@@ -561,13 +657,21 @@
                 </div>
             </ul>
 
+            <label class = "tooltip">
+                <span>Distribution Probability Weight</span>
+                <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Multiplier dictating the relative chance of NPCs getting this template compared to other templates in the same group.</span>
+                <input type="number" ng-model="template.probabilityWeighting">
+            </label>
+
+
         </section>
     </div>
 
     <br>
-    <label>
-    Show Template Group List
-    <input type="checkbox" ng-model="displayTemplateGroups"/>
+    <label class = "tooltip">
+        <span>Show Template Group List</span>
+        <input type="checkbox" ng-model="displayTemplateGroups"/>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">BodyGen Templates listed above can be assigned to one or more of the groups below.</span>
     </label>
     <div ng-if="displayTemplateGroups">
         <div class="templateGroups" ng-repeat="tG in settings.zEBD.bodyGenConfig.templateGroups track by $index" >
@@ -578,9 +682,10 @@
     </div>
 
     <br>
-    <label>
-    Show Template Descriptor List
-    <input type="checkbox" ng-model="displayTemplateDescriptors"/>
+    <label class = "tooltip">
+        <span>Show Template Descriptor List</span>
+        <input type="checkbox" ng-model="displayTemplateDescriptors"/>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">BodyGen Templates listed above can be assigned one or more of the descriptors below.</span>
     </label>
     <div ng-if="displayTemplateDescriptors">
         <div class="templateDescriptors" ng-repeat="tD in settings.zEBD.bodyGenConfig.templateDescriptors track by $index" >
@@ -643,7 +748,7 @@
     <br>
     <label class="tooltip">
         <button ng-click="loadNPCs()">Load NPCs from Mods</button>
-        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">This can take a minute or so.</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Fills list with all NPCs in your load order. This can take a minute or so.</span>
     </label>
     <span>
         <select class="NPCselect" ng-model="currentNPC" ng-options="NPC.displayString for NPC in availableNPCs" size="5"></select>
@@ -652,6 +757,13 @@
     <label>
         <button ng-click="addNPCtoForceList(currentNPC)">Add Selected NPC to Force List</button>
     </label>
+    <div>
+        Remove selected NPC's assigned 
+        <button ng-click="removeNPCinfoFromConsistency(currentNPC, 'assets')">assets</button>
+        <button ng-click="removeNPCinfoFromConsistency(currentNPC, 'height')">height</button>
+        <button ng-click="removeNPCinfoFromConsistency(currentNPC, 'bodygen')">BodyGen</button>
+        from consistency
+    <div>
 </section>
 
 <section ng-if="currentSettingsDisplay === 'blockList'">
@@ -673,7 +785,7 @@
         <label>Available NPCs</label>
         <label class="tooltip">
             <button ng-click="loadNPCs()">Load NPCs from Mods</button>
-            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">This can take a minute or so.</span>
+            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Fills list with all NPCs in your load order. This can take a minute or so.</span>
         </label>
     </label>
     <span>

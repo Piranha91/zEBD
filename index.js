@@ -26,6 +26,8 @@ ngapp.run(function(patcherService) {
 					patcherSettings.bodyGenConfig = IO.loadBodyGenConfig(modulePath) // first load the patcher's main BodyGen config file
 					IO.loadExtraBodyGenConfigs(modulePath, 11); // next import other exported config files if they exist
 					IO.loadNewBodyGenTemplates(modulePath, patcherSettings.bodyGenConfig.templates); // finally import BodyGen presets in .ini format if they exist
+					$scope.trimPaths = IO.loadTrimPaths(modulePath);
+					$scope.LinkedNPCNameExclusions = IO.loadLinkedNPCNameExclusions(modulePath);
 					
 					$scope.BodyGenItemDisplay = updateBodyGenItemDisplay(patcherSettings.bodyGenConfig);
 					$scope.allAssetPacks = generateAvailableAssetPacks(patcherSettings.assetPackSettings);
@@ -33,6 +35,8 @@ ngapp.run(function(patcherService) {
 					$scope.availableAssetPackNames = [];
 					$scope.availableSubgroups = [];
 					$scope.loadedPlugins = xelib.GetLoadedFileNames(true);
+					$scope.consistencyAssignments = IO.loadConsistency(modulePath, true);
+
 					patcherSettings.forcedNPCAssignments = IO.loadForceList(modulePath);
 					patcherSettings.blockList = IO.loadBlockList(modulePath);
 
@@ -119,6 +123,36 @@ ngapp.run(function(patcherService) {
 					
 					//
 
+					// misc settings
+					$scope.removeTrimPath = function(index)
+					{
+						$scope.trimPaths.splice(index, 1);
+					}
+					$scope.addTrimPath = function()
+					{
+						let obj = {};
+						obj.extension = "file extension";
+						obj.pathToTrim = "path to trim";
+						$scope.trimPaths.push(obj);
+					}
+					$scope.saveTrimPaths = function()
+					{
+						IO.saveTrimPaths(modulePath, $scope.trimPaths);
+					}
+					$scope.addLinkedNPCExclusion = function()
+					{
+						$scope.LinkedNPCNameExclusions.push("");
+					}
+					$scope.removeLinkedNPCExclusion = function(index)
+					{
+						$scope.LinkedNPCNameExclusions.splice(index, 1);
+					}
+					$scope.saveNPCLinkageExclusions = function()
+					{
+						IO.saveNPCLinkageExclusions(modulePath, $scope.LinkedNPCNameExclusions);
+					}
+					//
+
 					// force list
 					$scope.saveForceList = function()
 					{
@@ -148,7 +182,7 @@ ngapp.run(function(patcherService) {
 							{
 								if (patcherSettings.patchableRaces.includes(xelib.GetRefEditorID(NPClist[i], 'RNAM')))
 								{
-									NPC = PO.getNPCinfo(NPClist[i], [], xelib);
+									NPC = PO.getNPCinfo(NPClist[i], $scope.consistencyAssignments, xelib);
 									NPC.displayString = NPC.name + " | " + NPC.EDID + " | " + NPC.formID + " | " + NPC.race + " | " + NPC.masterRecordFile;
 									$scope.availableNPCs.push(NPC);
 								}
@@ -199,6 +233,55 @@ ngapp.run(function(patcherService) {
 							}
 						}
 					};
+
+					$scope.removeNPCinfoFromConsistency = function(currentNPC, mode)
+					{
+						if ($scope.consistencyAssignments === undefined || $scope.consistencyAssignments === null || $scope.consistencyAssignments.length === 0)
+						{
+							alert("No consistency file found.");
+							return;
+						}
+
+						if (currentNPC.consistencyIndex > -1)
+						{
+							switch(mode)
+							{
+								case "assets":
+									if ($scope.consistencyAssignments[currentNPC.consistencyIndex].assignedAssetPack !== undefined)
+									{
+										delete $scope.consistencyAssignments[currentNPC.consistencyIndex].assignedAssetPack;
+									}
+									if ($scope.consistencyAssignments[currentNPC.consistencyIndex].assignedPermutation !== undefined)
+									{
+										delete $scope.consistencyAssignments[currentNPC.consistencyIndex].assignedPermutation;
+									}
+									break;
+								case "height":
+									if ($scope.consistencyAssignments[currentNPC.consistencyIndex].height !== undefined)
+									{
+										delete $scope.consistencyAssignments[currentNPC.consistencyIndex].height;
+									}
+									break;
+								case "bodygen":
+									if ($scope.consistencyAssignments[currentNPC.consistencyIndex].assignedMorphs !== undefined)
+									{
+										delete $scope.consistencyAssignments[currentNPC.consistencyIndex].assignedMorphs;
+									}
+									if ($scope.consistencyAssignments[currentNPC.consistencyIndex].assignedGroups !== undefined)
+									{
+										delete $scope.consistencyAssignments[currentNPC.consistencyIndex].assignedGroups;
+									}
+									break;
+							}
+
+							IO.saveConsistency(modulePath, $scope.consistencyAssignments);
+							alert("Consistency updated.")
+						}
+						else
+						{
+							alert("NPC not found in consistency records.")
+						}
+					}
 
 					$scope.choosePacksForNPC = function(currentNPC)
 					{
@@ -517,10 +600,15 @@ ngapp.run(function(patcherService) {
 						patcherSettings.bodyGenConfig.templateDescriptors.splice(arrayIndex, 1);
 					};
 
-					$scope.addBodyGenItem = function(combination) { combination.push("") };
-					$scope.removeBodyGenItem = function(combination, index) { combination.splice(index, 1); };
+					$scope.addBodyGenItem = function(combination) { combination.members.push("") };
+					$scope.removeBodyGenItem = function(combination, index) { combination.members.splice(index, 1); };
 
-					$scope.addBodyGenCombo = function(RGconfig) { RGconfig.push([]); };
+					$scope.addBodyGenCombo = function(RGconfig) { 
+						let newCombo = {};
+						newCombo.members = [];
+						newCombo.probabilityWeighting = 1;
+						RGconfig.push(newCombo); 
+					};
 					$scope.removeBodyGenCombo = function(RGconfig, index) { 
 						RGconfig.combinations.splice(index, 1); 
 					};
@@ -629,6 +717,7 @@ ngapp.run(function(patcherService) {
 				defaultSettings:
 					{
 						btooltips: true,
+						showMiscSettings: false,
 						changeNPCappearance: true,
 						changeHeight: true,
 						changeHeadparts: false,
