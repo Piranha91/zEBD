@@ -52,7 +52,6 @@ ngapp.run(function(patcherService) {
 					$scope.availableRaces = patcherSettings.patchableRaces.slice(); // shallow copy intentional
 					$scope.displayRGmembers = initializeRGmembers(patcherSettings.raceGroupDefinitions);
 					$scope.racesAndGroups = updateAvailableRacesAndGroups($scope.availableRaces, patcherSettings.raceGroupDefinitions);
-					$scope.subgroupsForLinkageDisp = getAvailableLinkedSubgroupIDsForDisplay(patcherSettings.assetPackSettings);
 
 					$scope.currentSettingsDisplay = "main";
 
@@ -86,12 +85,6 @@ ngapp.run(function(patcherService) {
 					$scope.updateAvailableRacesAndGroups = function()
 					{
 						$scope.racesAndGroups = updateAvailableRacesAndGroups($scope.availableRaces, patcherSettings.raceGroupDefinitions);
-					}
-
-					$scope.testOuter = function(templateDescriptors, racesAndGroups)
-					{
-						let debug1 = templateDescriptors;
-						let debug2 = racesAndGroups;
 					}
 					//
 
@@ -635,6 +628,7 @@ ngapp.run(function(patcherService) {
 
 				defaultSettings:
 					{
+						btooltips: true,
 						changeNPCappearance: true,
 						changeHeight: true,
 						changeHeadparts: false,
@@ -1139,57 +1133,6 @@ function updateAvailableRacesAndGroups(races, groups)
 	return dispList;
 }
 
-function getAvailableLinkedSubgroupIDsForDisplay(assetPackSettingsList)
-{
-	let available = [];
-	for (let i = 0; i < assetPackSettingsList.length; i++)
-	{
-		available.push(getAvailableLinkedSubgroupIDsForAssetPack(assetPackSettingsList[i]));
-	}
-
-	return available;
-}
-
-function getAvailableLinkedSubgroupIDsForAssetPack(currentAssetPack)
-{
-	let availableSubGroups = [];
-	let allSubgroups = [];
-	let temp = [];
-
-
-	for (let j = 0; j < currentAssetPack.subgroups.length; j++)
-	{
-		temp = [];
-		getAllSubgroupIDs(temp, currentAssetPack.subgroups[j]);
-		allSubgroups.push(temp);
-	}
-
-	// get all subgroup chains not containing the curent subgroup ID
-	for (let j = 0; j < allSubgroups.length; j++)
-	{
-		temp = [];
-		for (let k = 0; k < allSubgroups.length; k++)
-		{
-			if (j !== k)
-			{
-				Aux.copyArrayInto(allSubgroups[k], temp);
-			}
-		}
-		availableSubGroups.push(temp);
-	}
-
-	return availableSubGroups;
-}
-
-function getAllSubgroupIDs(subgroupArray, currentSubgroup)
-{
-	subgroupArray.push(currentSubgroup.id);
-	for (let i = 0; i < currentSubgroup.subgroups.length; i++)
-	{
-		getAllSubgroupIDs(subgroupArray, currentSubgroup.subgroups[i]);
-	}
-}
-
 ngapp.directive('displaySubgroups', function()
 {
 	return {
@@ -1198,8 +1141,8 @@ ngapp.directive('displaySubgroups', function()
 			data: '=',
 			bgintegration: '=',
 			bgdescriptors: '=',
-			racesAndGroups: '=',
-			linkedSubgroupList: '='
+			racesandgroups: '=',
+			btooltips: '='
 		},
 		templateUrl: `${moduleUrl}/partials/subGroupTemplateDirective.html`,
 		controller: 'subgroupController'
@@ -1271,24 +1214,6 @@ ngapp.controller('subgroupController', function($scope)
 
 	$scope.addDisallowedBodyGenDescriptor = function (index) { $scope.data[index].disallowedBodyGenDescriptors.push("");}
 	$scope.removeDisallowedBodyGenDescriptor = function(subgroup, arrayIndex) {subgroup.disallowedBodyGenDescriptors.splice(arrayIndex, 1);}
-
-	$scope.getCorrectLinkedSubgroupList = function(subgroup, linkedSubgroupList)
-	{
-		for (let i = 0; i < linkedSubgroupList.length; i++)
-		{
-			if (linkedSubgroupList.includes(subgroup.id) === false)
-			{
-				$scope.availableLinkedSubgroups = linkedSubgroupList[i];
-				return;
-			}
-		}
-	}
-
-	$scope.testFunction = function(bgdescriptors, racesAndGroups)
-	{
-		let debug1 = bgdescriptors;
-		let debug2 = racesAndGroups;
-	}
 
 	$scope.handleDrop = function(e){
         e.preventDefault();

@@ -143,31 +143,31 @@
     <label class="tooltip">
         <input type="checkbox" ng-model="settings.zEBD.changeNPCappearance"/>
         <span>Apply Assets from Config Files</span>
-        <span class="tooltiptext">If enabled, zEBD will read in asset pack config files (e.g. textures and meshes) and apply them to NPCs.</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">If enabled, zEBD will read in asset pack config files (e.g. textures and meshes) and apply them to NPCs.</span>
     </label>
     <br>
     <label class="tooltip">
         <input type="checkbox" ng-model="settings.zEBD.changeHeight"/>
         <span>Customize Character Heights</span>
-        <span class="tooltiptext">If enabled, zEBD will adjust the base racial heights and/or randomize the individual NPC heights.</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">If enabled, zEBD will adjust the base racial heights and/or randomize the individual NPC heights.</span>
     </label>
     <br>
     <label class="tooltip">
         <input type="checkbox" ng-model="settings.zEBD.bEnableBodyGenIntegration"/>
         <span>Enable RaceMenu BodyGen Integration</span>
-        <span class="tooltiptext">If enabled, zEBD will create templates.ini and morphs.ini files, supplying body morphs to RaceMenu.</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">If enabled, zEBD will create templates.ini and morphs.ini files, supplying body morphs to RaceMenu.</span>
     </label>
     <br>
     <label class="tooltip">
         <input type="checkbox" ng-model="settings.zEBD.bAbortIfPathWarnings"/>
         <span>Abort patching if required assets are not found at the expected paths</span>
-        <span class="tooltiptext">If enabled, zEBD will stop patching if any loaded config files contain file paths that don't exist. If you disable this, be warned that your NPCs can turn blue when the game can't find the given file.</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">If enabled, zEBD will stop patching if any loaded config files contain file paths that don't exist. If you disable this, be warned that your NPCs can turn blue when the game can't find the given file.</span>
     </label>
     <br>
     <label>
         <label class="tooltip">
             <input type="checkbox" ng-model="settings.zEBD.bEnableConsistency"/>
-            <span class="tooltiptext">If enabled, zEBD will apply the same settings (assets, height, and/or BodyGen) to previously patched NPCs.</span>
+            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">If enabled, zEBD will apply the same settings (assets, height, and/or BodyGen) to previously patched NPCs.</span>
             <span>Enable Consistency</span>
         </label>
         <button ng-click="clearConsistency()">Clear Consistency Data</button>  
@@ -175,7 +175,13 @@
     <label class="tooltip">
         <input type="checkbox" ng-model="settings.zEBD.bLinkNPCsWithSameName"/>
         <span>Link multiple instances of the same NPC</span>
-        <span class="tooltiptext">Apply the same settings to NPC records with the same name, race, and gender (e.g. the different NPC records for Cicero).</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Apply the same settings to NPC records with the same name, race, and gender (e.g. the different NPC records for Cicero).</span>
+    </label>
+    <br>
+    <label class="tooltip">
+        <input type="checkbox" ng-model="settings.zEBD.btooltips"/>
+        <span>Display Tooltips</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Display tooltips such as this one to describe what each setting controls.</span>
     </label>
     <br>  
     <br>
@@ -183,7 +189,7 @@
         <span>Patchable Races</span>
         <label class="tooltip">
             <button ng-click = "getAvailableRaces()">Get All Available Races</button>
-            <span class="tooltiptext">Search load order for additional patchable races</span>
+            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Search load order for additional patchable races</span>
         </label>        
     </label>
     <div  ng-repeat="race in settings.zEBD.patchableRaces track by $index">
@@ -196,7 +202,7 @@
     <label>
         <label class="tooltip">
             <span>Group Definitions</span>
-            <span class="tooltiptext">These groups can be used anywhere you see "Allowed Races" or "Disallowed Races"</span>
+            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">These groups can be used anywhere you see "Allowed Races" or "Disallowed Races"</span>
         </label>
         <button ng-click = "saveGroupDefs()">Save Group Definitions</button>
     </label>
@@ -226,56 +232,56 @@
     <label class="tooltip">
         <input type="checkbox" ng-model="settings.zEBD.changeTextures"/>
         <span>Change NPC Textures</span>
-        <span class="tooltiptext">Change NPCs' textures to those supplied by config files</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Change NPCs' textures to those supplied by config files</span>
     </label>
     <br>
     <label class="tooltip">
         <input type="checkbox" ng-model="settings.zEBD.changeMeshes"/>
         <span>Change NPC Meshes</span>
-        <span class="tooltiptext">Change NPCs' meshes to those supplied by config files</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Change NPCs' meshes to those supplied by config files</span>
     </label>
     <br>
     <label class="tooltip">
         <input type="checkbox" ng-model="settings.zEBD.changeNPCsWithWNAM"/>
         <span>Apply to NPCs with custom skins</span>
-        <span class="tooltiptext">If disabled, NPCs with assigned WNAM records will be skipped</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">If disabled, NPCs with assigned WNAM records will be skipped</span>
     </label>
     <br>
     <label class="tooltip">
         <input type="checkbox" ng-model="settings.zEBD.changeNPCsWithFaceParts"/>
         <span>Apply to NPCs with custom faces</span>
-        <span class="tooltiptext">If disabled, NPCs with assigned Head Parts\*\Face records will be skipped. Note that if enabled, the NPC's face shape will not be affected; only the texture will be updated to match the assigned body texture.</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">If disabled, NPCs with assigned Head Parts\*\Face records will be skipped. Note that if enabled, the NPC's face shape will not be affected; only the texture will be updated to match the assigned body texture.</span>
     </label>
     <br>
     <label class="tooltip">
         <input type="checkbox" ng-model="settings.zEBD.displayAssetPackAlerts"/>
         <span>Display popup alerts from Asset Settings Packs</span>
-        <span class="tooltiptext">Some config files come with warnings. If enabled, these warnings will be shown as popups when entering the settings menu.</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Some config files come with warnings. If enabled, these warnings will be shown as popups when entering the settings menu.</span>
     </label>
     <br>
     <label class="tooltip">
         <input type="checkbox" ng-model="settings.zEBD.bGeneratePermutationLog"/>
         <span>Generate permutation assignment log</span>
-        <span class="tooltiptext">Generates a detailed log containing all generated permutations, what distribution rules they follow, and which NPCs they were assigned to. Located in zEBD\Logs\PermutationsGenerated.txt.</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Generates a detailed log containing all generated permutations, what distribution rules they follow, and which NPCs they were assigned to. Located in zEBD\Logs\PermutationsGenerated.txt.</span>
     </label>
     <br>
     <label class="tooltip">
         <input type="checkbox" ng-model="settings.zEBD.permutationBuildUpLogger"/>
         <span>Generate permutation buildup log</span>
-        <span class="tooltiptext">Generates a detailed log showing how subgroups in config files are combined step-by-step into permutations. Useful for config file development. Located in zEBD\Logs\PermutationBuildupLog.txt.</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Generates a detailed log showing how subgroups in config files are combined step-by-step into permutations. Useful for config file development. Located in zEBD\Logs\PermutationBuildupLog.txt.</span>
     </label>
     <br>
     <label class="tooltip">
         <input type="checkbox" ng-model="settings.zEBD.savePermutations"/>
         <span>Save generated permutations to file</span>
-        <span class="tooltiptext">Saves the permutations generated from the config files to a set of files located in zEBD\NPC Configuration. Files: GeneratedPermutations.json, GeneratedRecords.json, GeneratedRecordsMaxPriority.json, GeneratedLinkageList.json</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Saves the permutations generated from the config files to a set of files located in zEBD\NPC Configuration. Files: GeneratedPermutations.json, GeneratedRecords.json, GeneratedRecordsMaxPriority.json, GeneratedLinkageList.json</span>
     </label>
     <button ng-click="deleteSavedPermutations()">Delete Saved Permutations</button>
     <br>
     <label class="tooltip">
         <input type="checkbox" ng-model="settings.zEBD.loadPermutations"/>
         <span>Load generated permutations from file</span>
-        <span class="tooltiptext">If permutations generated by the previous zEBD run were saved, they will be loaded instead of being created from config files. This will save a considerable amount of patching time, but any updates to the config files since the save will be ignored.</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">If permutations generated by the previous zEBD run were saved, they will be loaded instead of being created from config files. This will save a considerable amount of patching time, but any updates to the config files since the save will be ignored.</span>
     </label>
     <br>
     <h3>Asset Pack Configuration Menu</h3>
@@ -300,16 +306,7 @@
             <input style="width:60%" type="text" ng-model="assetPackSetting.userAlert">
         </label>
 
-        <!--test-->
-        <div ng-repeat="linkageList in subgroupsForLinkageDisp[$index]">
-            Linked subgroup IDs for subgroups in {{assetPackSetting.subgroups[$index].id}}:
-            <div ng-repeat="subgroupID in linkageList">
-                {{subgroupID}}
-            </div>
-            <br>
-        </div>
-        <!-- end test -->
-        <display-subgroups ng-init="testOuter(settings.zEBD.bodyGenConfig.templateDescriptors, racesAndGroups)" data="assetPackSetting.subgroups" bgintegration = "settings.zEBD.bEnableBodyGenIntegration" bgdescriptors = "settings.zEBD.bodyGenConfig.templateDescriptors" racesAndGroups = "racesAndGroups" linkedSubgroupList = "subgroupsForLinkageDisp[$index]"></display-subgroups>
+        <display-subgroups data="assetPackSetting.subgroups" bgintegration = "settings.zEBD.bEnableBodyGenIntegration" bgdescriptors = "settings.zEBD.bodyGenConfig.templateDescriptors" racesandgroups = "racesAndGroups" btooltips = "settings.zEBD.btooltips"></display-subgroups>
         <button ng-click="addSubgroupTop($index)">Add New Subgroup</button>
 
         <button ng-click="saveAssetPackSetting(assetPackSetting)">Save</button>
@@ -327,23 +324,24 @@
     <label class="tooltip">
         <input type="checkbox" ng-model="settings.zEBD.changeNPCHeight"/>
         <span>Change NPC Record Height</span>
-        <span class="tooltiptext">Randomizes NPC heights to 1 +/- the bounds configured in the menu below.</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Randomizes NPC heights to 1 +/- the bounds configured in the menu below.</span>
     </label>
     <br>
     <label class="tooltip">
         <input type="checkbox" ng-model="settings.zEBD.changeRaceHeight"/>
         <span>Change Race Record Height</span>
-        <span class="tooltiptext">Changes base racial heights to the values configured in the menu below.</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Changes base racial heights to the values configured in the menu below.</span>
     </label>
     <br>
     <label class="tooltip">
         <input type = "checkbox" ng-model="settings.zEBD.changeNonDefaultHeight"/>
         <span>Overwrite Non-Default NPC Heights</span>
-        <span class="tooltiptext">Some NPCs already have a height that is not "1.000000". If unchecked, the height of such NPCs will not be altered."</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Some NPCs already have a height that is not "1.000000". If unchecked, the height of such NPCs will not be altered.</span>
     </label>
     <div>
-        <label>
+        <label class="tooltip">
             <span>Racial Height Presets:</span>
+            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Apply base racial heights from one of the selected presets.</span>
             <select ng-model="settings.zEBD.currentHeightPreset" ng-options="x.name for x in settings.zEBD.heightPresets"></select>
             <button ng-click="applyHeightPreset()">
                 Apply
@@ -645,7 +643,7 @@
     <br>
     <label class="tooltip">
         <button ng-click="loadNPCs()">Load NPCs from Mods</button>
-        <span class="tooltiptext">This can take a minute or so.</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">This can take a minute or so.</span>
     </label>
     <span>
         <select class="NPCselect" ng-model="currentNPC" ng-options="NPC.displayString for NPC in availableNPCs" size="5"></select>
@@ -675,7 +673,7 @@
         <label>Available NPCs</label>
         <label class="tooltip">
             <button ng-click="loadNPCs()">Load NPCs from Mods</button>
-            <span class="tooltiptext">This can take a minute or so.</span>
+            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">This can take a minute or so.</span>
         </label>
     </label>
     <span>
@@ -684,7 +682,7 @@
     <br>
     <label class = "tooltip">
         <button ng-click="addNPCtoBlockList(currentNPC)">Add Selected NPC to Block List</button>
-        <span class="tooltiptext">The selected NPC will be skipped for all modifications.</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">The selected NPC will be skipped for all modifications.</span>
     </label>
     <br>
     <label>
@@ -696,6 +694,6 @@
     <br>
     <label class = "tooltip">
         <button ng-click="addPluginToBlockList(currentPlugin)">Add Selected Plugin to Block List</button>
-        <span class="tooltiptext">NPCs that are affected by the selected plugin will be skipped for all modifications.</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">NPCs that are affected by the selected plugin will be skipped for all modifications.</span>
     </label>
 </section>
