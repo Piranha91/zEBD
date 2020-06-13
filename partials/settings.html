@@ -187,7 +187,7 @@
         </label>        
     </label>
     <div  ng-repeat="race in settings.zEBD.patchableRaces track by $index">
-        <select ng-model="settings.zEBD.patchableRaces[$index]" ng-options="rOption for rOption in availableRaces"></select>
+        <select ng-model="settings.zEBD.patchableRaces[$index]" ng-options="rOption for rOption in availableRaces" ng-change="updateAvailableRacesAndGroups()"></select>
         <button ng-click="removePatchableRace($index)">Remove</button>
     </div>
     <button ng-click="addPatchableRace()">Add New</button>
@@ -208,7 +208,7 @@
         <div ng-if="displayRGmembers[$index]">
             <ul>
                 <div ng-repeat="race in RG.entries track by $index">
-                    <select ng-model="RG.entries[$index]" ng-options="rOption for rOption in availableRaces"></select>
+                    <select ng-model="RG.entries[$index]" ng-options="rOption for rOption in availableRaces" ng-change="updateAvailableRacesAndGroups()"></select>
                     <button ng-click="removeRacefromGroupDef(RG, $index)">Remove</button>
                 </div>
             </ul>
@@ -300,7 +300,16 @@
             <input style="width:60%" type="text" ng-model="assetPackSetting.userAlert">
         </label>
 
-        <display-subgroups data="assetPackSetting.subgroups" bgintegration = "settings.zEBD.bEnableBodyGenIntegration" bgdescriptors = settings.zEBD.bodyGenConfig.templateDescriptors></display-subgroups>
+        <!--test-->
+        <div ng-repeat="linkageList in subgroupsForLinkageDisp[$index]">
+            Linked subgroup IDs for subgroups in {{assetPackSetting.subgroups[$index].id}}:
+            <div ng-repeat="subgroupID in linkageList">
+                {{subgroupID}}
+            </div>
+            <br>
+        </div>
+        <!-- end test -->
+        <display-subgroups ng-init="testOuter(settings.zEBD.bodyGenConfig.templateDescriptors, racesAndGroups)" data="assetPackSetting.subgroups" bgintegration = "settings.zEBD.bEnableBodyGenIntegration" bgdescriptors = "settings.zEBD.bodyGenConfig.templateDescriptors" racesAndGroups = "racesAndGroups" linkedSubgroupList = "subgroupsForLinkageDisp[$index]"></display-subgroups>
         <button ng-click="addSubgroupTop($index)">Add New Subgroup</button>
 
         <button ng-click="saveAssetPackSetting(assetPackSetting)">Save</button>
@@ -506,7 +515,7 @@
             </strong>
             <ul>
                 <div class="allowedRaces" ng-repeat="a in template.allowedRaces track by $index">
-                    <select ng-model="template.allowedRaces[$index]" ng-options="rOption for rOption in availableRaces"></select>
+                    <select ng-model="template.allowedRaces[$index]" ng-options="rOption for rOption in racesAndGroups"></select>
                     <button class="TDButton" ng-click="removeAllowedRaceBodyGen(template, $index)">Remove</button>
                 </div>
             </ul>
@@ -516,7 +525,7 @@
             </strong>
             <ul>
                 <div class="disallowedRaces" ng-repeat="a in template.disallowedRaces track by $index">
-                    <select ng-model="template.disallowedRaces[$index]" ng-options="rOption for rOption in availableRaces"></select>
+                    <select ng-model="template.disallowedRaces[$index]" ng-options="rOption for rOption in racesAndGroups"></select>
                     <button class="TDButton" ng-click="removeDisallowedRaceBodyGen(template, $index)">Remove</button>
                 </div>
             </ul>

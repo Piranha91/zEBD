@@ -17,7 +17,7 @@
 </label>
 
 <div ng-if="displaySubgroups" class="allInTD">
-    <div ng-repeat="subgroup in data">
+    <div ng-repeat="subgroup in data" ng-init="getCorrectLinkedSubgroupList(subgroup, linkedSubgroupList)"> <!--Why does linkedSubgroupList not exist?-->
         <section class="subgroup-section">
         {{subgroup.id}}: {{subgroup.name}} (Details <input ng-model="showDetails" type="checkbox">)
         <button class="TDButton" ng-click="removeSubgroup($index)">Remove</button>
@@ -59,10 +59,12 @@
 
             <strong>Allowed Races
                 <button class="TDButton" ng-click="addAllowedRace($index)">Add New</button>
+                <button class="TDButton" ng-click="testFunction(bgdescriptors, racesAndGroups)">TEST</button>
             </strong>
             <ul>
                 <div class="allowedRaces" ng-repeat="a in subgroup.allowedRaces track by $index">
-                    <input type="text" ng-model="subgroup.allowedRaces[$index]">
+                    <!--<input type="text" ng-model="subgroup.allowedRaces[$index]"> -->
+                    <select ng-model="subgroup.allowedRaces[$index]" ng-options="x for x in racesAndGroups"></select> <!--Why is racesAndGroups not populated?-->
                     <button class="TDButton" ng-click="removeAllowedRace(subgroup, $index)">Remove</button>
                 </div>
             </ul>
@@ -116,7 +118,8 @@
             </strong>
             <ul>
                 <div class="requiredSubgroups" ng-repeat="subgroupR in subgroup.requiredSubgroups track by $index">
-                    <input type="text" ng-model="subgroup.requiredSubgroups[$index]">
+                    <!--<input type="text" ng-model="subgroup.requiredSubgroups[$index]"> -->
+                    <select ng-model="subgroup.requiredSubgroups[$index]" ng-options="x for x in availableLinkedSubgroups"></select> <!--Why is availableLinkedSubgroups not populated?-->
                     <button class="TDButton" ng-click="removeRequiredSubgroup(subgroup, $index)">Remove</button>
                 </div>
             </ul>
@@ -175,7 +178,7 @@
 
             <button class="TDButton" ng-click="addSubgroup($index)">Add New Subgroup</button>
 
-            <display-subgroups ng-if="subgroup.subgroups.length" data="subgroup.subgroups" bgintegration = "bgintegration" bgdescriptors = "bgdescriptors"></display-subgroups>
+            <display-subgroups ng-if="subgroup.subgroups.length" data="subgroup.subgroups" bgintegration = "bgintegration" bgdescriptors = "bgdescriptors" availableRacesAndGroups = "availableRacesAndGroups"></display-subgroups>
         </div>
     </section>
     </div>

@@ -6,16 +6,19 @@
     "rootPlugin": "Dawnguard.esm",
     "race": "NordRace",
     "gender": "female",
-    "forcedAssetPack": "Bijin Skins 4K CBBE Director's Cut",
+    "forcedAssetPack": "Bijin Skins 4K CBBE Director's Cut (for BodyGen)",
     "forcedSubgroups": [
       {
-        "id": "BN.Y.D",
-        "description": "BN.Y.D: Default",
-        "topLevelSubgroup": "BN"
+        "id": "BN.Y.DC",
+        "description": "BN.Y.DC: Default Curvy",
+        "topLevelSubgroup": "BN",
+        "$$hashKey": "object:5505"
       }
     ],
     "forcedHeight": "1.000000",
-    "forcedBodyGenMorphs": [],
+    "forcedBodyGenMorphs": [
+      "NOR_Busty2_3560"
+    ],
     "displayString": "Serana (xx002B6C)",
     "$$hashKey": "object:9664"
   },
@@ -56,14 +59,12 @@
       {
         "id": "HD.H.D4",
         "description": "HD.H.D4: Geonox Stubbled",
-        "topLevelSubgroup": "HD",
-        "$$hashKey": "object:6344"
+        "topLevelSubgroup": "HD"
       },
       {
         "id": "BD.B1",
         "description": "BD.B1: B1 - Clean hairless",
-        "topLevelSubgroup": "BD",
-        "$$hashKey": "object:6413"
+        "topLevelSubgroup": "BD"
       }
     ],
     "forcedHeight": "1.000000",
@@ -78,7 +79,7 @@
     "rootPlugin": "Skyrim.esm",
     "race": "NordRace",
     "gender": "female",
-    "forcedAssetPack": "Bijin Skins 4K CBBE Director's Cut",
+    "forcedAssetPack": "Bijin Skins 4K CBBE Director's Cut (for BodyGen)",
     "forcedSubgroups": [
       {
         "id": "BN.M",
