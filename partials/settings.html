@@ -685,11 +685,11 @@
     <label class = "tooltip">
         <span>Show Template Descriptor List</span>
         <input type="checkbox" ng-model="displayTemplateDescriptors"/>
-        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">BodyGen Templates listed above can be assigned one or more of the descriptors below.</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">BodyGen Templates listed above can be assigned one or more of the descriptors below. The descriptor must be in the format "Category: Description".</span>
     </label>
     <div ng-if="displayTemplateDescriptors">
         <div class="templateDescriptors" ng-repeat="tD in settings.zEBD.bodyGenConfig.templateDescriptors track by $index" >
-            <input type="text" ng-model="settings.zEBD.bodyGenConfig.templateDescriptors[$index]">
+            <input type="text" ng-model="settings.zEBD.bodyGenConfig.templateDescriptors[$index]" ng-blur="validateTemplateDescriptorBodyGen($index)">
             <button class="TDButton" ng-click="removeTemplateDescriptorBodyGen($index)">Remove</button>
         </div>
         <button class="TDButton" ng-click="addTemplateDescriptorBodyGen()">Add New Template Descriptor</button>

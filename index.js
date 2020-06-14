@@ -182,7 +182,7 @@ ngapp.run(function(patcherService) {
 							{
 								if (patcherSettings.patchableRaces.includes(xelib.GetRefEditorID(NPClist[i], 'RNAM')))
 								{
-									NPC = PO.getNPCinfo(NPClist[i], $scope.consistencyAssignments, xelib);
+									NPC = PO.getNPCinfo(NPClist[i], [], xelib); // don't send consistency to avoid slowing down the loader. Consistency index is obtained individually per-NPC in the consistency-modifying $scope functions.
 									NPC.displayString = NPC.name + " | " + NPC.EDID + " | " + NPC.formID + " | " + NPC.race + " | " + NPC.masterRecordFile;
 									$scope.availableNPCs.push(NPC);
 								}
@@ -241,6 +241,8 @@ ngapp.run(function(patcherService) {
 							alert("No consistency file found.");
 							return;
 						}
+
+						currentNPC.consistencyIndex = findNPCAssignmentIndex($scope.consistencyAssignments, currentNPC);
 
 						if (currentNPC.consistencyIndex > -1)
 						{
@@ -595,6 +597,17 @@ ngapp.run(function(patcherService) {
 					{ 
 						patcherSettings.bodyGenConfig.templateDescriptors.push("");
 					};
+					
+					$scope.validateTemplateDescriptorBodyGen = function(index)
+					{
+						let split = patcherSettings.bodyGenConfig.templateDescriptors[index].split(":");
+						if (split.length !== 2)
+						{
+							alert("A descriptor must have the format \"Category: Description\". Please re-enter your descriptor.");
+							patcherSettings.bodyGenConfig.templateDescriptors[index] = "";
+						}
+					}
+
 					$scope.removeTemplateDescriptorBodyGen = function(arrayIndex)
 					{
 						patcherSettings.bodyGenConfig.templateDescriptors.splice(arrayIndex, 1);
@@ -1220,6 +1233,22 @@ function updateAvailableRacesAndGroups(races, groups)
 	}
 
 	return dispList;
+}
+
+function findNPCAssignmentIndex(consistencyRecords, NPCinfo)
+{
+    let index = -1;
+    let NPCsignature = NPCinfo.formID.substring(2, 9);
+
+    for (let i = 0; i < consistencyRecords.length; i++)
+    {
+        if (consistencyRecords[i].rootPlugin === NPCinfo.masterRecordFile && consistencyRecords[i].formIDSignature === NPCsignature)
+        {
+            index = i;
+            break;
+        }
+    }
+    return index;
 }
 
 ngapp.directive('displaySubgroups', function()
