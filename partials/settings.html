@@ -206,8 +206,8 @@
         </label>
         <button ng-click = "saveGroupDefs()">Save Group Definitions</button>
     </label>
-    <div class="bgTemplate" ng-repeat="RG in settings.zEBD.raceGroupDefinitions track by $index">
-        <input type="text" ng-model="settings.zEBD.raceGroupDefinitions[$index].name">
+    <div class="bgTemplate" ng-repeat="RG in raceGroupDefinitions track by $index">
+        <input type="text" ng-model="raceGroupDefinitions[$index].name">
         <input type="checkbox" ng-model="displayRGmembers[$index]"/>
         <span>Show members</span>
         <button ng-click = "removeGroupDef($index)">Remove</button>
@@ -318,7 +318,7 @@
     </label>
     <br>
     <h3>Asset Pack Configuration Menu</h3>
-    <div class="group" ng-repeat="assetPackSetting in settings.zEBD.assetPackSettings track by $index" id="per-config">
+    <div class="group" ng-repeat="assetPackSetting in assetPackSettings track by $index" id="per-config">
         <label>
             <span class="input-label">Group Name</span>
             <input style="width:60%" type="text" ng-model="assetPackSetting.groupName">
@@ -339,7 +339,7 @@
             <input style="width:60%" type="text" ng-model="assetPackSetting.userAlert">
         </label>
 
-        <display-subgroups data="assetPackSetting.subgroups" bgintegration = "settings.zEBD.bEnableBodyGenIntegration" bgdescriptors = "settings.zEBD.bodyGenConfig.templateDescriptors" racesandgroups = "racesAndGroups" btooltips = "settings.zEBD.btooltips"></display-subgroups>
+        <display-subgroups data="assetPackSetting.subgroups" bgintegration = "settings.zEBD.bEnableBodyGenIntegration" bgdescriptors = "bodyGenConfig.templateDescriptors" racesandgroups = "racesAndGroups" btooltips = "settings.zEBD.btooltips"></display-subgroups>
         <button ng-click="addSubgroupTop($index)">Add New Subgroup</button>
 
         <button ng-click="saveAssetPackSetting(assetPackSetting)">Save</button>
@@ -375,38 +375,36 @@
         <label class="tooltip">
             <span>Racial Height Presets:</span>
             <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Apply base racial heights from one of the selected presets.</span>
-            <select ng-model="settings.zEBD.currentHeightPreset" ng-options="x.name for x in settings.zEBD.heightPresets"></select>
-            <button ng-click="applyHeightPreset()">
-                Apply
-            </button>
         </label>
+        <select ng-model="heightGlobals.currentHeightPreset" ng-options="preset.name for preset in heightPresets"></select>
+        <button ng-click="applyHeightPreset()">Apply</button>
     </div>
 
     <div class="racial-settings" >   
-        <div class="racial-setting" ng-repeat="race in settings.zEBD.heightConfiguration track by $index">
+        <div class="racial-setting" ng-repeat="race in heightConfiguration track by $index">
             <label>
             <span>Race</span>
-            <select class = "raceTextInput" ng-model="settings.zEBD.heightConfiguration[$index].EDID" ng-options="rOption for rOption in availableRaces"></select>
+            <select class = "raceTextInput" ng-model="heightConfiguration[$index].EDID" ng-options="rOption for rOption in availableRaces"></select>
             </label>
             <label>
             <span>Distribution Mode</span>
-            <select ng-model= "settings.zEBD.heightConfiguration[$index].distMode" ng-options="x for x in heightDistOptions"></select>
+            <select ng-model= "heightConfiguration[$index].distMode" ng-options="x for x in heightDistOptions"></select>
             </label>
             <label>
             <span>Base Male Height</span>
-            <input class = "raceTextInput" type="text" ng-model="settings.zEBD.heightConfiguration[$index].heightMale" ng-change="validateHeightString(settings.zEBD.heightConfiguration[$index].heightMale)">
+            <input class = "raceTextInput" type="text" ng-model="heightConfiguration[$index].heightMale" ng-change="validateHeightString(heightConfiguration[$index].heightMale)">
             </label>
             <label>
             <span>Male Height +/-</span>
-            <input class = "raceTextInput" type="text" ng-model="settings.zEBD.heightConfiguration[$index].heightMaleRange" ng-change="validateHeightString(settings.zEBD.heightConfiguration[$index].heightMaleRange)">
+            <input class = "raceTextInput" type="text" ng-model="heightConfiguration[$index].heightMaleRange" ng-change="validateHeightString(heightConfiguration[$index].heightMaleRange)">
             </label>
             <label>
             <span>Base Female Height</span>
-            <input class = "raceTextInput" type="text" ng-model="settings.zEBD.heightConfiguration[$index].heightFemale" ng-change="validateHeightString(settings.zEBD.heightConfiguration[$index].heightFemale)">
+            <input class = "raceTextInput" type="text" ng-model="heightConfiguration[$index].heightFemale" ng-change="validateHeightString(heightConfiguration[$index].heightFemale)">
             </label>
             <label>
             <span>Female Height +/-</span>
-            <input class = "raceTextInput" type="text" ng-model="settings.zEBD.heightConfiguration[$index].heightFemaleRange" ng-change="validateHeightString(settings.zEBD.heightConfiguration[$index].heightFemaleRange)"> 
+            <input class = "raceTextInput" type="text" ng-model="heightConfiguration[$index].heightFemaleRange" ng-change="validateHeightString(heightConfiguration[$index].heightFemaleRange)"> 
             </label>
 
             <div class="remove-item" ng-click="removeHeightConfig($index)">
@@ -455,10 +453,10 @@
     </label>
 
     <div ng-if="displayMaleConfig">
-        <div class="bgTemplate" ng-repeat="maleAssignment in settings.zEBD.bodyGenConfig.racialSettingsMale" >
+        <div class="bgTemplate" ng-repeat="maleAssignment in bodyGenConfig.racialSettingsMale" >
             <label class = "tooltip">
                 <span>Race </span>
-                <select ng-model="settings.zEBD.bodyGenConfig.racialSettingsMale[$index].EDID" ng-options="rOption for rOption in availableRaces"></select>
+                <select ng-model="bodyGenConfig.racialSettingsMale[$index].EDID" ng-options="rOption for rOption in availableRaces"></select>
                 <button class="TDButton" ng-click="removeBodyGenMaleConfig($index)">Remove</button>
                 <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Race for which the morph groups below will be used.</span>
             </label>
@@ -491,10 +489,10 @@
     </div>
 
     <div ng-if="displayFemaleConfig">
-        <div class="bgTemplate" ng-repeat="femaleAssignment in settings.zEBD.bodyGenConfig.racialSettingsFemale" >
+        <div class="bgTemplate" ng-repeat="femaleAssignment in bodyGenConfig.racialSettingsFemale" >
             <label class = "tooltip">
                 <span>Race </span>
-                <select ng-model="settings.zEBD.bodyGenConfig.racialSettingsFemale[$index].EDID" ng-options="rOption for rOption in availableRaces"></select>
+                <select ng-model="bodyGenConfig.racialSettingsFemale[$index].EDID" ng-options="rOption for rOption in availableRaces"></select>
                 <button class="TDButton" ng-click="removeBodyGenFemaleConfig($index)">Remove</button>
                 <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Race for which the morph groups below will be used.</span>
             </label>
@@ -540,7 +538,7 @@
         <button class="TDButton" ng-click="selectBodyGenConfigFile()">Import a BodyGen zEBD Config File</button>
         <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Imports zEBD group assignments, morphs/rulesets, groups, and descriptors from a zEBD BodygenConfig.json file.</span>
     </label>
-    <div class="bgTemplate" ng-repeat="template in settings.zEBD.bodyGenConfig.templates track by $index" ng-if="displayTemplates">
+    <div class="bgTemplate" ng-repeat="template in bodyGenConfig.templates track by $index" ng-if="displayTemplates">
         <label>
             <span>{{template.name}} </span>
             (Details<input type="checkbox" ng-model="BodyGenTemplateDisplay[$index].showDetails"/>)
@@ -549,7 +547,7 @@
         <section ng-if="BodyGenTemplateDisplay[$index].showDetails">
             <label class = "tooltip">
                 <span>Gender</span>
-                <select ng-model="settings.zEBD.bodyGenConfig.templates[$index].gender" ng-options="x for x in genderOptions"></select>
+                <select ng-model="bodyGenConfig.templates[$index].gender" ng-options="x for x in genderOptions"></select>
                 <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Gender to which this morph can be applied.</span>
             </label>
             <br>
@@ -558,7 +556,7 @@
                 <span>Morph</span>
                 <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Slider settings for this morph.</span>
             </label>
-            <textarea class="inputLarge" ng-model="settings.zEBD.bodyGenConfig.templates[$index].params"></textarea>
+            <textarea class="inputLarge" ng-model="bodyGenConfig.templates[$index].params"></textarea>
 
             <br>
             <label class = "tooltip">
@@ -569,7 +567,7 @@
             </label>
             <ul>
                 <div class="belongGroups" ng-repeat="BG in template.groups track by $index">
-                    <select ng-model="template.groups[$index]" ng-options="tg for tg in settings.zEBD.bodyGenConfig.templateGroups"></select>
+                    <select ng-model="template.groups[$index]" ng-options="tg for tg in bodyGenConfig.templateGroups"></select>
                     <button class="TDButton" ng-click="removeBelongGroupBodyGen(template, $index)">Remove</button>
                 </div>
             </ul>
@@ -583,7 +581,7 @@
             </label>
             <ul>
                 <div class="Descriptors" ng-repeat="desc in template.descriptors track by $index">
-                    <select ng-model="template.descriptors[$index]" ng-options="td for td in settings.zEBD.bodyGenConfig.templateDescriptors"></select>
+                    <select ng-model="template.descriptors[$index]" ng-options="td for td in bodyGenConfig.templateDescriptors"></select>
                     <button class="TDButton" ng-click="removeBodyGenDescriptor(template, $index)">Remove</button>
                 </div>
             </ul>
@@ -674,8 +672,8 @@
         <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">BodyGen Templates listed above can be assigned to one or more of the groups below.</span>
     </label>
     <div ng-if="displayTemplateGroups">
-        <div class="templateGroups" ng-repeat="tG in settings.zEBD.bodyGenConfig.templateGroups track by $index" >
-            <input type="text" ng-model="settings.zEBD.bodyGenConfig.templateGroups[$index]" ng-change="updateBodyGenItemDisplay()">
+        <div class="templateGroups" ng-repeat="tG in bodyGenConfig.templateGroups track by $index" >
+            <input type="text" ng-model="bodyGenConfig.templateGroups[$index]" ng-change="updateBodyGenItemDisplay()">
             <button class="TDButton" ng-click="removeTemplateGroupBodyGen($index)">Remove</button>
         </div>
         <button class="TDButton" ng-click="addTemplateGroupBodyGen()">Add New Template Group</button>
@@ -688,8 +686,8 @@
         <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">BodyGen Templates listed above can be assigned one or more of the descriptors below. The descriptor must be in the format "Category: Description".</span>
     </label>
     <div ng-if="displayTemplateDescriptors">
-        <div class="templateDescriptors" ng-repeat="tD in settings.zEBD.bodyGenConfig.templateDescriptors track by $index" >
-            <input type="text" ng-model="settings.zEBD.bodyGenConfig.templateDescriptors[$index]" ng-blur="validateTemplateDescriptorBodyGen($index)">
+        <div class="templateDescriptors" ng-repeat="tD in bodyGenConfig.templateDescriptors track by $index" >
+            <input type="text" ng-model="bodyGenConfig.templateDescriptors[$index]" ng-blur="validateTemplateDescriptorBodyGen($index)">
             <button class="TDButton" ng-click="removeTemplateDescriptorBodyGen($index)">Remove</button>
         </div>
         <button class="TDButton" ng-click="addTemplateDescriptorBodyGen()">Add New Template Descriptor</button>
@@ -706,7 +704,7 @@
     <label>
         <span>Forced NPC Settings: </span>
         <span>
-            <select class="forceNPCselect" ng-model="currentForcedNPC" ng-options="NPC.displayString for NPC in settings.zEBD.forcedNPCAssignments" ng-change="choosePacksForNPC(currentForcedNPC); chooseSubgroupsForPack(currentForcedNPC.forcedAssetPack, currentForcedNPC.forcedSubgroups); chooseBodyGenForCurrentNPC(currentForcedNPC)"></select>
+            <select class="forceNPCselect" ng-model="currentForcedNPC" ng-options="NPC.displayString for NPC in forcedNPCAssignments" ng-change="choosePacksForNPC(currentForcedNPC); chooseSubgroupsForPack(currentForcedNPC.forcedAssetPack, currentForcedNPC.forcedSubgroups); chooseBodyGenForCurrentNPC(currentForcedNPC)"></select>
         </span>
     </label>
 
@@ -772,12 +770,12 @@
     </label>
     <br>
     <h3>Blocked NPCs:</h3>
-    <div ng-repeat="NPC in settings.zEBD.blockList.blockedNPCs track by $index">
+    <div ng-repeat="NPC in blockList.blockedNPCs track by $index">
         {{NPC.displayString}} <button ng-click="removeBlockedNPC($index)">Remove</button>
     </div>
     <br>
     <h3>Blocked Plugins:</h3>
-    <div ng-repeat="plugin in settings.zEBD.blockList.blockedPlugins track by $index">
+    <div ng-repeat="plugin in blockList.blockedPlugins track by $index">
         {{plugin}} <button ng-click="removeBlockedPlugin($index)">Remove</button>
     </div>
     <br>

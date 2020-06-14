@@ -19,47 +19,44 @@ ngapp.run(function(patcherService) {
 				controller: function ($scope)
 				{
 					let patcherSettings = $scope.settings.zEBD;  //$scope.anything becomes available as "anything" in the html file
-					patcherSettings.assetPackSettings = IO.loadAssetPackSettings(modulePath, patcherSettings.displayAssetPackAlerts, [], false, true, false);
-					patcherSettings.raceGroupDefinitions = IO.loadRestrictionGroupDefs(modulePath, patcherSettings.displayAssetPackAlerts);
-					patcherSettings.heightPresets = IO.loadHeightPresets(modulePath);
-					patcherSettings.heightConfiguration = IO.loadHeightConfiguration(modulePath);
-					patcherSettings.bodyGenConfig = IO.loadBodyGenConfig(modulePath) // first load the patcher's main BodyGen config file
-					IO.loadExtraBodyGenConfigs(modulePath, 11); // next import other exported config files if they exist
-					IO.loadNewBodyGenTemplates(modulePath, patcherSettings.bodyGenConfig.templates); // finally import BodyGen presets in .ini format if they exist
+					$scope.assetPackSettings = IO.loadAssetPackSettings(modulePath, patcherSettings.displayAssetPackAlerts, [], false, true, false);
+					$scope.raceGroupDefinitions = IO.loadRestrictionGroupDefs(modulePath, patcherSettings.displayAssetPackAlerts);
+					$scope.heightPresets = IO.loadHeightPresets(modulePath);
+					$scope.heightConfiguration = IO.loadHeightConfiguration(modulePath);
+					$scope.bodyGenConfig = IO.loadBodyGenConfig(modulePath);
 					$scope.trimPaths = IO.loadTrimPaths(modulePath);
 					$scope.LinkedNPCNameExclusions = IO.loadLinkedNPCNameExclusions(modulePath);
 					
-					$scope.BodyGenItemDisplay = updateBodyGenItemDisplay(patcherSettings.bodyGenConfig);
-					$scope.allAssetPacks = generateAvailableAssetPacks(patcherSettings.assetPackSettings);
+					$scope.BodyGenItemDisplay = updateBodyGenItemDisplay($scope.bodyGenConfig);
+					$scope.allAssetPacks = generateAvailableAssetPacks($scope.assetPackSettings);
 					$scope.availableAssetPacks = [];
 					$scope.availableAssetPackNames = [];
 					$scope.availableSubgroups = [];
 					$scope.loadedPlugins = xelib.GetLoadedFileNames(true);
 					$scope.consistencyAssignments = IO.loadConsistency(modulePath, true);
 
-					patcherSettings.forcedNPCAssignments = IO.loadForceList(modulePath);
-					patcherSettings.blockList = IO.loadBlockList(modulePath);
+					$scope.forcedNPCAssignments = IO.loadForceList(modulePath);
+					$scope.blockList = IO.loadBlockList(modulePath);
 
 					if (patcherSettings.bVerboseMode === true)
 					{
 						IO.logVerbose("", true);
 					};
 
-					$scope.currentSettingsDisplay = {};
 					$scope.genderOptions = ["male", "female"];
 					$scope.heightDistOptions = ["uniform", "bell curve"];
-					$scope.heightGlobals = { distModeGlobal: 'uniform', heightRangeGlobal: "0.020000" };
+					$scope.heightGlobals = { distModeGlobal: 'uniform', heightRangeGlobal: "0.020000", currentHeightPreset: undefined };
 					$scope.bodyGenBool = ["AND", "OR"];
 					$scope.availableNPCs = fh.loadJsonFile(modulePath + "\\zEBD assets\\Base NPC List\\NPClist.json");
 					$scope.currentNPC = {};
 					$scope.currentPlugin = "";
 					$scope.availableRaces = patcherSettings.patchableRaces.slice(); // shallow copy intentional
-					$scope.displayRGmembers = initializeRGmembers(patcherSettings.raceGroupDefinitions);
-					$scope.racesAndGroups = updateAvailableRacesAndGroups($scope.availableRaces, patcherSettings.raceGroupDefinitions);
+					$scope.displayRGmembers = initializeRGmembers($scope.raceGroupDefinitions);
+					$scope.racesAndGroups = updateAvailableRacesAndGroups($scope.availableRaces, $scope.raceGroupDefinitions);
 
 					$scope.currentSettingsDisplay = "main";
 
-					$scope.categorizedMorphs = BGI.categorizeMorphs(patcherSettings.bodyGenConfig, patcherSettings.raceGroupDefinitions);
+					$scope.categorizedMorphs = BGI.categorizeMorphs($scope.bodyGenConfig, $scope.raceGroupDefinitions);
 
 					// patchable races
 					$scope.removePatchableRace = function(index)
@@ -88,14 +85,14 @@ ngapp.run(function(patcherService) {
 
 					$scope.updateAvailableRacesAndGroups = function()
 					{
-						$scope.racesAndGroups = updateAvailableRacesAndGroups($scope.availableRaces, patcherSettings.raceGroupDefinitions);
+						$scope.racesAndGroups = updateAvailableRacesAndGroups($scope.availableRaces, $scope.raceGroupDefinitions);
 					}
 					//
 
 					// group definitions
 					$scope.addRaceToGroup = function(index)
 					{
-						patcherSettings.raceGroupDefinitions[index].entries.push("");
+						$scope.raceGroupDefinitions[index].entries.push("");
 					};
 
 					$scope.addNewGroupDef = function()
@@ -103,12 +100,12 @@ ngapp.run(function(patcherService) {
 						let obj = {};
 						obj.name = "";
 						obj.entries = [];
-						patcherSettings.raceGroupDefinitions.push(obj);
+						$scope.raceGroupDefinitions.push(obj);
 					};
 					$scope.removeGroupDef = function(index)
 					{
-						patcherSettings.raceGroupDefinitions.splice(index, 1);
-						$scope.racesAndGroups = updateAvailableRacesAndGroups($scope.availableRaces, patcherSettings.raceGroupDefinitions);
+						$scope.raceGroupDefinitions.splice(index, 1);
+						$scope.racesAndGroups = updateAvailableRacesAndGroups($scope.availableRaces, $scope.raceGroupDefinitions);
 					};
 
 					$scope.removeRacefromGroupDef = function(groupDef, index)
@@ -118,7 +115,7 @@ ngapp.run(function(patcherService) {
 
 					$scope.saveGroupDefs = function()
 					{
-						IO.saveRestrictionGroupDefs(patcherSettings.raceGroupDefinitions);
+						IO.saveRestrictionGroupDefs($scope.raceGroupDefinitions);
 					};
 					
 					//
@@ -156,7 +153,7 @@ ngapp.run(function(patcherService) {
 					// force list
 					$scope.saveForceList = function()
 					{
-						IO.saveForceList(modulePath, patcherSettings.forcedNPCAssignments);
+						IO.saveForceList(modulePath, $scope.forcedNPCAssignments);
 					};
 
 					$scope.loadNPCs = function()
@@ -207,10 +204,10 @@ ngapp.run(function(patcherService) {
 						obj.displayString = obj.name + " (" + obj.formID + ")";
 
 						let bFound = false;
-						for (let i = 0; i < patcherSettings.forcedNPCAssignments.length; i++)
+						for (let i = 0; i < $scope.forcedNPCAssignments.length; i++)
 						{
-							let matchedFormID = (patcherSettings.forcedNPCAssignments[i].formID === obj.formID);
-							let matchedPlugin = (patcherSettings.forcedNPCAssignments[i].rootPlugin === obj.rootPlugin);
+							let matchedFormID = ($scope.forcedNPCAssignments[i].formID === obj.formID);
+							let matchedPlugin = ($scope.forcedNPCAssignments[i].rootPlugin === obj.rootPlugin);
 							if (matchedFormID && matchedPlugin)
 							{
 								bFound = true;
@@ -219,17 +216,17 @@ ngapp.run(function(patcherService) {
 						}
 						if (bFound === false)
 						{
-							patcherSettings.forcedNPCAssignments.push(obj);
+							$scope.forcedNPCAssignments.push(obj);
 						}
 					};
 
 					$scope.removeNPCfromForceList = function(formID, rootPlugin)
 					{
-						for (let i = 0; i < patcherSettings.forcedNPCAssignments.length; i++)
+						for (let i = 0; i < $scope.forcedNPCAssignments.length; i++)
 						{
-							if (patcherSettings.forcedNPCAssignments[i].formID === formID && patcherSettings.forcedNPCAssignments[i].rootPlugin === rootPlugin)
+							if ($scope.forcedNPCAssignments[i].formID === formID && $scope.forcedNPCAssignments[i].rootPlugin === rootPlugin)
 							{
-								patcherSettings.forcedNPCAssignments.splice(i, 1);
+								$scope.forcedNPCAssignments.splice(i, 1);
 							}
 						}
 					};
@@ -373,7 +370,7 @@ ngapp.run(function(patcherService) {
 					// FUNCTIONS FOR CONFIG FILES
 					$scope.addSubgroupTop = function (index)
 					{
-						patcherSettings.assetPackSettings[index].subgroups.push({
+						$scope.assetPackSettings[index].subgroups.push({
 							id: 'defaultId',
 							enabled: true,
 							distributionEnabled: true,
@@ -397,7 +394,7 @@ ngapp.run(function(patcherService) {
 					$scope.saveAssetPackSetting = function (packSetting)
 					{
 						let pathWarnings = [];
-						let bParsedSuccessfully = IO.validatePackSettings(packSetting, patcherSettings, true, pathWarnings, []);
+						let bParsedSuccessfully = IO.validatePackSettings(packSetting, true, pathWarnings, []);
 						IO.warnUserAboutPaths(pathWarnings);
 
 						if (bParsedSuccessfully === true)
@@ -414,11 +411,11 @@ ngapp.run(function(patcherService) {
 					{
 						let pathWarnings = [];
 						let bParsedSuccessfully = true;
-						for (let i = 0; i < patcherSettings.assetPackSettings.length; i++)
+						for (let i = 0; i < $scope.assetPackSettings.length; i++)
 						{
-							if (IO.validatePackSettings(patcherSettings.assetPackSettings[i], patcherSettings, true, pathWarnings, []) === false)
+							if (IO.validatePackSettings($scope.assetPackSettings[i], true, pathWarnings, []) === false)
 							{
-								alert("There is a problem with settings file " + patcherSettings.assetPackSettings[i].groupName + ". Please see Logs\\zEBDerrors.txt");
+								alert("There is a problem with settings file " + $scope.assetPackSettings[i].groupName + ". Please see Logs\\zEBDerrors.txt");
 								bParsedSuccessfully = false;
 							}
 						}
@@ -438,7 +435,7 @@ ngapp.run(function(patcherService) {
 						newSettings.displayAlerts = true;
 						newSettings.userAlert = "";
 						newSettings.subgroups = [];
-						patcherSettings.assetPackSettings.push(newSettings);
+						$scope.assetPackSettings.push(newSettings);
 					};
 
 					$scope.clearConsistency = function()
@@ -457,25 +454,29 @@ ngapp.run(function(patcherService) {
 					// FUNCTIONS FOR HEIGHT CONFIGURATION
 					$scope.saveHeightConfig = function()
 					{
-						IO.saveHeightConfiguration(modulePath, patcherSettings.heightConfiguration);
+						IO.saveHeightConfiguration(modulePath, $scope.heightConfiguration);
 					};
 
 					$scope.applyHeightPreset = function(overridePresets)
 					{
-						let {currentHeightPreset, heightConfiguration} = patcherSettings;
-						let presets = currentHeightPreset.presets;
+						let presets;  
+
 						if (overridePresets !== undefined)
 						{
 							presets = overridePresets;
+						}
+						else
+						{
+							presets = $scope.heightGlobals.currentHeightPreset.presets;
 						}
 
 						if (!presets) return;
 						for (let i = 0; i < presets.length; i++)
 						{
 							let preset = presets[i];
-							for (let j = 0; j < heightConfiguration.length; j++)
+							for (let j = 0; j < $scope.heightConfiguration.length; j++)
 							{
-								let heightConfig = heightConfiguration[j];
+								let heightConfig = $scope.heightConfiguration[j];
 								if (preset.EDID === heightConfig.EDID)
 								{
 									heightConfig.heightMale = preset["Male Height"];
@@ -488,7 +489,7 @@ ngapp.run(function(patcherService) {
 					
 					$scope.removeHeightConfig = function(index)
 					{
-						patcherSettings.heightConfiguration.splice(index, 1);
+						$scope.heightConfiguration.splice(index, 1);
 					};
 
 					$scope.addHeightConfig = function()
@@ -500,7 +501,7 @@ ngapp.run(function(patcherService) {
 						newPreset.heightMaleRange = "0.020000";
 						newPreset.heightFemaleRange = "0.020000";
 						newPreset.distMode = "uniform";
-						patcherSettings.heightConfiguration.push(newPreset);
+						$scope.heightConfiguration.push(newPreset);
 					};
 
 					$scope.applyHeightsFromPlugins = function()
@@ -515,25 +516,23 @@ ngapp.run(function(patcherService) {
 							newRace["Female Height"]= xelib.GetValue(allRaces[i], "DATA\\Female Height");
 							newPreset.push(newRace);
 						}
-						this.applyHeightPreset(newPreset, patcherSettings.heightConfiguration);
+						this.applyHeightPreset(newPreset, $scope.heightConfiguration);
 					};
 
 					$scope.applyGlobalHeightRange = function()
 					{
-						let {heightConfiguration} = patcherSettings;
-						for (let i = 0; i < heightConfiguration.length; i++)
+						for (let i = 0; i < $scope.heightConfiguration.length; i++)
 						{
-							heightConfiguration[i].heightMaleRange = $scope.heightGlobals.heightRangeGlobal;
-							heightConfiguration[i].heightFemaleRange = $scope.heightGlobals.heightRangeGlobal;
+							$scope.heightConfiguration[i].heightMaleRange = $scope.heightGlobals.heightRangeGlobal;
+							$scope.heightConfiguration[i].heightFemaleRange = $scope.heightGlobals.heightRangeGlobal;
 						}
 					};
 
 					$scope.applyGlobalDistMode = function()
 					{
-						let {heightConfiguration} = patcherSettings;
-						for (let i = 0; i < heightConfiguration.length; i++)
+						for (let i = 0; i < $scope.heightConfiguration.length; i++)
 						{
-							heightConfiguration[i].distMode = $scope.heightGlobals.distModeGlobal;
+							$scope.heightConfiguration[i].distMode = $scope.heightGlobals.distModeGlobal;
 						}
 					};
 					
@@ -546,39 +545,39 @@ ngapp.run(function(patcherService) {
 					};
 
 					// FUNCTIONS FOR BODYGEN INTEGRATION
-					$scope.saveBodyGenConfig = function() { IO.saveBodyGenConfig(patcherSettings.bodyGenConfig); };
+					$scope.saveBodyGenConfig = function() { IO.saveBodyGenConfig($scope.bodyGenConfig); };
 
-					$scope.addAllowedRaceBodyGen = function (index) { patcherSettings.bodyGenConfig.templates[index].allowedRaces.push(""); };
+					$scope.addAllowedRaceBodyGen = function (index) { $scope.bodyGenConfig.templates[index].allowedRaces.push(""); };
 					$scope.removeAllowedRaceBodyGen = function(template, arrayIndex)
 					{
 						template.allowedRaces.splice(arrayIndex, 1);
 					};
 
-					$scope.addDisallowedRaceBodyGen = function (index) { patcherSettings.bodyGenConfig.templates[index].disallowedRaces.push(""); };
+					$scope.addDisallowedRaceBodyGen = function (index) { $scope.bodyGenConfig.templates[index].disallowedRaces.push(""); };
 					$scope.removeDisallowedRaceBodyGen = function(template, arrayIndex)
 					{
 						template.disallowedRaces.splice(arrayIndex, 1);
 					};
 
-					$scope.addAllowedAttributeBodyGen = function (index) { patcherSettings.bodyGenConfig.templates[index].allowedAttributes.push(["", ""]); };
+					$scope.addAllowedAttributeBodyGen = function (index) { $scope.bodyGenConfig.templates[index].allowedAttributes.push(["", ""]); };
 					$scope.removeAllowedAttributeBodyGen = function(template, arrayIndex)
 					{
 						template.allowedAttributes.splice(arrayIndex, 1);
 					};
 
-					$scope.addDisallowedAttributeBodyGen = function (index) { patcherSettings.bodyGenConfig.templates[index].disallowedAttributes.push(["",""]); };
+					$scope.addDisallowedAttributeBodyGen = function (index) { $scope.bodyGenConfig.templates[index].disallowedAttributes.push(["",""]); };
 					$scope.removeDisallowedAttributeBodyGen = function(template, arrayIndex)
 					{
 						template.disallowedAttributes.splice(arrayIndex, 1);
 					};
 
-					$scope.addForceIfAttributeBodyGen = function (index) { patcherSettings.bodyGenConfig.templates[index].forceIfAttributes.push(["", ""]); };
+					$scope.addForceIfAttributeBodyGen = function (index) { $scope.bodyGenConfig.templates[index].forceIfAttributes.push(["", ""]); };
 					$scope.removeForceIfAttributeBodyGen = function(template, arrayIndex)
 					{
 						template.forceIfAttributes.splice(arrayIndex, 1);
 					};
 
-					$scope.addBelongGroupBodyGen = function (index) { patcherSettings.bodyGenConfig.templates[index].groups.push(""); };
+					$scope.addBelongGroupBodyGen = function (index) { $scope.bodyGenConfig.templates[index].groups.push(""); };
 					$scope.removeBelongGroupBodyGen = function(template, arrayIndex)
 					{
 						template.groups.splice(arrayIndex, 1);
@@ -586,31 +585,31 @@ ngapp.run(function(patcherService) {
 
 					$scope.addTemplateGroupBodyGen = function () 
 					{ 
-						patcherSettings.bodyGenConfig.templateGroups.push("");
+						$scope.bodyGenConfig.templateGroups.push("");
 					};
 					$scope.removeTemplateGroupBodyGen = function(arrayIndex)
 					{
-						patcherSettings.bodyGenConfig.templateGroups.splice(arrayIndex, 1);
+						$scope.bodyGenConfig.templateGroups.splice(arrayIndex, 1);
 					};
 
 					$scope.addTemplateDescriptorBodyGen = function () 
 					{ 
-						patcherSettings.bodyGenConfig.templateDescriptors.push("");
+						$scope.bodyGenConfig.templateDescriptors.push("");
 					};
 					
 					$scope.validateTemplateDescriptorBodyGen = function(index)
 					{
-						let split = patcherSettings.bodyGenConfig.templateDescriptors[index].split(":");
+						let split = $scope.bodyGenConfig.templateDescriptors[index].split(":");
 						if (split.length !== 2)
 						{
 							alert("A descriptor must have the format \"Category: Description\". Please re-enter your descriptor.");
-							patcherSettings.bodyGenConfig.templateDescriptors[index] = "";
+							$scope.bodyGenConfig.templateDescriptors[index] = "";
 						}
 					}
 
 					$scope.removeTemplateDescriptorBodyGen = function(arrayIndex)
 					{
-						patcherSettings.bodyGenConfig.templateDescriptors.splice(arrayIndex, 1);
+						$scope.bodyGenConfig.templateDescriptors.splice(arrayIndex, 1);
 					};
 
 					$scope.addBodyGenItem = function(combination) { combination.members.push("") };
@@ -626,7 +625,7 @@ ngapp.run(function(patcherService) {
 						RGconfig.combinations.splice(index, 1); 
 					};
 
-					$scope.addBodyGenDescriptor = function (index) { patcherSettings.bodyGenConfig.templates[index].descriptors.push(""); };
+					$scope.addBodyGenDescriptor = function (index) { $scope.bodyGenConfig.templates[index].descriptors.push(""); };
 					$scope.removeBodyGenDescriptor = function(template, arrayIndex)
 					{
 						template.descriptors.splice(arrayIndex, 1);
@@ -634,7 +633,7 @@ ngapp.run(function(patcherService) {
 
 					$scope.updateBodyGenItemDisplay = function()
 					{
-						$scope.BodyGenItemDisplay = updateBodyGenItemDisplay(patcherSettings.bodyGenConfig);
+						$scope.BodyGenItemDisplay = updateBodyGenItemDisplay($scope.bodyGenConfig);
 					};
 
 					$scope.addBodyGenFemaleConfig = function()
@@ -642,12 +641,12 @@ ngapp.run(function(patcherService) {
 						newcfg = {};
 						newcfg.EDID = "";
 						newcfg.combinations = [];
-						patcherSettings.bodyGenConfig.racialSettingsFemale.push(newcfg);
+						$scope.bodyGenConfig.racialSettingsFemale.push(newcfg);
 					};
 
 					$scope.removeBodyGenFemaleConfig = function(index)
 					{
-						patcherSettings.bodyGenConfig.racialSettingsFemale.splice(index, 1);
+						$scope.bodyGenConfig.racialSettingsFemale.splice(index, 1);
 					};
 
 					$scope.addBodyGenMaleConfig = function()
@@ -655,12 +654,12 @@ ngapp.run(function(patcherService) {
 						newcfg = {};
 						newcfg.EDID = "";
 						newcfg.combinations = [];
-						patcherSettings.bodyGenConfig.racialSettingsMale.push(newcfg);
+						$scope.bodyGenConfig.racialSettingsMale.push(newcfg);
 					};
 
 					$scope.removeBodyGenMaleConfig = function(index)
 					{
-						patcherSettings.bodyGenConfig.racialSettingsMale.splice(index, 1);
+						$scope.bodyGenConfig.racialSettingsMale.splice(index, 1);
 					};
 
 					$scope.setRaceMenuConfig = function()
@@ -671,12 +670,12 @@ ngapp.run(function(patcherService) {
 					$scope.selectBodyGenTemplateFile = function()
 					{
 						let selected = fh.selectFile("BodyGen Templates", modulePath, [{ name: 'INI files', extensions: ['ini'] }]);
-						IO.loadSelectedBodyGenTemplate(selected, patcherSettings.bodyGenConfig.templates);
+						IO.loadSelectedBodyGenTemplate(selected, $scope.bodyGenConfig.templates);
 					};
 					$scope.selectBodyGenConfigFile = function()
 					{
 						let selected = fh.selectFile("BodyGen Configurations", modulePath, [{ name: 'JSON files', extensions: ['json'] }]);
-						IO.loadSelectedBodyGenConfig(selected, patcherSettings.bodyGenConfig);
+						IO.loadSelectedBodyGenConfig(selected, $scope.bodyGenConfig);
 					};
 
 					$scope.addNPCtoBlockList = function(currentNPC)
@@ -690,10 +689,10 @@ ngapp.run(function(patcherService) {
 						obj.displayString = obj.name + " (" + obj.formID + ") | " + obj.rootPlugin;
 
 						let bFound = false;
-						for (let i = 0; i < patcherSettings.blockList.blockedNPCs.length; i++)
+						for (let i = 0; i < $scope.blockList.blockedNPCs.length; i++)
 						{
-							let matchedFormID = (patcherSettings.blockList.blockedNPCs[i].formID === obj.formID);
-							let matchedPlugin = (patcherSettings.blockList.blockedNPCs[i].rootPlugin === obj.rootPlugin);
+							let matchedFormID = ($scope.blockList.blockedNPCs[i].formID === obj.formID);
+							let matchedPlugin = ($scope.blockList.blockedNPCs[i].rootPlugin === obj.rootPlugin);
 							if (matchedFormID && matchedPlugin)
 							{
 								bFound = true;
@@ -702,28 +701,28 @@ ngapp.run(function(patcherService) {
 						}
 						if (bFound === false)
 						{
-							patcherSettings.blockList.blockedNPCs.push(obj);
+							$scope.blockList.blockedNPCs.push(obj);
 						}
 					};
 
 					$scope.removeBlockedNPC = function(index)
 					{
-						patcherSettings.blockList.blockedNPCs.splice(index, 1);
+						$scope.blockList.blockedNPCs.splice(index, 1);
 					};
 
 					$scope.addPluginToBlockList = function(plugin)
 					{
-						patcherSettings.blockList.blockedPlugins.push(plugin);
+						$scope.blockList.blockedPlugins.push(plugin);
 					};
 
 					$scope.removeBlockedPlugin = function(index)
 					{
-						patcherSettings.blockList.blockedPlugins.splice(index, 1);
+						$scope.blockList.blockedPlugins.splice(index, 1);
 					};
 
 					$scope.saveBlockList = function()
 					{
-						IO.saveBlockList(modulePath, patcherSettings.blockList);
+						IO.saveBlockList(modulePath, $scope.blockList);
 					};
 				},
 
@@ -742,7 +741,6 @@ ngapp.run(function(patcherService) {
 						bEnableConsistency: true,
 						bLinkNPCsWithSameName: true,
 						displayAssetPackAlerts: true,
-						resourcePackSettingsArray: [],
 						patchFileName: 'zEBD.esp',
 						bVerboseMode: false,
 						bAbortIfPathWarnings: true,
@@ -751,12 +749,9 @@ ngapp.run(function(patcherService) {
 						savePermutations: false,
 						loadPermutations: false,
 						bGeneratePermutationLog: true,
-						heightPresets: [],
-						heightConfiguration: [],
-						changeNPCHeight: false,
-						changeRaceHeight: false,
+						changeNPCHeight: true,
+						changeRaceHeight: true,
 						changeNonDefaultHeight: true,
-						currentHeightPreset: "Skyrim Default",
 						bEnableBodyGenIntegration: false,
 						patchableRaces: ["NordRace", "BretonRace", "DarkElfRace", "HighElfRace", "ImperialRace", "OrcRace", "RedguardRace", "WoodElfRace", "ElderRace", "NordRaceVampire", "BretonRaceVampire", "DarkElfRaceVampire", "HighElfRaceVampire", "ImperialRaceVampire", "OrcRaceVampire", "RedguardRaceVampire", "WoodElfRaceVampire", "ElderRaceVampire", "SnowElfRace", "DA13AfflictedRace", "KhajiitRace", "KhajiitRaceVampire", "ArgonianRace", "ArgonianRaceVampire"]
 					}
@@ -817,11 +812,15 @@ ngapp.run(function(patcherService) {
 						// load info from JSON
 						helpers.logMessage("Loading info from JSON settings files");
 						locals.userKeywords = [];
-						settings.raceGroupDefinitions = IO.loadRestrictionGroupDefs(modulePath, settings.displayAssetPackAlerts);
-						settings.assetPackSettings = IO.loadAssetPackSettings(modulePath, settings.displayAssetPackAlerts, locals.userKeywords, true, true, settings.bAbortIfPathWarnings);
-						settings.recordTemplates = IO.loadRecordTemplates(modulePath, settings.raceGroupDefinitions);
+						locals.raceGroupDefinitions = IO.loadRestrictionGroupDefs(modulePath, settings.displayAssetPackAlerts);
+						locals.assetPackSettings = IO.loadAssetPackSettings(modulePath, settings.displayAssetPackAlerts, locals.userKeywords, true, true, settings.bAbortIfPathWarnings);
+						locals.recordTemplates = IO.loadRecordTemplates(modulePath, locals.raceGroupDefinitions);
 						locals.trimPaths = IO.loadTrimPaths(modulePath);
 						locals.EBDassets = IO.loadEBDAssets(modulePath);
+						locals.heightConfiguration = IO.loadHeightConfiguration(modulePath);
+						locals.bodyGenConfig = IO.loadBodyGenConfig(modulePath);
+						locals.forcedNPCAssignments = IO.loadForceList(modulePath);
+						locals.blockList = IO.loadBlockList(modulePath);
 						locals.consistencyAssignments  = IO.loadConsistency(modulePath, settings.bEnableConsistency);
 						locals.LinkedNPCNameExclusions = IO.loadLinkedNPCNameExclusions(modulePath);
 
@@ -838,8 +837,8 @@ ngapp.run(function(patcherService) {
 							if (settings.loadPermutations === false || locals.permutations === undefined || RG.recordTemplates === undefined || RG.maxPriority === undefined || locals.permutations.length === 0 || RG.recordTemplates.length === 0)
 							{
 								helpers.logMessage("Generating asset permutations.");
-								locals.permutations = PG.generateAssetPackPermutations(settings, locals.trimPaths, helpers);
-								RG.generateRecords(locals.permutations, settings, helpers); // RG.recordTemplates and RG.maxPriority filled by reference within this function
+								locals.permutations = PG.generateAssetPackPermutations(locals.assetPackSettings, locals.raceGroupDefinitions, settings, locals.trimPaths, helpers);
+								RG.generateRecords(locals.permutations, settings, locals.recordTemplates, helpers); // RG.recordTemplates and RG.maxPriority filled by reference within this function
 
 								locals.loadedFromJSON = false;
 							}
@@ -889,12 +888,12 @@ ngapp.run(function(patcherService) {
 						// fix height formats if necessary
 						if (settings.changeRaceHeight === true)
 						{
-							Aux.padHeightConfig(settings.heightConfiguration);
+							Aux.padHeightConfig(locals.heightConfiguration);
 						}
 
 						if (settings.bEnableBodyGenIntegration === true)
 						{
-							locals.BGcategorizedMorphs = BGI.categorizeMorphs(settings.bodyGenConfig, settings.raceGroupDefinitions);
+							locals.BGcategorizedMorphs = BGI.categorizeMorphs(locals.bodyGenConfig, locals.raceGroupDefinitions);
 						}
 
 						//just for fun
@@ -915,7 +914,7 @@ ngapp.run(function(patcherService) {
 											locals.filtered++;
 											let attributeCache = {};
 											let NPCinfo = PO.getNPCinfo(record, locals.consistencyAssignments, xelib);
-											let userForcedAssignment = PO.getUserForcedAssignment(NPCinfo, settings.forcedNPCAssignments);
+											let userForcedAssignment = PO.getUserForcedAssignment(NPCinfo, locals.forcedNPCAssignments);
 
 											if (NPCinfo.formID === "00000007") // ignore player because player isn't updated by the script.
 											{
@@ -934,7 +933,7 @@ ngapp.run(function(patcherService) {
 													bApplyPermutationToCurrentNPC = false;
 												}
 
-												if (PO.bNPCisBlocked(settings.blockList.blockedNPCs, NPCinfo) === true)
+												if (PO.bNPCisBlocked(locals.blockList.blockedNPCs, NPCinfo) === true)
 												{
 													helpers.logMessage("NPC " + NPCinfo.name + " (" + NPCinfo.EDID + "/" + NPCinfo.formID + ") was blocked by ID in BlockList.json. Skipping.");
 													bApplyPermutationToCurrentNPC = false;
@@ -942,7 +941,7 @@ ngapp.run(function(patcherService) {
 
 												let winningOverrideHandle = xelib.GetWinningOverride(record);
 												let ORfileName = xelib.GetFileName(xelib.GetElementFile(winningOverrideHandle));
-												if (settings.blockList.blockedPlugins.includes(ORfileName))
+												if (locals.blockList.blockedPlugins.includes(ORfileName))
 												{
 													helpers.logMessage("NPC " + NPCinfo.name + " (" + NPCinfo.EDID + "/" + NPCinfo.formID + ") was blocked by plugin (" + ORfileName + ") in BlockList.json. Skipping.");
 													bApplyPermutationToCurrentNPC = false;
@@ -991,7 +990,7 @@ ngapp.run(function(patcherService) {
 
 											if (settings.bEnableBodyGenIntegration === true)
 											{
-												let genMorph = BGI.assignMorphs(record, settings.bodyGenConfig, locals.BGcategorizedMorphs, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, locals.assignedPermutations[NPCinfo.formID], userForcedAssignment, attributeCache, helpers.logMessage);
+												let genMorph = BGI.assignMorphs(record, locals.bodyGenConfig, locals.BGcategorizedMorphs, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, locals.assignedPermutations[NPCinfo.formID], userForcedAssignment, attributeCache, helpers.logMessage);
 												if (genMorph !== undefined)
 												{
 													locals.assignedBodyGen[NPCinfo.formID] = genMorph;
@@ -1047,9 +1046,9 @@ ngapp.run(function(patcherService) {
 										xelib.AddArrayItem(record, "Actor Effects", "", locals.EBDeffect);
 									}
 
-									if (settings.changeRaceHeight === true && Aux.heightConfigIncludesRace(settings.heightConfiguration, raceEDID))
+									if (settings.changeRaceHeight === true && Aux.heightConfigIncludesRace(locals.heightConfiguration, raceEDID))
 									{
-										PO.patchRaceHeight(record, raceEDID, settings.heightConfiguration)
+										PO.patchRaceHeight(record, raceEDID, locals.heightConfiguration)
 									}
 
 									helpers.addProgress(1);
@@ -1077,7 +1076,7 @@ ngapp.run(function(patcherService) {
 
 						if (settings.bEnableBodyGenIntegration === true)
 						{
-							IO.generateBodyGenMorphs(locals.assignedBodyGen, settings.bodyGenConfig.templates, xelib.GetGlobal('DataPath'), settings.patchFileName);
+							IO.generateBodyGenMorphs(locals.assignedBodyGen, locals.bodyGenConfig.templates, xelib.GetGlobal('DataPath'), settings.patchFileName);
 						}
 
 						jasonSays(-1, helpers.logMessage, locals.Jason);

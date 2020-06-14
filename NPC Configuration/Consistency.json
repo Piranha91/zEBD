@@ -23,8 +23,7 @@
     "EDID": "MQ304LostSoulSons2",
     "name": "",
     "assignedAssetPack": "Tempered Skins for Males - Dressed - Director's Cut",
-    "assignedPermutation": "HD.H.D3,HN.YE3.N,HS,HSP.D3,HDE.A40,BD.B2,BN.Y.C3,BS.H,BSP.B2,HAD.B2,HAN.Y,HAS,HASP.B2",
-    "height": "1.020823"
+    "assignedPermutation": "HD.H.D2,HN.YE1.N,HS,HSP.D2,HDE.A40,BD.B4,BN.Y.C1,BS.H,BSP.B4,HAD.B4,HAN.Y,HAS,HASP.B4"
   },
   {
     "rootPlugin": "Skyrim.esm",
@@ -58555,8 +58554,6 @@
     "formIDSignature": "000D62",
     "EDID": "00FFDillyn",
     "name": "Dillyn",
-    "assignedAssetPack": "Bijin Skins 4K CBBE Director's Cut (for BodyGen)",
-    "assignedPermutation": "HD.D4K,HN.Y.W,HS.D,HSP.D,HDE.F,BD.4KH,BN.Y.D,BS.D,BSP.D,HAD,HAN,HAS.D,HASP.D",
     "height": "1.014147",
     "assignedMorphs": [
       "BOS_T_Skinny",
@@ -58567,7 +58564,9 @@
       "Top",
       "Bottom",
       "Nipples"
-    ]
+    ],
+    "assignedAssetPack": "Bijin Skins 4K CBBE Director's Cut (for BodyGen)",
+    "assignedPermutation": "HD.D4KNM,HN.Y.W,HS.D,HSP.D,HDE.F,BD.4KH,BN.Y.D,BS.D,BSP.D,HAD,HAN,HAS.D,HASP.D"
   },
   {
     "rootPlugin": "FFBosmer.esp",
