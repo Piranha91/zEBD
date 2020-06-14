@@ -1,0 +1,2065 @@
+{
+  "groupName": "Bijin 4K TEST",
+  "gender": "female",
+  "displayAlerts": true,
+  "userAlert": "Bijin Skins: Age40 and Age50 NPCs will be skipped due to neck seam.",
+  "subgroups": [
+    {
+      "id": "HD",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [
+        [
+          "FTST",
+          "SkinHeadFemaleBretonComplexion_Age40 [TXST:000F2058]"
+        ],
+        [
+          "FTST",
+          "SkinHeadFemaleDarkElfComplexion_Age40 [TXST:000F205C]"
+        ],
+        [
+          "FTST",
+          "SkinHeadFemaleHighElfComplexion_Age40 [TXST:000F2060]"
+        ],
+        [
+          "FTST",
+          "SkinHeadFemaleImperialComplexion_Age40 [TXST:000F2064]"
+        ],
+        [
+          "FTST",
+          "SkinHeadFemaleOrcComplexion_Age40 [TXST:000F2068]"
+        ],
+        [
+          "FTST",
+          "SkinHeadFemaleRedguardComplexion_Age40 [TXST:000F206C]"
+        ],
+        [
+          "FTST",
+          "SkinHeadFemaleWoodElfComplexion_Age40 [TXST:000F2070]"
+        ],
+        [
+          "FTST",
+          "SkinHeadFemaleNordComplexion_Age40 [TXST:000EAFA3]"
+        ],
+        [
+          "FTST",
+          "SkinHeadFemaleBretonComplexion_Age50 [TXST:000F2059]"
+        ],
+        [
+          "FTST",
+          "SkinHeadFemaleDarkElfComplexion_Age50 [TXST:000F205D]"
+        ],
+        [
+          "FTST",
+          "SkinHeadFemaleHighElfComplexion_Age50 [TXST:000F2061]"
+        ],
+        [
+          "FTST",
+          "SkinHeadFemaleImperialComplexion_Age50 [TXST:000F2065]"
+        ],
+        [
+          "FTST",
+          "SkinHeadFemaleOrcComplexion_Age50 [TXST:000F2069]"
+        ],
+        [
+          "FTST",
+          "SkinHeadFemaleRedguardComplexion_Age50 [TXST:000F206D]"
+        ],
+        [
+          "FTST",
+          "SkinHeadFemaleWoodElfComplexion_Age50 [TXST:000F2071]"
+        ],
+        [
+          "FTST",
+          "SkinHeadFemaleNordComplexion_Age50 [TXST:000645DB]"
+        ]
+      ],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Diffuse",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 10,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HD.D4K",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Default Head 4K",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\1 - Diffuse Head Options\\Default Head 4K\\textures\\actors\\character\\female\\femalehead.dds",
+              "femalehead.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4424",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HD.D4KNM",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Default  Head 4K No Moles",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\1 - Diffuse Head Options\\Default Head 4K No Moles\\textures\\actors\\character\\female\\femalehead.dds",
+              "femalehead.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4436",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HD.D4KV",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoidVampire"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Default Head 4K Vampire",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\1 - Diffuse Head Options\\Default Head 4K Vampire\\textures\\actors\\character\\female\\femaleheadvampire.dds",
+              "femalehead.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4447",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HD.D4KNMV",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoidVampire"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Default Head 4K No Moles Vampire",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\1 - Diffuse Head Options\\Default Head 4K No Moles Vampire\\textures\\actors\\character\\female\\femaleheadvampire.dds",
+              "femalehead.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4460",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HD.R4K",
+          "enabled": false,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Realistic Head 4K",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\1 - Diffuse Head Options\\Realistic Head 4K\\textures\\actors\\character\\female\\femalehead.dds",
+              "femalehead.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4473",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HD.R4KNM",
+          "enabled": false,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Realistic Head 4K No Moles",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\1 - Diffuse Head Options\\Realistic Head 4K No Moles\\textures\\actors\\character\\female\\femalehead.dds",
+              "femalehead.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4484",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HD.R4KV",
+          "enabled": false,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoidVampire"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Realistic Head 4K Vampire",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\1 - Diffuse Head Options\\Realistic Head 4K Vampire\\textures\\actors\\character\\female\\femaleheadvampire.dds",
+              "femalehead.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4495",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HD.R4KNMV",
+          "enabled": false,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoidVampire"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Realistic Head 4K No Moles Vampire",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\1 - Diffuse Head Options\\Realistic Head 4K No Moles Vampire\\textures\\actors\\character\\female\\femaleheadvampire.dds",
+              "femalehead.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4508",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:4409",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "HN",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Normals",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HN.Y",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Younger",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HN.Y.B",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "BretonRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Breton",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Bijin Skin 4K CBBE\\0 - Base\\textures\\actors\\character\\bretonfemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4544",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.Y.D",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "DarkElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Dark Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Bijin Skin 4K CBBE\\0 - Base\\textures\\actors\\character\\darkelffemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4558",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.Y.N",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "NordRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Nord",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [],
+              "subgroups": [
+                {
+                  "id": "HN.Y.N.D",
+                  "enabled": true,
+                  "distributionEnabled": true,
+                  "allowedRaces": [],
+                  "disallowedRaces": [],
+                  "allowedAttributes": [],
+                  "disallowedAttributes": [],
+                  "forceIfAttributes": [],
+                  "allowUnique": true,
+                  "allowNonUnique": true,
+                  "name": "Default Nord",
+                  "requiredSubgroups": [],
+                  "excludedSubgroups": [],
+                  "addKeywords": [],
+                  "probabilityWeighting": 1,
+                  "paths": [
+                    [
+                      "textures\\Bijin Skin 4K CBBE\\0 - Base\\textures\\actors\\character\\female\\femalehead_msn.dds",
+                      "femalehead_msn.dds"
+                    ]
+                  ],
+                  "subgroups": [],
+                  "$$hashKey": "object:4973",
+                  "allowedBodyGenDescriptors": [],
+                  "disallowedBodyGenDescriptors": []
+                },
+                {
+                  "id": "HN.Y.N.A",
+                  "enabled": true,
+                  "distributionEnabled": true,
+                  "allowedRaces": [],
+                  "disallowedRaces": [],
+                  "allowedAttributes": [],
+                  "disallowedAttributes": [],
+                  "forceIfAttributes": [],
+                  "allowUnique": true,
+                  "allowNonUnique": true,
+                  "name": "Alternative Nord",
+                  "requiredSubgroups": [],
+                  "excludedSubgroups": [],
+                  "addKeywords": [],
+                  "probabilityWeighting": 1,
+                  "paths": [
+                    [
+                      "textures\\Bijin Skin 4K CBBE\\2 - Normal Options\\Alternative Head Normal Nord\\textures\\actors\\character\\female\\femalehead_msn.dds",
+                      "femalehead_msn.dds"
+                    ]
+                  ],
+                  "subgroups": [],
+                  "$$hashKey": "object:4985",
+                  "allowedBodyGenDescriptors": [],
+                  "disallowedBodyGenDescriptors": []
+                }
+              ],
+              "$$hashKey": "object:4571",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.Y.H",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "HighElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "High Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Bijin Skin 4K CBBE\\0 - Base\\textures\\actors\\character\\highelffemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4595",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.Y.O",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "OrcRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Orc",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Bijin Skin 4K CBBE\\0 - Base\\textures\\actors\\character\\femaleorc\\femaleheadorc_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4608",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.Y.I",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "ImperialRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Imperial",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Bijin Skin 4K CBBE\\0 - Base\\textures\\actors\\character\\imperialfemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4619",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.Y.R",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "RedguardRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Redguard",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Bijin Skin 4K CBBE\\0 - Base\\textures\\actors\\character\\redguardfemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4634",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.Y.V",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoidVampire"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [],
+              "subgroups": [
+                {
+                  "id": "HN.Y.V.D",
+                  "enabled": true,
+                  "distributionEnabled": true,
+                  "allowedRaces": [],
+                  "disallowedRaces": [],
+                  "allowedAttributes": [],
+                  "disallowedAttributes": [],
+                  "forceIfAttributes": [],
+                  "allowUnique": true,
+                  "allowNonUnique": true,
+                  "name": "Default Vampire",
+                  "requiredSubgroups": [],
+                  "excludedSubgroups": [],
+                  "addKeywords": [],
+                  "probabilityWeighting": 1,
+                  "paths": [
+                    [
+                      "textures\\Bijin Skin 4K CBBE\\0 - Base\\textures\\actors\\character\\female\\femaleheadvampire_msn.dds",
+                      "femalehead_msn.dds"
+                    ]
+                  ],
+                  "subgroups": [],
+                  "$$hashKey": "object:4999",
+                  "allowedBodyGenDescriptors": [],
+                  "disallowedBodyGenDescriptors": []
+                },
+                {
+                  "id": "HN.Y.V.A",
+                  "enabled": true,
+                  "distributionEnabled": true,
+                  "allowedRaces": [],
+                  "disallowedRaces": [],
+                  "allowedAttributes": [],
+                  "disallowedAttributes": [],
+                  "forceIfAttributes": [],
+                  "allowUnique": true,
+                  "allowNonUnique": true,
+                  "name": "Alternative Vampire",
+                  "requiredSubgroups": [],
+                  "excludedSubgroups": [],
+                  "addKeywords": [],
+                  "probabilityWeighting": 1,
+                  "paths": [
+                    [
+                      "textures\\Bijin Skin 4K CBBE\\2 - Normal Options\\Alternative Head Normal Vampire\\textures\\actors\\character\\female\\femaleheadvampire_msn.dds",
+                      "femalehead_msn.dds"
+                    ]
+                  ],
+                  "subgroups": [],
+                  "$$hashKey": "object:5011",
+                  "allowedBodyGenDescriptors": [],
+                  "disallowedBodyGenDescriptors": []
+                },
+                {
+                  "id": "HN.Y.V.DE",
+                  "enabled": true,
+                  "distributionEnabled": false,
+                  "allowedRaces": [],
+                  "disallowedRaces": [],
+                  "allowedAttributes": [
+                    [
+                      "FTST",
+                      "SkinHeadFemaleDarkElfVampire [TXST:02006F91]"
+                    ]
+                  ],
+                  "disallowedAttributes": [],
+                  "forceIfAttributes": [
+                    [
+                      "FTST",
+                      "SkinHeadFemaleDarkElfVampire [TXST:02006F91]"
+                    ]
+                  ],
+                  "allowUnique": true,
+                  "allowNonUnique": true,
+                  "name": "Dark Elf Vampire",
+                  "requiredSubgroups": [],
+                  "excludedSubgroups": [],
+                  "addKeywords": [],
+                  "probabilityWeighting": 1,
+                  "paths": [
+                    [
+                      "textures\\Bijin Skin 4K CBBE\\0 - Base\\textures\\actors\\character\\darkelffemale\\femalehead_msn.dds",
+                      "femalehead_msn.dds"
+                    ]
+                  ],
+                  "subgroups": [],
+                  "$$hashKey": "object:9518",
+                  "allowedBodyGenDescriptors": [],
+                  "disallowedBodyGenDescriptors": []
+                },
+                {
+                  "id": "HN.Y.V.O",
+                  "enabled": true,
+                  "distributionEnabled": false,
+                  "allowedRaces": [],
+                  "disallowedRaces": [],
+                  "allowedAttributes": [
+                    [
+                      "FTST",
+                      "SkinHeadFemaleOrcVampire [TXST:02006F94]"
+                    ]
+                  ],
+                  "disallowedAttributes": [],
+                  "forceIfAttributes": [
+                    [
+                      "FTST",
+                      "SkinHeadFemaleOrcVampire [TXST:02006F94]"
+                    ]
+                  ],
+                  "allowUnique": true,
+                  "allowNonUnique": true,
+                  "name": "Orc Vampire",
+                  "requiredSubgroups": [],
+                  "excludedSubgroups": [],
+                  "addKeywords": [],
+                  "probabilityWeighting": 1,
+                  "paths": [
+                    [
+                      "textures\\Bijin Skin 4K CBBE\\0 - Base\\textures\\actors\\character\\femaleorc\\femaleheadorc_msn.dds",
+                      "femalehead_msn.dds"
+                    ]
+                  ],
+                  "subgroups": [],
+                  "$$hashKey": "object:9519",
+                  "allowedBodyGenDescriptors": [],
+                  "disallowedBodyGenDescriptors": []
+                }
+              ],
+              "$$hashKey": "object:3582",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.Y.W",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "WoodElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Wood Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Bijin Skin 4K CBBE\\0 - Base\\textures\\actors\\character\\highelffemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4185",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:1933",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:4780",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "HS",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Subsurface",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HS.D",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Default",
+          "requiredSubgroups": [
+            "BS.D",
+            "HAS.D"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\4 - Subsurface Options\\Default\\textures\\actors\\character\\female\\femalehead_sk.dds",
+              "femalehead_sk.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4663",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HS.B",
+          "enabled": false,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Black",
+          "requiredSubgroups": [
+            "BS.B",
+            "HAS.B"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\4 - Subsurface Options\\Black\\textures\\actors\\character\\female\\femalehead_sk.dds",
+              "femalehead_sk.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4675",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:4649",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "HSP",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Specular",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HSP.D",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Default 4K",
+          "requiredSubgroups": [
+            "BSP.D",
+            "HASP.D"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\3 - Specular Options\\Default 4K\\textures\\actors\\character\\female\\femalehead_s.dds",
+              "femalehead_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4700",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HSP.W",
+          "enabled": false,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "CNAM\\FULL",
+              "Blacksmith"
+            ],
+            [
+              "CNAM",
+              "Miner \"Miner\" [CLAS:0001326D]"
+            ],
+            [
+              "CNAM",
+              "Lumberjack \"Lumberjack\" [CLAS:0001326E]"
+            ],
+            [
+              "CNAM",
+              "Farmer \"Farmer\" [CLAS:0001326C]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Wet 4K",
+          "requiredSubgroups": [
+            "BSP.W",
+            "HASP.W"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\3 - Specular Options\\Wet 4K\\textures\\actors\\character\\female\\femalehead_s.dds",
+              "femalehead_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4712",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:4686",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "HDE",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Detail",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HDE.BDM",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "BlankDetailMap",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\0 - Base\\textures\\actors\\character\\male\\blankdetailmap.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4737",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HDE.R",
+          "enabled": true,
+          "distributionEnabled": false,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Rough01 [TXST:000F2057]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Rough01 [TXST:000F205B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Rough01 [TXST:000F205F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Rough [TXST:000F2063]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Rough01 [TXST:000F2067]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Rough01 [TXST:000F206B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Rough01 [TXST:000F206F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordRough [TXST:000EAFA4]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOldComplexion_Rough [TXST:000FFF42]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Rough01 [TXST:000F2057]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Rough01 [TXST:000F205B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Rough01 [TXST:000F205F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Rough [TXST:000F2063]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Rough01 [TXST:000F2067]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Rough01 [TXST:000F206B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Rough01 [TXST:000F206F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordRough [TXST:000EAFA4]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOldComplexion_Rough [TXST:000FFF42]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Rough",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\0 - Base\\textures\\actors\\character\\female\\femaleheaddetail_rough.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4752",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HDE.F",
+          "enabled": true,
+          "distributionEnabled": false,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Frekles [TXST:000F205A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Frekles [TXST:000F205E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Frekles [TXST:000F2062]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Frekles [TXST:000F2066]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Frekles [TXST:000EAFA5]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Frekles [TXST:000F206A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Frekles [TXST:000F206E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Frekles [TXST:000F2072]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOldComplexion_Frekles [TXST:000FFF41]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Frekles [TXST:000EAFA5]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Frekles [TXST:000F205A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Frekles [TXST:000F205E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Frekles [TXST:000F2062]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Frekles [TXST:000F2066]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Frekles [TXST:000EAFA5]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Frekles [TXST:000F206A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Frekles [TXST:000F206E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Frekles [TXST:000F2072]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOldComplexion_Frekles [TXST:000FFF41]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Freckles",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\0 - Base\\textures\\actors\\character\\female\\femaleheaddetail_frekles.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4766",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:4723",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "BD",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Diffuse",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "BD.4KH",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "4K Hairy",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\1 - Diffuse Body Options\\4K - Pubic\\textures\\actors\\character\\female\\femalebody_1.dds",
+              "femalebody_1.dds"
+            ],
+            [
+              "textures\\Bijin Skin 4K CBBE\\1 - Diffuse Body Options\\4K - Pubic\\textures\\actors\\character\\female\\femalebody_1.dds",
+              "femalebody_1_feet.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4899",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "BD.4KS",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "4K Shaved",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\1 - Diffuse Body Options\\4K - Shaved\\textures\\actors\\character\\female\\femalebody_1.dds",
+              "femalebody_1.dds"
+            ],
+            [
+              "textures\\Bijin Skin 4K CBBE\\1 - Diffuse Body Options\\4K - Shaved\\textures\\actors\\character\\female\\femalebody_1.dds",
+              "femalebody_1_feet.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4911",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:4741",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "BN",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Normal",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "BN.Y",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Not Elder",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "BN.Y.D",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Default",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Bijin Skin 4K CBBE\\2 - Normal Options\\Default\\textures\\actors\\character\\female\\femalebody_1_msn.dds",
+                  "femalebody_1_msn.dds"
+                ],
+                [
+                  "textures\\Bijin Skin 4K CBBE\\2 - Normal Options\\Default\\textures\\actors\\character\\female\\femalebody_1_msn.dds",
+                  "femalebody_1_feet_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4925",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": [
+                "secondary: busty"
+              ]
+            },
+            {
+              "id": "BN.Y.DC",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Default Curvy",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Bijin Skin 4K CBBE\\2 - Normal Options\\Default - Curvy\\textures\\actors\\character\\female\\femalebody_1_msn.dds",
+                  "femalebody_1_msn.dds"
+                ],
+                [
+                  "textures\\Bijin Skin 4K CBBE\\2 - Normal Options\\Default - Curvy\\textures\\actors\\character\\female\\femalebody_1_msn.dds",
+                  "femalebody_1_feet_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4937",
+              "allowedBodyGenDescriptors": [
+                "secondary: busty"
+              ],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "BN.M",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [
+                [
+                  "CNAM\\FULL",
+                  "Warrior"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Assassin"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Blacksmith"
+                ],
+                [
+                  "CNAM",
+                  "CombatSpellsword \"Spellsword\" [CLAS:00013177]"
+                ],
+                [
+                  "CNAM",
+                  "CombatWitchblade \"Witchblade\" [CLAS:00013178]"
+                ],
+                [
+                  "CNAM",
+                  "CombatNightblade \"Nightblade\" [CLAS:0001317C]"
+                ],
+                [
+                  "CNAM",
+                  "CombatRogue \"Rogue\" [CLAS:00013180]"
+                ],
+                [
+                  "CNAM",
+                  "CombatRanger \"Ranger\" [CLAS:00013181]"
+                ],
+                [
+                  "CNAM",
+                  "Lumberjack \"Lumberjack\" [CLAS:0001326E]"
+                ],
+                [
+                  "CNAM",
+                  "SoldierImperialNotGuard \"Imperial Soldier\" [CLAS:0001327F]"
+                ],
+                [
+                  "CNAM",
+                  "SoldierSonsSkyrimNotGuard \"Sons of Skyrim Soldier\" [CLAS:00013280]"
+                ],
+                [
+                  "CNAM",
+                  "CombatBarbarian \"Barbarian\" [CLAS:0001CE16]"
+                ],
+                [
+                  "CNAM",
+                  "Blade \"Blade\" [CLAS:00021A74]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassForsworn \"Forsworn\" [CLAS:00043BCB]"
+                ],
+                [
+                  "CNAM",
+                  "MQAncientNord \"Nord Hero\" [CLAS:0004FA49]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassAlikrMelee \"Alik'r Warrior\" [CLAS:0006766B]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassThalmorMelee \"Thalmor Warrior\" [CLAS:0007289D]"
+                ],
+                [
+                  "CNAM",
+                  "CWSoldierClass \"Soldier\" [CLAS:0010B1D8]"
+                ],
+                [
+                  "CNAM",
+                  "GuardOrc2H \"Orc Warrior\" [CLAS:0010E714]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassBanditMelee \"Bandit\" [CLAS:0001CE17]"
+                ],
+                [
+                  "CNAM",
+                  "GuardImperial \"Guard\" [CLAS:000253F2]"
+                ],
+                [
+                  "CNAM",
+                  "GuardSonsSkyrim \"Guard\" [CLAS:000253F3]"
+                ],
+                [
+                  "CNAM",
+                  "GuardOrc1H \"Orc Warrior\" [CLAS:0002A477]"
+                ],
+                [
+                  "CNAM",
+                  "CNAM\tMiner \"Miner\" [CLAS:0001326D]"
+                ]
+              ],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [
+                [
+                  "FULL - Name",
+                  "Uthgerd the Unbroken"
+                ],
+                [
+                  "FULL - Name",
+                  "Aela the Huntress"
+                ],
+                [
+                  "FULL - Name",
+                  "Irileth"
+                ],
+                [
+                  "FULL - Name",
+                  "Borgakh the Steel Heart"
+                ],
+                [
+                  "FULL - Name",
+                  "Gormlaith Golden-Hilt"
+                ],
+                [
+                  "CNAM",
+                  "EncClassPenitusOculatus \"Penitus Oculatus\" [CLAS:0007D98D]"
+                ]
+              ],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Muscular",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Bijin Skin 4K CBBE\\2 - Normal Options\\Muscular\\textures\\actors\\character\\female\\femalebody_1_msn.dds",
+                  "femalebody_1_msn.dds"
+                ],
+                [
+                  "textures\\Bijin Skin 4K CBBE\\2 - Normal Options\\Muscular\\textures\\actors\\character\\female\\femalebody_1_msn.dds",
+                  "femalebody_1_feet_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4948",
+              "allowedBodyGenDescriptors": [
+                "build: normal",
+                "build: petite"
+              ],
+              "disallowedBodyGenDescriptors": [
+                "secondary: busty"
+              ]
+            },
+            {
+              "id": "BN.MC",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Muscular Curvy",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Bijin Skin 4K CBBE\\2 - Normal Options\\Muscular - Curvy\\textures\\actors\\character\\female\\femalebody_1_msn.dds",
+                  "femalebody_1_msn.dds"
+                ],
+                [
+                  "textures\\Bijin Skin 4K CBBE\\2 - Normal Options\\Muscular - Curvy\\textures\\actors\\character\\female\\femalebody_1_msn.dds",
+                  "femalebody_1_feet_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4959",
+              "allowedBodyGenDescriptors": [
+                "secondary: busty",
+                "build: normal",
+                "build: petite"
+              ],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:2278",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:4753",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "BS",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Subsurface",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "BS.B",
+          "enabled": false,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Black",
+          "requiredSubgroups": [
+            "HS.B",
+            "HAS.B"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\4 - Subsurface Options\\Black\\textures\\actors\\character\\female\\femalebody_1_sk.dds",
+              "femalebody_1_sk.dds"
+            ],
+            [
+              "textures\\Bijin Skin 4K CBBE\\4 - Subsurface Options\\Black\\textures\\actors\\character\\female\\femalebody_1_sk.dds",
+              "femalebody_1_feet_sk.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5025",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "BS.D",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Default",
+          "requiredSubgroups": [
+            "HS.D",
+            "HAS.D"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\4 - Subsurface Options\\Default\\textures\\actors\\character\\female\\femalebody_1_sk.dds",
+              "femalebody_1_sk.dds"
+            ],
+            [
+              "textures\\Bijin Skin 4K CBBE\\4 - Subsurface Options\\Default\\textures\\actors\\character\\female\\femalebody_1_sk.dds",
+              "femalebody_1_feet_sk.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5037",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:4764",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "BSP",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Specular",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "BSP.D",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Default 4K",
+          "requiredSubgroups": [
+            "HSP.D",
+            "HASP.D"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\3 - Specular Options\\Default 4K\\textures\\actors\\character\\female\\femalebody_1_s.dds",
+              "femalebody_1_s.dds"
+            ],
+            [
+              "textures\\Bijin Skin 4K CBBE\\3 - Specular Options\\Default 4K\\textures\\actors\\character\\female\\femalebody_1_s.dds",
+              "femalebody_1_feet_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5051",
+          "allowedBodyGenDescriptors": [
+            "build: curvy",
+            "build: thick",
+            "build: chubby",
+            "build: petite"
+          ],
+          "disallowedBodyGenDescriptors": [
+            "build: normal",
+            "build: petite"
+          ]
+        },
+        {
+          "id": "BSP.W",
+          "enabled": false,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Wet 4K",
+          "requiredSubgroups": [
+            "HSP.W",
+            "HASP.W"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\3 - Specular Options\\Wet 4K\\textures\\actors\\character\\female\\femalebody_1_s.dds",
+              "femalebody_1_s.dds"
+            ],
+            [
+              "textures\\Bijin Skin 4K CBBE\\3 - Specular Options\\Wet 4K\\textures\\actors\\character\\female\\femalebody_1_s.dds",
+              "femalebody_1_feet_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5063",
+          "allowedBodyGenDescriptors": [
+            "build: petite",
+            "build: normal",
+            "build: chubby"
+          ],
+          "disallowedBodyGenDescriptors": [
+            "build: chubby",
+            "build: curvy",
+            "build: thick"
+          ]
+        }
+      ],
+      "$$hashKey": "object:1541",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "HAD",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Diffuse",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "textures\\Bijin Skin 4K CBBE\\0 - Base\\textures\\actors\\character\\female\\femalehands_1.dds",
+          "femalehands_1.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:4802",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "HAN",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Normal",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "textures\\Bijin Skin 4K CBBE\\0 - Base\\textures\\actors\\character\\female\\femalehands_1_msn.dds",
+          "femalehands_1_msn.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:4814",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "HAS",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Subsurface",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HAS.B",
+          "enabled": false,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Black",
+          "requiredSubgroups": [
+            "HS.B",
+            "BS.B"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\4 - Subsurface Options\\Black\\textures\\actors\\character\\female\\femalehands_1_sk.dds",
+              "femalehands_1_sk.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5089",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HAS.D",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Default",
+          "requiredSubgroups": [
+            "HS.D",
+            "BS.D"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\4 - Subsurface Options\\Default\\textures\\actors\\character\\female\\femalehands_1_sk.dds",
+              "femalehands_1_sk.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5101",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:4825",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "HASP",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Specular",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HASP.D",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Default 4K",
+          "requiredSubgroups": [
+            "HSP.D",
+            "BSP.D"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\3 - Specular Options\\Default 4K\\textures\\actors\\character\\female\\femalehands_1_s.dds",
+              "femalehands_1_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5063",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HASP.W",
+          "enabled": false,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Wet 4K",
+          "requiredSubgroups": [
+            "HSP.W",
+            "BSP.W"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Bijin Skin 4K CBBE\\3 - Specular Options\\Wet 4K\\textures\\actors\\character\\female\\femalehands_1_s.dds",
+              "femalehands_1_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5075",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:1542",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    }
+  ],
+  "displayAssetPackAlerts": true
+}

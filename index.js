@@ -893,6 +893,7 @@ ngapp.run(function(patcherService) {
 
 						if (settings.bEnableBodyGenIntegration === true)
 						{
+							BGI.formatMorphDescriptors(locals.bodyGenConfig.templates); 
 							locals.BGcategorizedMorphs = BGI.categorizeMorphs(locals.bodyGenConfig, locals.raceGroupDefinitions);
 						}
 
