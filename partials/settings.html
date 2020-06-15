@@ -446,12 +446,14 @@
         <button ng-click="setRaceMenuConfig()">Set RaceMenu BodyGen ini file</button>
         <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Edits the RaceMenu skee64.ini to the correct settings for BodyGen.</span>
     </label>
+    <br>
+    <br>
     <label class = "tooltip">
         <span>Show Body Morph Assignments For: </span>
         Male <input type="checkbox" ng-model="displayMaleConfig"/> Female <input type="checkbox" ng-model="displayFemaleConfig"/>
         <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">These settings dictate (per-race) which BodyGen morphs can be assigned to a given NPC. In this menu you can select the assigned morph groups.</span>
     </label>
-
+    <br>
     <div ng-if="displayMaleConfig">
         <div class="bgTemplate" ng-repeat="maleAssignment in bodyGenConfig.racialSettingsMale" >
             <label class = "tooltip">
@@ -486,6 +488,7 @@
             </div>
         </div>
         <button class="TDButton" ng-click="addBodyGenMaleConfig()">Add New Male Config</button>
+        <br>
     </div>
 
     <div ng-if="displayFemaleConfig">
@@ -522,6 +525,7 @@
             </div>
         </div>
         <button class="TDButton" ng-click="addBodyGenFemaleConfig()">Add New Female Config</button>
+        <br>
     </div>
 
     <br>
@@ -530,14 +534,22 @@
         <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">These settings allow you to customize the distribution rules for each available BodyGen morph.</span>
     </label>
     <br>
-    <label class = "tooltip">
-        <button class="TDButton" ng-click="selectBodyGenTemplateFile()">Import a BodyGen Template INI File</button>
-        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Imports BodyGen morphs from a RaceMenu templates.ini file.</span>
-    </label>
+
     <label class = "tooltip">
         <button class="TDButton" ng-click="selectBodyGenConfigFile()">Import a BodyGen zEBD Config File</button>
         <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Imports zEBD group assignments, morphs/rulesets, groups, and descriptors from a zEBD BodygenConfig.json file.</span>
     </label>
+    <br>
+    <label class = "tooltip">
+        <button class="TDButton" ng-click="selectBodyGenTemplateFile()">Import a BodyGen Template INI File</button>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Imports BodyGen morphs from a RaceMenu templates.ini file.</span>
+    </label>
+    <br>
+    <label class = "tooltip">
+        <button class="TDButton" ng-click="selectBodyGenMorphsFile()">Import a BodyGen Morphs INI File</button>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Imports BodyGen morph assignments from a RaceMenu templates.ini file.</span>
+    </label>
+    <br>
     <div class="bgTemplate" ng-repeat="template in bodyGenConfig.templates track by $index" ng-if="displayTemplates">
         <label>
             <span>{{template.name}} </span>
@@ -656,6 +668,24 @@
             </ul>
 
             <label class = "tooltip">
+                <input type="checkbox" ng-model="template.allowRandom">
+                <span>Distribute to Random NPCs</span>
+                <span class="tooltiptext" ng-if = "btooltips">If unchecked, this morph will not be distributed to NPCs unless called for by your specific NPC assignments list.</span>
+            </label>
+            <br>
+            <label class = "tooltip">
+                <input type="checkbox" ng-model="template.allowUnique">
+                <span class="tooltiptext" ng-if = "btooltips">If unchecked, this morph will not be distributed to NPCs flagged as "unique".</span>
+                <span>Allow Unique NPCs</span>
+            </label>
+            <br>
+            <label class = "tooltip">
+                <input type="checkbox" ng-model="template.allowNonUnique">
+                <span class="tooltiptext" ng-if = "btooltips">If unchecked, this morph will not be distributed to NPCs not flagged as "unique".</span>
+                <span>Allow Non-Unique NPCs</span>
+            </label>
+            <br>
+            <label class = "tooltip">
                 <span>Distribution Probability Weight</span>
                 <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Multiplier dictating the relative chance of NPCs getting this template compared to other templates in the same group.</span>
                 <input type="number" ng-model="template.probabilityWeighting">
@@ -664,7 +694,7 @@
 
         </section>
     </div>
-
+    <br>
     <br>
     <label class = "tooltip">
         <span>Show Template Group List</span>
@@ -678,7 +708,7 @@
         </div>
         <button class="TDButton" ng-click="addTemplateGroupBodyGen()">Add New Template Group</button>
     </div>
-
+    <br>
     <br>
     <label class = "tooltip">
         <span>Show Template Descriptor List</span>
@@ -718,19 +748,19 @@
                 <span>Forced Asset Pack</span>
                 <select class="forceNPCAssetPackselect" ng-model="currentForcedNPC.forcedAssetPack" ng-options="name for name in availableAssetPackNames" ng-change="chooseSubgroupsForPack(currentForcedNPC.forcedAssetPack, currentForcedNPC.forcedSubgroups)"></select>
             </label>
-            <label>
+            <div>
                 <span>Forced Subgroups</span>
                 <div ng-repeat="forcedSub in currentForcedNPC.forcedSubgroups track by $index">
                     <select ng-model="currentForcedNPC.forcedSubgroups[$index]" ng-options="subgroup.description for subgroup in availableSubgroups"></select>
                     <button ng-click="removeForcedSubgroup(currentForcedNPC, $index)">Remove</button>
                 </div>
                 <button ng-click="AddForcedSubgroup(currentForcedNPC)">Add Subgroup</button>
-            </label>
+            </div>
         </div>
-        <label ng-if="settings.zEBD.changeHeight">
+        <div ng-if="settings.zEBD.changeHeight">
             <span>Forced Height</span>
             <input type="text" ng-model="currentForcedNPC.forcedHeight" ng-change="validateHeightString(currentForcedNPC.forcedHeight)">
-        </label>
+        </div>
         <div ng-if="settings.zEBD.bEnableBodyGenIntegration">
              <span>Forced BodyGen Morphs</span>
             <button ng-click="AddForcedMorph(currentForcedNPC)">Add Morph</button>
@@ -740,7 +770,7 @@
             </div>               
 
         </div>
-        <button ng-click="removeNPCfromForceList(currentForcedNPC.formID, currentForcedNPC.rootPlugin)">Remove</button>
+        <button ng-click="removeNPCfromForceList(currentForcedNPC.formID, currentForcedNPC.rootPlugin)">Remove This NPC</button>
     </section>
 
     <br>

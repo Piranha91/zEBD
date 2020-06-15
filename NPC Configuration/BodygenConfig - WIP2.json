@@ -471,7 +471,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -494,7 +494,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -518,7 +518,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -541,7 +541,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -562,7 +562,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -586,7 +586,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -610,7 +610,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -634,7 +634,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -658,7 +658,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -681,7 +681,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -704,7 +704,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -727,7 +727,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -750,7 +750,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -773,7 +773,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -794,7 +794,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -815,7 +815,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -836,7 +836,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -859,7 +859,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -883,7 +883,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -906,7 +906,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -929,7 +929,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -953,7 +953,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -976,7 +976,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -999,7 +999,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1023,7 +1023,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1047,7 +1047,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1070,7 +1070,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1093,7 +1093,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1116,7 +1116,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1139,7 +1139,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1163,7 +1163,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1186,7 +1186,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1207,7 +1207,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1231,7 +1231,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1255,7 +1255,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1279,7 +1279,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1303,7 +1303,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1326,7 +1326,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1350,7 +1350,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1374,7 +1374,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1397,7 +1397,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1421,7 +1421,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1445,7 +1445,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1469,7 +1469,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1493,7 +1493,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1517,7 +1517,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1541,7 +1541,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1564,7 +1564,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1585,7 +1585,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1609,7 +1609,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1633,7 +1633,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1657,7 +1657,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1680,7 +1680,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1703,7 +1703,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1727,7 +1727,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1748,7 +1748,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1772,7 +1772,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1795,7 +1795,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1819,7 +1819,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1842,7 +1842,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1865,7 +1865,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1888,7 +1888,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1911,7 +1911,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1935,7 +1935,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1959,7 +1959,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -1984,7 +1984,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2009,7 +2009,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2032,7 +2032,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2055,7 +2055,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2078,7 +2078,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2102,7 +2102,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2126,7 +2126,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2150,7 +2150,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2175,7 +2175,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2196,7 +2196,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2219,7 +2219,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2243,7 +2243,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2266,7 +2266,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2290,7 +2290,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2313,7 +2313,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2337,7 +2337,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2360,7 +2360,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2383,7 +2383,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2408,7 +2408,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2432,7 +2432,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2456,7 +2456,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2479,7 +2479,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2502,7 +2502,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2526,7 +2526,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2550,7 +2550,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2574,7 +2574,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2598,7 +2598,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2623,7 +2623,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2646,7 +2646,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2670,7 +2670,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2691,7 +2691,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2715,7 +2715,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2739,7 +2739,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2763,7 +2763,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
+"allowRandom": true,
       "probabilityWeighting": 1
     },
     {
@@ -2784,907 +2784,7 @@
       "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
-      "allowRandom": true,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Adelaisa70",
-      "params": "AnkleSize@0.0, AppleCheeks@0.09, Arms@0.62, BigTorso@0.17, BreastGravity2@0.71, BreastHeight@0.33, Breasts@0.31, BreastsFantasy@0.03, BreastsNewSH@0.07, BreastsTogether@0.66, BreastTopSlope@0.3, ButtCrack@0.22, ButtSmall@0.29, CalfSize@0.41, CalfSmooth@0.79, ChestWidth@0.18, CrotchBack@-0.07, Groin@-0.14, HipBone@0.1, Hips@0.06, HipUpperWidth@0.06, KneeHeight@0.17, LegsThin@0.16, MuscleAbs@0.25, ShoulderSmooth@0.56, ShoulderTweak@0.57, ShoulderWidth@0.82, SlimThighs@0.31, SternumDepth@0.15, SternumHeight@0.06, Thighs@0.25, TummyTuck@0.15, Waist@0.29, WristSize@0.0",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Adrianne80",
-      "params": "AnkleSize@0.2, AreolaSize@0.48, Arms@0.54, Back@0.12, BackArch@0.18, Belly@0.54, BigTorso@0.21, BottomDepth@1.0, BottomEdges@0.46, BottomLength@0.68, BreastCenter@0.89, BreastGravity2@0.52, BreastHeight@0.27, BreastPerkiness@0.2, Breasts@0.44, BreastsFantasy@0.05, BreastsNewSH@0.54, BreastsSmall@0.12, BreastsSmall2@0.07, BreastsTogether@0.48, BreastTopSlope@0.52, BreastWidth@-0.61, ButtClassic@0.34, ButtCrack@0.13, ButtShape2@0.26, ButtSmall@0.76, CalfSize@0.1, CalfSmooth@0.41, ChestDepth@0.06, ChestWidth@0.46, ChubbyLegs@0.04, ChubbyWaist@0.1, Groin@-0.2, HipBone@0.06, HipForward@0.1, Hips@0.16, KneeHeight@0.3, LegsThin@0.27, NippleDistance@0.24, NippleDown@0.43, NippleManga@0.19, NipplePerkiness@0.58, NipplePerkManga@0.48, NippleSize@0.3, NippleUp@0.08, RibsProminance@0.31, ShoulderSmooth@0.44, ShoulderTweak@0.83, ShoulderWidth@0.22, SlimThighs@0.56, SternumDepth@0.24, SternumHeight@0.09, Thighs@0.43, Waist@0.62, WaistHeight@0.09, WideWaistLine@0.15, WristSize@0.2",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Aela10",
-      "params": "AnkleSize@0.0, AppleCheeks@0.2, BottomLength@-0.45, BreastCenter@1.0, BreastFlatness2@0.18, BreastGravity2@0.27, BreastHeight@0.5, BreastPerkiness@0.13, Breasts@0.23, BreastsNewSH@0.29, BreastsSmall2@0.31, BreastsTogether@0.45, BreastTopSlope@-0.25, BreastWidth@-0.28, Butt@0.2, ButtCrack@0.8, ButtShape2@0.1, ButtSmall@0.37, CalfSize@0.42, CalfSmooth@1.0, CrotchBack@0.51, DoubleMelon@0.09, Groin@-0.31, HipForward@0.45, KneeShape@0.75, MusclePecs@-1.0, NippleLength@0.05, NipplePerkiness@0.28, NippleSize@0.04, NippleUp@0.3, ShoulderTweak@1.0, ShoulderWidth@1.0, SlimThighs@0.25, Thighs@0.24, TummyTuck@0.2, WaistHeight@0.1, WristSize@0.0",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Annekke40",
-      "params": "AnkleSize@0.0, AppleCheeks@0.31, AreolaSize@0.65, Back@1.0, BackArch@0.22, Belly@0.77, BigBelly@0.47, BottomDepth@1.0, BottomLength@1.0, BreastGravity2@0.35, BreastHeight@-0.08, Breasts@0.54, BreastsNewSH@0.35, BreastsTogether@0.78, ButtClassic@0.83, ButtShape2@0.44, CalfSize@0.55, CalfSmooth@0.23, ChubbyArms@0.04, ChubbyButt@0.26, ChubbyLegs@0.28, ChubbyWaist@0.1, DoubleMelon@0.18, Groin@-0.4, HipBone@0.54, HipForward@0.07, Hips@0.3, HipUpperWidth@0.02, KneeHeight@0.24, KneeShape@1.0, MuscleAbs@0.9, MuscleArms@0.87, MuscleButt@0.84, MuscleLegs@0.46, NippleLength@0.04, NipplePerkManga@0.42, ShoulderTweak@1.0, ShoulderWidth@0.7, SlimThighs@0.2, Thighs@0.43, TriangularShape@0.5, TummyTuck@-1.0, WaistHeight@0.28, WideWaistLine@0.09, WristSize@0.0",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Aranea40",
-      "params": "AnkleSize@0.6, Arms@0.65, Back@0.04, BottomLength@-0.2, BreastCenter@0.24, BreastGravity2@0.24, BreastHeight@0.36, Breasts@0.1, BreastsSmall@0.3, BreastsTogether@0.35, BreastTopSlope@0.45, Butt@0.08, ButtShape2@0.18, ButtSmall@0.84, CalfSmooth@1.0, Groin@-0.12, HipForward@0.09, KneeShape@0.68, LegsThin@0.6, MuscleAbs@0.3, MuscleArms@0.3, MuscleButt@0.3, MuscleLegs@0.3, NippleDown@0.21, NipplePerkiness@0.42, NippleSize@0.3, ShoulderWidth@0.66, SternumDepth@0.24, Waist@0.16, WaistHeight@0.15, WideWaistLine@0.3, WristSize@0.6",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Beleval50",
-      "params": "AnkleSize@0.75, AreolaSize@0.31, Arms@0.4, Back@0.25, Belly@0.5, BigBelly@0.11, BigButt@0.16, BigTorso@0.13, BreastHeight@0.16, BreastPerkiness@0.15, Breasts@0.33, BreastsFantasy@0.02, BreastsSmall@0.05, BreastsSmall2@0.23, BreastsTogether@0.49, Butt@0.29, ButtClassic@0.5, ButtSmall@1.0, CalfSize@0.25, CalfSmooth@1.0, ChubbyArms@0.06, ChubbyLegs@0.07, CrotchBack@0.05, Groin@-0.4, HipForward@0.15, KneeHeight@0.24, KneeShape@0.87, LegsThin@0.4, MuscleAbs@0.5, MuscleArms@0.25, MuscleButt@0.25, MuscleLegs@0.25, NippleDistance@0.5, NippleLength@0.19, NipplePerkManga@1.0, NippleSize@0.6, NippleTip@0.5, ShoulderSmooth@1.0, ShoulderTweak@1.0, ShoulderWidth@1.0, SlimThighs@0.51, Waist@0.5, WristSize@0.75",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Borgakh20",
-      "params": "AnkleSize@0.4, AreolaSize@0.6, Arms@0.4, Back@0.56, BackArch@0.34, Belly@0.2, BigButt@0.48, BigTorso@0.5, BottomDepth@1.0, BottomLength@1.0, BreastCenter@0.2, BreastFlatness@0.15, BreastGravity2@0.25, Breasts@0.78, BreastsGone@0.1, BreastsNewSH@0.21, BreastsTogether@0.14, BreastTopSlope@0.38, Butt@0.43, ButtClassic@0.44, ButtCrack@0.09, ButtShape2@0.29, CalfSize@0.6, CalfSmooth@0.45, ChestDepth@0.08, ChestWidth@0.57, ChubbyArms@0.34, ChubbyButt@0.04, ChubbyLegs@0.14, ChubbyWaist@0.55, DoubleMelon@0.51, ForearmSize@0.07, Groin@-0.3, HipBone@0.47, HipForward@0.1, Hips@0.14, HipUpperWidth@0.11, KneeHeight@0.5, KneeShape@0.9, LabiaWidth@1.0, LegShapeClassic@0.9, MuscleAbs@1.0, MuscleArms@1.0, MuscleButt@0.35, MuscleLegs@1.0, NippleDistance@0.33, NippleDown@0.29, NippleLength@0.19, NippleManga@0.69, PregnancyBelly@0.01, RoundAss@0.09, ShoulderWidth@0.81, SlimThighs@0.16, Thighs@0.02, UpperDepth@0.7, Waist@0.16, WideWaistLine@0.01, WristSize@0.4",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Brelyna60",
-      "params": "AnkleSize@0.4, AppleCheeks@0.21, Arms@0.4, Belly@-0.1, BreastGravity2@0.17, BreastPerkiness@0.06, Breasts@0.24, BreastsNewSH@0.24, BreastsSmall@0.32, BreastsSmall2@0.25, BreastsTogether@0.61, BreastTopSlope@0.12, ButtSmall@0.28, CalfSmooth@1.0, ChestDepth@-0.06, ChestWidth@-0.1, CrotchBack@0.24, DoubleMelon@0.03, HipForward@0.2, LegsThin@0.14, NippleDown@0.09, NipplePerkiness@0.25, NippleSize@0.5, NippleTip@0.04, RibsProminance@0.58, ShoulderWidth@0.66, SlimThighs@0.4, SternumDepth@0.06, TummyTuck@0.2, WaistHeight@0.15, WideWaistLine@0.2, WristSize@0.4",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Camilla55",
-      "params": "AnkleSize@0.73, AppleCheeks@0.2, Arms@0.45, Back@0.4, BackArch@0.52, Belly@0.12, BigBelly@0.04, BigButt@0.5, BigTorso@0.46, BottomDepth@0.28, BottomLength@0.44, BreastHeight@0.24, Breasts@0.26, BreastsNewSH@0.27, BreastsSmall@0.03, BreastsSmall2@0.16, BreastsTogether@0.11, Butt@0.41, ButtCrack@0.41, ButtSmall@0.24, CalfSize@1.05, CalfSmooth@0.55, ChubbyArms@0.26, ChubbyLegs@0.08, HipBone@0.55, Hips@0.41, HipUpperWidth@0.18, KneeShape@0.61, LegShapeClassic@0.88, NipBGone@0.26, NippleDistance@0.1, NipplePerkManga@1.0, NippleUp@0.29, PregnancyBelly@0.11, RoundAss@0.4, ShoulderSmooth@1.0, ShoulderTweak@1.0, ShoulderWidth@0.74, SlimThighs@0.25, Thighs@0.3, Waist@0.78, WideWaistLine@0.87, WristSize@0.73",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Carlotta60",
-      "params": "AnkleSize@0.0, AppleCheeks@0.28, AreolaSize@0.26, Arms@0.4, Back@0.16, BackArch@0.19, BigBelly@0.21, BigTorso@0.51, BreastCenter@0.34, BreastCenterBig@0.6, BreastGravity2@0.68, BreastHeight@0.29, Breasts@0.26, BreastsNewSH@0.26, BreastsTogether@0.38, BreastTopSlope@0.29, BreastWidth@-0.18, ButtClassic@0.13, ButtCrack@0.17, ButtShape2@0.17, ButtSmall@0.46, CalfSize@0.43, CalfSmooth@0.45, ChestDepth@0.14, ChestWidth@0.44, ChubbyButt@0.19, CrotchBack@0.09, Groin@-0.2, HipBone@0.19, HipForward@0.15, Hips@0.49, HipUpperWidth@0.08, KneeHeight@0.17, LegShapeClassic@0.11, LegsThin@0.06, MuscleAbs@0.1, NippleDistance@0.13, NippleDown@0.45, NippleLength@0.05, NippleManga@0.2, NipplePerkiness@0.27, NipplePerkManga@0.53, NippleSize@0.25, NippleTipManga@0.22, RibsProminance@0.37, ShoulderSmooth@0.47, ShoulderTweak@0.23, ShoulderWidth@0.6, SlimThighs@0.43, SternumDepth@0.15, SternumHeight@0.06, Thighs@0.59, TummyTuck@0.15, Waist@0.29, WaistHeight@0.08, WideWaistLine@0.28, WristSize@0.0",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Delphine50",
-      "params": "7B Lower@0.1, AnkleSize@0.0, AppleCheeks@0.2, AreolaSize@0.15, Arms@0.45, Back@0.1, BottomDepth@0.93, BottomLength@0.25, BreastCenter@1.0, BreastGravity2@0.71, BreastHeight@0.66, BreastPerkiness@0.25, Breasts@0.2, BreastsFantasy@0.1, BreastsNewSH@0.4, BreastsSmall@0.1, BreastsSmall2@0.52, BreastsTogether@0.5, Butt@0.35, ButtClassic@0.43, ButtCrack@-0.2, ButtShape2@0.4, ButtSmall@0.8, CalfSize@0.75, ChestDepth@-0.2, ChubbyArms@0.15, ChubbyLegs@0.15, CrotchBack@0.57, CrotchBackAdjustment@0.48, ForearmSize@0.25, Groin@-0.5, HipBone@0.78, HipForward@0.2, Hips@0.1, KneeHeight@0.4, KneeShape@0.8, LegShapeClassic@0.15, LegsThin@0.7, MuscleAbs@0.15, MuscleArms@0.2, MuscleLegs@0.15, MusclePecs@-1.0, NippleDistance@0.4, NippleLength@0.12, NipplePerkiness@0.18, NipplePerkManga@0.5, NippleSize@0.23, NippleTip@0.51, NippleUp@0.33, PushUp@0.39, RibsProminance@0.5, ShoulderTweak@1.0, ShoulderWidth@0.53, Thighs@0.1, TriangularShape@0.25, TummyTuck@0.4, WaistHeight@0.45, WideWaistLine@0.25, WristSize@0.0",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Elisif50",
-      "params": "AnkleSize@0.0, AppleCheeks@0.35, AreolaSize@0.11, BottomLength@0.75, BreastCenter@1.0, BreastFlatness2@0.1, BreastGravity2@0.15, BreastHeight@0.55, Breasts@0.2, BreastsNewSH@0.55, BreastsSmall2@0.28, BreastsTogether@0.25, BreastWidth@-0.6, Butt@0.5, ButtCrack@0.8, CalfSize@0.5, CalfSmooth@1.0, Groin@-0.1, HipForward@0.05, KneeShape@0.75, MusclePecs@-1.0, NippleDown@0.25, NippleLength@0.02, NipplePerkiness@0.23, NipplePerkManga@0.75, NippleSize@0.2, NippleTip@0.1, PushUp@0.1, ShoulderTweak@1.0, ShoulderWidth@1.0, SlimThighs@0.25, Thighs@0.4, TummyTuck@0.2, WaistHeight@0.1, WristSize@0.0",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Eola30",
-      "params": "AnkleSize@0.85, AreolaSize@-0.1, Arms@0.19, BackArch@0.06, BigBelly@-0.12, BigButt@0.04, BigTorso@-0.1, BottomDepth@0.24, BreastCenter@0.15, BreastCenterBig@0.09, BreastGravity2@0.01, BreastHeight@0.03, BreastPerkiness@0.01, Breasts@0.15, BreastsSmall2@0.03, BreastsTogether@0.1, BreastTopSlope@0.09, BreastWidth@-0.06, Butt@0.03, ButtClassic@0.24, ButtCrack@0.12, ButtShape2@0.19, ButtSmall@0.15, CalfSize@-0.15, CalfSmooth@0.18, ChestWidth@-0.04, ChubbyArms@0.01, ChubbyButt@0.1, ChubbyLegs@-0.03, ChubbyWaist@-0.1, CrotchBack@0.13, ForearmSize@0.01, Groin@-0.34, HipBone@0.1, HipForward@0.16, Hips@-0.12, HipUpperWidth@0.06, KneeHeight@0.07, LegsThin@0.3, NippleLength@0.03, NipplePerkiness@0.06, NippleSize@0.23, PushUp@0.04, RibsProminance@0.3, RoundAss@0.09, ShoulderSmooth@0.13, ShoulderTweak@0.24, ShoulderWidth@0.27, SlimThighs@0.19, SternumDepth@0.12, SternumHeight@0.07, TriangularShape@0.7, TummyTuck@0.1, Waist@-0.15, WaistHeight@0.1, WristSize@0.85",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Frea40",
-      "params": "7B Lower@0.07, 7B Upper@0.05, AnkleSize@0.6, AppleCheeks@0.19, AreolaSize@0.33, Arms@0.21, Back@0.07, BackArch@0.11, BigButt@0.1, BigTorso@0.14, BottomDepth@1.0, BottomLength@0.23, BreastCenterBig@0.92, BreastCleavage@0.12, BreastHeight@0.18, BreastPerkiness@0.05, Breasts@0.33, BreastsFantasy@0.2, BreastsNewSH@0.31, BreastsTogether@0.22, BreastTopSlope@0.25, BreastWidth@-0.24, Butt@-0.17, ButtClassic@0.77, ButtCrack@-0.32, ButtShape2@0.65, ButtSmall@0.6, ChestDepth@0.18, ChestWidth@0.19, ChubbyButt@0.21, ChubbyWaist@0.02, CrotchBack@0.27, Groin@-0.62, HipBone@0.14, HipForward@0.33, Hips@0.09, HipUpperWidth@0.09, MuscleArms@0.39, MuscleButt@0.59, MuscleLegs@0.39, MusclePecs@0.21, NipBGone@0.06, NippleDistance@0.13, NipplePerkiness@0.38, NipplePerkManga@0.36, NippleSize@0.4, PushUp@-0.56, RoundAss@0.52, ShoulderWidth@0.15, SlimThighs@0.2, SternumDepth@0.15, SternumHeight@0.08, Thighs@0.19, TriangularShape@0.5, TummyTuck@0.12, WristSize@0.6",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Gerdur80",
-      "params": "AnkleSize@0.2, AppleCheeks@0.16, AreolaSize@0.48, Arms@0.48, Belly@-0.1, BigBelly@0.08, BottomDepth@0.8, BreastCenter@0.06, BreastCenterBig@0.9, BreastCleavage@0.46, BreastFlatness2@0.02, BreastGravity2@0.6, BreastHeight@0.05, BreastPerkiness@0.32, Breasts@0.83, BreastsFantasy@0.24, BreastsNewSH@0.32, BreastsSmall2@0.02, BreastsTogether@0.24, BreastTopSlope@0.46, ButtShape2@0.48, ButtSmall@0.47, CalfSize@0.56, CalfSmooth@0.36, ChestDepth@0.12, ChestWidth@0.12, ChubbyButt@0.24, ChubbyLegs@0.16, CrotchBack@0.52, Groin@-0.4, HipBone@0.08, HipForward@0.44, LabiaPosition@0.45, LegsThin@0.06, MuscleArms@0.4, MuscleButt@0.4, MuscleLegs@0.4, NippleDistance@0.15, NippleLength@0.01, NippleManga@0.42, NipplePerkiness@0.04, NipplePerkManga@1.0, NippleSize@0.2, NippleTip@0.22, NippleUp@0.32, PushUp@0.2, ShoulderSmooth@0.52, ShoulderTweak@0.46, SlimThighs@0.06, SternumDepth@0.08, Thighs@0.32, TriangularShape@0.54, TummyTuck@0.2, WaistHeight@0.34, WideWaistLine@0.08, WristSize@0.2",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Grelka20",
-      "params": "AnkleSize@0.0, AppleCheeks@0.36, AreolaSize@0.13, BreastCenter@1.0, BreastFlatness2@0.16, BreastGravity2@0.3, BreastHeight@0.5, BreastPerkiness@0.1, Breasts@0.32, BreastsNewSH@0.73, BreastsSmall2@0.44, BreastsTogether@0.4, BreastTopSlope@-0.2, BreastWidth@-0.41, Butt@0.52, ButtCrack@0.8, CalfSize@0.44, CalfSmooth@1.0, HipForward@0.05, KneeShape@0.75, MusclePecs@-1.0, NippleDistance@0.25, NippleDown@0.1, NippleLength@0.16, NipplePerkiness@0.35, NipplePerkManga@0.75, NippleSize@0.7, NippleTip@0.28, ShoulderTweak@1.0, ShoulderWidth@1.0, SlimThighs@0.25, Thighs@0.28, TummyTuck@0.2, WaistHeight@0.1, WristSize@0.0",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Hulda50",
-      "params": "AnkleSize@0.5, AppleCheeks@0.13, AreolaSize@0.1, Back@0.15, BigButt@0.08, BigTorso@0.4, BottomDepth@1.0, BottomLength@0.3, BreastCleavage@0.5, BreastGravity2@0.72, Breasts@0.8, BreastsFantasy@0.22, BreastsGone@0.1, BreastsNewSH@0.3, BreastsSmall@-0.3, BreastsSmall2@-0.3, BreastsTogether@0.18, BreastTopSlope@0.6, BreastWidth@-0.75, Butt@-0.13, ButtClassic@0.15, ButtCrack@-1.5, ButtShape2@0.33, CalfSize@0.13, CalfSmooth@0.1, ChestDepth@0.07, ChestWidth@0.2, ChubbyArms@0.33, ChubbyButt@0.4, ChubbyLegs@0.28, ChubbyWaist@0.15, CrotchBack@-0.1, DoubleMelon@0.07, ForearmSize@0.23, Groin@-0.3, HipBone@0.07, HipUpperWidth@0.14, MuscleAbs@0.15, MuscleArms@0.15, MuscleButt@0.2, MuscleLegs@0.1, MusclePecs@0.1, NippleDistance@0.58, NippleDown@0.58, NippleLength@0.32, NipplePerkiness@0.1, NipplePerkManga@0.53, NippleSize@0.07, NippleUp@-0.18, PushUp@-0.02, RoundAss@0.07, ShoulderWidth@0.18, Thighs@0.18, TriangularShape@0.6, VanillaSSELo@0.3, WaistHeight@-0.13, WideWaistLine@0.13, WristSize@0.5",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Idgrod30",
-      "params": "7B Lower@0.2, AnkleSize@0.7, AppleCheeks@0.33, AreolaSize@0.66, Arms@0.75, Back@0.17, BackArch@0.28, Belly@-0.87, BigButt@-0.68, BreastCleavage@-0.15, BreastFlatness@0.29, BreastFlatness2@-0.35, BreastGravity2@0.39, BreastHeight@0.52, BreastPerkiness@-0.21, Breasts@0.26, BreastsNewSH@0.12, BreastsTogether@0.68, BreastTopSlope@1.06, ButtClassic@-0.1, ButtCrack@0.4, ButtShape2@-0.27, ButtSmall@-0.1, CalfSize@1.45, ChestDepth@0.09, ChestWidth@0.2, ChubbyArms@-0.07, ChubbyButt@0.37, ChubbyLegs@0.13, ChubbyWaist@0.16, CrotchBack@0.04, ForearmSize@0.16, HipBone@0.8, Hips@0.26, HipUpperWidth@0.48, KneeHeight@0.2, KneeShape@0.5, LegsThin@1.4, MuscleArms@0.33, MuscleButt@-0.2, NippleDown@0.58, NippleManga@0.28, NipplePerkManga@0.12, PushUp@0.48, RibsProminance@0.68, RoundAss@0.39, ShoulderSmooth@0.85, ShoulderTweak@1.35, ShoulderWidth@0.16, SlimThighs@0.12, SternumDepth@-0.28, SternumHeight@0.31, Thighs@0.11, TummyTuck@0.74, Waist@-0.25, WaistHeight@0.27, WideWaistLine@-0.19, WristSize@0.7",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Illia40",
-      "params": "AnkleSize@0.0, AreolaSize@0.53, Arms@0.19, Back@0.23, Belly@1.0, BigTorso@0.21, BottomDepth@0.3, BreastCenter@0.26, BreastGravity2@0.54, BreastHeight@0.53, BreastPerkiness@0.28, Breasts@0.44, BreastsGone@0.04, BreastsNewSH@0.08, BreastsSmall2@0.33, BreastsTogether@0.53, BreastTopSlope@0.11, BreastWidth@0.08, ButtClassic@0.38, ButtCrack@0.65, ButtSmall@0.72, CalfSize@0.51, CalfSmooth@1.0, ChestWidth@0.35, DoubleMelon@0.06, HipBone@0.47, HipForward@0.1, Hips@0.57, HipUpperWidth@0.07, KneeHeight@0.02, LegShapeClassic@0.02, LegsThin@0.08, NippleDistance@0.1, NippleDown@0.3, NippleLength@0.04, NippleManga@0.14, NipplePerkiness@0.6, NipplePerkManga@0.56, NippleSize@0.49, NippleTip@0.04, NippleTipManga@0.08, NippleUp@0.26, PregnancyBelly@0.03, RibsProminance@0.4, ShoulderSmooth@0.24, ShoulderTweak@0.6, ShoulderWidth@0.3, SlimThighs@0.52, SternumDepth@0.21, Thighs@0.56, UpperDepth@0.3, Waist@0.27, WaistHeight@0.43, WideWaistLine@0.72, WristSize@0.0",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Ingjard60",
-      "params": "AnkleSize@0.4, AppleCheeks@0.23, AreolaSize@0.11, Arms@0.38, Back@0.15, BottomDepth@0.92, BottomEdges@-0.5, BreastCleavage@0.18, BreastGravity2@0.64, BreastPerkiness@0.04, Breasts@0.6, BreastsNewSH@0.18, BreastsTogether@0.31, BreastTopSlope@1.0, Butt@0.52, ButtClassic@1.0, CalfSize@0.27, CalfSmooth@1.0, ChestWidth@0.12, CrotchBack@0.43, Groin@-0.6, HipForward@0.38, Hips@0.08, KneeShape@0.6, LegsThin@0.1, NippleDown@0.5, NipplePerkiness@0.07, NipplePerkManga@0.02, NippleSize@0.31, NippleTip@0.1, PushUp@0.6, ShoulderWidth@0.42, SlimThighs@0.04, Thighs@0.2, TriangularShape@0.89, TummyTuck@0.08, UpperDepth@1.0, WaistHeight@0.15, WideWaistLine@0.08, WristSize@0.4",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Ingun20",
-      "params": "AnkleSize@0.8, AppleCheeks@0.36, AreolaSize@0.2, Back@0.05, Belly@0.05, BigButt@0.2, BottomDepth@0.56, BreastFlatness@0.04, BreastGravity2@0.42, BreastHeight@0.2, Breasts@0.37, BreastsFantasy@0.18, BreastsNewSH@0.1, BreastsTogether@0.44, BreastTopSlope@0.84, Butt@0.3, ButtCrack@0.15, Groin@-0.12, HipForward@0.05, Hips@0.05, KneeShape@0.84, LegsThin@0.08, NippleDown@0.35, NippleLength@0.1, NippleManga@0.44, NipplePerkiness@0.26, NipplePerkManga@0.16, NippleSize@0.34, NippleUp@0.28, OldBaseShape@0.2, RoundAss@0.05, ShoulderSmooth@0.94, ShoulderWidth@0.86, SlimThighs@0.08, Thighs@0.06, WaistHeight@0.05, WristSize@0.8",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Iona50",
-      "params": "AnkleSize@0.5, AppleCheeks@0.2, Belly@0.07, BigButt@0.05, BottomDepth@0.45, BottomEdges@0.24, BottomLength@0.5, BreastGravity2@0.22, BreastHeight@0.07, BreastPerkiness@0.54, Breasts@0.43, BreastsNewSH@0.1, BreastsTogether@0.2, Butt@0.5, CalfSize@0.15, ChubbyArms@0.15, ChubbyButt@0.15, ChubbyWaist@0.13, DoubleMelon@0.38, HipUpperWidth@-0.1, KneeShape@0.7, RoundAss@0.5, ShoulderTweak@0.5, ShoulderWidth@0.4, Thighs@0.15, TriangularShape@0.25, Waist@0.5, WaistHeight@0.05, WristSize@0.5",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Irileth80",
-      "params": "AnkleSize@1.0, AreolaSize@0.36, Arms@0.95, BigButt@0.08, BottomDepth@1.0, BottomLength@0.5, BreastCenter@0.64, BreastCenterBig@0.36, BreastCleavage@0.33, BreastFlatness2@0.02, BreastGravity2@0.12, Breasts@0.08, BreastsNewSH@0.02, BreastsSmall@0.05, BreastsTogether@0.15, BreastTopSlope@0.16, Butt@0.43, ButtClassic@0.4, ButtCrack@0.84, ButtShape2@0.44, ButtSmall@0.11, CalfSize@-0.4, CalfSmooth@1.0, ChestWidth@0.28, DoubleMelon@0.06, Groin@-0.24, HipForward@0.07, HipUpperWidth@0.22, KneeHeight@0.56, LegsThin@0.87, MuscleAbs@0.24, MuscleArms@0.24, MuscleButt@0.16, MuscleLegs@0.24, MusclePecs@0.16, NippleDistance@0.24, NippleDown@0.2, NippleLength@0.12, NipplePerkiness@0.8, NipplePerkManga@0.17, NippleSize@0.5, NippleTip@0.32, NippleUp@0.13, PushUp@0.04, RoundAss@0.8, ShoulderTweak@0.8, ShoulderWidth@0.82, SlimThighs@0.6, TummyTuck@0.36, Waist@-0.64, WaistHeight@0.03, WideWaistLine@-0.4, WristSize@1.0",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Jenassa20",
-      "params": "AnkleSize@0.9, AreolaSize@0.31, Arms@0.64, Back@0.1, Belly@0.2, BigBelly@0.04, BigButt@0.07, BigTorso@0.05, BottomDepth@1.0, BottomLength@-1.0, BreastGravity2@0.31, BreastHeight@0.36, BreastPerkiness@0.06, Breasts@0.29, BreastsFantasy@0.01, BreastsSmall@0.08, BreastsSmall2@0.37, BreastsTogether@0.54, Butt@0.12, ButtClassic@0.5, ButtSmall@1.0, CalfSize@0.1, CalfSmooth@1.0, ChubbyArms@0.02, ChubbyLegs@0.03, CrotchBack@0.64, Groin@-0.4, HipForward@0.5, KneeHeight@0.1, KneeShape@0.87, LegsThin@0.48, MuscleAbs@0.2, MuscleArms@0.1, MuscleButt@0.1, MuscleLegs@0.1, NippleDistance@0.5, NippleLength@0.19, NipplePerkiness@0.37, NipplePerkManga@1.0, NippleSize@0.6, NippleTip@0.5, ShoulderSmooth@1.0, ShoulderTweak@1.0, ShoulderWidth@1.0, SlimThighs@0.64, Waist@0.2, WristSize@0.9",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Jordis30",
-      "params": "AnkleSize@0.7, AppleCheeks@0.12, Arms@0.68, Belly@0.1, BigButt@0.38, BottomDepth@0.88, BottomEdges@0.59, BottomLength@-1.0, BreastCenter@0.25, BreastGravity2@0.04, BreastHeight@0.1, Breasts@0.45, BreastsFantasy@0.24, BreastsNewSH@0.13, BreastsSmall@0.21, BreastsTogether@0.68, BreastTopSlope@1.32, BreastWidth@-0.15, Butt@0.76, ButtClassic@0.3, ButtCrack@0.86, CalfSmooth@1.0, ChubbyLegs@0.03, ClosedShape@0.4, CrotchBack@0.25, Groin@-0.4, HipForward@0.27, Hips@-0.08, HipUpperWidth@0.18, LegsThin@0.21, NippleDistance@0.14, NippleDown@0.32, NippleLength@0.01, NippleSize@0.47, RoundAss@-0.06, RoundShape@0.7, ShoulderWidth@0.67, SlimThighs@0.21, Smoothing1@0.5, TriangularShape@-0.5, TummyTuck@0.2, WaistHeight@0.15, WideWaistLine@0.06, WristSize@0.7",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Karliah100",
-      "params": "7B Upper@0.25, AnkleSize@0.0, AppleCheeks@0.0, Arms@1.0, Back@0.0, BackArch@0.3, Belly@0.0, BigBelly@0.0, BigButt@0.0, BottomDepth@1.0, BottomEdges@0.5, BottomLength@-0.5, Breasts@0.1, BreastsGone@0.0, BreastsSmall2@0.65, BreastsTogether@0.35, Butt@-0.25, ButtSmall@1.0, CalfSmooth@1.0, ChestWidth@-0.25, ChubbyButt@-0.25, CrotchBack@0.7, ForearmSize@0.0, HipBone@1.0, HipForward@0.45, HipUpperWidth@0.0, KneeShape@1.0, LegsThin@0.5, NippleSize@0.5, NippleTip@0.1, ShoulderWidth@0.3, SlimThighs@0.4, TummyTuck@1.0, UpperDepth@1.0, WaistHeight@0.1, WideWaistLine@0.15, WristSize@0.0",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Lisette50",
-      "params": "AnkleSize@0.5, AppleCheeks@0.18, Arms@0.63, Back@0.15, BigButt@0.35, BigTorso@0.12, BottomDepth@1.0, BottomLength@0.5, BreastCenter@0.1, BreastGravity2@0.1, BreastHeight@0.1, BreastPerkiness@0.35, Breasts@0.75, BreastsNewSH@0.07, BreastsTogether@0.3, BreastTopSlope@0.6, Butt@0.67, ButtClassic@0.9, ButtCrack@0.8, ButtShape2@0.13, ButtSmall@0.18, CalfSize@0.25, CalfSmooth@1.0, ChestDepth@0.1, ChestWidth@0.15, CrotchBack@0.2, DoubleMelon@0.07, Groin@-0.6, HipForward@0.25, HipUpperWidth@0.07, KneeHeight@0.15, KneeShape@0.45, LegsThin@0.2, MuscleAbs@0.6, MuscleArms@0.9, MuscleButt@0.9, MuscleLegs@0.9, MusclePecs@0.6, NippleDistance@0.4, NippleDown@0.1, NippleLength@0.05, NipplePerkiness@0.5, NipplePerkManga@0.28, NippleSize@0.6, ShoulderSmooth@0.15, ShoulderTweak@0.6, ShoulderWidth@0.5, SlimThighs@0.27, Thighs@0.13, Waist@0.15, WideWaistLine@0.2, WristSize@0.5",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Lydia70",
-      "params": "AnkleSize@0.3, AppleCheeks@0.28, Arms@0.42, BackArch@0.21, BigButt@0.35, BottomDepth@0.7, BottomEdges@0.29, BottomLength@0.32, BreastCenterBig@-1.05, BreastGravity2@0.18, BreastHeight@0.7, Breasts@0.7, BreastsNewSH@0.21, BreastsSmall@-0.35, BreastsTogether@0.35, BreastTopSlope@0.7, BreastWidth@-0.35, CalfSize@0.32, CrotchBack@0.35, Groin@-0.4, HipBone@0.28, HipForward@0.32, Hips@0.14, NipplePerkiness@0.35, RoundAss@0.35, ShoulderSmooth@0.7, ShoulderTweak@0.7, ShoulderWidth@0.88, SternumHeight@-0.35, VanillaSSELo@0.3, Waist@0.7, WaistHeight@0.24, WristSize@0.3",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Maven50",
-      "params": "AnkleSize@1.0, AreolaSize@0.17, Arms@1.0, Back@0.15, BackArch@0.81, Belly@0.3, BigBelly@0.3, BigTorso@0.13, BottomDepth@3.0, BottomEdges@0.01, BreastFlatness@0.06, BreastGravity2@0.41, BreastPerkiness@0.32, Breasts@0.65, BreastsFantasy@0.1, BreastsNewSH@0.33, BreastsSmall@0.13, BreastsSmall2@0.34, BreastsTogether@0.25, Butt@0.5, ButtClassic@1.0, ButtShape2@0.88, ButtSmall@1.0, DoubleMelon@0.1, HipBone@0.5, HipUpperWidth@0.04, KneeHeight@0.5, LegsThin@0.81, NippleDown@0.44, NippleLength@0.11, NippleManga@0.28, NippleSize@0.37, PregnancyBelly@0.07, ShoulderSmooth@1.0, ShoulderTweak@1.0, ShoulderWidth@1.0, SlimThighs@0.65, TriangularShape@1.0, TummyTuck@0.7, UpperDepth@1.5, WaistHeight@0.17, WideWaistLine@1.0, WristSize@1.0",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Mjoll0",
-      "params": "7B Upper@0.4, AnkleSize@1.0, AppleCheeks@0.3, Arms@0.55, Back@0.45, BigBelly@-0.5, BigButt@0.15, BigTorso@0.0, BottomDepth@2.0, BottomLength@0.2, BreastCenter@0.2, BreastGravity2@0.3, BreastHeight@-0.25, BreastPerkiness@-0.1, Breasts@-0.2, BreastsSmall@-0.15, BreastsSmall2@-0.8, BreastsTogether@0.7, BreastTopSlope@0.4, BreastWidth@0.05, Butt@0.55, ButtClassic@0.3, ButtCrack@0.8, ButtShape2@-0.1, CalfSize@1.0, ChestWidth@0.2, ChubbyArms@0.0, ChubbyButt@0.3, ChubbyWaist@-0.25, CrotchBack@0.0, DoubleMelon@-0.2, Groin@-0.5, HipForward@0.05, Hips@-0.4, HipUpperWidth@0.25, KneeShape@0.75, MuscleAbs@0.65, MuscleArms@1.0, MuscleLegs@1.0, MusclePecs@1.0, NippleDown@0.1, NipplePerkiness@0.15, NipplePerkManga@0.5, NippleSize@0.7, NippleTip@0.4, RoundAss@0.3, ShoulderSmooth@-0.3, ShoulderTweak@1.0, ShoulderWidth@0.15, SlimThighs@0.0, SternumHeight@0.85, Thighs@0.2, TummyTuck@0.25, VanillaSSEHi@0.3, WaistHeight@0.15, WideWaistLine@0.15, WristSize@1.0",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Morwen60",
-      "params": "AnkleSize@0.0, AppleCheeks@0.08, Arms@0.68, BigTorso@0.16, BreastCenter@0.0, BreastCleavage@0.18, BreastGravity2@0.68, BreastHeight@0.33, BreastPerkiness@0.12, Breasts@0.53, BreastsFantasy@0.09, BreastsNewSH@0.17, BreastsSmall@0.16, BreastsTogether@0.66, BreastTopSlope@0.53, BreastWidth@0.08, ButtCrack@0.22, ButtSmall@0.32, CalfSize@0.35, CalfSmooth@0.79, ChestWidth@0.18, HipBone@0.1, Hips@0.06, HipUpperWidth@0.06, KneeHeight@0.17, LegsThin@0.16, MuscleAbs@0.25, NippleDistance@0.18, NippleDown@0.45, NipplePerkiness@0.38, NipplePerkManga@0.8, NippleSize@0.54, PushUp@0.12, ShoulderSmooth@0.56, ShoulderTweak@0.57, ShoulderWidth@0.82, SlimThighs@0.32, SternumDepth@0.15, SternumHeight@0.06, Thighs@0.23, TummyTuck@0.15, Waist@0.25, WristSize@0.0",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Muiri0",
-      "params": "AnkleSize@1.0, AppleCheeks@0.3, BottomLength@-0.5, BreastCenter@0.0, BreastGravity2@0.05, BreastHeight@0.1, BreastPerkiness@0.35, Breasts@0.3, BreastsNewSH@0.05, BreastsTogether@0.25, BreastTopSlope@0.5, Butt@0.1, ButtCrack@0.8, ButtShape2@0.1, DoubleMelon@0.0, Groin@-0.2, HipForward@0.1, Hips@0.2, LegShapeClassic@0.25, MuscleAbs@0.1, NippleDistance@0.4, NippleDown@0.1, NippleLength@0.05, NipplePerkiness@0.6, NipplePerkManga@0.55, NippleSize@0.6, RoundAss@0.05, ShoulderSmooth@0.7, ShoulderTweak@0.7, ShoulderWidth@0.7, SlimThighs@0.5, TriangularShape@0.5, Waist@0.15, WaistHeight@0.05, WideWaistLine@0.0, WristSize@1.0",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Njada60",
-      "params": "AnkleSize@0.4, AreolaSize@0.06, Arms@0.6, Back@0.06, BottomDepth@0.38, BottomLength@0.5, BreastCenter@0.36, BreastCleavage@0.27, BreastGravity2@0.3, BreastHeight@0.38, Breasts@0.24, BreastsSmall@0.12, BreastsTogether@0.55, BreastTopSlope@0.5, Butt@0.26, ButtShape2@0.22, ButtSmall@0.38, CalfSmooth@1.0, CrotchBack@0.45, HipForward@0.3, KneeShape@0.72, LegsThin@0.5, MuscleAbs@0.18, MuscleArms@0.18, MuscleLegs@0.18, NippleDown@0.24, NipplePerkiness@0.48, NippleSize@0.2, ShoulderWidth@0.64, SternumDepth@0.16, UpperDepth@0.32, Waist@0.18, WaistHeight@0.15, WideWaistLine@0.09, WristSize@0.4",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Rayya50",
-      "params": "AnkleSize@0.0, AreolaSize@0.49, Arms@0.45, Belly@-0.25, BigButt@0.13, BottomDepth@0.25, BreastCenterBig@-1.0, BreastFlatness@0.25, BreastGravity2@0.45, Breasts@0.75, BreastsGone@-0.5, BreastsNewSH@0.5, BreastsSmall@-0.5, BreastsSmall2@-0.5, BreastsTogether@-0.25, BreastTopSlope@2.0, BreastWidth@-2.0, Butt@0.13, ButtCrack@0.75, ButtSmall@0.5, CalfSize@0.23, CalfSmooth@1.0, ChubbyButt@0.25, ChubbyLegs@0.13, ChubbyWaist@0.13, DoubleMelon@-0.25, HipBone@0.5, HipForward@0.02, Hips@0.5, HipUpperWidth@-0.2, LegsThin@0.13, NipBGone@0.5, NippleDistance@0.75, NippleDown@1.0, NippleUp@-0.5, ShoulderWidth@0.15, SlimThighs@0.25, SternumDepth@1.5, SternumHeight@-0.5, Thighs@0.13, TriangularShape@0.4, TummyTuck@0.5, Waist@-0.38, WaistHeight@0.75, WideWaistLine@-0.38, WristSize@0.0",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Ria50",
-      "params": "AnkleSize@1.0, AppleCheeks@0.01, AreolaSize@0.17, Arms@0.5, Back@0.1, BackArch@0.5, Belly@0.13, BigBelly@0.1, BigButt@0.16, BigTorso@0.21, BreastCenter@0.29, BreastCleavage@0.17, BreastFlatness@0.11, BreastGravity2@0.3, BreastHeight@0.09, Breasts@0.34, BreastsFantasy@0.09, BreastsNewSH@0.33, BreastsTogether@0.23, Butt@0.57, ButtCrack@0.5, CalfSize@0.92, CalfSmooth@1.0, ChubbyArms@0.1, DoubleMelon@0.12, HipForward@0.05, Hips@0.25, KneeHeight@0.5, KneeShape@0.76, LegShapeClassic@0.7, MuscleAbs@0.15, MuscleArms@0.15, MuscleButt@0.15, MuscleLegs@0.15, NippleDistance@0.12, NippleDown@0.39, NippleLength@0.06, NippleManga@0.72, NipplePerkiness@0.14, NipplePerkManga@0.12, NippleSize@0.26, PregnancyBelly@0.08, RoundAss@0.5, ShoulderSmooth@1.0, ShoulderTweak@1.0, ShoulderWidth@0.9, SlimThighs@0.66, Thighs@0.45, Waist@0.7, WideWaistLine@0.71, WristSize@1.0",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Rikke60",
-      "params": "AnkleSize@0.4, AppleCheeks@0.24, Belly@0.09, BigButt@0.03, BottomDepth@0.12, BreastCleavage@0.15, BreastFlatness@0.07, BreastFlatness2@0.1, BreastGravity2@0.42, BreastHeight@0.28, BreastPerkiness@0.12, Breasts@0.72, BreastsGone@0.1, BreastsNewSH@0.32, BreastsSmall@0.06, BreastsSmall2@0.03, BreastsTogether@0.34, BreastTopSlope@0.88, BreastWidth@0.19, Butt@0.6, CalfSize@0.18, ChubbyArms@0.18, ChubbyButt@0.09, ChubbyWaist@0.15, DoubleMelon@0.02, HipUpperWidth@-0.12, KneeShape@0.72, NippleDown@0.49, NippleLength@0.06, NipplePerkiness@0.24, NipplePerkManga@0.42, RoundAss@0.6, ShoulderTweak@0.6, ShoulderWidth@0.48, Thighs@0.18, UpperDepth@0.3, Waist@0.6, WaistHeight@0.06, WristSize@0.4",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Sapphire70",
-      "params": "AnkleSize@0.3, AppleCheeks@0.32, AreolaSize@0.15, Arms@0.15, Belly@0.18, BigBelly@0.03, BigTorso@0.28, BreastCleavage@0.21, BreastFlatness2@-0.35, BreastGravity2@0.3, BreastHeight@-0.18, BreastPerkiness@0.03, Breasts@0.28, BreastsGone@0.49, BreastsNewSH@0.28, BreastsSmall@-0.35, BreastsSmall2@0.07, BreastsTogether@0.61, BreastTopSlope@0.59, BreastWidth@-0.5, Butt@0.26, ButtCrack@0.38, CalfSmooth@0.3, ChestDepth@0.07, ChestWidth@0.21, ChubbyArms@0.18, ChubbyButt@0.18, ChubbyLegs@0.35, ChubbyWaist@0.32, CrotchBack@0.34, Groin@-0.14, HipForward@0.28, HipUpperWidth@0.08, LegsThin@0.08, MuscleAbs@0.18, MuscleArms@0.18, MuscleButt@0.18, MuscleLegs@0.18, MusclePecs@0.18, NippleDistance@0.24, NippleDown@0.48, NippleLength@0.13, NipplePerkiness@0.49, NipplePerkManga@0.22, NippleSize@0.43, NippleTip@0.03, RibsProminance@0.07, ShoulderWidth@0.39, SlimThighs@0.03, SternumDepth@0.18, TummyTuck@0.06, WaistHeight@0.29, WideWaistLine@0.06, WristSize@0.3",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Senna100",
-      "params": "AnkleSize@0.0, AppleCheeks@0.4, BottomDepth@0.45, BottomLength@0.4, BreastCenter@0.2, BreastGravity2@0.15, BreastHeight@0.1, BreastPerkiness@0.35, Breasts@0.75, BreastsNewSH@0.1, BreastsTogether@0.35, BreastTopSlope@0.7, Butt@0.2, ButtCrack@0.0, ButtShape2@0.2, DoubleMelon@0.15, Groin@-0.2, HipForward@0.1, Hips@0.2, LegShapeClassic@0.4, MuscleAbs@0.2, NippleDistance@0.4, NippleDown@0.1, NippleLength@0.05, NipplePerkiness@0.4, NipplePerkManga@0.0, NippleSize@0.6, RoundAss@0.15, ShoulderSmooth@1.0, ShoulderTweak@1.0, ShoulderWidth@1.0, SlimThighs@0.35, TriangularShape@0.2, Waist@0.25, WaistHeight@0.1, WideWaistLine@0.1, WristSize@0.0",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Serana60",
-      "params": "7B Upper@0.24, AnkleSize@0.4, AppleCheeks@0.2, Arms@0.6, Belly@0.2, BigButt@0.47, BottomDepth@0.3, BottomLength@0.2, BreastCenter@0.14, BreastGravity2@0.09, BreastHeight@0.1, Breasts@0.6, BreastsFantasy@0.17, BreastsNewSH@0.19, BreastsSmall@0.12, BreastsTogether@0.6, BreastTopSlope@1.14, BreastWidth@-0.3, Butt@0.86, ButtClassic@0.36, ButtCrack@0.92, CalfSmooth@1.0, ChubbyLegs@0.06, CrotchBack@0.11, Groin@-0.4, HipForward@0.2, Hips@-0.26, HipUpperWidth@0.21, LegsThin@0.12, NippleDistance@0.13, NippleDown@0.18, NippleLength@0.03, NippleSize@0.44, RoundAss@-0.12, ShoulderWidth@0.64, SlimThighs@0.12, TriangularShape@0.16, TummyTuck@0.2, WaistHeight@0.15, WideWaistLine@0.12, WristSize@0.4",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Sofia80",
-      "params": "7B Lower@0.3, 7B Upper@0.26, AnkleSize@0.2, Arms@0.64, BigButt@0.06, BigTorso@0.21, BottomDepth@0.8, BottomLength@0.4, BreastCenter@0.26, BreastGravity2@0.45, BreastHeight@0.14, Breasts@0.09, BreastsFantasy@0.06, BreastsTogether@0.32, BreastTopSlope@0.22, ButtClassic@0.24, CalfSize@0.24, ChubbyButt@0.18, CrotchBack@-0.08, DoubleMelon@0.14, ForearmSize@0.32, Groin@-0.4, HipForward@0.16, Hips@-0.04, HipUpperWidth@0.02, MuscleAbs@0.48, MuscleArms@0.32, MuscleButt@0.2, MuscleLegs@0.2, MusclePecs@0.24, NippleDown@0.56, NippleLength@0.05, NippleManga@0.2, NipplePerkiness@0.19, NipplePerkManga@0.26, NippleSize@0.3, RoundAss@0.2, ShoulderSmooth@0.12, ShoulderWidth@0.1, TummyTuck@0.08, Waist@-0.6, WristSize@0.2",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Sylgja70",
-      "params": "AnkleSize@0.3, AppleCheeks@0.42, Arms@0.15, Belly@0.42, BigBelly@0.07, BigButt@0.14, BottomEdges@0.5, BreastCenter@1.0, BreastGravity2@0.27, BreastHeight@0.7, BreastPerkiness@0.11, Breasts@0.41, BreastsNewSH@0.55, BreastsSmall2@0.39, BreastsTogether@0.63, BreastTopSlope@-0.23, Butt@0.8, ButtCrack@0.8, ButtSmall@0.15, CalfSize@0.88, CalfSmooth@1.0, ClosedShape@0.3, CrotchBack@0.15, HipForward@0.12, KneeShape@0.71, LegsThin@0.06, MusclePecs@-0.85, NippleDown@0.06, NipplePerkiness@0.29, NipplePerkManga@0.68, NippleSize@0.09, NippleTip@0.03, PushUp@0.08, ShoulderTweak@0.7, ShoulderWidth@0.39, SlimThighs@0.33, Thighs@0.37, TummyTuck@0.06, WaistHeight@0.11, WristSize@0.3",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Taarie70",
-      "params": "AnkleSize@0.3, AppleCheeks@0.35, Arms@0.62, Back@0.14, BackArch@0.14, BigBelly@-0.4, BottomDepth@1.0, BottomLength@0.7, BreastCenter@0.7, BreastFlatness@0.1, BreastGravity2@0.2, Breasts@0.85, BreastsFantasy@0.34, BreastsNewSH@0.07, BreastsTogether@0.47, BreastTopSlope@0.51, Butt@0.15, ButtClassic@1.0, ButtCrack@0.8, ButtSmall@0.11, CalfSize@-0.93, CalfSmooth@0.15, ChestWidth@0.1, ChubbyButt@0.07, ChubbyLegs@0.1, CrotchBackAdjustment@0.07, Groin@-0.5, HipForward@0.08, Hips@0.24, HipUpperWidth@-0.2, LegsThin@0.12, NipBGone@0.06, NippleDistance@0.2, NippleDown@0.3, NippleLength@0.1, NippleManga@0.2, NippleSize@1.0, RibsProminance@1.0, RoundAss@0.08, ShoulderTweak@0.86, ShoulderWidth@0.4, Thighs@-0.06, TummyTuck@0.5, Waist@0.41, WaistHeight@0.05, WideWaistLine@-0.31, WristSize@0.3",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Temba70",
-      "params": "AnkleSize@0.3, AppleCheeks@0.22, Arms@0.58, Belly@0.23, BigButt@0.5, BottomDepth@1.0, BreastCenter@0.11, BreastCleavage@0.09, BreastGravity2@0.28, BreastHeight@0.25, Breasts@0.65, BreastsFantasy@0.15, BreastsNewSH@0.21, BreastsSmall@0.09, BreastsTogether@0.58, BreastTopSlope@1.08, BreastWidth@-0.29, Butt@0.9, ButtClassic@0.7, ButtCrack@0.94, CalfSmooth@1.0, ChubbyLegs@0.07, CrotchBack@0.25, Groin@-0.6, HipForward@0.35, Hips@-0.32, HipUpperWidth@0.22, LegsThin@0.09, NippleDistance@0.13, NippleDown@0.13, NippleLength@0.03, NippleSize@0.43, RoundAss@-0.14, ShoulderWidth@0.63, SlimThighs@0.09, TummyTuck@0.2, Waist@0.12, WaistHeight@0.15, WideWaistLine@0.14, WristSize@0.3",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Toccata100",
-      "params": "AnkleSize@0.0, AppleCheeks@0.4, Arms@0.6, BackArch@0.3, BigButt@0.5, BreastCenterBig@-1.5, BreastGravity2@0.25, BreastHeight@1.0, Breasts@1.0, BreastsNewSH@0.3, BreastsSmall@-0.5, BreastsTogether@0.5, BreastTopSlope@1.0, BreastWidth@-0.5, CalfSize@0.45, CrotchBack@0.35, Groin@-0.4, HipBone@0.4, HipForward@0.36, Hips@0.2, NipplePerkiness@0.5, RoundAss@0.5, ShoulderSmooth@1.0, ShoulderTweak@1.0, ShoulderWidth@1.0, SternumHeight@-0.5, VanillaSSELo@0.0, Waist@1.0, WaistHeight@0.35, WristSize@0.0",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Tonilia20",
-      "params": "AnkleSize@0.8, AppleCheeks@0.5, AreolaSize@1.0, Belly@0.03, BigButt@0.28, BreastGravity2@0.2, BreastPerkiness@0.17, Breasts@0.32, BreastsNewSH@0.19, BreastsSmall@0.24, BreastsSmall2@0.1, BreastsTogether@0.2, Butt@1.0, ButtCrack@-0.1, ButtShape2@0.02, ButtSmall@-0.04, CalfSize@0.06, ChubbyArms@0.06, ChubbyButt@0.24, CrotchBack@0.1, DoubleMelon@0.3, Groin@-0.24, HipForward@0.16, HipUpperWidth@-0.04, KneeShape@0.64, NippleLength@0.04, NipplePerkManga@0.06, RoundAss@1.04, ShoulderTweak@0.2, ShoulderWidth@0.16, Thighs@0.06, Waist@0.1, WaistHeight@0.02, WristSize@0.8",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Ugor80",
-      "params": "AnkleSize@0.2, AppleCheeks@0.3, Arms@0.8, Back@0.4, BackArch@0.25, BigButt@0.24, BigTorso@0.45, BottomDepth@1.0, BreastGravity2@0.46, BreastHeight@0.3, BreastPerkiness@0.06, Breasts@0.9, BreastWidth@-0.25, Butt@0.86, ButtSmall@0.5, CalfSize@1.0, CalfSmooth@0.2, ChestDepth@0.45, ChestWidth@0.69, ChubbyArms@0.86, ChubbyLegs@0.46, CrotchBack@1.0, DoubleMelon@0.4, ForearmSize@0.9, Groin@-0.4, HipBone@0.88, HipForward@0.72, Hips@-0.2, HipUpperWidth@0.05, LabiaPosition@-0.8, MuscleAbs@0.9, MuscleArms@0.9, MuscleButt@0.9, MusclePecs@0.9, NipplePerkiness@0.3, NippleSize@0.1, NippleUp@0.86, ShoulderSmooth@0.2, ShoulderTweak@1.0, ShoulderWidth@1.0, UpperDepth@0.8, WideWaistLine@-0.24, WristSize@0.2",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Uthgerd100",
-      "params": "AnkleSize@0.5, AppleCheeks@0.3, AreolaSize@0.61, Arms@0.25, Belly@1.0, BreastCleavage@0.5, BreastFlatness@0.5, BreastFlatness2@0.0, BreastGravity2@0.3, BreastHeight@0.2, Breasts@1.0, BreastsFantasy@0.1, BreastsNewSH@0.05, BreastsSmall@-0.1, BreastsSmall2@-0.1, BreastsTogether@-0.25, BreastTopSlope@1.0, Butt@1.0, CalfSize@0.75, CalfSmooth@1.0, ChestDepth@0.2, ChestWidth@0.2, ChubbyArms@0.2, ChubbyLegs@0.33, Groin@-0.2, HipBone@0.5, HipForward@0.09, Hips@0.35, HipUpperWidth@0.1, MuscleAbs@0.6, MuscleArms@0.7, MuscleButt@0.6, MuscleLegs@0.5, MusclePecs@0.35, NipBGone@0.19, NippleDown@0.3, NippleLength@0.04, NipplePerkManga@0.2, NippleSize@0.16, NippleTip@0.1, PushUp@0.13, RibsProminance@0.5, RoundAss@1.0, ShoulderSmooth@0.4, ShoulderTweak@0.4, ShoulderWidth@0.3, SlimThighs@0.0, SternumHeight@0.1, Waist@1.0, WristSize@0.5",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Valerica100",
-      "params": "7B Lower@0.2, 7B Upper@0.65, AnkleSize@0.0, Arms@0.0, Back@0.19, Belly@0.0, BigBelly@0.25, BigButt@0.3, BigTorso@-0.1, BottomDepth@1.0, BreastGravity2@0.35, Breasts@0.2, BreastsSmall2@0.3, CalfSize@-0.2, CalfSmooth@0.65, ChubbyArms@-0.1, HipForward@0.05, Hips@0.3, OldBaseShape@0.0, ShoulderSmooth@0.35, ShoulderWidth@0.68, SlimThighs@0.0, TriangularShape@0.6, TummyTuck@-0.05, Waist@0.3, WristSize@0.0",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Vex50",
-      "params": "AnkleSize@0.5, Arms@0.63, Back@0.05, BottomDepth@0.3, BreastCenter@0.3, BreastGravity2@0.45, BreastHeight@0.35, BreastPerkiness@0.13, Breasts@0.4, BreastsFantasy@0.05, BreastsNewSH@0.07, BreastsSmall@0.25, BreastsTogether@0.35, BreastTopSlope@0.47, Butt@0.1, ButtShape2@0.2, ButtSmall@0.8, CalfSmooth@1.0, CrotchBack@0.05, HipForward@0.05, KneeShape@0.7, LegsThin@0.55, MuscleAbs@0.3, MuscleArms@0.3, MuscleButt@0.3, MuscleLegs@0.3, NippleDown@0.23, NipplePerkiness@0.45, NippleSize@0.3, ShoulderWidth@0.65, SternumDepth@0.2, Waist@0.2, WaistHeight@0.15, WideWaistLine@0.3, WristSize@0.5",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
-      "probabilityWeighting": 1
-    },
-    {
-      "name": "$Ysolda80",
-      "params": "AnkleSize@0.2, AppleCheeks@-0.05, Arms@0.34, Back@0.2, BottomLength@-0.6, BreastCenter@0.16, BreastGravity2@0.42, BreastHeight@0.2, Breasts@0.64, BreastsTogether@0.33, BreastTopSlope@0.36, Butt@0.36, ButtCrack@0.8, ButtShape2@-0.5, ButtSmall@0.4, CalfSize@0.36, CalfSmooth@1.0, ChestWidth@0.08, CrotchBack@0.24, Groin@0.16, HipBone@0.32, HipForward@0.18, HipUpperWidth@0.37, KneeShape@0.72, LegsThin@0.05, NippleDown@0.12, NippleSize@0.5, NippleTip@0.1, ShoulderWidth@0.36, SlimThighs@0.06, SternumHeight@0.24, Thighs@0.2, TriangularShape@-0.5, TummyTuck@0.04, WaistHeight@0.11, WideWaistLine@0.19, WristSize@0.2",
-      "gender": "female",
-      "groups": [
-        "Unique"
-      ],
-      "descriptors": [],
-      "allowedRaces": [],
-      "disallowedRaces": [],
-      "allowedAttributes": [],
-      "disallowedAttributes": [],
-      "forceIfAttributes": [],
-      "allowUnique": true,
-      "allowNonUnique": true,
-      "allowRandom": false,
+"allowRandom": true,
       "probabilityWeighting": 1
     }
   ],

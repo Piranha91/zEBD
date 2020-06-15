@@ -189,35 +189,7 @@ ngapp.run(function(patcherService) {
 
 					$scope.addNPCtoForceList = function(currentNPC)
 					{
-						let obj = {};
-						obj.name = currentNPC.name;
-						obj.formID = currentNPC.formID;
-						obj.formID = "xx" + obj.formID.substring(2, 9);
-						obj.EDID = currentNPC.EDID;
-						obj.rootPlugin = currentNPC.masterRecordFile;
-						obj.race = currentNPC.race;
-						obj.gender = currentNPC.gender;
-						obj.forcedAssetPack = "";
-						obj.forcedSubgroups = [];
-						obj.forcedHeight = "1.000000";
-						obj.forcedBodyGenMorphs = [];
-						obj.displayString = obj.name + " (" + obj.formID + ")";
-
-						let bFound = false;
-						for (let i = 0; i < $scope.forcedNPCAssignments.length; i++)
-						{
-							let matchedFormID = ($scope.forcedNPCAssignments[i].formID === obj.formID);
-							let matchedPlugin = ($scope.forcedNPCAssignments[i].rootPlugin === obj.rootPlugin);
-							if (matchedFormID && matchedPlugin)
-							{
-								bFound = true;
-								break;
-							}
-						}
-						if (bFound === false)
-						{
-							$scope.forcedNPCAssignments.push(obj);
-						}
+						Aux.addNPCtoForceList(currentNPC, $scope.forcedNPCAssignments);
 					};
 
 					$scope.removeNPCfromForceList = function(formID, rootPlugin)
@@ -538,7 +510,7 @@ ngapp.run(function(patcherService) {
 					
 					$scope.validateHeightString = function(heightString)
 					{
-						if (isNaN(heightString) === true)
+						if (heightString !== "" && isNaN(heightString) === true)
 						{
 							alert("Height must be a number");
 						}
@@ -667,16 +639,21 @@ ngapp.run(function(patcherService) {
 						IO.setRaceMenuConfig(xelib.GetGlobal('DataPath'));
 					};
 
-					$scope.selectBodyGenTemplateFile = function()
-					{
-						let selected = fh.selectFile("BodyGen Templates", modulePath, [{ name: 'INI files', extensions: ['ini'] }]);
-						IO.loadSelectedBodyGenTemplate(selected, $scope.bodyGenConfig.templates);
-					};
 					$scope.selectBodyGenConfigFile = function()
 					{
-						let selected = fh.selectFile("BodyGen Configurations", modulePath, [{ name: 'JSON files', extensions: ['json'] }]);
-						IO.loadSelectedBodyGenConfig(selected, $scope.bodyGenConfig);
+						IO.loadSelectedBodyGenConfig($scope.bodyGenConfig);
 					};
+
+					$scope.selectBodyGenTemplateFile = function()
+					{
+						
+						IO.loadSelectedBodyGenTemplate($scope.bodyGenConfig.templates);
+					};
+					
+					$scope.selectBodyGenMorphsFile = function()
+					{
+						IO.loadSelectedBodyGenMorphs($scope.forcedNPCAssignments, $scope.availableNPCs, $scope.bodyGenConfig.templates);
+					}
 
 					$scope.addNPCtoBlockList = function(currentNPC)
 					{
