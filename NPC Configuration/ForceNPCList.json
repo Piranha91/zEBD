@@ -6,14 +6,8 @@
     "rootPlugin": "Dawnguard.esm",
     "race": "NordRace",
     "gender": "female",
-    "forcedAssetPack": "Bijin Skins 4K CBBE Director's Cut (for BodyGen)",
-    "forcedSubgroups": [
-      {
-        "id": "BN.Y.DC",
-        "description": "BN.Y.DC: Default Curvy",
-        "topLevelSubgroup": "BN"
-      }
-    ],
+    "forcedAssetPack": "",
+    "forcedSubgroups": [],
     "forcedHeight": "1.000000",
     "forcedBodyGenMorphs": [
       "$Serana60"
@@ -28,19 +22,8 @@
     "rootPlugin": "Skyrim.esm",
     "race": "NordRace",
     "gender": "male",
-    "forcedAssetPack": "Tempered Skins for Males - Dressed - Director's Cut",
-    "forcedSubgroups": [
-      {
-        "id": "HD.H.D4",
-        "description": "HD.H.D4: Geonox Stubbled",
-        "topLevelSubgroup": "HD"
-      },
-      {
-        "id": "HAD.B4",
-        "description": "HAD.B4: B4 - Clean bear",
-        "topLevelSubgroup": "HAD"
-      }
-    ],
+    "forcedAssetPack": "",
+    "forcedSubgroups": [],
     "forcedHeight": "1.000000",
     "forcedBodyGenMorphs": [],
     "displayString": "Hadvar (xx02BF9F)",
@@ -53,19 +36,8 @@
     "rootPlugin": "Skyrim.esm",
     "race": "NordRace",
     "gender": "male",
-    "forcedAssetPack": "Tempered Skins for Males - Dressed - Director's Cut",
-    "forcedSubgroups": [
-      {
-        "id": "HD.H.D4",
-        "description": "HD.H.D4: Geonox Stubbled",
-        "topLevelSubgroup": "HD"
-      },
-      {
-        "id": "BD.B1",
-        "description": "BD.B1: B1 - Clean hairless",
-        "topLevelSubgroup": "BD"
-      }
-    ],
+    "forcedAssetPack": "",
+    "forcedSubgroups": [],
     "forcedHeight": "1.000000",
     "forcedBodyGenMorphs": [],
     "displayString": "Ralof (xx02BF9D)",
@@ -78,14 +50,8 @@
     "rootPlugin": "Skyrim.esm",
     "race": "NordRace",
     "gender": "female",
-    "forcedAssetPack": "Bijin Skins 4K CBBE Director's Cut (for BodyGen)",
-    "forcedSubgroups": [
-      {
-        "id": "BN.M",
-        "description": "BN.M: Muscular",
-        "topLevelSubgroup": "BN"
-      }
-    ],
+    "forcedAssetPack": "",
+    "forcedSubgroups": [],
     "forcedHeight": "1.000000",
     "forcedBodyGenMorphs": [
       "$Aela10"

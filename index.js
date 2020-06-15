@@ -43,6 +43,7 @@ ngapp.run(function(patcherService) {
 						IO.logVerbose("", true);
 					};
 
+					$scope.GUIobjects = {};
 					$scope.genderOptions = ["male", "female"];
 					$scope.heightDistOptions = ["uniform", "bell curve"];
 					$scope.heightGlobals = { distModeGlobal: 'uniform', heightRangeGlobal: "0.020000", currentHeightPreset: undefined };
@@ -202,6 +203,12 @@ ngapp.run(function(patcherService) {
 							}
 						}
 					};
+
+					$scope.clearForcedAssetPack = function(currentForcedNPC)
+					{
+						currentForcedNPC.forcedAssetPack = "";
+						currentForcedNPC.forcedSubgroups = [];
+					}
 
 					$scope.removeNPCinfoFromConsistency = function(currentNPC, mode)
 					{
@@ -714,6 +721,8 @@ ngapp.run(function(patcherService) {
 						changeMeshes: true,
 						changeNPCsWithWNAM: true,
 						changeNPCsWithFaceParts: true,
+						excludePC: true,
+						excludePresets: true,
 						changeFemaleAnimations: false,
 						bEnableConsistency: true,
 						bLinkNPCsWithSameName: true,
@@ -894,7 +903,13 @@ ngapp.run(function(patcherService) {
 											let NPCinfo = PO.getNPCinfo(record, locals.consistencyAssignments, xelib);
 											let userForcedAssignment = PO.getUserForcedAssignment(NPCinfo, locals.forcedNPCAssignments);
 
-											if (NPCinfo.formID === "00000007") // ignore player because player isn't updated by the script.
+											if (NPCinfo.formID === "00000007" && settings.excludePC === true) // ignore player
+											{
+												helpers.addProgress(1);
+												return false;
+											}
+
+											if (NPCinfo.EDID.includes("Preset") && settings.excludePresets === true) // ignore player presets
 											{
 												helpers.addProgress(1);
 												return false;
@@ -902,6 +917,7 @@ ngapp.run(function(patcherService) {
 
 											let bApplyPermutationToCurrentNPC = settings.changeNPCappearance;
 											let bApplyHeightSettingsToCurrentNPC = settings.changeNPCHeight;
+											let bApplyBodyGenSettingsToCurrentNPC = settings.bEnableBodyGenIntegration;
 
 											if (settings.changeNPCappearance === true)
 											{
@@ -940,7 +956,7 @@ ngapp.run(function(patcherService) {
 												//if all the above don't fail, assign a permutation.
 												if (bApplyPermutationToCurrentNPC === true)
 												{
-													locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation(record, NPCinfo, locals.permutationsByRaceGender, locals.consistencyAssignments, settings.bEnableConsistency, userForcedAssignment, settings.bLinkNPCsWithSameName, locals.linkedNPCpermutations, locals.LinkedNPCNameExclusions, attributeCache, helpers.logMessage);
+													locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation(record, NPCinfo, locals.permutationsByRaceGender, locals.consistencyAssignments, settings.bEnableConsistency, userForcedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, attributeCache, helpers.logMessage);
 												}
 												if (locals.assignedPermutations[NPCinfo.formID] === undefined) // occurs if the NPC is incompatible with the assignment criteria for all generated permutations.
 												{
@@ -950,29 +966,29 @@ ngapp.run(function(patcherService) {
 
 											if (settings.changeNPCHeight === true)
 											{
-												locals.assignedHeights[NPCinfo.formID] = PO.assignNPCheight(record, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, settings.heightConfiguration, userForcedAssignment, settings.changeNonDefaultHeight, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCheights);
+												locals.assignedHeights[NPCinfo.formID] = PO.assignNPCheight(record, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, locals.heightConfiguration, userForcedAssignment, settings.changeNonDefaultHeight, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCheights);
 												if (locals.assignedHeights[NPCinfo.formID] === undefined) // if there are no height settings for the given NPC's race
 												{
 													bApplyHeightSettingsToCurrentNPC = false;
+												}
+											}
+											
+											if (settings.bEnableBodyGenIntegration === true)
+											{
+												locals.assignedBodyGen[NPCinfo.formID] = BGI.assignMorphs(record, locals.bodyGenConfig, locals.BGcategorizedMorphs, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, locals.assignedPermutations[NPCinfo.formID], userForcedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCbodygen, attributeCache, helpers.logMessage);
+												if (locals.assignedBodyGen[NPCinfo.formID] === undefined)
+												{
+													bApplyBodyGenSettingsToCurrentNPC = false;
 												}
 											}
 
 											// store the NPC info
 											locals.NPCinfoDict[NPCinfo.formID] = NPCinfo; // can't store it using the handle as key because the handle changes from filter() to patch()
 
-											if (bApplyPermutationToCurrentNPC === false && bApplyHeightSettingsToCurrentNPC === false)
+											if (bApplyPermutationToCurrentNPC === false && bApplyHeightSettingsToCurrentNPC === false && bApplyBodyGenSettingsToCurrentNPC === false)
 											{
 												helpers.addProgress(1);
 												return false;
-											}
-
-											if (settings.bEnableBodyGenIntegration === true)
-											{
-												let genMorph = BGI.assignMorphs(record, locals.bodyGenConfig, locals.BGcategorizedMorphs, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, locals.assignedPermutations[NPCinfo.formID], userForcedAssignment, attributeCache, helpers.logMessage);
-												if (genMorph !== undefined)
-												{
-													locals.assignedBodyGen[NPCinfo.formID] = genMorph;
-												}
 											}
 
 											return true;

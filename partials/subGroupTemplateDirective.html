@@ -48,10 +48,10 @@
 }
 </style>
 
-<label>
+<div>
     <input ng-model="displaySubgroups" type="checkbox">
     <span>Display subgroups</span>
-</label>
+</div>
 
 <div ng-if="displaySubgroups" class="allInTD">
     <div ng-repeat="subgroup in data" ng-init="getCorrectLinkedSubgroupList(subgroup, linkedsubgrouplist)">
@@ -248,14 +248,15 @@
                         <button class="TDButton" ng-click="removeDisallowedBodyGenDescriptor(subgroup, $index)">Remove</button>
                     </div>
                 </ul>
+                <br>
             </div>
 
+            <display-subgroups ng-if="subgroup.subgroups.length" data="subgroup.subgroups" bgintegration = "bgintegration" bgdescriptors = "bgdescriptors" racesandgroups = "racesandgroups" btooltips = "btooltips"></display-subgroups>
+            
             <label class = "tooltip">
                 <span class="tooltiptext" ng-if = "btooltips">Add a child subgroup to the current subgroup. Child subgroups will inherit parent values. One bottom-level child subgroup from each top-level parent subgroup will be combined into the final permutation.</span>
                 <button class="TDButton" ng-click="addSubgroup($index)">Add New Subgroup</button>
             </label>
-
-            <display-subgroups ng-if="subgroup.subgroups.length" data="subgroup.subgroups" bgintegration = "bgintegration" bgdescriptors = "bgdescriptors" racesandgroups = "racesandgroups" btooltips = "btooltips"></display-subgroups>
         </div>
     </section>
     </div>

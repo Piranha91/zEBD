@@ -1,5 +1,5 @@
 {
-  "groupName": "Bijin Skins 4K CBBE Director's Cut (for BodyGen)",
+  "groupName": "Bijin Skins 4K CBBE Director's Cut (for Diverse Races BodyGen)",
   "gender": "female",
   "displayAlerts": true,
   "userAlert": "Bijin Skins: Age40 and Age50 NPCs will be skipped due to neck seam.",
@@ -1378,7 +1378,12 @@
               "enabled": true,
               "distributionEnabled": true,
               "allowedRaces": [],
-              "disallowedRaces": [],
+              "disallowedRaces": [
+                "OrcRace",
+                "OrcRaceVampire",
+                "HighElfRace",
+                "HighElfRaceVampire"
+              ],
               "allowedAttributes": [],
               "disallowedAttributes": [],
               "forceIfAttributes": [],
@@ -1401,18 +1406,24 @@
               ],
               "subgroups": [],
               "$$hashKey": "object:4925",
-              "allowedBodyGenDescriptors": [
-                "build: normal",
-                "build: petite"
-              ],
-              "disallowedBodyGenDescriptors": []
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": [
+                "secondary: busty"
+              ]
             },
             {
               "id": "BN.Y.DC",
               "enabled": true,
               "distributionEnabled": true,
               "allowedRaces": [],
-              "disallowedRaces": [],
+              "disallowedRaces": [
+                "ImperialRace",
+                "ImperialRaceVampire",
+                "DarkElfRace",
+                "DarkElfRaceVampire",
+                "WoodElfRace",
+                "WoodElfRaceVampire"
+              ],
               "allowedAttributes": [],
               "disallowedAttributes": [],
               "forceIfAttributes": [],
@@ -1436,9 +1447,7 @@
               "subgroups": [],
               "$$hashKey": "object:4937",
               "allowedBodyGenDescriptors": [
-                "build: curvy",
-                "build: thick",
-                "build: chubby"
+                "secondary: busty"
               ],
               "disallowedBodyGenDescriptors": []
             },
@@ -1447,7 +1456,12 @@
               "enabled": true,
               "distributionEnabled": true,
               "allowedRaces": [],
-              "disallowedRaces": [],
+              "disallowedRaces": [
+                "OrcRace",
+                "OrcRaceVampire",
+                "HighElfRace",
+                "HighElfRaceVampire"
+              ],
               "allowedAttributes": [
                 [
                   "CNAM\\FULL",
@@ -1592,18 +1606,24 @@
               ],
               "subgroups": [],
               "$$hashKey": "object:4948",
-              "allowedBodyGenDescriptors": [
-                "build: normal",
-                "build: petite"
-              ],
-              "disallowedBodyGenDescriptors": []
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": [
+                "secondary: busty"
+              ]
             },
             {
               "id": "BN.MC",
               "enabled": true,
               "distributionEnabled": true,
               "allowedRaces": [],
-              "disallowedRaces": [],
+              "disallowedRaces": [
+                "ImperialRace",
+                "ImperialRaceVampire",
+                "DarkElfRace",
+                "DarkElfRaceVampire",
+                "WoodElfRace",
+                "WoodElfRaceVampire"
+              ],
               "allowedAttributes": [],
               "disallowedAttributes": [],
               "forceIfAttributes": [],
@@ -1627,7 +1647,7 @@
               "subgroups": [],
               "$$hashKey": "object:4959",
               "allowedBodyGenDescriptors": [
-                "build: curvy"
+                "secondary: busty"
               ],
               "disallowedBodyGenDescriptors": []
             }

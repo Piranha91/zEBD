@@ -233,6 +233,19 @@
 
     <section ng-if="settings.zEBD.showMiscSettings">
         <label class="tooltip">
+            <input type="checkbox" ng-model="settings.zEBD.excludePC"/>
+            <span>Exclude player character</span>
+            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">If checked, your character will not be patched</span>
+        </label>
+        <br>
+        <label class="tooltip">
+            <input type="checkbox" ng-model="settings.zEBD.excludePresets"/>
+            <span>Exclude player character presets</span>
+            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">If checked, presets for your character will not be patched</span>
+        </label>
+        <br>
+        <br>
+        <label class="tooltip">
             <span>Path Trimming</span>
             <button ng-click = "saveTrimPaths()">Save Path Trimming Settings</button>
             <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">For each asset file path that contains the file extension in box 1, the text in box 2 will be removed from its path when it is added to a record. This is because (i.e.) for a texture, Skyrim assumes the file path starts with \"data\textures\".</span>
@@ -448,11 +461,12 @@
     </label>
     <br>
     <br>
-    <label class = "tooltip">
+    <div class = "tooltip">
         <span>Show Body Morph Assignments For: </span>
-        Male <input type="checkbox" ng-model="displayMaleConfig"/> Female <input type="checkbox" ng-model="displayFemaleConfig"/>
+        Male <input type="checkbox" ng-model="displayMaleConfig"/> 
+        Female <input type="checkbox" ng-model="displayFemaleConfig"/>
         <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">These settings dictate (per-race) which BodyGen morphs can be assigned to a given NPC. In this menu you can select the assigned morph groups.</span>
-    </label>
+    </div>
     <br>
     <div ng-if="displayMaleConfig">
         <div class="bgTemplate" ng-repeat="maleAssignment in bodyGenConfig.racialSettingsMale" >
@@ -744,10 +758,11 @@
         <label>FormID: {{currentForcedNPC.formID}}</label>
         <label>Root Plugin: {{currentForcedNPC.rootPlugin}}</label>
         <div ng-if="settings.zEBD.changeNPCappearance">
-            <label>
+            <div>
                 <span>Forced Asset Pack</span>
                 <select class="forceNPCAssetPackselect" ng-model="currentForcedNPC.forcedAssetPack" ng-options="name for name in availableAssetPackNames" ng-change="chooseSubgroupsForPack(currentForcedNPC.forcedAssetPack, currentForcedNPC.forcedSubgroups)"></select>
-            </label>
+                <button ng-click="clearForcedAssetPack(currentForcedNPC)">Clear</button>
+            </div>
             <div>
                 <span>Forced Subgroups</span>
                 <div ng-repeat="forcedSub in currentForcedNPC.forcedSubgroups track by $index">
