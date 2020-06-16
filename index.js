@@ -649,6 +649,8 @@ ngapp.run(function(patcherService) {
 					$scope.selectBodyGenConfigFile = function()
 					{
 						IO.loadSelectedBodyGenConfig($scope.bodyGenConfig);
+						$scope.BodyGenItemDisplay = updateBodyGenItemDisplay($scope.bodyGenConfig);
+						$scope.categorizedMorphs = BGI.categorizeMorphs($scope.bodyGenConfig, $scope.raceGroupDefinitions);
 					};
 
 					$scope.selectBodyGenTemplateFile = function()
