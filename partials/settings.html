@@ -261,7 +261,7 @@
         <label class="tooltip">
             <span>Exclusions to NPC Linkage</span>
             <button ng-click = "saveNPCLinkageExclusions()">Save NPC Linkage Exclusions</button>
-            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">The NPCs with the following names will not be linked together by name/race/gender even if their unique flag is set to true.</span>
+            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">The NPCs with the following names will not be linked together by name/race/gender even if their unique flag is set to true. Not case-sensitive.</span>
         </label>
         <div ng-repeat="exlusion in LinkedNPCNameExclusions track by $index">
             <input type="text" ng-model="LinkedNPCNameExclusions[$index]">

@@ -1408,7 +1408,7 @@
               "$$hashKey": "object:4925",
               "allowedBodyGenDescriptors": [],
               "disallowedBodyGenDescriptors": [
-                "secondary: busty"
+                "chest: busty"
               ]
             },
             {
@@ -1447,7 +1447,7 @@
               "subgroups": [],
               "$$hashKey": "object:4937",
               "allowedBodyGenDescriptors": [
-                "secondary: busty"
+                "chest: busty"
               ],
               "disallowedBodyGenDescriptors": []
             },
@@ -1608,7 +1608,9 @@
               "$$hashKey": "object:4948",
               "allowedBodyGenDescriptors": [],
               "disallowedBodyGenDescriptors": [
-                "secondary: busty"
+                "chest: busty",
+                "build: thick",
+                "build: chubby"
               ]
             },
             {
@@ -1647,9 +1649,12 @@
               "subgroups": [],
               "$$hashKey": "object:4959",
               "allowedBodyGenDescriptors": [
-                "secondary: busty"
+                "chest: busty"
               ],
-              "disallowedBodyGenDescriptors": []
+              "disallowedBodyGenDescriptors": [
+                "build: thick",
+                "build: chubby"
+              ]
             }
           ],
           "$$hashKey": "object:2278",

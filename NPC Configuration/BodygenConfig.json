@@ -5,8 +5,8 @@
       "combinations": [
         {
           "members": [
-            "Top",
-            "Bottom"
+            "Bottom",
+            "Top"
           ],
           "probabilityWeighting": 1
         },
@@ -24,8 +24,8 @@
       "combinations": [
         {
           "members": [
-            "Top",
-            "Bottom"
+            "Bottom",
+            "Top"
           ],
           "probabilityWeighting": 1
         },
@@ -43,8 +43,8 @@
       "combinations": [
         {
           "members": [
-            "Top",
-            "Bottom"
+            "Bottom",
+            "Top"
           ],
           "probabilityWeighting": 1
         },
@@ -62,8 +62,8 @@
       "combinations": [
         {
           "members": [
-            "Top",
-            "Bottom"
+            "Bottom",
+            "Top"
           ],
           "probabilityWeighting": 1
         },
@@ -81,8 +81,8 @@
       "combinations": [
         {
           "members": [
-            "Top",
-            "Bottom"
+            "Bottom",
+            "Top"
           ],
           "probabilityWeighting": 1
         },
@@ -100,8 +100,8 @@
       "combinations": [
         {
           "members": [
-            "Top",
             "Bottom",
+            "Top",
             "Nipples"
           ],
           "probabilityWeighting": 1
@@ -196,8 +196,8 @@
       "combinations": [
         {
           "members": [
-            "Top",
-            "Bottom"
+            "Bottom",
+            "Top"
           ],
           "probabilityWeighting": 1
         },
@@ -215,8 +215,8 @@
       "combinations": [
         {
           "members": [
-            "Top",
-            "Bottom"
+            "Bottom",
+            "Top"
           ],
           "probabilityWeighting": 1
         },
@@ -234,8 +234,8 @@
       "combinations": [
         {
           "members": [
-            "Top",
             "Bottom",
+            "Top",
             "Nipples"
           ],
           "probabilityWeighting": 1
@@ -254,8 +254,8 @@
       "combinations": [
         {
           "members": [
-            "Top",
             "Bottom",
+            "Top",
             "Nipples"
           ],
           "probabilityWeighting": 1
@@ -274,8 +274,8 @@
       "combinations": [
         {
           "members": [
-            "Top",
             "Bottom",
+            "Top",
             "Nipples"
           ],
           "probabilityWeighting": 1
@@ -294,8 +294,8 @@
       "combinations": [
         {
           "members": [
-            "Top",
             "Bottom",
+            "Top",
             "Nipples"
           ],
           "probabilityWeighting": 1
@@ -314,8 +314,8 @@
       "combinations": [
         {
           "members": [
-            "Top",
             "Bottom",
+            "Top",
             "Nipples"
           ],
           "probabilityWeighting": 1
@@ -334,8 +334,8 @@
       "combinations": [
         {
           "members": [
-            "Top",
             "Bottom",
+            "Top",
             "Nipples"
           ],
           "probabilityWeighting": 1
@@ -354,8 +354,8 @@
       "combinations": [
         {
           "members": [
-            "Top",
-            "Bottom"
+            "Bottom",
+            "Top"
           ],
           "probabilityWeighting": 1
         },
@@ -373,8 +373,8 @@
       "combinations": [
         {
           "members": [
-            "Top",
-            "Bottom"
+            "Bottom",
+            "Top"
           ],
           "probabilityWeighting": 1
         },
@@ -392,8 +392,8 @@
       "combinations": [
         {
           "members": [
-            "Top",
             "Bottom",
+            "Top",
             "Nipples"
           ],
           "probabilityWeighting": 1
@@ -412,8 +412,8 @@
       "combinations": [
         {
           "members": [
-            "Top",
             "Bottom",
+            "Top",
             "Nipples"
           ],
           "probabilityWeighting": 1
@@ -449,7 +449,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: wide hips"
+        "hips: wide"
       ],
       "allowedRaces": [
         "HighElfRace",
@@ -496,7 +496,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: hourglass"
+        "sides: hourglass"
       ],
       "allowedRaces": [
         "HighElfRace",
@@ -564,7 +564,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: busty"
+        "chest: busty"
       ],
       "allowedRaces": [
         "HighElfRace",
@@ -588,7 +588,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: busty"
+        "chest: busty"
       ],
       "allowedRaces": [
         "HighElfRace",
@@ -612,7 +612,7 @@
       ],
       "descriptors": [
         "build: curvy",
-        "secondary: wide hips"
+        "hips: wide"
       ],
       "allowedRaces": [
         "ArgonianRace",
@@ -636,7 +636,7 @@
       ],
       "descriptors": [
         "build: curvy",
-        "secondary: wide hips"
+        "hips: wide"
       ],
       "allowedRaces": [
         "ArgonianRace",
@@ -861,7 +861,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: wide hips"
+        "hips: wide"
       ],
       "allowedRaces": [
         "BretonRace",
@@ -933,7 +933,7 @@
       ],
       "descriptors": [
         "build: curvy",
-        "secondary: busty"
+        "chest: busty"
       ],
       "allowedRaces": [
         "BretonRace",
@@ -1003,7 +1003,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: wide hips"
+        "hips: wide"
       ],
       "allowedRaces": [
         "DarkElfRace",
@@ -1027,7 +1027,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: wide hips"
+        "hips: wide"
       ],
       "allowedRaces": [
         "DarkElfRace",
@@ -1145,7 +1145,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: straight sides"
+        "sides: straight"
       ],
       "allowedRaces": [
         "ElderRace",
@@ -1213,7 +1213,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: saggy"
+        "chest: saggy"
       ],
       "allowedRaces": [
         "ElderRace",
@@ -1237,7 +1237,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: saggy"
+        "chest: saggy"
       ],
       "allowedRaces": [
         "ElderRace",
@@ -1261,7 +1261,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: saggy"
+        "chest: saggy"
       ],
       "allowedRaces": [
         "ElderRace",
@@ -1285,7 +1285,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: busty"
+        "chest: busty"
       ],
       "allowedRaces": [
         "ImperialRace",
@@ -1332,7 +1332,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: straight sides"
+        "sides: straight"
       ],
       "allowedRaces": [
         "ImperialRace",
@@ -1356,7 +1356,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: straight sides"
+        "sides: straight"
       ],
       "allowedRaces": [
         "ImperialRace",
@@ -1403,7 +1403,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: straight sides"
+        "sides: straight"
       ],
       "allowedRaces": [
         "ImperialRace",
@@ -1427,7 +1427,7 @@
       ],
       "descriptors": [
         "build: petite",
-        "secondary: straight sides"
+        "sides: straight"
       ],
       "allowedRaces": [
         "ImperialRace",
@@ -1451,7 +1451,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: straight sides"
+        "sides: straight"
       ],
       "allowedRaces": [
         "ImperialRace",
@@ -1475,7 +1475,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: straight sides"
+        "sides: straight"
       ],
       "allowedRaces": [
         "ImperialRace",
@@ -1499,7 +1499,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: saggy"
+        "chest: saggy"
       ],
       "allowedRaces": [
         "ImperialRace",
@@ -1523,7 +1523,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: hourglass"
+        "sides: hourglass"
       ],
       "allowedRaces": [
         "ImperialRace",
@@ -1591,7 +1591,7 @@
       ],
       "descriptors": [
         "build: petite",
-        "secondary: hourglass"
+        "sides: hourglass"
       ],
       "allowedRaces": [
         "ImperialRace",
@@ -1615,7 +1615,7 @@
       ],
       "descriptors": [
         "build: petite",
-        "secondary: hourglass"
+        "sides: hourglass"
       ],
       "allowedRaces": [
         "ImperialRace",
@@ -1639,7 +1639,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: hourglass"
+        "sides: hourglass"
       ],
       "allowedRaces": [
         "ImperialRace",
@@ -1709,7 +1709,7 @@
       ],
       "descriptors": [
         "build: petite",
-        "secondary: wide hips"
+        "hips: wide"
       ],
       "allowedRaces": [
         "KhajiitRace",
@@ -1754,7 +1754,7 @@
       ],
       "descriptors": [
         "build: curvy",
-        "secondary: busty"
+        "chest: busty"
       ],
       "allowedRaces": [
         "KhajiitRace",
@@ -1801,7 +1801,7 @@
       ],
       "descriptors": [
         "build: curvy",
-        "secondary: busty"
+        "chest: busty"
       ],
       "allowedRaces": [
         "KhajiitRace",
@@ -1917,7 +1917,7 @@
       ],
       "descriptors": [
         "build: curvy",
-        "secondary: busty"
+        "chest: busty"
       ],
       "allowedRaces": [
         "NordRace",
@@ -1941,7 +1941,7 @@
       ],
       "descriptors": [
         "build: curvy",
-        "secondary: busty"
+        "chest: busty"
       ],
       "allowedRaces": [
         "NordRace",
@@ -1965,8 +1965,8 @@
       ],
       "descriptors": [
         "build: curvy",
-        "secondary: busty",
-        "secondary: hourglass"
+        "chest: busty",
+        "sides: hourglass"
       ],
       "allowedRaces": [
         "NordRace",
@@ -1990,8 +1990,8 @@
       ],
       "descriptors": [
         "build: curvy",
-        "secondary: busty",
-        "secondary: hourglass"
+        "chest: busty",
+        "sides: hourglass"
       ],
       "allowedRaces": [
         "NordRace",
@@ -2084,7 +2084,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: wide hips"
+        "hips: wide"
       ],
       "allowedRaces": [
         "NordRace",
@@ -2108,7 +2108,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: wide hips"
+        "hips: wide"
       ],
       "allowedRaces": [
         "NordRace",
@@ -2132,7 +2132,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: hourglass"
+        "sides: hourglass"
       ],
       "allowedRaces": [
         "NordRace",
@@ -2156,8 +2156,8 @@
       ],
       "descriptors": [
         "build: curvy",
-        "secondary: busty",
-        "secondary: hourglass"
+        "chest: busty",
+        "sides: hourglass"
       ],
       "allowedRaces": [
         "NordRace",
@@ -2225,7 +2225,7 @@
       ],
       "descriptors": [
         "build: normal",
-        "secondary: hourglass"
+        "sides: hourglass"
       ],
       "allowedRaces": [
         "NordRace",
@@ -2272,7 +2272,7 @@
       ],
       "descriptors": [
         "build: curvy",
-        "secondary: busty"
+        "chest: busty"
       ],
       "allowedRaces": [
         "NordRace",
@@ -2319,7 +2319,7 @@
       ],
       "descriptors": [
         "build: curvy",
-        "secondary: busty"
+        "chest: busty"
       ],
       "allowedRaces": [
         "NordRace",
@@ -2389,8 +2389,8 @@
       ],
       "descriptors": [
         "build: curvy",
-        "secondary: busty",
-        "secondary: wide hips"
+        "chest: busty",
+        "hips: wide"
       ],
       "allowedRaces": [
         "NordRace",
@@ -2414,7 +2414,7 @@
       ],
       "descriptors": [
         "build: thick",
-        "secondary: busty"
+        "chest: busty"
       ],
       "allowedRaces": [
         "NordRace",
@@ -2438,7 +2438,7 @@
       ],
       "descriptors": [
         "build: thick",
-        "secondary: busty"
+        "chest: busty"
       ],
       "allowedRaces": [
         "NordRace",
@@ -2507,8 +2507,7 @@
         "Bottom"
       ],
       "descriptors": [
-        "build: thick",
-        "secondary: busty"
+        "build: powerful"
       ],
       "allowedRaces": [
         "OrcRace",
@@ -2532,7 +2531,7 @@
       ],
       "descriptors": [
         "build: curvy",
-        "secondary: busty"
+        "chest: busty"
       ],
       "allowedRaces": [
         "OrcRace",
@@ -2556,7 +2555,7 @@
       ],
       "descriptors": [
         "build: curvy",
-        "secondary: busty"
+        "chest: busty"
       ],
       "allowedRaces": [
         "OrcRace",
@@ -2580,7 +2579,7 @@
       ],
       "descriptors": [
         "build: curvy",
-        "secondary: busty"
+        "chest: busty"
       ],
       "allowedRaces": [
         "OrcRace",
@@ -2604,8 +2603,7 @@
       ],
       "descriptors": [
         "build: thick",
-        "secondary: wide hips",
-        "secondary: busty"
+        "hips: wide"
       ],
       "allowedRaces": [
         "RedguardRace",
@@ -2651,8 +2649,7 @@
         "Bottom"
       ],
       "descriptors": [
-        "build: thick",
-        "secondary: busty"
+        "build: thick"
       ],
       "allowedRaces": [
         "RedguardRace",
@@ -2697,7 +2694,7 @@
       ],
       "descriptors": [
         "build: curvy",
-        "secondary: busty"
+        "chest: busty"
       ],
       "allowedRaces": [
         "RedguardRace",
@@ -2721,7 +2718,7 @@
       ],
       "descriptors": [
         "build: curvy",
-        "secondary: busty"
+        "chest: busty"
       ],
       "allowedRaces": [
         "RedguardRace",
@@ -2745,7 +2742,7 @@
       ],
       "descriptors": [
         "build: curvy",
-        "secondary: busty"
+        "chest: busty"
       ],
       "allowedRaces": [
         "RedguardRace",
@@ -2769,7 +2766,7 @@
       ],
       "descriptors": [
         "build: curvy",
-        "secondary: busty"
+        "chest: busty"
       ],
       "allowedRaces": [],
       "disallowedRaces": [],
@@ -3694,12 +3691,13 @@
     "build: normal",
     "build: curvy",
     "build: petite",
+    "build: powerful",
     "build: thick",
     "build: chubby",
-    "secondary: wide hips",
-    "secondary: hourglass",
-    "secondary: busty",
-    "secondary: straight sides",
-    "secondary: saggy"
+    "chest: busty",
+    "chest: saggy",
+    "hips: wide",
+    "sides: hourglass",
+    "sides: straight"
   ]
 }
