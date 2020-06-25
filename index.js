@@ -664,30 +664,25 @@ ngapp.run(function(patcherService) {
 						IO.loadSelectedBodyGenMorphs($scope.forcedNPCAssignments, $scope.availableNPCs, $scope.bodyGenConfig.templates);
 					}
 
-					$scope.addNPCtoBlockList = function(currentNPC)
+					$scope.addNPCtoBlockList = function(currentNPC, mode)
 					{
-						let obj = {};
-						obj.name = currentNPC.name;
-						obj.formID = currentNPC.formID;
-						obj.formID = "xx" + obj.formID.substring(2, 9);
-						obj.EDID = currentNPC.EDID;
-						obj.rootPlugin = currentNPC.masterRecordFile;
-						obj.displayString = obj.name + " (" + obj.formID + ") | " + obj.rootPlugin;
-
-						let bFound = false;
-						for (let i = 0; i < $scope.blockList.blockedNPCs.length; i++)
+						let blockedNPC = findNPCinBlockList(currentNPC, $scope.blockList.blockedNPCs);
+						if (blockedNPC === undefined)
 						{
-							let matchedFormID = ($scope.blockList.blockedNPCs[i].formID === obj.formID);
-							let matchedPlugin = ($scope.blockList.blockedNPCs[i].rootPlugin === obj.rootPlugin);
-							if (matchedFormID && matchedPlugin)
-							{
-								bFound = true;
-								break;
-							}
+							blockedNPC = createNPCforBlockList(currentNPC, $scope.blockList.blockedNPCs);
 						}
-						if (bFound === false)
+
+						if (mode === "all" || mode === "assets")
 						{
-							$scope.blockList.blockedNPCs.push(obj);
+							blockedNPC.bBlockAssets = true;
+						}
+						if (mode === "all" || mode === "height")
+						{
+							blockedNPC.bBlockHeight = true;
+						}
+						if (mode === "all" || mode === "bodygen")
+						{
+							blockedNPC.bBlockBodyGen = true;
 						}
 					};
 
@@ -696,9 +691,26 @@ ngapp.run(function(patcherService) {
 						$scope.blockList.blockedNPCs.splice(index, 1);
 					};
 
-					$scope.addPluginToBlockList = function(plugin)
+					$scope.addPluginToBlockList = function(currentPlugin, mode)
 					{
-						$scope.blockList.blockedPlugins.push(plugin);
+						let blockedPlugin = findPlugininBlockList(currentPlugin, $scope.blockList.blockedPlugins);
+						if (blockedPlugin === undefined)
+						{
+							blockedPlugin = createPluginforBlockList(currentPlugin, $scope.blockList.blockedPlugins);
+						}
+
+						if (mode === "all" || mode === "assets")
+						{
+							blockedPlugin.bBlockAssets = true;
+						}
+						if (mode === "all" || mode === "height")
+						{
+							blockedPlugin.bBlockHeight = true;
+						}
+						if (mode === "all" || mode === "bodygen")
+						{
+							blockedPlugin.bBlockBodyGen = true;
+						}
 					};
 
 					$scope.removeBlockedPlugin = function(index)
@@ -904,6 +916,7 @@ ngapp.run(function(patcherService) {
 											let attributeCache = {};
 											let NPCinfo = PO.getNPCinfo(record, locals.consistencyAssignments, xelib);
 											let userForcedAssignment = PO.getUserForcedAssignment(NPCinfo, locals.forcedNPCAssignments);
+											let userBlockedAssignment = PO.getBlocks(record, locals.blockList, NPCinfo, helpers.logMessage, xelib);
 
 											if (NPCinfo.formID === "00000007" && settings.excludePC === true) // ignore player
 											{
@@ -917,77 +930,80 @@ ngapp.run(function(patcherService) {
 												return false;
 											}
 
+											if (settings.patchableRaces.includes(NPCinfo.race) === false) // check if NPC's race is one of the patchable races
+											{
+												helpers.addProgress(1);
+												return false;
+											}
+
 											let bApplyPermutationToCurrentNPC = settings.changeNPCappearance;
 											let bApplyHeightSettingsToCurrentNPC = settings.changeNPCHeight;
-											let bApplyBodyGenSettingsToCurrentNPC = settings.bEnableBodyGenIntegration;
+											// not needed for BodyGen because no code is executed in the patch function for BodyGen assignment
 
 											if (settings.changeNPCappearance === true)
 											{
-												let bRGvalid = bCheckNPCRaceGenderValid(NPCinfo, settings.patchableRaces, locals.patchableGenders, locals.permutationsByRaceGender);
-												if (bRGvalid === false)
+												if (userBlockedAssignment.assets === true)
 												{
 													bApplyPermutationToCurrentNPC = false;
 												}
+												else
+												{
+													let bRGvalid = bCheckNPCRaceGenderValid(NPCinfo, locals.patchableGenders, locals.permutationsByRaceGender);
+													if (bRGvalid === false)
+													{
+														bApplyPermutationToCurrentNPC = false;
+													}
 
-												if (PO.bNPCisBlocked(locals.blockList.blockedNPCs, NPCinfo) === true)
-												{
-													helpers.logMessage("NPC " + NPCinfo.name + " (" + NPCinfo.EDID + "/" + NPCinfo.formID + ") was blocked by ID in BlockList.json. Skipping.");
-													bApplyPermutationToCurrentNPC = false;
-												}
+													if (settings.changeNPCsWithWNAM === false && xelib.HasElement(record, "WNAM") === true)
+													{
+														helpers.logMessage("NPC " + NPCinfo.name + " (" + NPCinfo.EDID + "/" + NPCinfo.formID + ") was blocked because it already has a WNAM record. Skipping.");
+														bApplyPermutationToCurrentNPC = false;
+													}
 
-												let winningOverrideHandle = xelib.GetWinningOverride(record);
-												let ORfileName = xelib.GetFileName(xelib.GetElementFile(winningOverrideHandle));
-												if (locals.blockList.blockedPlugins.includes(ORfileName))
-												{
-													helpers.logMessage("NPC " + NPCinfo.name + " (" + NPCinfo.EDID + "/" + NPCinfo.formID + ") was blocked by plugin (" + ORfileName + ") in BlockList.json. Skipping.");
-													bApplyPermutationToCurrentNPC = false;
-												}
+													if (settings.changeNPCsWithFaceParts === false && Aux.bAttributeMatched("Head Parts\\*\\PNAM", "Face", record, helpers.logMessage, xelib, {}) === true)
+													{
+														helpers.logMessage("NPC " + NPCinfo.name + " (" + NPCinfo.EDID + "/" + NPCinfo.formID + ") was blocked because it has a custom face part. Skipping.");
+														bApplyPermutationToCurrentNPC = false;
+													}
 
-												if (settings.changeNPCsWithWNAM === false && xelib.HasElement(record, "WNAM") === true)
-												{
-													helpers.logMessage("NPC " + NPCinfo.name + " (" + NPCinfo.EDID + "/" + NPCinfo.formID + ") was blocked because it already has a WNAM record. Skipping.");
-													bApplyPermutationToCurrentNPC = false;
-												}
-
-												if (settings.changeNPCsWithFaceParts === false && Aux.bAttributeMatched("Head Parts\\*\\PNAM", "Face", record, helpers.logMessage, xelib, {}) === true)
-												{
-													helpers.logMessage("NPC " + NPCinfo.name + " (" + NPCinfo.EDID + "/" + NPCinfo.formID + ") was blocked because it has a custom face part. Skipping.");
-													bApplyPermutationToCurrentNPC = false;
-												}
-
-												//if all the above don't fail, assign a permutation.
-												if (bApplyPermutationToCurrentNPC === true)
-												{
-													locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation(record, NPCinfo, locals.permutationsByRaceGender, locals.consistencyAssignments, settings.bEnableConsistency, userForcedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, attributeCache, helpers.logMessage);
-												}
-												if (locals.assignedPermutations[NPCinfo.formID] === undefined) // occurs if the NPC is incompatible with the assignment criteria for all generated permutations.
-												{
-													bApplyPermutationToCurrentNPC = false;
+													//if all the above don't fail, assign a permutation.
+													if (bApplyPermutationToCurrentNPC === true)
+													{
+														locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation(record, NPCinfo, locals.permutationsByRaceGender, locals.consistencyAssignments, settings.bEnableConsistency, userForcedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, attributeCache, helpers.logMessage);
+													}
+													if (locals.assignedPermutations[NPCinfo.formID] === undefined) // occurs if the NPC is incompatible with the assignment criteria for all generated permutations.
+													{
+														bApplyPermutationToCurrentNPC = false;
+													}
 												}
 											}
 
 											if (settings.changeNPCHeight === true)
 											{
-												locals.assignedHeights[NPCinfo.formID] = PO.assignNPCheight(record, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, locals.heightConfiguration, userForcedAssignment, settings.changeNonDefaultHeight, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCheights);
-												if (locals.assignedHeights[NPCinfo.formID] === undefined) // if there are no height settings for the given NPC's race
+												if (userBlockedAssignment.height === true)
 												{
 													bApplyHeightSettingsToCurrentNPC = false;
 												}
+												else
+												{
+													locals.assignedHeights[NPCinfo.formID] = PO.assignNPCheight(record, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, locals.heightConfiguration, userForcedAssignment, settings.changeNonDefaultHeight, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCheights);
+													if (locals.assignedHeights[NPCinfo.formID] === undefined || locals.assignedHeights[NPCinfo.formID] === "NaN") // if there are no height settings for the given NPC's race
+													{
+														bApplyHeightSettingsToCurrentNPC = false;
+													}
+												}
+												
 											}
 											
-											if (settings.bEnableBodyGenIntegration === true)
+											if (settings.bEnableBodyGenIntegration === true && userBlockedAssignment.bodygen === false)
 											{
 												locals.assignedBodyGen[NPCinfo.formID] = BGI.assignMorphs(record, locals.bodyGenConfig, locals.BGcategorizedMorphs, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, locals.assignedPermutations[NPCinfo.formID], userForcedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCbodygen, attributeCache, helpers.logMessage);
-												if (locals.assignedBodyGen[NPCinfo.formID] === undefined)
-												{
-													bApplyBodyGenSettingsToCurrentNPC = false;
-												}
 											}
 
 											// store the NPC info
 											locals.NPCinfoDict[NPCinfo.formID] = NPCinfo; // can't store it using the handle as key because the handle changes from filter() to patch()
 
-											if (bApplyPermutationToCurrentNPC === false && bApplyHeightSettingsToCurrentNPC === false && bApplyBodyGenSettingsToCurrentNPC === false)
+											if (bApplyPermutationToCurrentNPC === false && bApplyHeightSettingsToCurrentNPC === false)
 											{
 												helpers.addProgress(1);
 												return false;
@@ -1006,7 +1022,7 @@ ngapp.run(function(patcherService) {
 										PO.applyPermutation(record, locals.assignedPermutations[NPCformID], locals.formIDdict, settings.updateHeadPartNames, xelib, helpers.copyToPatch);
 									}
 									
-									if (settings.changeNPCHeight === true && locals.assignedHeights[NPCformID] !== undefined)
+									if (settings.changeNPCHeight === true && locals.assignedHeights[NPCformID] !== undefined && locals.assignedHeights[NPCformID] !== NaN && locals.assignedHeights[NPCformID] !== NaN) // NaN and NaN are catch-alls in case of manual editing and misconfiguring of consistency file
 									{
 										xelib.SetValue(record, "NAM6 - Height", locals.assignedHeights[NPCformID]);
 									}
@@ -1084,13 +1100,8 @@ ngapp.run(function(patcherService) {
 	});
 });
 
-function bCheckNPCRaceGenderValid(NPCinfo, patchableRaces, patchableGenders, permutationsByRaceGender)
+function bCheckNPCRaceGenderValid(NPCinfo, patchableGenders, permutationsByRaceGender)
 {
-	if (patchableRaces.includes(NPCinfo.race) === false) // check if NPC's race is one of the patchable races
-	{
-		return false;
-	}
-
 	if (patchableGenders.includes(NPCinfo.gender) === false)
 	{
 		return false;
@@ -1244,6 +1255,58 @@ function findNPCAssignmentIndex(consistencyRecords, NPCinfo)
         }
     }
     return index;
+}
+
+function findNPCinBlockList(currentNPC, BlockedNPCs)
+{
+	for (let i = 0; i < BlockedNPCs.length; i++)
+	{
+		if (BlockedNPCs[i].formID === currentNPC.formID && BlockedNPCs[i].rootPlugin === currentNPC.rootPlugin)
+		{
+			return BlockedNPCs[i];
+		}
+	}
+	return undefined;
+}
+
+function createNPCforBlockList(currentNPC, BlockedNPCs)
+{
+	let obj = {};
+	obj.name = currentNPC.name;
+	obj.formID = currentNPC.formID;
+	obj.formID = "xx" + obj.formID.substring(2, 9);
+	obj.EDID = currentNPC.EDID;
+	obj.rootPlugin = currentNPC.masterRecordFile;
+	obj.displayString = obj.name + " (" + obj.formID + ") | " + obj.rootPlugin;
+	obj.bBlockAssets = false;
+	obj.bBlockHeight = false;
+	obj.bBlockBodyGen = false;
+
+	BlockedNPCs.push(obj);
+	return obj;
+}
+
+function findPlugininBlockList(currentPlugin, BlockedPlugins)
+{
+	for (let i = 0; i < BlockedPlugins.length; i++)
+	{
+		if (BlockedPlugins[i].name === currentPlugin)
+		{
+			return BlockedPlugins[i];
+		}
+	}
+	return undefined;
+}
+
+function createPluginforBlockList(currentPlugin, BlockedPlugins)
+{
+	let obj = {};
+	obj.name = currentPlugin;
+	obj.bBlockAssets = false;
+	obj.bBlockHeight = false;
+	obj.bBlockBodyGen = false;
+	BlockedPlugins.push(obj);
+	return obj;
 }
 
 ngapp.directive('displaySubgroups', function()

@@ -5,29 +5,106 @@
       "formID": "xx01367B",
       "EDID": "Hern",
       "rootPlugin": "Skyrim.esm",
-      "displayString": "Hern (xx01367B) | Skyrim.esm"
+      "displayString": "Hern (xx01367B) | Skyrim.esm",
+      "bBlockAssets": true,
+      "bBlockHeight": false,
+      "bBlockBodyGen": false
     },
     {
       "name": "Vingalmo",
       "formID": "xx003360",
       "EDID": "DLC1Vingalmo",
       "rootPlugin": "Dawnguard.esm",
-      "displayString": "Vingalmo (xx003360) | Dawnguard.esm"
+      "displayString": "Vingalmo (xx003360) | Dawnguard.esm",
+      "bBlockAssets": true,
+      "bBlockHeight": false,
+      "bBlockBodyGen": false
     },
     {
       "name": "Orthjolf",
       "formID": "xx003361",
       "EDID": "DLC1Orthjolf",
       "rootPlugin": "Dawnguard.esm",
-      "displayString": "Orthjolf (xx003361) | Dawnguard.esm"
+      "displayString": "Orthjolf (xx003361) | Dawnguard.esm",
+      "bBlockAssets": true,
+      "bBlockHeight": false,
+      "bBlockBodyGen": false
     },
     {
       "name": "Ronthil",
       "formID": "xx003367",
       "EDID": "DLC1Ronthil",
       "rootPlugin": "Dawnguard.esm",
-      "displayString": "Ronthil (xx003367) | Dawnguard.esm"
+      "displayString": "Ronthil (xx003367) | Dawnguard.esm",
+      "bBlockAssets": true,
+      "bBlockHeight": false,
+      "bBlockBodyGen": false
+    },
+    {
+      "name": "Gerdur",
+      "formID": "xx01347C",
+      "EDID": "Gerdur",
+      "rootPlugin": "Skyrim.esm",
+      "displayString": "Gerdur (xx01347C) | Skyrim.esm",
+      "bBlockAssets": true,
+      "bBlockHeight": false,
+      "bBlockBodyGen": false
+    },
+    {
+      "name": "Hod",
+      "formID": "xx01347D",
+      "EDID": "Hod",
+      "rootPlugin": "Skyrim.esm",
+      "displayString": "Hod (xx01347D) | Skyrim.esm",
+      "bBlockAssets": false,
+      "bBlockHeight": true,
+      "bBlockBodyGen": false
+    },
+    {
+      "name": "Alva",
+      "formID": "xx0135E6",
+      "EDID": "Alva",
+      "rootPlugin": "Skyrim.esm",
+      "displayString": "Alva (xx0135E6) | Skyrim.esm",
+      "bBlockAssets": false,
+      "bBlockHeight": false,
+      "bBlockBodyGen": true
+    },
+    {
+      "name": "Sigrid",
+      "formID": "xx013476",
+      "EDID": "Sigrid",
+      "rootPlugin": "Skyrim.esm",
+      "displayString": "Sigrid (xx013476) | Skyrim.esm",
+      "bBlockAssets": true,
+      "bBlockHeight": true,
+      "bBlockBodyGen": true
     }
   ],
-  "blockedPlugins": []
+  "blockedPlugins": [
+    {
+      "name": "Bijin Warmaidens.esp",
+      "bBlockAssets": true,
+      "bBlockHeight": false,
+      "bBlockBodyGen": false
+    },
+    {
+      "name": "Bijin Wives.esp",
+      "bBlockAssets": false,
+      "bBlockHeight": true,
+      "bBlockBodyGen": false
+    },
+    {
+      "name": "Bijin NPCs.esp",
+      "bBlockAssets": false,
+      "bBlockHeight": false,
+      "bBlockBodyGen": true
+    },
+    {
+      "name": "Valerica.esp",
+      "bBlockAssets": true,
+      "bBlockHeight": true,
+      "bBlockBodyGen": true
+    }
+  ]
 }

@@ -234,7 +234,10 @@
           },
           "NAM1 - Female Skin Texture": "SkinBodyFemale_1 [TXST:0003EDE7]",
           "SNDD - Footstep Sound": "FSTBarefootFootstepSet [FSTS:00021468]"
-        }
+        },
+        "NakedTorsoWerewolfBeast [ARMA:000CDD87]",
+        "DLC2NakedTorsoWerebearBeast [ARMA:0401E17D]",
+        "DLC1NakedVampireLord [ARMA:020023F4]"
       ]
     },
     {

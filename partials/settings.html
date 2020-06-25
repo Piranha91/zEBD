@@ -821,12 +821,16 @@
     <br>
     <h3>Blocked NPCs:</h3>
     <div ng-repeat="NPC in blockList.blockedNPCs track by $index">
-        {{NPC.displayString}} <button ng-click="removeBlockedNPC($index)">Remove</button>
+        {{NPC.displayString}}: Assets<input type="checkbox" ng-model="NPC.bBlockAssets"> Height<input type="checkbox" ng-model="NPC.bBlockHeight"> BodyGen<input type="checkbox" ng-model="NPC.bBlockBodyGen">  
+        <br>
+        <button ng-click="removeBlockedNPC($index)">Remove</button>
     </div>
     <br>
     <h3>Blocked Plugins:</h3>
     <div ng-repeat="plugin in blockList.blockedPlugins track by $index">
-        {{plugin}} <button ng-click="removeBlockedPlugin($index)">Remove</button>
+        {{plugin.name}}: Assets<input type="checkbox" ng-model="plugin.bBlockAssets"> Height<input type="checkbox" ng-model="plugin.bBlockHeight"> BodyGen<input type="checkbox" ng-model="plugin.bBlockBodyGen"> 
+        <br>
+        <button ng-click="removeBlockedPlugin($index)">Remove</button>
     </div>
     <br>
     <label>
@@ -840,10 +844,14 @@
         <select class="NPCselect" ng-model="currentNPC" ng-options="NPC.displayString for NPC in availableNPCs" size="5"></select>
     </span>
     <br>
-    <label class = "tooltip">
-        <button ng-click="addNPCtoBlockList(currentNPC)">Add Selected NPC to Block List</button>
-        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">The selected NPC will be skipped for all modifications.</span>
-    </label>
+    <div class = "tooltip">
+        Block NPC's 
+        <button ng-click="addNPCtoBlockList(currentNPC, 'assets')">Assets</button>
+        <button ng-click="addNPCtoBlockList(currentNPC, 'height')">Height</button>
+        <button ng-click="addNPCtoBlockList(currentNPC, 'bodygen')">BodyGen</button>
+        <button ng-click="addNPCtoBlockList(currentNPC, 'all')">All</button>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">The selected NPC will be skipped for the specified modifications.</span>
+    </div>
     <br>
     <label>
         <label>Available Plugins</label>
@@ -852,8 +860,12 @@
         <select class="NPCselect" ng-model="currentPlugin" ng-options="plugin for plugin in loadedPlugins" size="5"></select>
     </span>
     <br>
-    <label class = "tooltip">
-        <button ng-click="addPluginToBlockList(currentPlugin)">Add Selected Plugin to Block List</button>
+    <div class = "tooltip">
+        Block plugin's 
+        <button ng-click="addPluginToBlockList(currentPlugin, 'assets')">Assets</button>
+        <button ng-click="addPluginToBlockList(currentPlugin, 'height')">Height</button>
+        <button ng-click="addPluginToBlockList(currentPlugin, 'bodygen')">BodyGen</button>
+        <button ng-click="addPluginToBlockList(currentPlugin, 'all')">All</button>
         <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">NPCs that are affected by the selected plugin will be skipped for all modifications.</span>
-    </label>
+    </div>
 </section>

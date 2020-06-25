@@ -1,0 +1,3034 @@
+{
+  "groupName": "Vitruvia Skins for Males 4K (Director's Cut)",
+  "gender": "male",
+  "displayAlerts": true,
+  "userAlert": "Make sure that Vitruvia meshes are manually installed!",
+  "subgroups": [
+    {
+      "id": "HD",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Diffuse",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HD.H",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Non-vampire",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\male\\malehead.dds",
+              "malehead.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5570"
+        },
+        {
+          "id": "HD.V",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoidVampire"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Vampire",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\maleheadvampire.dds",
+              "malehead.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5582"
+        },
+        {
+          "id": "HD.A",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "DA13AfflictedRace"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Afflicted",
+          "requiredSubgroups": [
+            "BD.A",
+            "HAD.A"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\maleheadafflicted.dds",
+              "malehead.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6265"
+        },
+        {
+          "id": "HD.S",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "SnowElfRace"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Snow Elf",
+          "requiredSubgroups": [
+            "BD.S",
+            "HAD.S"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\maleheadsnowelf.dds",
+              "malehead.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6281"
+        },
+        {
+          "id": "HD.K",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "khajiit"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Khajiit (Default)",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\Actors\\Character\\KhajiitMale\\KhajiitMaleHead.dds",
+              "KhajiitMaleHead.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5021"
+        },
+        {
+          "id": "HD.Arg",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "argonian"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Argonian (Default)",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\Actors\\Character\\ArgonianMale\\ArgonianMaleHead.dds",
+              "ArgonianMaleHead.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5032"
+        }
+      ],
+      "$$hashKey": "object:4409"
+    },
+    {
+      "id": "HN",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Normals",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HN.Y",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Younger",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HN.Y.B",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "BretonRace",
+                "DA13AfflictedRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Breton",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\bretonmale\\malehead_msn.dds",
+                  "malehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4544"
+            },
+            {
+              "id": "HN.Y.D",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "DarkElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Dark Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\darkelfmale\\malehead_msn.dds",
+                  "malehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4558"
+            },
+            {
+              "id": "HN.Y.N",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "NordRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Nord",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\male\\malehead_msn.dds",
+                  "malehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4571"
+            },
+            {
+              "id": "HN.Y.H",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "HighElfRace",
+                "SnowElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "High Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\highelfmale\\malehead_msn.dds",
+                  "malehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4595"
+            },
+            {
+              "id": "HN.Y.O",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "OrcRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Orc",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\orcmale\\maleheadorc_msn.dds",
+                  "malehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4608"
+            },
+            {
+              "id": "HN.Y.I",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "ImperialRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Imperial",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\imperialmale\\malehead_msn.dds",
+                  "malehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4619"
+            },
+            {
+              "id": "HN.Y.R",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "RedguardRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Redguard",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\redguardmale\\malehead_msn.dds",
+                  "malehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4634"
+            },
+            {
+              "id": "HN.Y.V",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoidVampire"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": false,
+              "allowNonUnique": true,
+              "name": "Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\maleheadvampire_msn.dds",
+                  "malehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:3582"
+            },
+            {
+              "id": "HN.Y.W",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "WoodElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Wood Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\woodelfmale\\malehead_msn.dds",
+                  "malehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4185"
+            }
+          ],
+          "$$hashKey": "object:1933"
+        },
+        {
+          "id": "HN.E",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "elder"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Elder",
+          "requiredSubgroups": [
+            "BN.E"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\maleold\\malehead_msn.dds",
+              "malehead_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4584"
+        },
+        {
+          "id": "HN.K",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "khajiit"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Khajiit (Default)",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\Actors\\Character\\KhajiitMale\\KhajiitMaleHead_msn.dds",
+              "KhajiitMaleHead_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5053"
+        },
+        {
+          "id": "HN.Arg",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "argonian"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Argonian (Default)",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\Actors\\Character\\ArgonianMale\\ArgonianMaleHead_msn.dds",
+              "ArgonianMaleHead_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5064"
+        }
+      ],
+      "$$hashKey": "object:4780"
+    },
+    {
+      "id": "HS",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Subsurface",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\malehead_sk.dds",
+          "malehead_sk.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:4649"
+    },
+    {
+      "id": "HSP",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Specular",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HSP.H",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Humanoid",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\male\\malehead_s.dds",
+              "malehead_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:2727"
+        },
+        {
+          "id": "HSP.K",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "khajiit"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Khajiit (Default)",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\khajiitmale\\khajiitmalehead_s.dds",
+              "KhajiitMaleHead_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4781"
+        },
+        {
+          "id": "HSP.Arg",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "argonian"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Argonian (Default)",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\Actors\\Character\\ArgonianMale\\ArgonianMaleHead_s.dds",
+              "ArgonianMaleHead_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5085"
+        }
+      ],
+      "$$hashKey": "object:4686"
+    },
+    {
+      "id": "HDE",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Detail",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HDE.BDM",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "BlankDetailMap",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\blankdetailmap.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4737"
+        },
+        {
+          "id": "HDE.A40",
+          "enabled": true,
+          "distributionEnabled": false,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadMaleBretonComplexion_Age40 [TXST:000D0721]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleDarkElfComplexion_Age40 [TXST:000F204F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleHighElfComplexion_Age40 [TXST:000F204B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleImperialComplexion_Age40 [TXST:000D0725]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleNordComplexion_Age40 [TXST:000D071D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOrcComplexion_Age40 [TXST:000D072E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleRedGuardComplexion_Age40 [TXST:000D0729]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleWoodElfComplexion_Age40 [TXST:000F2054]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadMaleBretonComplexion_Age40 [TXST:000D0721]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleDarkElfComplexion_Age40 [TXST:000F204F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleHighElfComplexion_Age40 [TXST:000F204B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleImperialComplexion_Age40 [TXST:000D0725]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleNordComplexion_Age40 [TXST:000D071D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOrcComplexion_Age40 [TXST:000D072E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleRedGuardComplexion_Age40 [TXST:000D0729]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleWoodElfComplexion_Age40 [TXST:000F2054]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Age 40",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\MaleHeadDetail_Age40.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:2728"
+        },
+        {
+          "id": "HDE.A40R",
+          "enabled": true,
+          "distributionEnabled": false,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadMaleBretonComplexion_Age40Rough [TXST:000D0722]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleDarkElfComplexion_Age40Rough [TXST:000F204E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleHighElfComplexion_Age40Rough [TXST:000F2049]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleImperialComplexion_Age40Rough [TXST:000D0726]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleNordComplexion_Age40Rough [TXST:000D071E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOrcComplexion_Age40Rough [TXST:000D072F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleRedGuardComplexion_Age40Rough [TXST:000D072A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleWoodElfComplexion_Age40Rough [TXST:000F2053]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadMaleBretonComplexion_Age40Rough [TXST:000D0722]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleDarkElfComplexion_Age40Rough [TXST:000F204E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleHighElfComplexion_Age40Rough [TXST:000F2049]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleImperialComplexion_Age40Rough [TXST:000D0726]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleNordComplexion_Age40Rough [TXST:000D071E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOrcComplexion_Age40Rough [TXST:000D072F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleRedGuardComplexion_Age40Rough [TXST:000D072A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleWoodElfComplexion_Age40Rough [TXST:000F2053]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Age 40 Rough",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\MaleHeadDetail_Age40rough.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:1838"
+        },
+        {
+          "id": "HDE.A50",
+          "enabled": true,
+          "distributionEnabled": false,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadMaleBretonComplexion_Age50 [TXST:000D0731]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleDarkElfComplexion_Age50 [TXST:000F2050]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleHighElfComplexion_Age50 [TXST:000F204A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleImperialComplexion_Age50 [TXST:0009F0CD]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleNordComplexion_Age50 [TXST:0007325B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOrcComplexion_Age50 [TXST:000D0730]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleRedGuardComplexion_Age50 [TXST:000D072B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleWoodElfComplexion_Age50 [TXST:000F2055]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadMaleBretonComplexion_Age50 [TXST:000D0731]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleDarkElfComplexion_Age50 [TXST:000F2050]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleHighElfComplexion_Age50 [TXST:000F204A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleImperialComplexion_Age50 [TXST:0009F0CD]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleNordComplexion_Age50 [TXST:0007325B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOrcComplexion_Age50 [TXST:000D0730]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleRedGuardComplexion_Age50 [TXST:000D072B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleWoodElfComplexion_Age50 [TXST:000F2055]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Age 50",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\MaleHeadDetail_Age50.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:2729"
+        },
+        {
+          "id": "HDE.R01",
+          "enabled": true,
+          "distributionEnabled": false,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadMaleBretonComplexion_Rough01 [TXST:000D071F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleDarkElfComplexion_Rough01 [TXST:000F204C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleHighElfComplexion_Rough01 [TXST:000F2047]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleImperialComplexion_Rough01 [TXST:000D0723]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleNordComplexion_Rough01 [TXST:00073259]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOrcComplexion_Rough01 [TXST:000D072C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleRedGuardComplexion_Rough01 [TXST:000D0727]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleWoodElfComplexion_Rough01 [TXST:000F2051]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOldComplexion_Rough01 [TXST:000FFF3F]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadMaleBretonComplexion_Rough01 [TXST:000D071F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleDarkElfComplexion_Rough01 [TXST:000F204C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleHighElfComplexion_Rough01 [TXST:000F2047]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleImperialComplexion_Rough01 [TXST:000D0723]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleNordComplexion_Rough01 [TXST:00073259]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOrcComplexion_Rough01 [TXST:000D072C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleRedGuardComplexion_Rough01 [TXST:000D0727]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleWoodElfComplexion_Rough01 [TXST:000F2051]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOldComplexion_Rough01 [TXST:000FFF3F]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Rough01",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\maleheaddetail_rough01.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4752"
+        },
+        {
+          "id": "HDE.R02",
+          "enabled": true,
+          "distributionEnabled": false,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadMaleBretonComplexion_Rough02 [TXST:000D0720]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleDarkElfComplexion_Rough02 [TXST:000F204D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleHighElfComplexion_Rough02 [TXST:000F2048]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleImperialComplexion_Rough02 [TXST:000D0724]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleNordComplexion_Rough02 [TXST:0007325A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOrcComplexion_Rough02 [TXST:000D072D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleRedGuardComplexion_Rough02 [TXST:000D0728]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleWoodElfComplexion_Rough02 [TXST:000F2052]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOldComplexion_Rough02 [TXST:000FFF40]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadMaleBretonComplexion_Rough02 [TXST:000D0720]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleDarkElfComplexion_Rough02 [TXST:000F204D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleHighElfComplexion_Rough02 [TXST:000F2048]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleImperialComplexion_Rough02 [TXST:000D0724]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleNordComplexion_Rough02 [TXST:0007325A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOrcComplexion_Rough02 [TXST:000D072D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleRedGuardComplexion_Rough02 [TXST:000D0728]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleWoodElfComplexion_Rough02 [TXST:000F2052]"
+            ],
+            [
+              "FTST",
+              "SkinHeadMaleOldComplexion_Rough02 [TXST:000FFF40]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Rough02",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\male\\maleheaddetail_rough02.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4766"
+        },
+        {
+          "id": "HDE.K",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "khajiit"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Khajiiit (Default)",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HDE.K.Y",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [
+                [
+                  "FTST",
+                  "SkinHeadMaleKhajiitOld [TXST:000F123A]"
+                ]
+              ],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Young",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\Actors\\Character\\KhajiitMale\\BlankDetailmap.dds",
+                  "BlankDetailmap.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4982"
+            },
+            {
+              "id": "HDE.K.O",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [
+                [
+                  "FTST",
+                  "SkinHeadMaleKhajiitOld [TXST:000F123A]"
+                ]
+              ],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [
+                [
+                  "FTST",
+                  "SkinHeadMaleKhajiitOld [TXST:000F123A]"
+                ]
+              ],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Old",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\Actors\\Character\\KhajiitMale\\KhajiitOld.dds",
+                  "BlankDetailmap.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4994"
+            }
+          ],
+          "$$hashKey": "object:4955"
+        },
+        {
+          "id": "HDE.Arg",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "argonian"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Argonian (Default)",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HDE.Arg.Y",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [
+                [
+                  "FTST",
+                  "SkinHeadMaleArgonianOld [TXST:000B3047]"
+                ]
+              ],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Young",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\Actors\\Character\\ArgonianMale\\BlankDetailmap.dds",
+                  "BlankDetailmap.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:5021"
+            },
+            {
+              "id": "HDE.Arg.O",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [
+                [
+                  "FTST",
+                  "SkinHeadMaleArgonianOld [TXST:000B3047]"
+                ]
+              ],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [
+                [
+                  "FTST",
+                  "SkinHeadMaleArgonianOld [TXST:000B3047]"
+                ]
+              ],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Old",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "Skyrim.esm\\Actors\\Character\\ArgonianMale\\ArgonianMaleHeadOld.dds",
+                  "BlankDetailmap.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:5033"
+            }
+          ],
+          "$$hashKey": "object:4966"
+        }
+      ],
+      "$$hashKey": "object:4723"
+    },
+    {
+      "id": "BD",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Diffuse",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "BD.A",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "DA13AfflictedRace"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Afflicted",
+          "requiredSubgroups": [
+            "HAD.A",
+            "HD.A"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\malebodyafflicted.dds",
+              "malebody_1.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\malebodyafflicted.dds",
+              "malebody_1_feet.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6166"
+        },
+        {
+          "id": "BD.S",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "SnowElfRace"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Snow Elf",
+          "requiredSubgroups": [
+            "HAD.S",
+            "HD.S"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\malebodysnowelf.dds",
+              "malebody_1.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\malebodysnowelf.dds",
+              "malebody_1_feet.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6186"
+        },
+        {
+          "id": "BD.Arg",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "argonian"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Argonian",
+          "requiredSubgroups": [
+            "BN.Arg"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\argonianmale\\argonianmalebody.dds",
+              "argonianmalebody.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\argonianmale\\argonianmalebody.dds",
+              "argonianmalebody_feet.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\argonianmale\\argonianmalebody.dds",
+              "argonianmalebody_tail.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6313"
+        },
+        {
+          "id": "BD.K",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "khajiit"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Khajiit",
+          "requiredSubgroups": [
+            "BN.K"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\khajiitmale\\bodymale.dds",
+              "bodymale.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\khajiitmale\\bodymale.dds",
+              "bodymale_feet.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\khajiitmale\\bodymale.dds",
+              "bodymale_tail.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6355"
+        },
+        {
+          "id": "BD.D",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Hairy (Default)",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\male\\malebody_1.dds",
+              "malebody_1.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\male\\malebody_1.dds",
+              "malebody_1_feet.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6395"
+        },
+        {
+          "id": "BD.HL",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "Head Parts\\*",
+              "HumanBeard00NoBeard \"HumanBeard00NoBeard\" [HDPT:000F5009]"
+            ],
+            [
+              "RNAM",
+              "RedguardRace \"Redguard\" [RACE:00013748]"
+            ],
+            [
+              "RNAM",
+              "RedguardRaceVampire \"Redguard\" [RACE:00088846]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "RNAM",
+              "DarkElfRace \"Dark Elf\" [RACE:00013742]"
+            ],
+            [
+              "RNAM",
+              "DarkElfRaceVampire \"Dark Elf\" [RACE:0008883D]"
+            ],
+            [
+              "RNAM",
+              "HighElfRace \"High Elf\" [RACE:00013743]"
+            ],
+            [
+              "RNAM",
+              "HighElfRaceVampire \"High Elf\" [RACE:00088840]"
+            ],
+            [
+              "RNAM",
+              "WoodElfRace \"Wood Elf\" [RACE:00013749]"
+            ],
+            [
+              "RNAM",
+              "WoodElfRaceVampire \"Wood Elf\" [RACE:00088884]"
+            ],
+            [
+              "RNAM",
+              "SnowElfRace \"High Elf\" [RACE:0200377D]"
+            ],
+            [
+              "VTCK",
+              "MaleYoungEager [VTYP:00013AD1]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Hairless Chest",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\04 Hairless Chest\\03 - 4K\\Textures\\actors\\character\\male\\malebody_1.dds",
+              "malebody_1.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\04 Hairless Chest\\03 - 4K\\Textures\\actors\\character\\male\\malebody_1.dds",
+              "malebody_1_feet.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6446"
+        },
+        {
+          "id": "BD.HLSc",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "Head Parts\\*",
+              "HumanBeard00NoBeard \"HumanBeard00NoBeard\" [HDPT:000F5009]"
+            ],
+            [
+              "RNAM",
+              "RedguardRace \"Redguard\" [RACE:00013748]"
+            ],
+            [
+              "RNAM",
+              "RedguardRaceVampire \"Redguard\" [RACE:00088846]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "RNAM",
+              "DarkElfRace \"Dark Elf\" [RACE:00013742]"
+            ],
+            [
+              "RNAM",
+              "DarkElfRaceVampire \"Dark Elf\" [RACE:0008883D]"
+            ],
+            [
+              "RNAM",
+              "HighElfRace \"High Elf\" [RACE:00013743]"
+            ],
+            [
+              "RNAM",
+              "HighElfRaceVampire \"High Elf\" [RACE:00088840]"
+            ],
+            [
+              "RNAM",
+              "WoodElfRace \"Wood Elf\" [RACE:00013749]"
+            ],
+            [
+              "RNAM",
+              "WoodElfRaceVampire \"Wood Elf\" [RACE:00088884]"
+            ],
+            [
+              "RNAM",
+              "MaleYoungEager [VTYP:00013AD1]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Hairless Chest (Scars)",
+          "requiredSubgroups": [
+            "BN.Y.HLSc"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\05 Scars - hairless\\03 - 4K\\Textures\\actors\\character\\male\\malebody_1.dds",
+              "malebody_1.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\05 Scars - hairless\\03 - 4K\\Textures\\actors\\character\\male\\malebody_1.dds",
+              "malebody_1_feet.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6490"
+        },
+        {
+          "id": "BD.Sc",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Hairy Chest (Scars)",
+          "requiredSubgroups": [
+            "BN.Y.Sc"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\05 Scars\\03 - 4K\\Textures\\actors\\character\\male\\malebody_1.dds",
+              "malebody_1.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\05 Scars\\03 - 4K\\Textures\\actors\\character\\male\\malebody_1.dds",
+              "malebody_1_feet.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6566"
+        }
+      ],
+      "$$hashKey": "object:4741"
+    },
+    {
+      "id": "BN",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Normal",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "BN.Y",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid"
+          ],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Not Elder",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "BN.Y.D",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [
+                [
+                  "Factions\\*\\Faction",
+                  "JobInnkeeperFaction [FACT:0005091B]"
+                ],
+                [
+                  "CNAM",
+                  "VendorFood \"Food Vendor\" [CLAS:00013256]"
+                ],
+                [
+                  "CNAM",
+                  "VendorPawnbroker \"Pawnbroker\" [CLAS:0001325B]"
+                ],
+                [
+                  "FULL - Name",
+                  "Nazeem"
+                ]
+              ],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "No Scars (Default)",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\male\\malebody_1_msn.dds",
+                  "malebody_1_msn.dds"
+                ],
+                [
+                  "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\male\\malebody_1_msn.dds",
+                  "malebody_1_feet_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:6417"
+            },
+            {
+              "id": "BN.Y.Sc",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [
+                [
+                  "CNAM\\FULL",
+                  "Warrior"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Thief"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Assassin"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Scout"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Blacksmith"
+                ],
+                [
+                  "CNAM",
+                  "CombatSpellsword \"Spellsword\" [CLAS:00013177]"
+                ],
+                [
+                  "CNAM",
+                  "CombatWitchblade \"Witchblade\" [CLAS:00013178]"
+                ],
+                [
+                  "CNAM",
+                  "CombatMystic \"Mystic\" [CLAS:0001317B]"
+                ],
+                [
+                  "CNAM",
+                  "CombatNightblade \"Nightblade\" [CLAS:0001317C]"
+                ],
+                [
+                  "CNAM",
+                  "CombatRogue \"Rogue\" [CLAS:00013180]"
+                ],
+                [
+                  "CNAM",
+                  "CombatRanger \"Ranger\" [CLAS:00013181]"
+                ],
+                [
+                  "CNAM",
+                  "CombatMonk \"Monk\" [CLAS:00013182]"
+                ],
+                [
+                  "CNAM",
+                  "Lumberjack \"Lumberjack\" [CLAS:0001326E]"
+                ],
+                [
+                  "CNAM",
+                  "SoldierImperialNotGuard \"Imperial Soldier\" [CLAS:0001327F]"
+                ],
+                [
+                  "CNAM",
+                  "SoldierSonsSkyrimNotGuard \"Sons of Skyrim Soldier\" [CLAS:00013280]"
+                ],
+                [
+                  "CNAM",
+                  "CombatBarbarian \"Barbarian\" [CLAS:0001CE16]"
+                ],
+                [
+                  "CNAM",
+                  "Blade \"Blade\" [CLAS:00021A74]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassForsworn \"Forsworn\" [CLAS:00043BCB]"
+                ],
+                [
+                  "CNAM",
+                  "MQAncientNord \"Nord Hero\" [CLAS:0004FA49]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassAlikrMelee \"Alik'r Warrior\" [CLAS:0006766B]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassThalmorMelee \"Thalmor Warrior\" [CLAS:0007289D]"
+                ],
+                [
+                  "CNAM",
+                  "CWSoldierClass \"Soldier\" [CLAS:0010B1D8]"
+                ],
+                [
+                  "CNAM",
+                  "GuardOrc2H \"Orc Warrior\" [CLAS:0010E714]"
+                ],
+                [
+                  "CNAM",
+                  "NPCclassBelrand \"Spellsword\" [CLAS:0010F7F9]"
+                ],
+                [
+                  "CNAM",
+                  "VendorFletcher \"Fletcher\" [CLAS:00013259]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassBanditMissile \"Bandit Archer\" [CLAS:00015BE7]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassBanditMelee \"Bandit\" [CLAS:0001CE17]"
+                ],
+                [
+                  "CNAM",
+                  "GuardImperial \"Guard\" [CLAS:000253F2]"
+                ],
+                [
+                  "CNAM",
+                  "GuardSonsSkyrim \"Guard\" [CLAS:000253F3]"
+                ],
+                [
+                  "CNAM",
+                  "GuardOrc1H \"Orc Warrior\" [CLAS:0002A477]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassVampire \"Vampire\" [CLAS:0002E00F]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassForswornShaman \"Forsworn Shaman\" [CLAS:00043BCC]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassForswornMissile \"Forsworn Missile\" [CLAS:00043BCD]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassAlikrMissile \"Alik'r Archer\" [CLAS:0006766C]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassThalmorMissile \"Thalmor Archer\" [CLAS:00072891]"
+                ]
+              ],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Hairy Chest (Scars)",
+              "requiredSubgroups": [
+                "BD.Sc"
+              ],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\05 Scars\\03 - 4K\\Textures\\actors\\character\\male\\malebody_1_msn.dds",
+                  "malebody_1_msn.dds"
+                ],
+                [
+                  "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\05 Scars\\03 - 4K\\Textures\\actors\\character\\male\\malebody_1_msn.dds",
+                  "malebody_1_feet_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:6429"
+            },
+            {
+              "id": "BN.Y.HLSc",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [
+                [
+                  "CNAM\\FULL",
+                  "Warrior"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Thief"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Assassin"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Scout"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Blacksmith"
+                ],
+                [
+                  "CNAM",
+                  "CombatSpellsword \"Spellsword\" [CLAS:00013177]"
+                ],
+                [
+                  "CNAM",
+                  "CombatWitchblade \"Witchblade\" [CLAS:00013178]"
+                ],
+                [
+                  "CNAM",
+                  "CombatMystic \"Mystic\" [CLAS:0001317B]"
+                ],
+                [
+                  "CNAM",
+                  "CombatNightblade \"Nightblade\" [CLAS:0001317C]"
+                ],
+                [
+                  "CNAM",
+                  "CombatRogue \"Rogue\" [CLAS:00013180]"
+                ],
+                [
+                  "CNAM",
+                  "CombatRanger \"Ranger\" [CLAS:00013181]"
+                ],
+                [
+                  "CNAM",
+                  "CombatMonk \"Monk\" [CLAS:00013182]"
+                ],
+                [
+                  "CNAM",
+                  "Lumberjack \"Lumberjack\" [CLAS:0001326E]"
+                ],
+                [
+                  "CNAM",
+                  "SoldierImperialNotGuard \"Imperial Soldier\" [CLAS:0001327F]"
+                ],
+                [
+                  "CNAM",
+                  "SoldierSonsSkyrimNotGuard \"Sons of Skyrim Soldier\" [CLAS:00013280]"
+                ],
+                [
+                  "CNAM",
+                  "CombatBarbarian \"Barbarian\" [CLAS:0001CE16]"
+                ],
+                [
+                  "CNAM",
+                  "Blade \"Blade\" [CLAS:00021A74]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassForsworn \"Forsworn\" [CLAS:00043BCB]"
+                ],
+                [
+                  "CNAM",
+                  "MQAncientNord \"Nord Hero\" [CLAS:0004FA49]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassAlikrMelee \"Alik'r Warrior\" [CLAS:0006766B]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassThalmorMelee \"Thalmor Warrior\" [CLAS:0007289D]"
+                ],
+                [
+                  "CNAM",
+                  "CWSoldierClass \"Soldier\" [CLAS:0010B1D8]"
+                ],
+                [
+                  "CNAM",
+                  "GuardOrc2H \"Orc Warrior\" [CLAS:0010E714]"
+                ],
+                [
+                  "CNAM",
+                  "NPCclassBelrand \"Spellsword\" [CLAS:0010F7F9]"
+                ],
+                [
+                  "CNAM",
+                  "VendorFletcher \"Fletcher\" [CLAS:00013259]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassBanditMissile \"Bandit Archer\" [CLAS:00015BE7]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassBanditMelee \"Bandit\" [CLAS:0001CE17]"
+                ],
+                [
+                  "CNAM",
+                  "GuardImperial \"Guard\" [CLAS:000253F2]"
+                ],
+                [
+                  "CNAM",
+                  "GuardSonsSkyrim \"Guard\" [CLAS:000253F3]"
+                ],
+                [
+                  "CNAM",
+                  "GuardOrc1H \"Orc Warrior\" [CLAS:0002A477]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassVampire \"Vampire\" [CLAS:0002E00F]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassForswornShaman \"Forsworn Shaman\" [CLAS:00043BCC]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassForswornMissile \"Forsworn Missile\" [CLAS:00043BCD]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassAlikrMissile \"Alik'r Archer\" [CLAS:0006766C]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassThalmorMissile \"Thalmor Archer\" [CLAS:00072891]"
+                ]
+              ],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Hairless Chest (Scars)",
+              "requiredSubgroups": [
+                "BD.HLSc"
+              ],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\05 Scars - hairless\\03 - 4K\\Textures\\actors\\character\\male\\malebody_1_msn.dds",
+                  "malebody_1_msn.dds"
+                ],
+                [
+                  "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\05 Scars - hairless\\03 - 4K\\Textures\\actors\\character\\male\\malebody_1_msn.dds",
+                  "malebody_1_feet_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:6509"
+            }
+          ],
+          "$$hashKey": "object:2278"
+        },
+        {
+          "id": "BN.E",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "elder"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Elder",
+          "requiredSubgroups": [
+            "HN.E"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\maleold\\malebody_1_msn.dds",
+              "malebody_1_msn.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\maleold\\malebody_1_msn.dds",
+              "malebody_1_feet_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5112"
+        },
+        {
+          "id": "BN.Arg",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "argonian"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Argonian",
+          "requiredSubgroups": [
+            "BD.Arg"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\argonianmale\\argonianmalebody_msn.dds",
+              "ArgonianMaleBody_msn.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\argonianmale\\argonianmalebody_msn.dds",
+              "ArgonianMaleBody_feet_msn.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\argonianmale\\argonianmalebody_msn.dds",
+              "ArgonianMaleBody_tail_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6332"
+        },
+        {
+          "id": "BN.K",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "khajiit"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Khajiit",
+          "requiredSubgroups": [
+            "BD.K"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\khajiitmale\\bodymale_msn.dds",
+              "bodymale_msn.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\khajiitmale\\bodymale_msn.dds",
+              "bodymale_feet_msn.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\khajiitmale\\bodymale_msn.dds",
+              "bodymale_tail_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6370"
+        }
+      ],
+      "$$hashKey": "object:4753"
+    },
+    {
+      "id": "BS",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Subsurface",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "BS.H",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Humanoid",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\malebody_1_sk.dds",
+              "malebody_1_sk.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\malebody_1_sk.dds",
+              "malebody_1_feet_sk.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:2887"
+        },
+        {
+          "id": "BS.K",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "khajiit"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Khajiit",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\malebody_1_sk.dds",
+              "malebody_1_sk.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\malebody_1_sk.dds",
+              "bodymale_feet_sk.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\malebody_1_sk.dds",
+              "bodymale_tail_sk.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:2899"
+        },
+        {
+          "id": "BS.Arg",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "argonian"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Argonian",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\malebody_1_sk.dds",
+              "MaleBody_1_sk.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\malebody_1_sk.dds",
+              "MaleBody_1_feet_sk.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\malebody_1_sk.dds",
+              "MaleBody_1_tail_sk.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6223"
+        }
+      ],
+      "$$hashKey": "object:4764"
+    },
+    {
+      "id": "BSP",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Specular",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "BSP.D",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Default",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\male\\malebody_1_s.dds",
+              "malebody_1_s.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\02 Vitruvia - 4K\\Textures\\actors\\character\\male\\malebody_1_s.dds",
+              "malebody_1_feet_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6531"
+        },
+        {
+          "id": "BSP.W",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "CNAM",
+              "Lumberjack \"Lumberjack\" [CLAS:0001326E]"
+            ],
+            [
+              "CNAM",
+              "Miner \"Miner\" [CLAS:0001326D]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Wet",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\06 Wet Body (CMO) specular\\Textures\\actors\\character\\male\\malebody_1_s.dds",
+              "malebody_1_s.dds"
+            ],
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\06 Wet Body (CMO) specular\\Textures\\actors\\character\\male\\malebody_1_s.dds",
+              "malebody_1_feet_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6543"
+        },
+        {
+          "id": "BSP.K",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "khajiit"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Khajiit (Default)",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\khajiitmale\\bodymale_s.dds",
+              "bodymale_s.dds"
+            ],
+            [
+              "Skyrim.esm\\actors\\character\\khajiitmale\\bodymale_s.dds",
+              "bodymale_feet_s.dds"
+            ],
+            [
+              "Skyrim.esm\\actors\\character\\khajiitmale\\bodymale_s.dds",
+              "bodymale_tail_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4841"
+        },
+        {
+          "id": "BSP.Arg",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "argonian"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Argonian (Default)",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\argonianmale\\argonianmalebody_s.dds",
+              "argonianmalebody_s.dds"
+            ],
+            [
+              "Skyrim.esm\\actors\\character\\argonianmale\\argonianmalebody_s.dds",
+              "ArgonianMaleBody_feet_s.dds"
+            ],
+            [
+              "Skyrim.esm\\actors\\character\\argonianmale\\argonianmalebody_s.dds",
+              "ArgonianMaleBody_tail_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4917"
+        }
+      ],
+      "$$hashKey": "object:1541"
+    },
+    {
+      "id": "HAD",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Diffuse",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HAD.H",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Humanoid",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\malehands_1.dds",
+              "malehands_1.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6208"
+        },
+        {
+          "id": "HAD.A",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "DA13AfflictedRace"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Afflicted",
+          "requiredSubgroups": [
+            "BD.A",
+            "HD.A"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\malehandsafflicted.dds",
+              "malehands_1.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6225"
+        },
+        {
+          "id": "HAD.S",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "SnowElfRace"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Snow Elf",
+          "requiredSubgroups": [
+            "BD.S",
+            "HD.S"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\malehandssnowelf.dds",
+              "malehands_1.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6241"
+        },
+        {
+          "id": "HAD.K",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "khajiit"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Khajiit (Default)",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\Actors\\Character\\KhajiitMale\\HandsMale.dds",
+              "HandsMale.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5121"
+        },
+        {
+          "id": "HAD.Arg",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "argonian"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Argonian (Default)",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\Actors\\Character\\ArgonianMale\\ArgonianMaleHands.dds",
+              "ArgonianMaleHands.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5132"
+        }
+      ],
+      "$$hashKey": "object:4802"
+    },
+    {
+      "id": "HAN",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Normal",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HAN.Y",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid"
+          ],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Young",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\malehands_1_msn.dds",
+              "malehands_1_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:3255"
+        },
+        {
+          "id": "HAN.E",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "elder"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Elder",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\maleold\\malehands_1_msn.dds",
+              "malehands_1_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:3267"
+        },
+        {
+          "id": "HAN.K",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "khajiit"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Khajiit (Default)",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\Actors\\Character\\KhajiitMale\\HandsMale_msn.dds",
+              "HandsMale_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5153"
+        },
+        {
+          "id": "HAN.Arg",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "argonian"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Argonian (Default)",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\Actors\\Character\\ArgonianMale\\ArgonianMaleHands_msn.dds",
+              "ArgonianMaleHands_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5164"
+        }
+      ],
+      "$$hashKey": "object:4814"
+    },
+    {
+      "id": "HAS",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Subsurface",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\malehands_1_sk.dds",
+          "malehands_1_sk.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:4825"
+    },
+    {
+      "id": "HASP",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Specular",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HASP.H",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Humanoid",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Vitruvia 4K\\Vitruvia - Skin texture overhaul for males - SE\\01 Core\\Textures\\actors\\character\\male\\malehands_1_s.dds",
+              "malehands_1_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:3026"
+        },
+        {
+          "id": "HASP.K",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "khajiit"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Khajiit (Default)",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\khajiitmale\\handsmale_s.dds",
+              "handsmale_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4878"
+        },
+        {
+          "id": "HASP.Arg",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "argonian"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Argonian (Default)",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\Actors\\Character\\ArgonianMale\\ArgonianMaleHands_s.dds",
+              "ArgonianMaleHands_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5185"
+        }
+      ],
+      "$$hashKey": "object:1542"
+    }
+  ],
+  "displayAssetPackAlerts": true
+}
