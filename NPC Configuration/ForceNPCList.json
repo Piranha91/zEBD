@@ -766,5 +766,19 @@
     ],
     "displayString": "Vex (xx01CD90)",
     "$$hashKey": "object:2322"
+  },
+  {
+    "name": "Auri",
+    "formID": "xx000D63",
+    "EDID": "018Auri",
+    "rootPlugin": "018Auri.esp",
+    "race": "WoodElfRace",
+    "gender": "female",
+    "forcedAssetPack": "Demoniac 4K CBBE (No Bronze Shine) No Age40Age50 Director's Cut (for Diverse Races BodyGen)",
+    "forcedSubgroups": [],
+    "forcedHeight": "",
+    "forcedBodyGenMorphs": [],
+    "displayString": "Auri (xx000D63)",
+    "$$hashKey": "object:6707"
   }
 ]

@@ -3153,7 +3153,6 @@
               "disallowedBodyGenDescriptors": [
                 "build: thick",
                 "build: chubby",
-                "build: curvy",
                 "build: petite"
               ]
             },
@@ -3460,7 +3459,6 @@
               "disallowedBodyGenDescriptors": [
                 "build: thick",
                 "build: chubby",
-                "build: curvy",
                 "build: petite"
               ]
             },
@@ -3475,7 +3473,9 @@
                 "DarkElfRace",
                 "DarkElfRaceVampire",
                 "WoodElfRace",
-                "WoodElfRaceVampire"
+                "WoodElfRaceVampire",
+                "OrcRace",
+                "OrcRaceVampire"
               ],
               "allowedAttributes": [],
               "disallowedAttributes": [
@@ -3655,158 +3655,15 @@
               "distributionEnabled": true,
               "allowedRaces": [],
               "disallowedRaces": [
-                "HighElfRace",
-                "HighElfRaceVampire",
-                "OrcRace",
-                "OrcRaceVampire"
+                "ImperialRace",
+                "ImperialRaceVampire",
+                "DarkElfRace",
+                "DarkElfRaceVampire",
+                "WoodElfRace",
+                "WoodElfRaceVampire"
               ],
               "allowedAttributes": [],
-              "disallowedAttributes": [
-                [
-                  "CNAM\\FULL",
-                  "Warrior"
-                ],
-                [
-                  "CNAM\\FULL",
-                  "Thief"
-                ],
-                [
-                  "CNAM\\FULL",
-                  "Scout"
-                ],
-                [
-                  "CNAM\\FULL",
-                  "Warrior"
-                ],
-                [
-                  "CNAM\\FULL",
-                  "Blacksmith"
-                ],
-                [
-                  "CNAM",
-                  "CombatSpellsword \"Spellsword\" [CLAS:00013177]"
-                ],
-                [
-                  "CNAM",
-                  "CombatWitchblade \"Witchblade\" [CLAS:00013178]"
-                ],
-                [
-                  "CNAM",
-                  "CombatMystic \"Mystic\" [CLAS:0001317B]"
-                ],
-                [
-                  "CNAM",
-                  "CombatNightblade \"Nightblade\" [CLAS:0001317C]"
-                ],
-                [
-                  "CNAM",
-                  "CombatRogue \"Rogue\" [CLAS:00013180]"
-                ],
-                [
-                  "CNAM",
-                  "CombatRanger \"Ranger\" [CLAS:00013181]"
-                ],
-                [
-                  "CNAM",
-                  "CombatMonk \"Monk\" [CLAS:00013182]"
-                ],
-                [
-                  "CNAM",
-                  "Lumberjack \"Lumberjack\" [CLAS:0001326E]"
-                ],
-                [
-                  "CNAM",
-                  "SoldierImperialNotGuard \"Imperial Soldier\" [CLAS:0001327F]"
-                ],
-                [
-                  "CNAM",
-                  "SoldierSonsSkyrimNotGuard \"Sons of Skyrim Soldier\" [CLAS:00013280]"
-                ],
-                [
-                  "CNAM",
-                  "CombatBarbarian \"Barbarian\" [CLAS:0001CE16]"
-                ],
-                [
-                  "CNAM",
-                  "Blade \"Blade\" [CLAS:00021A74]"
-                ],
-                [
-                  "CNAM",
-                  "EncClassForsworn \"Forsworn\" [CLAS:00043BCB]"
-                ],
-                [
-                  "CNAM",
-                  "MQAncientNord \"Nord Hero\" [CLAS:0004FA49]"
-                ],
-                [
-                  "CNAM",
-                  "EncClassAlikrMelee \"Alik'r Warrior\" [CLAS:0006766B]"
-                ],
-                [
-                  "CNAM",
-                  "EncClassThalmorMelee \"Thalmor Warrior\" [CLAS:0007289D]"
-                ],
-                [
-                  "CNAM",
-                  "CWSoldierClass \"Soldier\" [CLAS:0010B1D8]"
-                ],
-                [
-                  "CNAM",
-                  "GuardOrc2H \"Orc Warrior\" [CLAS:0010E714]"
-                ],
-                [
-                  "CNAM",
-                  "NPCclassBelrand \"Spellsword\" [CLAS:0010F7F9]"
-                ],
-                [
-                  "CNAM",
-                  "VendorFletcher \"Fletcher\" [CLAS:00013259]"
-                ],
-                [
-                  "CNAM",
-                  "EncClassBanditMissile \"Bandit Archer\" [CLAS:00015BE7]"
-                ],
-                [
-                  "CNAM",
-                  "EncClassBanditMelee \"Bandit\" [CLAS:0001CE17]"
-                ],
-                [
-                  "CNAM",
-                  "GuardImperial \"Guard\" [CLAS:000253F2]"
-                ],
-                [
-                  "CNAM",
-                  "GuardSonsSkyrim \"Guard\" [CLAS:000253F3]"
-                ],
-                [
-                  "CNAM",
-                  "GuardOrc1H \"Orc Warrior\" [CLAS:0002A477]"
-                ],
-                [
-                  "CNAM",
-                  "EncClassForswornShaman \"Forsworn Shaman\" [CLAS:00043BCC]"
-                ],
-                [
-                  "CNAM",
-                  "EncClassForswornMissile \"Forsworn Missile\" [CLAS:00043BCD]"
-                ],
-                [
-                  "CNAM",
-                  "EncClassAlikrMissile \"Alik'r Archer\" [CLAS:0006766C]"
-                ],
-                [
-                  "CNAM",
-                  "EncClassThalmorMissile \"Thalmor Archer\" [CLAS:00072891]"
-                ],
-                [
-                  "CNAM",
-                  "Miner \"Miner\" [CLAS:0001326D]"
-                ],
-                [
-                  "CNAM",
-                  "EncClassPenitusOculatus \"Penitus Oculatus\" [CLAS:0007D98D]"
-                ]
-              ],
+              "disallowedAttributes": [],
               "forceIfAttributes": [],
               "allowUnique": true,
               "allowNonUnique": true,
@@ -3829,9 +3686,7 @@
               "$$hashKey": "object:15058",
               "allowedBodyGenDescriptors": [],
               "disallowedBodyGenDescriptors": [
-                "build: thick",
-                "build: chubby",
-                "chest: busty"
+                "build: petite"
               ]
             },
             {
@@ -3947,7 +3802,6 @@
               "disallowedBodyGenDescriptors": [
                 "build: thick",
                 "build: chubby",
-                "build: curvy",
                 "build: petite"
               ]
             }
