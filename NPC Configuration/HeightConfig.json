@@ -190,5 +190,13 @@
     "heightMaleRange": "0.020000",
     "heightFemaleRange": "0.020000",
     "distMode": "uniform"
+  },
+  {
+    "EDID": "0_RACeBretonRaceZora",
+    "heightMale": "1.000000",
+    "heightFemale": "0.950000",
+    "heightMaleRange": "0.020000",
+    "heightFemaleRange": "0.020000",
+    "distMode": "uniform"
   }
 ]

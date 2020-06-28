@@ -986,7 +986,7 @@ ngapp.run(function(patcherService) {
 												}
 												else
 												{
-													locals.assignedHeights[NPCinfo.formID] = PO.assignNPCheight(record, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, locals.heightConfiguration, userForcedAssignment, settings.changeNonDefaultHeight, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCheights);
+													locals.assignedHeights[NPCinfo.formID] = PO.assignNPCheight(record, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, locals.heightConfiguration, userForcedAssignment, settings.changeNonDefaultHeight, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCheights, helpers.logMessage);
 													if (locals.assignedHeights[NPCinfo.formID] === undefined || locals.assignedHeights[NPCinfo.formID] === "NaN") // if there are no height settings for the given NPC's race
 													{
 														bApplyHeightSettingsToCurrentNPC = false;
