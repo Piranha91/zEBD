@@ -434,11 +434,27 @@ ngapp.run(function(patcherService) {
 						$scope.assetPackSettings.push(newSettings);
 					};
 
-					$scope.clearConsistency = function()
+					$scope.clearConsistency = function(mode)
 					{
-						if (confirm("Are you sure you want to delete your consistency file? Your current consistency settings will be backed up."))
+						let confirmation;
+						switch(mode)
 						{
-							IO.deleteConsistency(modulePath);
+							case "assets":
+								confirmation = confirm("Are you sure you want to delete your asset assignment consistency? Your current consistency settings will be backed up.");
+								break;
+							case "height":
+								confirmation = confirm("Are you sure you want to delete your height assignment consistency? Your current consistency settings will be backed up.");
+								break;	
+							case "bodygen":
+								confirmation = confirm("Are you sure you want to delete your BodyGen assignment consistency? Your current consistency settings will be backed up.");
+								break;
+							case "all":
+								confirmation = confirm("Are you sure you want to delete your consistency file? Your current consistency settings will be backed up.");
+								break;
+						}
+						if (confirmation === true)
+						{
+							IO.deleteConsistency(modulePath, mode);
 						}
 					};
 

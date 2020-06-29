@@ -170,7 +170,13 @@
             <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">If enabled, zEBD will apply the same settings (assets, height, and/or BodyGen) to previously patched NPCs.</span>
             <span>Enable Consistency</span>
         </label>
-        <button ng-click="clearConsistency()">Clear Consistency Data</button>  
+        <br>
+        <span>  Clear </span>
+        <button ng-click="clearConsistency('assets')">Textures & Meshes</button>
+        <button ng-click="clearConsistency('height')">Height</button>
+        <button ng-click="clearConsistency('bodygen')">BodyGen</button>
+        <button ng-click="clearConsistency('all')">All</button>
+        <span> consistency data</span>
     </label>
     <label class="tooltip">
         <input type="checkbox" ng-model="settings.zEBD.bLinkNPCsWithSameName"/>
