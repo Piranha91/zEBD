@@ -32,7 +32,7 @@ ngapp.run(function(patcherService) {
 					$scope.availableAssetPacks = [];
 					$scope.availableAssetPackNames = [];
 					$scope.availableSubgroups = [];
-					$scope.loadedPlugins = xelib.GetLoadedFileNames(true);
+					
 					$scope.consistencyAssignments = IO.loadConsistency(modulePath, true);
 
 					$scope.forcedNPCAssignments = IO.loadForceList(modulePath);
@@ -49,6 +49,9 @@ ngapp.run(function(patcherService) {
 					$scope.heightGlobals = { distModeGlobal: 'uniform', heightRangeGlobal: "0.020000", currentHeightPreset: undefined };
 					$scope.bodyGenBool = ["AND", "OR"];
 					$scope.availableNPCs = fh.loadJsonFile(modulePath + "\\zEBD assets\\Base NPC List\\NPClist.json");
+					$scope.displayedNPCs = $scope.availableNPCs;
+					$scope.loadedPlugins = xelib.GetLoadedFileNames(true);
+					$scope.displayedPlugins = $scope.loadedPlugins;
 					$scope.currentNPC = {};
 					$scope.currentPlugin = "";
 					$scope.availableRaces = patcherSettings.patchableRaces.slice(); // shallow copy intentional
@@ -186,6 +189,8 @@ ngapp.run(function(patcherService) {
 								}
 							}
 						}
+
+						$scope.displayedNPCs = $scope.availableNPCs;
 					};
 
 					$scope.addNPCtoForceList = function(currentNPC)
@@ -373,7 +378,8 @@ ngapp.run(function(patcherService) {
 					$scope.saveAssetPackSetting = function (packSetting)
 					{
 						let pathWarnings = [];
-						let bParsedSuccessfully = IO.validatePackSettings(packSetting, true, pathWarnings, []);
+						let otherAlerts = [];
+						let bParsedSuccessfully = IO.validatePackSettings(packSetting, true, pathWarnings, [], otherAlerts);
 						IO.warnUserAboutPaths(pathWarnings);
 
 						if (bParsedSuccessfully === true)
@@ -384,15 +390,21 @@ ngapp.run(function(patcherService) {
 						{
 							alert("There is a problem with your current settings. Please see Logs\\zEBDerrors.txt\nYour settings were not saved.")
 						}
+
+						if (otherAlerts.join() !== "")
+						{
+							alert(otherAlerts);
+						}
 					};
 
 					$scope.validateAssetPackSettings = function()
 					{
 						let pathWarnings = [];
+						let otherAlerts = [];
 						let bParsedSuccessfully = true;
 						for (let i = 0; i < $scope.assetPackSettings.length; i++)
 						{
-							if (IO.validatePackSettings($scope.assetPackSettings[i], true, pathWarnings, []) === false)
+							if (IO.validatePackSettings($scope.assetPackSettings[i], true, pathWarnings, [], otherAlerts) === false)
 							{
 								alert("There is a problem with settings file " + $scope.assetPackSettings[i].groupName + ". Please see Logs\\zEBDerrors.txt");
 								bParsedSuccessfully = false;
@@ -400,7 +412,12 @@ ngapp.run(function(patcherService) {
 						}
 						IO.warnUserAboutPaths(pathWarnings);
 
-						if (bParsedSuccessfully === true && pathWarnings.length === 0)
+						if (otherAlerts.length > 0)
+						{
+							alert(otherAlerts);
+						}
+
+						if (bParsedSuccessfully === true && pathWarnings.length === 0 && otherAlerts.length === 0)
 						{
 							alert("No problems found.")
 						}
@@ -722,6 +739,38 @@ ngapp.run(function(patcherService) {
 					{
 						IO.saveBlockList(modulePath, $scope.blockList);
 					};
+
+					$scope.refreshFilters = function()
+					{
+						$scope.displayedNPCs = $scope.availableNPCs;
+						$scope.displayedPlugins = $scope.loadedPlugins;
+					}
+
+					$scope.updateDisplayedNPCs = function(filter)
+					{
+						let lfilter = filter.toLowerCase();
+						$scope.displayedNPCs = [];
+						for (let i = 0; i < $scope.availableNPCs.length; i++)
+						{
+							if ($scope.availableNPCs[i].name.toLowerCase().includes(lfilter) || $scope.availableNPCs[i].EDID.toLowerCase().includes(lfilter))
+							{
+								$scope.displayedNPCs.push($scope.availableNPCs[i]);
+							}
+						}
+					}
+
+					$scope.updateDisplayedPlugins = function(filter)
+					{
+						let lfilter = filter.toLowerCase();
+						$scope.displayedPlugins = [];
+						for (let i = 0; i < $scope.loadedPlugins.length; i++)
+						{
+							if ($scope.loadedPlugins[i].toLowerCase().includes(lfilter) || $scope.availableNPCs[i].EDID.toLowerCase().includes(lfilter))
+							{
+								$scope.displayedPlugins.push($scope.loadedPlugins[i]);
+							}
+						}
+					}
 				},
 
 				defaultSettings:

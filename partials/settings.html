@@ -132,8 +132,8 @@
     </section>
     <section class="menuButtonRow">       
         <button class="menuButton" ng-click="currentSettingsDisplay = 'bodygen'">BodyGen Integration Settings</button>
-        <button class="menuButton" ng-click="currentSettingsDisplay = 'forcedNPCs'">Specific NPC Assignments</button>
-        <button class="menuButton" ng-click="currentSettingsDisplay = 'blockList'">Block List</button>
+        <button class="menuButton" ng-click="currentSettingsDisplay = 'forcedNPCs'; refreshFilters()">Specific NPC Assignments</button>
+        <button class="menuButton" ng-click="currentSettingsDisplay = 'blockList'; refreshFilters()">Block List</button>
     </section>
 </section>
 
@@ -798,8 +798,13 @@
         <button ng-click="loadNPCs()">Load NPCs from Mods</button>
         <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Fills list with all NPCs in your load order. This can take a minute or so.</span>
     </label>
+    <br>
+    <div class="tooltip">
+        <span>Search filter: </span><input type="text" ng-model="NPCfilter" ng-change= "updateDisplayedNPCs(NPCfilter)">
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Type the name of the NPC that you're searching for to narrow down the list.</span>
+    </div>
     <span>
-        <select class="NPCselect" ng-model="currentNPC" ng-options="NPC.displayString for NPC in availableNPCs" size="5"></select>
+        <select class="NPCselect" ng-model="currentNPC" ng-options="NPC.displayString for NPC in displayedNPCs" size="5"></select>
     </span>
     <br>
     <label>
@@ -833,16 +838,21 @@
         <button ng-click="removeBlockedPlugin($index)">Remove</button>
     </div>
     <br>
-    <label>
+    <div>
         <label>Available NPCs</label>
-        <label class="tooltip">
+        <div class="tooltip">
             <button ng-click="loadNPCs()">Load NPCs from Mods</button>
             <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Fills list with all NPCs in your load order. This can take a minute or so.</span>
-        </label>
-    </label>
-    <span>
-        <select class="NPCselect" ng-model="currentNPC" ng-options="NPC.displayString for NPC in availableNPCs" size="5"></select>
-    </span>
+        </div>
+        <br>
+        <div class="tooltip">
+            <span>Search filter: </span><input type="text" ng-model="NPCfilter" ng-change= "updateDisplayedNPCs(NPCfilter)">
+            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Type the name of the NPC that you're searching for to narrow down the list.</span>
+        </div>
+    </div>
+    <div>
+        <select class="NPCselect" ng-model="currentNPC" ng-options="NPC.displayString for NPC in displayedNPCs" size="5"></select>
+    </div>
     <br>
     <div class = "tooltip">
         Block NPC's 
@@ -853,11 +863,15 @@
         <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">The selected NPC will be skipped for the specified modifications.</span>
     </div>
     <br>
-    <label>
+    <div>
         <label>Available Plugins</label>
-    </label>
+        <div class="tooltip">
+            <span>Search filter: </span><input type="text" ng-model="pluginFilter" ng-change= "updateDisplayedPlugins(pluginFilter)">
+            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Type the name of the plugin that you're searching for to narrow down the list.</span>
+        </div>
+    </div>
     <span>
-        <select class="NPCselect" ng-model="currentPlugin" ng-options="plugin for plugin in loadedPlugins" size="5"></select>
+        <select class="NPCselect" ng-model="currentPlugin" ng-options="plugin for plugin in displayedPlugins" size="5"></select>
     </span>
     <br>
     <div class = "tooltip">
