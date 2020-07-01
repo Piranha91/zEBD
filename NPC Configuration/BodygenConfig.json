@@ -2606,10 +2606,11 @@
         "hips: wide"
       ],
       "allowedRaces": [
-        "RedguardRace",
-        "RedguardRaceVampire"
+        "humanoidYoung"
       ],
-      "disallowedRaces": [],
+      "disallowedRaces": [
+        "elven"
+      ],
       "allowedAttributes": [],
       "disallowedAttributes": [],
       "forceIfAttributes": [],
@@ -2652,10 +2653,11 @@
         "build: thick"
       ],
       "allowedRaces": [
-        "RedguardRace",
-        "RedguardRaceVampire"
+        "humanoidYoung"
       ],
-      "disallowedRaces": [],
+      "disallowedRaces": [
+        "elven"
+      ],
       "allowedAttributes": [],
       "disallowedAttributes": [],
       "forceIfAttributes": [],
@@ -2697,10 +2699,11 @@
         "chest: busty"
       ],
       "allowedRaces": [
-        "RedguardRace",
-        "RedguardRaceVampire"
+        "humanoidYoung"
       ],
-      "disallowedRaces": [],
+      "disallowedRaces": [
+        "elven"
+      ],
       "allowedAttributes": [],
       "disallowedAttributes": [],
       "forceIfAttributes": [],
@@ -2721,10 +2724,11 @@
         "chest: busty"
       ],
       "allowedRaces": [
-        "RedguardRace",
-        "RedguardRaceVampire"
+        "humanoidYoung"
       ],
-      "disallowedRaces": [],
+      "disallowedRaces": [
+        "elven"
+      ],
       "allowedAttributes": [],
       "disallowedAttributes": [],
       "forceIfAttributes": [],
