@@ -280,6 +280,45 @@
             <button ng-click="removeLinkedNPCExclusion($index)">Remove</button>
         </div>
         <button ng-click="addLinkedNPCExclusion()">Add new excluded name</button>
+        <br>
+        <br>
+        <label class="tooltip">
+            <span>Specifically linked NPCs</span>
+            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">The groups selected in this list will have the same textures, height, and/or BodyGen applied to them.</span>
+        </label>
+        <br>
+        <button ng-click = "saveSpecificNPCLinkages()">Save linked NPC list</button>
+        <br>
+        <span>Current Link Group: </span>
+        <select ng-model="currentLinkGroup" ng-options="linkGroup.name for linkGroup in linkGroups"></select>
+        <br>
+        NPCs in current Link Group:
+        <div ng-repeat="NPC in currentLinkGroup.NPCs track by $index">
+            {{NPC.displayString}}
+            <button ng-click="removeLinkedNPC(currentLinkGroup, $index)">Remove</button>
+        </div>
+        <br>
+        <button ng-click="addLinkGroup(newLinkGroupName)">Create a new Link Group</button>
+        Link Group Name: 
+        <input type="text" ng-model="newLinkGroupName">
+        <br>
+        <br>
+        <label class="tooltip">
+            <button ng-click="loadNPCs()">Load NPCs from Mods</button>
+            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Fills list with all NPCs in your load order. This can take a minute or so.</span>
+        </label>
+        <br>
+        <div class="tooltip">
+            <span>Search filter: </span><input type="text" ng-model="NPCfilter" ng-change= "updateDisplayedNPCs(NPCfilter)">
+            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Type the name of the NPC that you're searching for to narrow down the list.</span>
+        </div>
+        <span>
+            <select class="NPCselect" ng-model="currentNPC" ng-options="NPC.displayString for NPC in displayedNPCs" size="5"></select>
+        </span>
+        <br>
+        <label>
+            <button ng-click="addNPCtoLinkGroup(currentNPC, currentLinkGroup)">Add Selected NPC to the current Link Group</button>
+        </label>
     </section>
 </section>
 

@@ -36,6 +36,7 @@ ngapp.run(function(patcherService) {
 					$scope.bodyGenConfig = IO.loadBodyGenConfig(patcherSettings.loadPath);
 					$scope.trimPaths = IO.loadTrimPaths(modulePath);
 					$scope.LinkedNPCNameExclusions = IO.loadLinkedNPCNameExclusions(modulePath);
+					$scope.linkGroups = IO.loadLinkGroups(modulePath);
 					
 					$scope.BodyGenItemDisplay = updateBodyGenItemDisplay($scope.bodyGenConfig);
 					$scope.allAssetPacks = generateAvailableAssetPacks($scope.assetPackSettings);
@@ -64,6 +65,7 @@ ngapp.run(function(patcherService) {
 					$scope.displayedPlugins = $scope.loadedPlugins;
 					$scope.currentNPC = {};
 					$scope.currentPlugin = "";
+					$scope.currentLinkGroup = getBlankLinkGroup();
 					$scope.availableRaces = patcherSettings.patchableRaces.slice(); // shallow copy intentional
 					$scope.displayRGmembers = initializeRGmembers($scope.raceGroupDefinitions);
 					$scope.racesAndGroups = updateAvailableRacesAndGroups($scope.availableRaces, $scope.raceGroupDefinitions);
@@ -817,6 +819,49 @@ ngapp.run(function(patcherService) {
 						$scope.forcedNPCAssignments = IO.loadForceList(patcherSettings.loadPath);
 						$scope.blockList = IO.loadBlockList(patcherSettings.loadPath);
 					}
+
+					$scope.saveSpecificNPCLinkages = function()
+					{
+						IO.saveLinkGroups(modulePath, $scope.linkGroups);
+					}
+
+					$scope.removeLinkedNPC = function(currentLinkGroup, index)
+					{
+						currentLinkGroup.NPCs.splice(index, 1);
+					}
+
+					$scope.addLinkGroup = function(newLinkGroupName)
+					{
+						let bExists = false;
+						for (let i = 0; i < $scope.linkGroups.length; i++)
+						{
+							if ($scope.linkGroups[i].name === newLinkGroupName)
+							{
+								bExists = true;
+								break;
+							}
+						}
+						if (newLinkGroupName === undefined || newLinkGroupName === "")
+						{
+							alert("You must enter a name for this Link Group before adding it to the list.");
+						}
+						else if (bExists === true)
+						{
+							alert("A link group with name " + newLinkGroupName + " already exists.");
+						}
+						else
+						{
+							let LG = {};
+							LG.name = newLinkGroupName;
+							LG.NPCs = [];
+							$scope.linkGroups.push(LG);
+						}
+					}
+
+					$scope.addNPCtoLinkGroup = function(currentNPC, currentLinkGroup)
+					{
+						currentLinkGroup.NPCs.push(currentNPC);
+					}
 				},
 
 				defaultSettings:
@@ -1404,6 +1449,13 @@ function createPluginforBlockList(currentPlugin, BlockedPlugins)
 	obj.bBlockBodyGen = false;
 	BlockedPlugins.push(obj);
 	return obj;
+}
+
+function getBlankLinkGroup()
+{
+	let obj = {};
+	obj.name = "";
+	obj.NPCs = [];
 }
 
 ngapp.directive('displaySubgroups', function()

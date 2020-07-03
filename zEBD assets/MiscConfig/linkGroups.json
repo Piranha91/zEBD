@@ -1,0 +1,304 @@
+[
+  {
+    "name": "Legate Rikke",
+    "NPCs": [
+      {
+        "name": "Legate Rikke",
+        "formID": "000132A1",
+        "EDID": "Rikke",
+        "masterRecordFile": "Skyrim.esm",
+        "race": "NordRace",
+        "isUnique": true,
+        "gender": "female",
+        "height": "1.000000",
+        "consistencyIndex": -1,
+        "displayString": "Legate Rikke | Rikke | 000132A1 | NordRace | Skyrim.esm",
+        "$$hashKey": "object:4672"
+      },
+      {
+        "name": "Legate Rikke",
+        "formID": "000D0573",
+        "EDID": "CWBattleRikke",
+        "masterRecordFile": "Skyrim.esm",
+        "race": "NordRace",
+        "isUnique": false,
+        "gender": "female",
+        "height": "1.000000",
+        "consistencyIndex": -1,
+        "displayString": "Legate Rikke | CWBattleRikke | 000D0573 | NordRace | Skyrim.esm",
+        "$$hashKey": "object:2109"
+      },
+      {
+        "name": "",
+        "formID": "000EA583",
+        "EDID": "MQ304Rikke",
+        "masterRecordFile": "Skyrim.esm",
+        "race": "NordRace",
+        "isUnique": false,
+        "gender": "female",
+        "height": "1.000000",
+        "consistencyIndex": -1,
+        "displayString": " | MQ304Rikke | 000EA583 | NordRace | Skyrim.esm",
+        "$$hashKey": "object:2039"
+      }
+    ],
+    "$$hashKey": "object:5471"
+  },
+  {
+    "name": "Ulfric Stormcloak",
+    "NPCs": [
+      {
+        "name": "Ulfric Stormcloak",
+        "formID": "0001414D",
+        "EDID": "Ulfric",
+        "masterRecordFile": "Skyrim.esm",
+        "race": "NordRace",
+        "isUnique": true,
+        "gender": "male",
+        "height": "1.000000",
+        "consistencyIndex": -1,
+        "displayString": "Ulfric Stormcloak | Ulfric | 0001414D | NordRace | Skyrim.esm",
+        "$$hashKey": "object:8459"
+      },
+      {
+        "name": "Ulfric Stormcloak",
+        "formID": "000D0575",
+        "EDID": "CWBattleUlfric",
+        "masterRecordFile": "Skyrim.esm",
+        "race": "NordRace",
+        "isUnique": false,
+        "gender": "male",
+        "height": "1.000000",
+        "consistencyIndex": -1,
+        "displayString": "Ulfric Stormcloak | CWBattleUlfric | 000D0575 | NordRace | Skyrim.esm",
+        "$$hashKey": "object:6223"
+      },
+      {
+        "name": "",
+        "formID": "000EA581",
+        "EDID": "MQ304Ulfric",
+        "masterRecordFile": "Skyrim.esm",
+        "race": "NordRace",
+        "isUnique": false,
+        "gender": "male",
+        "height": "1.000000",
+        "consistencyIndex": -1,
+        "displayString": " | MQ304Ulfric | 000EA581 | NordRace | Skyrim.esm",
+        "$$hashKey": "object:6156"
+      }
+    ],
+    "$$hashKey": "object:9587"
+  },
+  {
+    "name": "Galmar Stone-Fist",
+    "NPCs": [
+      {
+        "name": "Galmar Stone-Fist",
+        "formID": "00014128",
+        "EDID": "Galmar",
+        "masterRecordFile": "Skyrim.esm",
+        "race": "NordRace",
+        "isUnique": true,
+        "gender": "male",
+        "height": "1.000000",
+        "consistencyIndex": -1,
+        "displayString": "Galmar Stone-Fist | Galmar | 00014128 | NordRace | Skyrim.esm",
+        "$$hashKey": "object:8494"
+      },
+      {
+        "name": "Galmar Stone-Fist",
+        "formID": "000D0570",
+        "EDID": "CWBattleGalmar",
+        "masterRecordFile": "Skyrim.esm",
+        "race": "NordRace",
+        "isUnique": false,
+        "gender": "male",
+        "height": "1.000000",
+        "consistencyIndex": -1,
+        "displayString": "Galmar Stone-Fist | CWBattleGalmar | 000D0570 | NordRace | Skyrim.esm",
+        "$$hashKey": "object:6225"
+      },
+      {
+        "name": "",
+        "formID": "000EA582",
+        "EDID": "MQ304Galmar",
+        "masterRecordFile": "Skyrim.esm",
+        "race": "NordRace",
+        "isUnique": false,
+        "gender": "male",
+        "height": "1.000000",
+        "consistencyIndex": -1,
+        "displayString": " | MQ304Galmar | 000EA582 | NordRace | Skyrim.esm",
+        "$$hashKey": "object:6155"
+      }
+    ],
+    "$$hashKey": "object:9591"
+  },
+  {
+    "name": "General Tullius",
+    "NPCs": [
+      {
+        "name": "General Tullius",
+        "formID": "0001327E",
+        "EDID": "GeneralTullius",
+        "masterRecordFile": "Skyrim.esm",
+        "race": "ImperialRace",
+        "isUnique": true,
+        "gender": "male",
+        "height": "1.000000",
+        "consistencyIndex": -1,
+        "displayString": "General Tullius | GeneralTullius | 0001327E | ImperialRace | Skyrim.esm",
+        "$$hashKey": "object:8817"
+      },
+      {
+        "name": "General Tullius",
+        "formID": "000D0577",
+        "EDID": "CWBattleTullius",
+        "masterRecordFile": "Skyrim.esm",
+        "race": "ImperialRace",
+        "isUnique": false,
+        "gender": "male",
+        "height": "1.000000",
+        "consistencyIndex": -1,
+        "displayString": "General Tullius | CWBattleTullius | 000D0577 | ImperialRace | Skyrim.esm",
+        "$$hashKey": "object:6222"
+      }
+    ],
+    "$$hashKey": "object:9595"
+  },
+  {
+    "name": "Froki Whetted-Blade",
+    "NPCs": [
+      {
+        "name": "Froki Whetted-Blade",
+        "formID": "000185F6",
+        "EDID": "dunHunterFroki",
+        "masterRecordFile": "Skyrim.esm",
+        "race": "ElderRace",
+        "isUnique": true,
+        "gender": "male",
+        "height": "1.000000",
+        "consistencyIndex": -1,
+        "displayString": "Froki Whetted-Blade | dunHunterFroki | 000185F6 | ElderRace | Skyrim.esm",
+        "$$hashKey": "object:6928"
+      },
+      {
+        "name": "",
+        "formID": "000EA57E",
+        "EDID": "MQ304Froki",
+        "masterRecordFile": "Skyrim.esm",
+        "race": "ElderRace",
+        "isUnique": false,
+        "gender": "male",
+        "height": "1.000000",
+        "consistencyIndex": -1,
+        "displayString": " | MQ304Froki | 000EA57E | ElderRace | Skyrim.esm",
+        "$$hashKey": "object:6157"
+      }
+    ],
+    "$$hashKey": "object:10838"
+  },
+  {
+    "name": "Svaknir",
+    "NPCs": [
+      {
+        "name": "Svaknir",
+        "formID": "00016C87",
+        "EDID": "MS05_dunDeadMensRespite_Svaknir",
+        "masterRecordFile": "Skyrim.esm",
+        "race": "NordRace",
+        "isUnique": false,
+        "gender": "male",
+        "height": "1.000000",
+        "consistencyIndex": -1,
+        "displayString": "Svaknir | MS05_dunDeadMensRespite_Svaknir | 00016C87 | NordRace | Skyrim.esm",
+        "$$hashKey": "object:6929"
+      },
+      {
+        "name": "",
+        "formID": "000EA57A",
+        "EDID": "MQ304Svaknir",
+        "masterRecordFile": "Skyrim.esm",
+        "race": "NordRace",
+        "isUnique": false,
+        "gender": "male",
+        "height": "1.000000",
+        "consistencyIndex": -1,
+        "displayString": " | MQ304Svaknir | 000EA57A | NordRace | Skyrim.esm",
+        "$$hashKey": "object:6158"
+      }
+    ],
+    "$$hashKey": "object:10841"
+  },
+  {
+    "name": "Kodlak Whitemane",
+    "NPCs": [
+      {
+        "name": "Kodlak Whitemane",
+        "formID": "0001A68E",
+        "EDID": "KodlakWhitemane",
+        "masterRecordFile": "Skyrim.esm",
+        "race": "NordRace",
+        "isUnique": true,
+        "gender": "male",
+        "height": "1.000000",
+        "consistencyIndex": -1,
+        "displayString": "Kodlak Whitemane | KodlakWhitemane | 0001A68E | NordRace | Skyrim.esm",
+        "$$hashKey": "object:8423"
+      },
+      {
+        "name": "Kodlak Whitemane",
+        "formID": "0009700E",
+        "EDID": "MQ304Kodlak",
+        "masterRecordFile": "Skyrim.esm",
+        "race": "NordRace",
+        "isUnique": false,
+        "gender": "male",
+        "height": "1.000000",
+        "consistencyIndex": -1,
+        "displayString": "Kodlak Whitemane | MQ304Kodlak | 0009700E | NordRace | Skyrim.esm",
+        "$$hashKey": "object:7054"
+      },
+      {
+        "name": "",
+        "formID": "000AD3A5",
+        "EDID": "C04DeadKodlak",
+        "masterRecordFile": "Skyrim.esm",
+        "race": "NordRace",
+        "isUnique": true,
+        "gender": "male",
+        "height": "1.000000",
+        "consistencyIndex": -1,
+        "displayString": " | C04DeadKodlak | 000AD3A5 | NordRace | Skyrim.esm",
+        "$$hashKey": "object:7017"
+      },
+      {
+        "name": "",
+        "formID": "000DCCC0",
+        "EDID": "C06DeadKodlak",
+        "masterRecordFile": "Skyrim.esm",
+        "race": "NordRace",
+        "isUnique": true,
+        "gender": "male",
+        "height": "1.000000",
+        "consistencyIndex": -1,
+        "displayString": " | C06DeadKodlak | 000DCCC0 | NordRace | Skyrim.esm",
+        "$$hashKey": "object:6193"
+      },
+      {
+        "name": "",
+        "formID": "0001720B",
+        "EDID": "C06KodlaksGhost",
+        "masterRecordFile": "Skyrim.esm",
+        "race": "NordRace",
+        "isUnique": true,
+        "gender": "male",
+        "height": "1.000000",
+        "consistencyIndex": -1,
+        "displayString": " | C06KodlaksGhost | 0001720B | NordRace | Skyrim.esm",
+        "$$hashKey": "object:8051"
+      }
+    ],
+    "$$hashKey": "object:10844"
+  }
+]
