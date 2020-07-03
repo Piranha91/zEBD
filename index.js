@@ -19,11 +19,21 @@ ngapp.run(function(patcherService) {
 				controller: function ($scope)
 				{
 					let patcherSettings = $scope.settings.zEBD;  //$scope.anything becomes available as "anything" in the html file
-					$scope.assetPackSettings = IO.loadAssetPackSettings(modulePath, patcherSettings.displayAssetPackAlerts, [], false, true, false);
+					switch(patcherSettings.bLoadFromData)
+					{
+						case false:
+							patcherSettings.loadPath = modulePath;
+							break;
+						case true:
+							patcherSettings.loadPath = xelib.GetGlobal('DataPath') + "zEBD";
+							break;
+					}
+
+					$scope.assetPackSettings = IO.loadAssetPackSettings(patcherSettings.loadPath, patcherSettings.displayAssetPackAlerts, [], false, true, false);
 					$scope.raceGroupDefinitions = IO.loadRestrictionGroupDefs(modulePath, patcherSettings.displayAssetPackAlerts);
 					$scope.heightPresets = IO.loadHeightPresets(modulePath);
-					$scope.heightConfiguration = IO.loadHeightConfiguration(modulePath);
-					$scope.bodyGenConfig = IO.loadBodyGenConfig(modulePath);
+					$scope.heightConfiguration = IO.loadHeightConfiguration(patcherSettings.loadPath);
+					$scope.bodyGenConfig = IO.loadBodyGenConfig(patcherSettings.loadPath);
 					$scope.trimPaths = IO.loadTrimPaths(modulePath);
 					$scope.LinkedNPCNameExclusions = IO.loadLinkedNPCNameExclusions(modulePath);
 					
@@ -33,10 +43,10 @@ ngapp.run(function(patcherService) {
 					$scope.availableAssetPackNames = [];
 					$scope.availableSubgroups = [];
 					
-					$scope.consistencyAssignments = IO.loadConsistency(modulePath, true);
+					$scope.consistencyAssignments = IO.loadConsistency(patcherSettings.loadPath, true);
 
-					$scope.forcedNPCAssignments = IO.loadForceList(modulePath);
-					$scope.blockList = IO.loadBlockList(modulePath);
+					$scope.forcedNPCAssignments = IO.loadForceList(patcherSettings.loadPath);
+					$scope.blockList = IO.loadBlockList(patcherSettings.loadPath);
 
 					if (patcherSettings.bVerboseMode === true)
 					{
@@ -157,7 +167,7 @@ ngapp.run(function(patcherService) {
 					// force list
 					$scope.saveForceList = function()
 					{
-						IO.saveForceList(modulePath, $scope.forcedNPCAssignments);
+						IO.saveForceList(patcherSettings.loadPath, $scope.forcedNPCAssignments);
 					};
 
 					$scope.loadNPCs = function()
@@ -257,7 +267,7 @@ ngapp.run(function(patcherService) {
 									break;
 							}
 
-							IO.saveConsistency(modulePath, $scope.consistencyAssignments);
+							IO.saveConsistency(patcherSettings.loadPath, $scope.consistencyAssignments);
 							alert("Consistency updated.")
 						}
 						else
@@ -384,7 +394,7 @@ ngapp.run(function(patcherService) {
 
 						if (bParsedSuccessfully === true)
 						{
-							IO.saveAssetPackSettings(packSetting, modulePath);
+							IO.saveAssetPackSettings(packSetting, patcherSettings.loadPath);
 						}
 						else
 						{
@@ -454,19 +464,19 @@ ngapp.run(function(patcherService) {
 						}
 						if (confirmation === true)
 						{
-							IO.deleteConsistency(modulePath, mode);
+							IO.deleteConsistency(patcherSettings.loadPath, mode);
 						}
 					};
 
 					$scope.deleteSavedPermutations = function()
 					{
-						IO.deleteSavedPermutationsRecords(modulePath);
+						IO.deleteSavedPermutationsRecords(pathcerSettings.loadPath);
 					}
 
 					// FUNCTIONS FOR HEIGHT CONFIGURATION
 					$scope.saveHeightConfig = function()
 					{
-						IO.saveHeightConfiguration(modulePath, $scope.heightConfiguration);
+						IO.saveHeightConfiguration(patcherSettings.loadPath, $scope.heightConfiguration);
 					};
 
 					$scope.applyHeightPreset = function(overridePresets)
@@ -753,7 +763,7 @@ ngapp.run(function(patcherService) {
 
 					$scope.saveBlockList = function()
 					{
-						IO.saveBlockList(modulePath, $scope.blockList);
+						IO.saveBlockList(patcherSettings.loadPath, $scope.blockList);
 					};
 
 					$scope.refreshFilters = function()
@@ -787,6 +797,26 @@ ngapp.run(function(patcherService) {
 							}
 						}
 					}
+
+					$scope.toggleLoadPath = function(bLoadFromData)
+					{
+						switch(bLoadFromData)
+						{
+							case false:
+								patcherSettings.loadPath = modulePath;
+								break;
+							case true:
+								patcherSettings.loadPath = xelib.GetGlobal('DataPath') + "zEBD";
+								break;
+						}
+
+						$scope.assetPackSettings = IO.loadAssetPackSettings(patcherSettings.loadPath, patcherSettings.displayAssetPackAlerts, [], false, true, false);
+						$scope.heightConfiguration = IO.loadHeightConfiguration(patcherSettings.loadPath);
+						$scope.bodyGenConfig = IO.loadBodyGenConfig(patcherSettings.loadPath);
+						$scope.consistencyAssignments = IO.loadConsistency(patcherSettings.loadPath, true);
+						$scope.forcedNPCAssignments = IO.loadForceList(patcherSettings.loadPath);
+						$scope.blockList = IO.loadBlockList(patcherSettings.loadPath);
+					}
 				},
 
 				defaultSettings:
@@ -818,6 +848,8 @@ ngapp.run(function(patcherService) {
 						changeRaceHeight: true,
 						changeNonDefaultHeight: true,
 						bEnableBodyGenIntegration: false,
+						bLoadFromData: false,
+						loadPath: modulePath,
 						patchableRaces: ["NordRace", "BretonRace", "DarkElfRace", "HighElfRace", "ImperialRace", "OrcRace", "RedguardRace", "WoodElfRace", "ElderRace", "NordRaceVampire", "BretonRaceVampire", "DarkElfRaceVampire", "HighElfRaceVampire", "ImperialRaceVampire", "OrcRaceVampire", "RedguardRaceVampire", "WoodElfRaceVampire", "ElderRaceVampire", "SnowElfRace", "DA13AfflictedRace", "KhajiitRace", "KhajiitRaceVampire", "ArgonianRace", "ArgonianRaceVampire"]
 					}
 			},
@@ -878,15 +910,15 @@ ngapp.run(function(patcherService) {
 						helpers.logMessage("Loading info from JSON settings files");
 						locals.userKeywords = [];
 						locals.raceGroupDefinitions = IO.loadRestrictionGroupDefs(modulePath, settings.displayAssetPackAlerts);
-						locals.assetPackSettings = IO.loadAssetPackSettings(modulePath, settings.displayAssetPackAlerts, locals.userKeywords, true, true, settings.bAbortIfPathWarnings);
+						locals.assetPackSettings = IO.loadAssetPackSettings(settings.loadPath, settings.displayAssetPackAlerts, locals.userKeywords, true, true, settings.bAbortIfPathWarnings);
 						locals.recordTemplates = IO.loadRecordTemplates(modulePath, locals.raceGroupDefinitions);
 						locals.trimPaths = IO.loadTrimPaths(modulePath);
 						locals.EBDassets = IO.loadEBDAssets(modulePath);
-						locals.heightConfiguration = IO.loadHeightConfiguration(modulePath);
-						locals.bodyGenConfig = IO.loadBodyGenConfig(modulePath);
-						locals.forcedNPCAssignments = IO.loadForceList(modulePath);
-						locals.blockList = IO.loadBlockList(modulePath);
-						locals.consistencyAssignments  = IO.loadConsistency(modulePath, settings.bEnableConsistency);
+						locals.heightConfiguration = IO.loadHeightConfiguration(settings.loadPath);
+						locals.bodyGenConfig = IO.loadBodyGenConfig(settings.loadPath);
+						locals.forcedNPCAssignments = IO.loadForceList(settings.loadPath);
+						locals.blockList = IO.loadBlockList(settings.loadPath);
+						locals.consistencyAssignments  = IO.loadConsistency(settings.loadPath, settings.bEnableConsistency);
 						locals.LinkedNPCNameExclusions = IO.loadLinkedNPCNameExclusions(modulePath);
 
 						// generate permutations to assign to NPCs
@@ -894,9 +926,9 @@ ngapp.run(function(patcherService) {
 						{
 							if (settings.loadPermutations === true)
 							{
-								locals.permutations = IO.loadGeneratedPermutations(modulePath);
-								RG.recordTemplates = IO.loadGeneratedRecords(modulePath);
-								RG.maxPriority = IO.loadGeneratedRecordsMaxPriority(modulePath);	
+								locals.permutations = IO.loadGeneratedPermutations(settings.loadPath);
+								RG.recordTemplates = IO.loadGeneratedRecords(settings.loadPath);
+								RG.maxPriority = IO.loadGeneratedRecordsMaxPriority(settings.loadPath);	
 							}
 
 							if (settings.loadPermutations === false || locals.permutations === undefined || RG.recordTemplates === undefined || RG.maxPriority === undefined || locals.permutations.length === 0 || RG.recordTemplates.length === 0)
@@ -916,8 +948,8 @@ ngapp.run(function(patcherService) {
 							if (settings.savePermutations === true && locals.permutations.length > 0 && RG.recordTemplates.length > 0 && locals.loadedFromJSON === false)
 							{
 								helpers.logMessage("Saving permutations and records to JSON");
-								IO.saveGeneratedPermutations(modulePath, locals.permutations);
-								IO.saveGeneratedRecords(modulePath, RG.recordTemplates, RG.linkageList, RG.maxPriority);
+								IO.saveGeneratedPermutations(settings.loadPath, locals.permutations);
+								IO.saveGeneratedRecords(settings.loadPath, RG.recordTemplates, RG.linkageList, RG.maxPriority);
 							}
 
 							// create lists to narrow down permutation search space (speeds up patching)
@@ -1138,7 +1170,7 @@ ngapp.run(function(patcherService) {
 					{
 						if (settings.bEnableConsistency === true)
 						{
-							IO.saveConsistency(modulePath, locals.consistencyAssignments);
+							IO.saveConsistency(settings.loadPath, locals.consistencyAssignments);
 						}
 						
 						if (settings.bVerboseMode === true)

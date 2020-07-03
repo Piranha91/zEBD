@@ -185,6 +185,12 @@
     </label>
     <br>
     <label class="tooltip">
+        <input type="checkbox" ng-model="settings.zEBD.bLoadFromData" ng-click = "toggleLoadPath(settings.zEBD.bLoadFromData)"/>
+        <span>Load settings from Data folder instead of zEBD folder</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">If enabled, zEBD will load asset packs, height configuration, BodyGen configuration, specific NPC assignments, and block list from Data\zEBD instead of zEdit\modules\zEBD</span>
+    </label>
+    <br>
+    <label class="tooltip">
         <input type="checkbox" ng-model="settings.zEBD.btooltips"/>
         <span>Display Tooltips</span>
         <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Display tooltips such as this one to describe what each setting controls.</span>
@@ -752,9 +758,9 @@
 
 <section ng-if="currentSettingsDisplay === 'forcedNPCs'">
     <h3>Forced Assignment Menu</h3>
-    <label>
+    <div>
         <button ng-click="saveForceList()">Save Forced NPC List</button>
-    </label>
+    </div>
     <br>
     <label>
         <span>Forced NPC Settings: </span>
@@ -826,9 +832,9 @@
 </section>
 
 <section ng-if="currentSettingsDisplay === 'blockList'">
-    <label>
+    <div>
         <button ng-click="saveBlockList()">Save Block List</button>
-    </label>
+    </div>
     <br>
     <h3>Blocked NPCs:</h3>
     <div ng-repeat="NPC in blockList.blockedNPCs track by $index">
