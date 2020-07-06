@@ -196,7 +196,7 @@ ngapp.run(function(patcherService) {
 								if (patcherSettings.patchableRaces.includes(xelib.GetRefEditorID(NPClist[i], 'RNAM')))
 								{
 									NPC = PO.getNPCinfo(NPClist[i], [], xelib); // don't send consistency to avoid slowing down the loader. Consistency index is obtained individually per-NPC in the consistency-modifying $scope functions.
-									NPC.displayString = NPC.name + " | " + NPC.EDID + " | " + NPC.formID + " | " + NPC.race + " | " + NPC.masterRecordFile;
+									NPC.displayString = NPC.name + " | " + NPC.EDID + " | " + NPC.formID + " | " + NPC.race + " | " + NPC.rootPlugin;
 									$scope.availableNPCs.push(NPC);
 								}
 							}
@@ -965,6 +965,7 @@ ngapp.run(function(patcherService) {
 						locals.blockList = IO.loadBlockList(settings.loadPath);
 						locals.consistencyAssignments  = IO.loadConsistency(settings.loadPath, settings.bEnableConsistency);
 						locals.LinkedNPCNameExclusions = IO.loadLinkedNPCNameExclusions(modulePath);
+						locals.linkedNPCList = IO.loadLinkGroups(modulePath);
 
 						// generate permutations to assign to NPCs
 						if (settings.changeNPCappearance === true)
@@ -1057,7 +1058,8 @@ ngapp.run(function(patcherService) {
 											locals.filtered++;
 											let attributeCache = {};
 											let NPCinfo = PO.getNPCinfo(record, locals.consistencyAssignments, xelib);
-											let userForcedAssignment = PO.getUserForcedAssignment(NPCinfo, locals.forcedNPCAssignments);
+											let NPClinkGroup = PO.findNPCinLinkedList(locals.linkedNPCList, NPCinfo);
+											let userForcedAssignment = PO.getUserForcedAssignment(NPCinfo, locals.forcedNPCAssignments, NPClinkGroup);
 											let userBlockedAssignment = PO.getBlocks(record, locals.blockList, NPCinfo, helpers.logMessage, xelib);
 
 											if (NPCinfo.formID === "00000007" && settings.excludePC === true) // ignore player
@@ -1111,7 +1113,7 @@ ngapp.run(function(patcherService) {
 													//if all the above don't fail, assign a permutation.
 													if (bApplyPermutationToCurrentNPC === true)
 													{
-														locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation(record, NPCinfo, locals.permutationsByRaceGender, locals.consistencyAssignments, settings.bEnableConsistency, userForcedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, attributeCache, helpers.logMessage);
+														locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation(record, NPCinfo, locals.permutationsByRaceGender, locals.consistencyAssignments, settings.bEnableConsistency, userForcedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, NPClinkGroup, attributeCache, helpers.logMessage);
 													}
 													if (locals.assignedPermutations[NPCinfo.formID] === undefined) // occurs if the NPC is incompatible with the assignment criteria for all generated permutations.
 													{
@@ -1128,7 +1130,7 @@ ngapp.run(function(patcherService) {
 												}
 												else
 												{
-													locals.assignedHeights[NPCinfo.formID] = PO.assignNPCheight(record, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, locals.heightConfiguration, userForcedAssignment, settings.changeNonDefaultHeight, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCheights, helpers.logMessage);
+													locals.assignedHeights[NPCinfo.formID] = PO.assignNPCheight(record, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, locals.heightConfiguration, userForcedAssignment, settings.changeNonDefaultHeight, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCheights, NPClinkGroup, helpers.logMessage);
 													if (locals.assignedHeights[NPCinfo.formID] === undefined || locals.assignedHeights[NPCinfo.formID] === "NaN") // if there are no height settings for the given NPC's race
 													{
 														bApplyHeightSettingsToCurrentNPC = false;
@@ -1139,7 +1141,7 @@ ngapp.run(function(patcherService) {
 											
 											if (settings.bEnableBodyGenIntegration === true && userBlockedAssignment.bodygen === false)
 											{
-												locals.assignedBodyGen[NPCinfo.formID] = BGI.assignMorphs(record, locals.bodyGenConfig, locals.BGcategorizedMorphs, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, locals.assignedPermutations[NPCinfo.formID], userForcedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCbodygen, attributeCache, helpers.logMessage);
+												locals.assignedBodyGen[NPCinfo.formID] = BGI.assignMorphs(record, locals.bodyGenConfig, locals.BGcategorizedMorphs, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, locals.assignedPermutations[NPCinfo.formID], userForcedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCbodygen, NPClinkGroup, attributeCache, helpers.logMessage);
 											}
 
 											// store the NPC info
@@ -1390,7 +1392,7 @@ function findNPCAssignmentIndex(consistencyRecords, NPCinfo)
 
     for (let i = 0; i < consistencyRecords.length; i++)
     {
-        if (consistencyRecords[i].rootPlugin === NPCinfo.masterRecordFile && consistencyRecords[i].formIDSignature === NPCsignature)
+        if (consistencyRecords[i].rootPlugin === NPCinfo.rootPlugin && consistencyRecords[i].formIDSignature === NPCsignature)
         {
             index = i;
             break;
@@ -1418,7 +1420,7 @@ function createNPCforBlockList(currentNPC, BlockedNPCs)
 	obj.formID = currentNPC.formID;
 	obj.formID = "xx" + obj.formID.substring(2, 9);
 	obj.EDID = currentNPC.EDID;
-	obj.rootPlugin = currentNPC.masterRecordFile;
+	obj.rootPlugin = currentNPC.rootPlugin;
 	obj.displayString = obj.name + " (" + obj.formID + ") | " + obj.rootPlugin;
 	obj.bBlockAssets = false;
 	obj.bBlockHeight = false;
