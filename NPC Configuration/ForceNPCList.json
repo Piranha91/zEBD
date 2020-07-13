@@ -1,5 +1,19 @@
 [
   {
+    "name": "Auri",
+    "formID": "xx000D63",
+    "EDID": "018Auri",
+    "rootPlugin": "018Auri.esp",
+    "race": "WoodElfRace",
+    "gender": "female",
+    "forcedAssetPack": "Demoniac 4K CBBE (No Bronze Shine) No Age40Age50 Director's Cut (for Diverse Races BodyGen)",
+    "forcedSubgroups": [],
+    "forcedHeight": "",
+    "forcedBodyGenMorphs": [],
+    "displayString": "Auri (xx000D63)",
+    "$$hashKey": "object:6707"
+  },
+  {
     "name": "Elisif the Fair",
     "formID": "xx01326A",
     "EDID": "ElisifTheFair",
@@ -13,7 +27,7 @@
       "$Elisif50"
     ],
     "displayString": "Elisif the Fair (xx01326A)",
-    "$$hashKey": "object:2275"
+    "$$hashKey": "object:7272"
   },
   {
     "name": "Serana",
@@ -29,7 +43,7 @@
       "$Serana60"
     ],
     "displayString": "Serana (xx002B6C)",
-    "$$hashKey": "object:2276"
+    "$$hashKey": "object:7273"
   },
   {
     "name": "Valerica",
@@ -45,7 +59,7 @@
       "$Valerica100"
     ],
     "displayString": "Valerica (xx003B8B)",
-    "$$hashKey": "object:2277"
+    "$$hashKey": "object:7274"
   },
   {
     "name": "Adelaisa Vendicci",
@@ -61,7 +75,7 @@
       "$Adelaisa70"
     ],
     "displayString": "Adelaisa Vendicci (xx01411D)",
-    "$$hashKey": "object:2278"
+    "$$hashKey": "object:7275"
   },
   {
     "name": "Aela the Huntress",
@@ -77,7 +91,7 @@
       "$Aela10"
     ],
     "displayString": "Aela the Huntress (xx01A696)",
-    "$$hashKey": "object:2279"
+    "$$hashKey": "object:7276"
   },
   {
     "name": "Annekke Crag-Jumper",
@@ -93,7 +107,7 @@
       "$Annekke40"
     ],
     "displayString": "Annekke Crag-Jumper (xx013666)",
-    "$$hashKey": "object:2280"
+    "$$hashKey": "object:7277"
   },
   {
     "name": "Aranea Ienith",
@@ -109,7 +123,7 @@
       "$Aranea40"
     ],
     "displayString": "Aranea Ienith (xx028AD0)",
-    "$$hashKey": "object:2281"
+    "$$hashKey": "object:7278"
   },
   {
     "name": "Beleval",
@@ -125,7 +139,7 @@
       "$Beleval50"
     ],
     "displayString": "Beleval (xx01541C)",
-    "$$hashKey": "object:2282"
+    "$$hashKey": "object:7279"
   },
   {
     "name": "Borgakh the Steel Heart",
@@ -141,7 +155,7 @@
       "$Borgakh20"
     ],
     "displayString": "Borgakh the Steel Heart (xx019959)",
-    "$$hashKey": "object:2283"
+    "$$hashKey": "object:7280"
   },
   {
     "name": "Brelyna Maryon",
@@ -157,7 +171,7 @@
       "$Brelyna60"
     ],
     "displayString": "Brelyna Maryon (xx01C196)",
-    "$$hashKey": "object:2284"
+    "$$hashKey": "object:7281"
   },
   {
     "name": "Delphine",
@@ -173,7 +187,7 @@
       "$Delphine50"
     ],
     "displayString": "Delphine (xx013478)",
-    "$$hashKey": "object:2285"
+    "$$hashKey": "object:7282"
   },
   {
     "name": "Eola",
@@ -189,7 +203,7 @@
       "$Eola30"
     ],
     "displayString": "Eola (xx01990F)",
-    "$$hashKey": "object:2286"
+    "$$hashKey": "object:7283"
   },
   {
     "name": "Frea",
@@ -205,7 +219,7 @@
       "$Frea40"
     ],
     "displayString": "Frea (xx017934)",
-    "$$hashKey": "object:2287"
+    "$$hashKey": "object:7284"
   },
   {
     "name": "Illia",
@@ -221,7 +235,7 @@
       "$Illia40"
     ],
     "displayString": "Illia (xx048C2F)",
-    "$$hashKey": "object:2288"
+    "$$hashKey": "object:7285"
   },
   {
     "name": "Ingjard",
@@ -237,7 +251,7 @@
       "$Ingjard60"
     ],
     "displayString": "Ingjard (xx01541B)",
-    "$$hashKey": "object:2289"
+    "$$hashKey": "object:7286"
   },
   {
     "name": "Iona",
@@ -253,7 +267,7 @@
       "$Iona50"
     ],
     "displayString": "Iona (xx0A2C91)",
-    "$$hashKey": "object:2290"
+    "$$hashKey": "object:7287"
   },
   {
     "name": "Jenassa",
@@ -269,7 +283,7 @@
       "$Jenassa20"
     ],
     "displayString": "Jenassa (xx0B9982)",
-    "$$hashKey": "object:2291"
+    "$$hashKey": "object:7288"
   },
   {
     "name": "Jordis the Sword-Maiden",
@@ -285,7 +299,7 @@
       "$Jordis30"
     ],
     "displayString": "Jordis the Sword-Maiden (xx0A2C8F)",
-    "$$hashKey": "object:2292"
+    "$$hashKey": "object:7289"
   },
   {
     "name": "Lydia",
@@ -301,7 +315,7 @@
       "$Lydia70"
     ],
     "displayString": "Lydia (xx0A2C8E)",
-    "$$hashKey": "object:2293"
+    "$$hashKey": "object:7290"
   },
   {
     "name": "Mjoll the Lioness",
@@ -317,7 +331,7 @@
       "$Mjoll0"
     ],
     "displayString": "Mjoll the Lioness (xx01336B)",
-    "$$hashKey": "object:2294"
+    "$$hashKey": "object:7291"
   },
   {
     "name": "Njada Stonearm",
@@ -333,7 +347,7 @@
       "$Njada60"
     ],
     "displayString": "Njada Stonearm (xx01A6D9)",
-    "$$hashKey": "object:2295"
+    "$$hashKey": "object:7292"
   },
   {
     "name": "Rayya",
@@ -349,7 +363,7 @@
       "$Rayya50"
     ],
     "displayString": "Rayya (xx005215)",
-    "$$hashKey": "object:2296"
+    "$$hashKey": "object:7293"
   },
   {
     "name": "Ria",
@@ -365,7 +379,7 @@
       "$Ria50"
     ],
     "displayString": "Ria (xx01A6D7)",
-    "$$hashKey": "object:2297"
+    "$$hashKey": "object:7294"
   },
   {
     "name": "Ugor",
@@ -381,7 +395,7 @@
       "$Ugor80"
     ],
     "displayString": "Ugor (xx019E1A)",
-    "$$hashKey": "object:2298"
+    "$$hashKey": "object:7295"
   },
   {
     "name": "Uthgerd the Unbroken",
@@ -397,7 +411,7 @@
       "$Uthgerd100"
     ],
     "displayString": "Uthgerd the Unbroken (xx0918E2)",
-    "$$hashKey": "object:2299"
+    "$$hashKey": "object:7296"
   },
   {
     "name": "Camilla Valerius",
@@ -413,7 +427,7 @@
       "$Camilla55"
     ],
     "displayString": "Camilla Valerius (xx01347B)",
-    "$$hashKey": "object:2300"
+    "$$hashKey": "object:7297"
   },
   {
     "name": "Grelka",
@@ -429,7 +443,7 @@
       "$Grelka20"
     ],
     "displayString": "Grelka (xx0136C5)",
-    "$$hashKey": "object:2301"
+    "$$hashKey": "object:7298"
   },
   {
     "name": "Morwen",
@@ -445,7 +459,7 @@
       "$Morwen60"
     ],
     "displayString": "Morwen (xx018FA9)",
-    "$$hashKey": "object:2302"
+    "$$hashKey": "object:7299"
   },
   {
     "name": "Muiri",
@@ -461,7 +475,7 @@
       "$Muiri0"
     ],
     "displayString": "Muiri (xx01406B)",
-    "$$hashKey": "object:2303"
+    "$$hashKey": "object:7300"
   },
   {
     "name": "Senna",
@@ -477,7 +491,7 @@
       "$Senna100"
     ],
     "displayString": "Senna (xx0133B7)",
-    "$$hashKey": "object:2304"
+    "$$hashKey": "object:7301"
   },
   {
     "name": "Sylgja",
@@ -493,7 +507,7 @@
       "$Sylgja70"
     ],
     "displayString": "Sylgja (xx0C3A3F)",
-    "$$hashKey": "object:2305"
+    "$$hashKey": "object:7302"
   },
   {
     "name": "Taarie",
@@ -509,7 +523,7 @@
       "$Taarie70"
     ],
     "displayString": "Taarie (xx0132AB)",
-    "$$hashKey": "object:2306"
+    "$$hashKey": "object:7303"
   },
   {
     "name": "Temba Wide-Arm",
@@ -525,7 +539,7 @@
       "$Temba70"
     ],
     "displayString": "Temba Wide-Arm (xx0658D2)",
-    "$$hashKey": "object:2307"
+    "$$hashKey": "object:7304"
   },
   {
     "name": "Ysolda",
@@ -541,7 +555,7 @@
       "$Ysolda80"
     ],
     "displayString": "Ysolda (xx013BAB)",
-    "$$hashKey": "object:2308"
+    "$$hashKey": "object:7305"
   },
   {
     "name": "Adrianne Avenicci",
@@ -557,7 +571,7 @@
       "$Adrianne80"
     ],
     "displayString": "Adrianne Avenicci (xx013BB9)",
-    "$$hashKey": "object:2309"
+    "$$hashKey": "object:7306"
   },
   {
     "name": "Carlotta Valentia",
@@ -573,7 +587,7 @@
       "$Carlotta60"
     ],
     "displayString": "Carlotta Valentia (xx013B99)",
-    "$$hashKey": "object:2310"
+    "$$hashKey": "object:7307"
   },
   {
     "name": "Gerdur",
@@ -589,7 +603,7 @@
       "$Gerdur80"
     ],
     "displayString": "Gerdur (xx01347C)",
-    "$$hashKey": "object:2311"
+    "$$hashKey": "object:7308"
   },
   {
     "name": "Hulda",
@@ -605,7 +619,7 @@
       "$Hulda50"
     ],
     "displayString": "Hulda (xx013BA3)",
-    "$$hashKey": "object:2312"
+    "$$hashKey": "object:7309"
   },
   {
     "name": "Idgrod the Younger",
@@ -621,7 +635,7 @@
       "$Idgrod30"
     ],
     "displayString": "Idgrod the Younger (xx0135EC)",
-    "$$hashKey": "object:2313"
+    "$$hashKey": "object:7310"
   },
   {
     "name": "Ingun Black-Briar",
@@ -637,7 +651,7 @@
       "$Ingun20"
     ],
     "displayString": "Ingun Black-Briar (xx013364)",
-    "$$hashKey": "object:2314"
+    "$$hashKey": "object:7311"
   },
   {
     "name": "Irileth",
@@ -653,7 +667,7 @@
       "$Irileth80"
     ],
     "displayString": "Irileth (xx013BB8)",
-    "$$hashKey": "object:2315"
+    "$$hashKey": "object:7312"
   },
   {
     "name": "Lisette",
@@ -669,7 +683,7 @@
       "$Lisette50"
     ],
     "displayString": "Lisette (xx013297)",
-    "$$hashKey": "object:2316"
+    "$$hashKey": "object:7313"
   },
   {
     "name": "Karliah",
@@ -685,7 +699,7 @@
       "$Karliah100"
     ],
     "displayString": "Karliah (xx01B07F)",
-    "$$hashKey": "object:2317"
+    "$$hashKey": "object:7314"
   },
   {
     "name": "Maven Black-Briar",
@@ -701,7 +715,7 @@
       "$Maven50"
     ],
     "displayString": "Maven Black-Briar (xx01336A)",
-    "$$hashKey": "object:2318"
+    "$$hashKey": "object:7315"
   },
   {
     "name": "Legate Rikke",
@@ -717,7 +731,7 @@
       "$Rikke60"
     ],
     "displayString": "Legate Rikke (xx0132A1)",
-    "$$hashKey": "object:2319"
+    "$$hashKey": "object:7316"
   },
   {
     "name": "Sapphire",
@@ -733,7 +747,7 @@
       "$Sapphire70"
     ],
     "displayString": "Sapphire (xx0C19A3)",
-    "$$hashKey": "object:2320"
+    "$$hashKey": "object:7317"
   },
   {
     "name": "Tonilia",
@@ -749,7 +763,7 @@
       "$Tonilia20"
     ],
     "displayString": "Tonilia (xx0B8827)",
-    "$$hashKey": "object:2321"
+    "$$hashKey": "object:7318"
   },
   {
     "name": "Vex",
@@ -765,20 +779,6 @@
       "$Vex50"
     ],
     "displayString": "Vex (xx01CD90)",
-    "$$hashKey": "object:2322"
-  },
-  {
-    "name": "Auri",
-    "formID": "xx000D63",
-    "EDID": "018Auri",
-    "rootPlugin": "018Auri.esp",
-    "race": "WoodElfRace",
-    "gender": "female",
-    "forcedAssetPack": "Demoniac 4K CBBE (No Bronze Shine) No Age40Age50 Director's Cut (for Diverse Races BodyGen)",
-    "forcedSubgroups": [],
-    "forcedHeight": "",
-    "forcedBodyGenMorphs": [],
-    "displayString": "Auri (xx000D63)",
-    "$$hashKey": "object:6707"
+    "$$hashKey": "object:7319"
   }
 ]

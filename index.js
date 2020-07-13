@@ -472,7 +472,7 @@ ngapp.run(function(patcherService) {
 
 					$scope.deleteSavedPermutations = function()
 					{
-						IO.deleteSavedPermutationsRecords(pathcerSettings.loadPath);
+						IO.deleteSavedPermutationsRecords(patcherSettings.loadPath);
 					}
 
 					// FUNCTIONS FOR HEIGHT CONFIGURATION
