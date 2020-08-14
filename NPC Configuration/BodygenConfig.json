@@ -456,7 +456,12 @@
         "HighElfRaceVampire"
       ],
       "disallowedRaces": [],
-      "allowedAttributes": [],
+      "allowedAttributes": [
+        [
+          "test1",
+          "test2"
+        ]
+      ],
       "disallowedAttributes": [],
       "forceIfAttributes": [],
       "allowUnique": true,

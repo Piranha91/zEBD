@@ -20,8 +20,15 @@
     "rootPlugin": "Skyrim.esm",
     "race": "NordRace",
     "gender": "female",
-    "forcedAssetPack": "",
-    "forcedSubgroups": [],
+    "forcedAssetPack": "The Pure CBBE 8K-4K Default Subsurface - Director's Cut (for Diverse Races BodyGen)",
+    "forcedSubgroups": [
+      {
+        "id": "HN.Y.W",
+        "description": "HN.Y.W: Wood Elf",
+        "topLevelSubgroup": "HN",
+        "$$hashKey": "object:5523"
+      }
+    ],
     "forcedHeight": "",
     "forcedBodyGenMorphs": [
       "$Elisif50"
