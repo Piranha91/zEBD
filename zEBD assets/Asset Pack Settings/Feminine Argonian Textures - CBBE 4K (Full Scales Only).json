@@ -1,0 +1,849 @@
+{
+  "groupName": "Feminine Argonian Textures - CBBE 4K (Full Scales Only)",
+  "gender": "female",
+  "displayAlerts": true,
+  "userAlert": "",
+  "subgroups": [
+    {
+      "id": "V",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [
+        "argonian"
+      ],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Variants",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "V.C",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Chameleon",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "V.C.A",
+              "enabled": false,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Abs",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemalebody.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemaleBody_feet.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemaleBody_tail.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemalebody_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemaleBody_feet_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemaleBody_tail_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "argonianfemalebody_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "ArgonianFemaleBody_s_feet.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "argonianfemaleBody_tail_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands.dds",
+                  "argonianfemalehands.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands_msn.dds",
+                  "argonianfemalehands_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands_s.dds",
+                  "argonianfemalehands_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead.dds",
+                  "argonianfemalehead.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead_msn.dds",
+                  "argonianfemalehead_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead_s.dds",
+                  "argonianfemalehead_s.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:1670"
+            },
+            {
+              "id": "V.C.F",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Full Scales",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemalebody.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemaleBody_feet.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemaleBody_tail.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemalebody_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemaleBody_feet_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemaleBody_tail_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "argonianfemalebody_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "ArgonianFemaleBody_s_feet.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "argonianfemaleBody_tail_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands.dds",
+                  "argonianfemalehands.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands_msn.dds",
+                  "argonianfemalehands_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands_s.dds",
+                  "argonianfemalehands_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead.dds",
+                  "argonianfemalehead.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead_msn.dds",
+                  "argonianfemalehead_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead_s.dds",
+                  "argonianfemalehead_s.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:1671"
+            },
+            {
+              "id": "V.C.L",
+              "enabled": false,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Less Scales",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemalebody.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemaleBody_feet.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemaleBody_tail.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemalebody_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemaleBody_feet_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemaleBody_tail_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "argonianfemalebody_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "ArgonianFemaleBody_s_feet.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "argonianfemaleBody_tail_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands.dds",
+                  "argonianfemalehands.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands_msn.dds",
+                  "argonianfemalehands_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands_s.dds",
+                  "argonianfemalehands_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead.dds",
+                  "argonianfemalehead.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead_msn.dds",
+                  "argonianfemalehead_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead_s.dds",
+                  "argonianfemalehead_s.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:1672"
+            },
+            {
+              "id": "V.C.N",
+              "enabled": false,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "No Scales",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemalebody.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemaleBody_feet.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemaleBody_tail.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemalebody_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemaleBody_feet_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemaleBody_tail_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "argonianfemalebody_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "ArgonianFemaleBody_s_feet.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "argonianfemaleBody_tail_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands.dds",
+                  "argonianfemalehands.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands_msn.dds",
+                  "argonianfemalehands_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands_s.dds",
+                  "argonianfemalehands_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead.dds",
+                  "argonianfemalehead.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead_msn.dds",
+                  "argonianfemalehead_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Chameleon - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead_s.dds",
+                  "argonianfemalehead_s.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:1673"
+            }
+          ],
+          "$$hashKey": "object:1569"
+        },
+        {
+          "id": "V.L",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Lizard",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "V.L.A",
+              "enabled": false,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Abs",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemalebody.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemaleBody_feet.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemaleBody_tail.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemalebody_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemaleBody_feet_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemaleBody_tail_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "argonianfemalebody_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "ArgonianFemaleBody_s_feet.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "argonianfemaleBody_tail_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands.dds",
+                  "argonianfemalehands.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands_msn.dds",
+                  "argonianfemalehands_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands_s.dds",
+                  "argonianfemalehands_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead.dds",
+                  "argonianfemalehead.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead_msn.dds",
+                  "argonianfemalehead_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Abs\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead_s.dds",
+                  "argonianfemalehead_s.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:1824"
+            },
+            {
+              "id": "V.L.F",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Full Scales",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemalebody.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemaleBody_feet.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemaleBody_tail.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemalebody_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemaleBody_feet_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemaleBody_tail_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "argonianfemalebody_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "ArgonianFemaleBody_s_feet.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "argonianfemaleBody_tail_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands.dds",
+                  "argonianfemalehands.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands_msn.dds",
+                  "argonianfemalehands_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands_s.dds",
+                  "argonianfemalehands_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead.dds",
+                  "argonianfemalehead.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead_msn.dds",
+                  "argonianfemalehead_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Full Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead_s.dds",
+                  "argonianfemalehead_s.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:1825"
+            },
+            {
+              "id": "V.L.L",
+              "enabled": false,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Less Scales",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemalebody.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemaleBody_feet.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemaleBody_tail.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemalebody_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemaleBody_feet_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemaleBody_tail_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "argonianfemalebody_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "ArgonianFemaleBody_s_feet.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "argonianfemaleBody_tail_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands.dds",
+                  "argonianfemalehands.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands_msn.dds",
+                  "argonianfemalehands_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands_s.dds",
+                  "argonianfemalehands_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead.dds",
+                  "argonianfemalehead.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead_msn.dds",
+                  "argonianfemalehead_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - Less Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead_s.dds",
+                  "argonianfemalehead_s.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:1826"
+            },
+            {
+              "id": "V.L.N",
+              "enabled": false,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "No Scales",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemalebody.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemaleBody_feet.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody.dds",
+                  "argonianfemaleBody_tail.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemalebody_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemaleBody_feet_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_msn.dds",
+                  "argonianfemaleBody_tail_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "argonianfemalebody_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "ArgonianFemaleBody_s_feet.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalebody_s.dds",
+                  "argonianfemaleBody_tail_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands.dds",
+                  "argonianfemalehands.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands_msn.dds",
+                  "argonianfemalehands_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehands_s.dds",
+                  "argonianfemalehands_s.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead.dds",
+                  "argonianfemalehead.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead_msn.dds",
+                  "argonianfemalehead_msn.dds"
+                ],
+                [
+                  "textures\\FATC4K\\[4K]\\Lizard - No Scales\\Textures\\Actors\\Character\\ArgonianFemale\\argonianfemalehead_s.dds",
+                  "argonianfemalehead_s.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:1827"
+            }
+          ],
+          "$$hashKey": "object:1581"
+        }
+      ],
+      "$$hashKey": "object:2487"
+    },
+    {
+      "id": "D",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Detail Maps (Default)",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "D.Y",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleArgonianOld [TXST:000B30F2]"
+            ]
+          ],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Young",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\Actors\\Character\\argonianfemale\\BlankDetailmap.dds",
+              "BlankDetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:1733"
+        },
+        {
+          "id": "D.O",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleArgonianOld [TXST:000B30F2]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleArgonianOld [TXST:000B30F2]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Old",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\Actors\\Character\\argonianfemale\\ArgonianFemaleHeadOld.dds",
+              "BlankDetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:1745"
+        }
+      ],
+      "$$hashKey": "object:1678"
+    },
+    {
+      "id": "S",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Subsurface (Default)",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "Skyrim.esm\\Actors\\Character\\Female\\FemaleBody_1_sk.dds",
+          "FemaleBody_1_sk.dds"
+        ],
+        [
+          "Skyrim.esm\\Actors\\Character\\Female\\FemaleBody_1_sk.dds",
+          "FemaleBody_1_feet_sk.dds"
+        ],
+        [
+          "Skyrim.esm\\Actors\\Character\\Female\\FemaleBody_1_sk.dds",
+          "FemaleBody_1_tail_sk.dds"
+        ],
+        [
+          "Skyrim.esm\\Actors\\Character\\Female\\FemaleHands_1_sk.dds",
+          "FemaleHands_1_sk.dds"
+        ],
+        [
+          "Skyrim.esm\\Actors\\Character\\Female\\FemaleHead_sk.dds",
+          "FemaleHead_sk.dds"
+        ]
+      ],
+      "subgroups": [],
+      "$$hashKey": "object:1689"
+    }
+  ],
+  "displayAssetPackAlerts": true
+}

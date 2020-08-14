@@ -1,0 +1,4697 @@
+{
+  "groupName": "Demoniac 4K CBBE (No Bronze Shine) No Age40Age50 Director's Cut (for Diverse Races BodyGen)",
+  "gender": "female",
+  "displayAlerts": true,
+  "userAlert": "",
+  "subgroups": [
+    {
+      "id": "HD",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Diffuse",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HD.FMS",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Fair Mature Skin",
+          "requiredSubgroups": [
+            "BD.FMS",
+            "HAD.FMS",
+            "HN.CS"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HD.FMS.H",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoid_NonVamp"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Non-vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FMS_4K\\textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:5535",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HD.FMS.V",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoidVampire"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FMS_4K\\textures\\actors\\character\\female\\femaleheadvampire.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:5547",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:2325",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HD.FSC",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Fair Skin Complexion",
+          "requiredSubgroups": [
+            "BD.FSC",
+            "HAD.FSC",
+            "HN.FSC"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HD.FSC.H",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoid_NonVamp"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Non-vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FSC_4K\\textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:3899",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HD.FSC.V",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoidVampire"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FSC_4K\\textures\\actors\\character\\female\\femaleheadvampire.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:3900",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:3165",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HD.RG",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "RealGirl Skin",
+          "requiredSubgroups": [
+            "BD.RG",
+            "HAD.RG",
+            "HN.CS"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HD.RG.H",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoid_NonVamp"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Non-vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RG_4K\\textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:3933",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HD.RG.V",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoidVampire"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RG_4K\\textures\\actors\\character\\female\\femaleheadvampire.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:3934",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:3176",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HD.RSG",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Real SG Skin",
+          "requiredSubgroups": [
+            "BD.RSG",
+            "HAD.RSG",
+            "HN.FSC"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HD.RSG.H",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoid_NonVamp"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Non-vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RSG_4K\\textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:3967",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HD.RSG.V",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoidVampire"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RSG_4K\\textures\\actors\\character\\female\\femaleheadvampire.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:3968",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:3187",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HD.SG",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "SG Skin",
+          "requiredSubgroups": [
+            "BD.SG",
+            "HAD.SG",
+            "HN.CS"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HD.SG.H",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoid_NonVamp"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Non-vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_SG_4K\\textures\\actors\\character\\female\\femalehead.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4001",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HD.SG.V",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoidVampire"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_SG_4K\\textures\\actors\\character\\female\\femaleheadvampire.dds",
+                  "femalehead.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4002",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:3198",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:4409",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "HN",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Normals",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HN.CS",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "CBBE Standard",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HN.CS.B",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "BretonRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Breton",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_base\\textures\\actors\\character\\bretonfemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4544",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.CS.D",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "DarkElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Dark Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_base\\textures\\actors\\character\\darkelffemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4558",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.CS.N",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "NordRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Nord",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_base\\textures\\actors\\character\\female\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4571",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.CS.H",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "HighElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "High Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_base\\textures\\actors\\character\\highelffemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4595",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.CS.O",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "OrcRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Orc",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_base\\textures\\actors\\character\\femaleorc\\femaleheadorc_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4608",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.CS.I",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "ImperialRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Imperial",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_base\\textures\\actors\\character\\imperialfemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4619",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.CS.R",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "RedguardRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Redguard",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_base\\textures\\actors\\character\\redguardfemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4634",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.CS.V",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoidYoungVampire"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": false,
+              "allowNonUnique": true,
+              "name": "Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [],
+              "subgroups": [
+                {
+                  "id": "HN.CS.V.D",
+                  "enabled": true,
+                  "distributionEnabled": true,
+                  "allowedRaces": [],
+                  "disallowedRaces": [],
+                  "allowedAttributes": [],
+                  "disallowedAttributes": [],
+                  "forceIfAttributes": [],
+                  "allowUnique": true,
+                  "allowNonUnique": true,
+                  "name": "Default Vampire",
+                  "requiredSubgroups": [],
+                  "excludedSubgroups": [],
+                  "addKeywords": [],
+                  "probabilityWeighting": 1,
+                  "paths": [
+                    [
+                      "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_base\\textures\\actors\\character\\female\\femaleheadvampire_msn.dds",
+                      "femalehead_msn.dds"
+                    ]
+                  ],
+                  "subgroups": [],
+                  "$$hashKey": "object:4999",
+                  "allowedBodyGenDescriptors": [],
+                  "disallowedBodyGenDescriptors": []
+                },
+                {
+                  "id": "HN.CS.V.DE",
+                  "enabled": true,
+                  "distributionEnabled": false,
+                  "allowedRaces": [],
+                  "disallowedRaces": [],
+                  "allowedAttributes": [
+                    [
+                      "FTST",
+                      "SkinHeadFemaleDarkElfVampire [TXST:02006F91]"
+                    ]
+                  ],
+                  "disallowedAttributes": [],
+                  "forceIfAttributes": [
+                    [
+                      "FTST",
+                      "SkinHeadFemaleDarkElfVampire [TXST:02006F91]"
+                    ]
+                  ],
+                  "allowUnique": true,
+                  "allowNonUnique": true,
+                  "name": "Dark Elf Vampire",
+                  "requiredSubgroups": [],
+                  "excludedSubgroups": [],
+                  "addKeywords": [],
+                  "probabilityWeighting": 1,
+                  "paths": [
+                    [
+                      "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_base\\textures\\actors\\character\\darkelffemale\\femalehead_msn.dds",
+                      "femalehead_msn.dds"
+                    ]
+                  ],
+                  "subgroups": [],
+                  "$$hashKey": "object:9518",
+                  "allowedBodyGenDescriptors": [],
+                  "disallowedBodyGenDescriptors": []
+                },
+                {
+                  "id": "HN.CS.V.O",
+                  "enabled": true,
+                  "distributionEnabled": false,
+                  "allowedRaces": [],
+                  "disallowedRaces": [],
+                  "allowedAttributes": [
+                    [
+                      "FTST",
+                      "SkinHeadFemaleOrcVampire [TXST:02006F94]"
+                    ]
+                  ],
+                  "disallowedAttributes": [],
+                  "forceIfAttributes": [
+                    [
+                      "FTST",
+                      "SkinHeadFemaleOrcVampire [TXST:02006F94]"
+                    ]
+                  ],
+                  "allowUnique": true,
+                  "allowNonUnique": true,
+                  "name": "Orc Vampire",
+                  "requiredSubgroups": [],
+                  "excludedSubgroups": [],
+                  "addKeywords": [],
+                  "probabilityWeighting": 1,
+                  "paths": [
+                    [
+                      "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_base\\textures\\actors\\character\\femaleorc\\femaleheadorc_msn.dds",
+                      "femalehead_msn.dds"
+                    ]
+                  ],
+                  "subgroups": [],
+                  "$$hashKey": "object:9519",
+                  "allowedBodyGenDescriptors": [],
+                  "disallowedBodyGenDescriptors": []
+                }
+              ],
+              "$$hashKey": "object:3582",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.CS.W",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "WoodElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Wood Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_base\\textures\\actors\\character\\highelffemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:4185",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.CS.E",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "elder"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Elder",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_base\\textures\\actors\\character\\femaleold\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:14920",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:1933",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HN.FSC",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "FSC (Younger Appearance)",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HN.FSC.B",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "BretonRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Breton",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_FSCHead\\textures\\actors\\character\\bretonfemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:14169",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.FSC.D",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "DarkElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Dark Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_FSCHead\\textures\\actors\\character\\darkelffemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:14170",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.FSC.N",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "NordRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Nord",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_FSCHead\\textures\\actors\\character\\female\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:14171",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.FSC.H",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "HighElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "High Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_FSCHead\\textures\\actors\\character\\highelffemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:14172",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.FSC.O",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "OrcRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Orc",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_FSCHead\\textures\\actors\\character\\femaleorc\\femaleheadorc_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:14173",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.FSC.I",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "ImperialRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Imperial",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_FSCHead\\textures\\actors\\character\\imperialfemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:14174",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.FSC.R",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "RedguardRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Redguard",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_FSCHead\\textures\\actors\\character\\redguardfemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:14175",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.FSC.V",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoidYoungVampire"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": false,
+              "allowNonUnique": true,
+              "name": "Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [],
+              "subgroups": [
+                {
+                  "id": "HN.FSC.V.D",
+                  "enabled": true,
+                  "distributionEnabled": true,
+                  "allowedRaces": [],
+                  "disallowedRaces": [],
+                  "allowedAttributes": [],
+                  "disallowedAttributes": [],
+                  "forceIfAttributes": [],
+                  "allowUnique": true,
+                  "allowNonUnique": true,
+                  "name": "Default Vampire",
+                  "requiredSubgroups": [],
+                  "excludedSubgroups": [],
+                  "addKeywords": [],
+                  "probabilityWeighting": 1,
+                  "paths": [
+                    [
+                      "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_FSCHead\\textures\\actors\\character\\female\\femaleheadvampire_msn.dds",
+                      "femalehead_msn.dds"
+                    ]
+                  ],
+                  "subgroups": [],
+                  "$$hashKey": "object:14862",
+                  "allowedBodyGenDescriptors": [],
+                  "disallowedBodyGenDescriptors": []
+                },
+                {
+                  "id": "HN.FSC.V.DE",
+                  "enabled": true,
+                  "distributionEnabled": false,
+                  "allowedRaces": [],
+                  "disallowedRaces": [],
+                  "allowedAttributes": [
+                    [
+                      "FTST",
+                      "SkinHeadFemaleDarkElfVampire [TXST:02006F91]"
+                    ]
+                  ],
+                  "disallowedAttributes": [],
+                  "forceIfAttributes": [
+                    [
+                      "FTST",
+                      "SkinHeadFemaleDarkElfVampire [TXST:02006F91]"
+                    ]
+                  ],
+                  "allowUnique": true,
+                  "allowNonUnique": true,
+                  "name": "Dark Elf Vampire",
+                  "requiredSubgroups": [],
+                  "excludedSubgroups": [],
+                  "addKeywords": [],
+                  "probabilityWeighting": 1,
+                  "paths": [
+                    [
+                      "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_FSCHead\\textures\\actors\\character\\darkelffemale\\femalehead_msn.dds",
+                      "femalehead_msn.dds"
+                    ]
+                  ],
+                  "subgroups": [],
+                  "$$hashKey": "object:14863",
+                  "allowedBodyGenDescriptors": [],
+                  "disallowedBodyGenDescriptors": []
+                },
+                {
+                  "id": "HN.FSC.V.O",
+                  "enabled": true,
+                  "distributionEnabled": false,
+                  "allowedRaces": [],
+                  "disallowedRaces": [],
+                  "allowedAttributes": [
+                    [
+                      "FTST",
+                      "SkinHeadFemaleOrcVampire [TXST:02006F94]"
+                    ]
+                  ],
+                  "disallowedAttributes": [],
+                  "forceIfAttributes": [
+                    [
+                      "FTST",
+                      "SkinHeadFemaleOrcVampire [TXST:02006F94]"
+                    ]
+                  ],
+                  "allowUnique": true,
+                  "allowNonUnique": true,
+                  "name": "Orc Vampire",
+                  "requiredSubgroups": [],
+                  "excludedSubgroups": [],
+                  "addKeywords": [],
+                  "probabilityWeighting": 1,
+                  "paths": [
+                    [
+                      "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_FSCHead\\textures\\actors\\character\\femaleorc\\femaleheadorc_msn.dds",
+                      "femalehead_msn.dds"
+                    ]
+                  ],
+                  "subgroups": [],
+                  "$$hashKey": "object:14864",
+                  "allowedBodyGenDescriptors": [],
+                  "disallowedBodyGenDescriptors": []
+                }
+              ],
+              "$$hashKey": "object:14176",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HN.FSC.W",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "WoodElfRace"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Wood Elf",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_FSCHead\\textures\\actors\\character\\highelffemale\\femalehead_msn.dds",
+                  "femalehead_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:14177",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:12745",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:4780",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "HS",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Subsurface",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HS.S",
+          "enabled": false,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Standard",
+          "requiredSubgroups": [
+            "BS.S",
+            "HAS.S"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HS.S.NV",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoid_NonVamp"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Non-Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_sk\\textures\\actors\\character\\female\\femalehead_sk.dds",
+                  "femalehead_sk.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:16724",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HS.S.V",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoidVampire"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_sk\\textures\\actors\\character\\female\\femaleheadvampire_sk.dds",
+                  "femalehead_sk.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:16725",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:15466",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HS.NBS",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "No Bronze Shine",
+          "requiredSubgroups": [
+            "BS.NBS",
+            "HAS.NBS"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HS.NBS.NV",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoid_NonVamp"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Non-Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\Options\\Skin_sk_fix\\textures\\actors\\character\\female\\femalehead_sk.dds",
+                  "femalehead_sk.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:16758",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HS.NBS.V",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoidVampire"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\Options\\Skin_sk_fix\\textures\\actors\\character\\female\\femaleheadvampire_sk.dds",
+                  "femalehead_sk.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:16759",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:15467",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:4649",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "HSP",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Specular",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HSP.G",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Glossy",
+          "requiredSubgroups": [
+            "BSP.G",
+            "HASP.G"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HSP.G.NV",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoid_NonVamp"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Non-Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_G_4K\\textures\\actors\\character\\female\\femalehead_s.dds",
+                  "femalehead_s.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:10749",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HSP.G.V",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoidVampire"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_G_4K\\textures\\actors\\character\\female\\femaleheadvampire_s.dds",
+                  "femalehead_s.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:10761",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:9297",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HSP.GB",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Goose Bumps",
+          "requiredSubgroups": [
+            "BSP.GB",
+            "HASP.GB"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HSP.GB.NV",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoid_NonVamp"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Non-Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_GB_4K\\textures\\actors\\character\\female\\femalehead_s.dds",
+                  "femalehead_s.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:12175",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HSP.GB.V",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoidVampire"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_GB_4K\\textures\\actors\\character\\female\\femaleheadvampire_s.dds",
+                  "femalehead_s.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:12176",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:9298",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HSP.NG",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Non-glossy",
+          "requiredSubgroups": [
+            "BSP.NG",
+            "HASP.NG"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HSP.NG.NV",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoid_NonVamp"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Non-Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_NG_4K\\textures\\actors\\character\\female\\femalehead_s.dds",
+                  "femalehead_s.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:12203",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HSP.NG.V",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoidVampire"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_NG_4K\\textures\\actors\\character\\female\\femaleheadvampire_s.dds",
+                  "femalehead_s.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:12204",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:9299",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HSP.SV1",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Sweaty V1",
+          "requiredSubgroups": [
+            "BSP.SV1",
+            "HASP.SV1"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HSP.SV1.NV",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoid_NonVamp"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Non-Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_v1_4K\\textures\\actors\\character\\female\\femalehead_s.dds",
+                  "femalehead_s.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:12231",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HSP.SV1.V",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoidVampire"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_v1_4K\\textures\\actors\\character\\female\\femaleheadvampire_s.dds",
+                  "femalehead_s.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:12232",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:9300",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HSP.SV2",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Sweaty V2",
+          "requiredSubgroups": [
+            "BSP.SV2",
+            "HASP.SV2"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "HSP.SV2.NV",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoid_NonVamp"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Non-Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_v1_4K\\textures\\actors\\character\\female\\femalehead_s.dds",
+                  "femalehead_s.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:12259",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "HSP.SV2.V",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [
+                "humanoidVampire"
+              ],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Vampire",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_v1_4K\\textures\\actors\\character\\female\\femaleheadvampire_s.dds",
+                  "femalehead_s.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:12260",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:9301",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:4686",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "HDE",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Head Detail",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HDE.BDM",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Age40 [TXST:000F2058]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Age40 [TXST:000F205C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Age40 [TXST:000F2060]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Age40 [TXST:000F2064]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Age40 [TXST:000F2068]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Age40 [TXST:000F206C]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Age40 [TXST:000F2070]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Age40 [TXST:000EAFA3]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Age50 [TXST:000F2059]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Age50 [TXST:000F205D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Age50 [TXST:000F2061]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Age50 [TXST:000F2065]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Age50 [TXST:000F2069]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Age50 [TXST:000F206D]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Age50 [TXST:000F2071]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Age50 [TXST:000645DB]"
+            ]
+          ],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "BlankDetailMap",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\male\\blankdetailmap.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4737",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HDE.R",
+          "enabled": true,
+          "distributionEnabled": false,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Rough01 [TXST:000F2057]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Rough01 [TXST:000F205B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Rough01 [TXST:000F205F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Rough [TXST:000F2063]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Rough01 [TXST:000F2067]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Rough01 [TXST:000F206B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Rough01 [TXST:000F206F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordRough [TXST:000EAFA4]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOldComplexion_Rough [TXST:000FFF42]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Rough01 [TXST:000F2057]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Rough01 [TXST:000F205B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Rough01 [TXST:000F205F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Rough [TXST:000F2063]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Rough01 [TXST:000F2067]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Rough01 [TXST:000F206B]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Rough01 [TXST:000F206F]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordRough [TXST:000EAFA4]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOldComplexion_Rough [TXST:000FFF42]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Rough",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\female\\femaleheaddetail_rough.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4752",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HDE.F",
+          "enabled": true,
+          "distributionEnabled": false,
+          "allowedRaces": [
+            "humanoid_NonVamp"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Frekles [TXST:000F205A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Frekles [TXST:000F205E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Frekles [TXST:000F2062]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Frekles [TXST:000F2066]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Frekles [TXST:000EAFA5]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Frekles [TXST:000F206A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Frekles [TXST:000F206E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Frekles [TXST:000F2072]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOldComplexion_Frekles [TXST:000FFF41]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Frekles [TXST:000EAFA5]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [
+            [
+              "FTST",
+              "SkinHeadFemaleBretonComplexion_Frekles [TXST:000F205A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleDarkElfComplexion_Frekles [TXST:000F205E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleHighElfComplexion_Frekles [TXST:000F2062]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleImperialComplexion_Frekles [TXST:000F2066]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleNordComplexion_Frekles [TXST:000EAFA5]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOrcComplexion_Frekles [TXST:000F206A]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleRedguardComplexion_Frekles [TXST:000F206E]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleWoodElfComplexion_Frekles [TXST:000F2072]"
+            ],
+            [
+              "FTST",
+              "SkinHeadFemaleOldComplexion_Frekles [TXST:000FFF41]"
+            ]
+          ],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Freckles",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\female\\femaleheaddetail_frekles.dds",
+              "blankdetailmap.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4766",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:4723",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "BD",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Diffuse",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "BD.FMS",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Fair Mature Skin",
+          "requiredSubgroups": [
+            "HD.FMS",
+            "HAD.FMS",
+            "HN.CS"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "BD.FMS.SD",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Shaved, Dry",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FMS_4K\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FMS_4K\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:5417",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "BD.FMS.HD",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Hairy, Dry",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FMS_4K_p\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FMS_4K_p\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:5429",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "BD.FMS.SW",
+              "enabled": false,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Shaved, Wet",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FMS_4K_w\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FMS_4K_w\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:5440",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "BD.FMS.HW",
+              "enabled": false,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Hairy, Wet",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FMS_4K_w_p\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FMS_4K_w_p\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:5451",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:4808",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "BD.FSC",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Fair Skin Complexion",
+          "requiredSubgroups": [
+            "HD.FSC",
+            "HAD.FSC",
+            "HN.FSC"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "BD.FSC.SD",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Shaved, Dry",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FSC_4K\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FSC_4K\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:6638",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "BD.FSC.HD",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Hairy, Dry",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FSC_4K_p\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FSC_4K_p\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:6639",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "BD.FSC.SW",
+              "enabled": false,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Shaved, Wet",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FSC_4K_w\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FSC_4K_w\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:6640",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "BD.FSC.HW",
+              "enabled": false,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Hairy, Wet",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FSC_4K_w_p\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FSC_4K_w_p\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:6641",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:4809",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "BD.RG",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "RealGirl Skin",
+          "requiredSubgroups": [
+            "HD.RG",
+            "HAD.RG",
+            "HN.CS"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "BD.RG.SD",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Shaved, Dry",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RG_4K\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RG_4K\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:6684",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "BD.RG.HD",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Hairy, Dry",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RG_4K_p\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RG_4K_p\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:6685",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "BD.RG.SW",
+              "enabled": false,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Shaved, Wet",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RG_4K_w\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RG_4K_w\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:6686",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "BD.RG.HW",
+              "enabled": false,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Hairy, Wet",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RG_4K_w_p\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RG_4K_w_p\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:6687",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:4810",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "BD.RSG",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Real SG Skin",
+          "requiredSubgroups": [
+            "HD.RSG",
+            "BD.RSG",
+            "HN.FSC"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "BD.RSG.SD",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Shaved, Dry",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RSG_4K\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RSG_4K\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:6730",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "BD.RSG.HD",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Hairy, Dry",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RSG_4K_p\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RSG_4K_p\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:6731",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "BD.RSG.SW",
+              "enabled": false,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Shaved, Wet",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RSG_4K_w\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RSG_4K_w\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:6732",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "BD.RSG.HW",
+              "enabled": false,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Hairy, Wet",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RSG_4K_w_p\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RSG_4K_w_p\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:6733",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:4811",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "BD.SG",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "SG Skin",
+          "requiredSubgroups": [
+            "HD.SG",
+            "HAD.SG",
+            "HN.CS"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "BD.SG.SD",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Shaved, Dry",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_SG_4K\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_SG_4K\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:6776",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "BD.SG.HD",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Hairy, Dry",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_SG_4K_p\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_SG_4K_p\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:6777",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "BD.SG.SW",
+              "enabled": false,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Shaved, Wet",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_SG_4K_w\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_SG_4K_w\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:6778",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            },
+            {
+              "id": "BD.SG.HW",
+              "enabled": false,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Hairy, Wet",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_SG_4K_w_p\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_SG_4K_w_p\\textures\\actors\\character\\female\\femalebody_1.dds",
+                  "femalebody_1_feet.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:6779",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": []
+            }
+          ],
+          "$$hashKey": "object:4812",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:4741",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "BN",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Normal",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "BN.Y",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "humanoid"
+          ],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Not Elder",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [],
+          "subgroups": [
+            {
+              "id": "BN.Y.US",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [
+                "ImperialRace",
+                "ImperialRaceVampire",
+                "DarkElfRace",
+                "DarkElfRaceVampire",
+                "WoodElfRace",
+                "WoodElfRaceVampire"
+              ],
+              "allowedAttributes": [],
+              "disallowedAttributes": [
+                [
+                  "CNAM\\FULL",
+                  "Warrior"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Blacksmith"
+                ],
+                [
+                  "CNAM",
+                  "CombatSpellsword \"Spellsword\" [CLAS:00013177]"
+                ],
+                [
+                  "CNAM",
+                  "CombatWitchblade \"Witchblade\" [CLAS:00013178]"
+                ],
+                [
+                  "CNAM",
+                  "CombatNightblade \"Nightblade\" [CLAS:0001317C]"
+                ],
+                [
+                  "CNAM",
+                  "CombatRogue \"Rogue\" [CLAS:00013180]"
+                ],
+                [
+                  "CNAM",
+                  "CombatRanger \"Ranger\" [CLAS:00013181]"
+                ],
+                [
+                  "CNAM",
+                  "Lumberjack \"Lumberjack\" [CLAS:0001326E]"
+                ],
+                [
+                  "CNAM",
+                  "CombatBarbarian \"Barbarian\" [CLAS:0001CE16]"
+                ],
+                [
+                  "CNAM",
+                  "Blade \"Blade\" [CLAS:00021A74]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassAlikrMelee \"Alik'r Warrior\" [CLAS:0006766B]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassThalmorMelee \"Thalmor Warrior\" [CLAS:0007289D]"
+                ],
+                [
+                  "CNAM",
+                  "GuardOrc2H \"Orc Warrior\" [CLAS:0010E714]"
+                ],
+                [
+                  "CNAM",
+                  "NPCclassBelrand \"Spellsword\" [CLAS:0010F7F9]"
+                ],
+                [
+                  "CNAM",
+                  "GuardOrc1H \"Orc Warrior\" [CLAS:0002A477]"
+                ],
+                [
+                  "CNAM",
+                  "Miner \"Miner\" [CLAS:0001326D]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassPenitusOculatus \"Penitus Oculatus\" [CLAS:0007D98D]"
+                ]
+              ],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "CBBE Standard (Sporty Default)",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_base\\textures\\actors\\character\\female\\femalebody_1_msn.dds",
+                  "femalebody_1_msn.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_base\\textures\\actors\\character\\female\\femalebody_1_msn.dds",
+                  "femalebody_1_feet_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:14955",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": [
+                "build: thick",
+                "build: chubby",
+                "build: petite"
+              ]
+            },
+            {
+              "id": "BN.Y.M1",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [
+                "ImperialRace",
+                "ImperialRaceVampire",
+                "DarkElfRace",
+                "DarkElfRaceVampire",
+                "WoodElfRace",
+                "WoodElfRaceVampire"
+              ],
+              "allowedAttributes": [
+                [
+                  "CNAM\\FULL",
+                  "Thief"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Assassin"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Scout"
+                ],
+                [
+                  "CNAM",
+                  "CombatSpellsword \"Spellsword\" [CLAS:00013177]"
+                ],
+                [
+                  "CNAM",
+                  "CombatWitchblade \"Witchblade\" [CLAS:00013178]"
+                ],
+                [
+                  "CNAM",
+                  "CombatMystic \"Mystic\" [CLAS:0001317B]"
+                ],
+                [
+                  "CNAM",
+                  "CombatNightblade \"Nightblade\" [CLAS:0001317C]"
+                ],
+                [
+                  "CNAM",
+                  "CombatRogue \"Rogue\" [CLAS:00013180]"
+                ],
+                [
+                  "CNAM",
+                  "CombatRanger \"Ranger\" [CLAS:00013181]"
+                ],
+                [
+                  "CNAM",
+                  "CombatMonk \"Monk\" [CLAS:00013182]"
+                ],
+                [
+                  "CNAM",
+                  "SoldierImperialNotGuard \"Imperial Soldier\" [CLAS:0001327F]"
+                ],
+                [
+                  "CNAM",
+                  "SoldierSonsSkyrimNotGuard \"Sons of Skyrim Soldier\" [CLAS:00013280]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassForsworn \"Forsworn\" [CLAS:00043BCB]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassAlikrMelee \"Alik'r Warrior\" [CLAS:0006766B]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassThalmorMelee \"Thalmor Warrior\" [CLAS:0007289D]"
+                ],
+                [
+                  "CNAM",
+                  "CWSoldierClass \"Soldier\" [CLAS:0010B1D8]"
+                ],
+                [
+                  "CNAM",
+                  "VendorFletcher \"Fletcher\" [CLAS:00013259]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassBanditMissile \"Bandit Archer\" [CLAS:00015BE7]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassBanditMelee \"Bandit\" [CLAS:0001CE17]"
+                ],
+                [
+                  "CNAM",
+                  "GuardImperial \"Guard\" [CLAS:000253F2]"
+                ],
+                [
+                  "CNAM",
+                  "GuardSonsSkyrim \"Guard\" [CLAS:000253F3]"
+                ],
+                [
+                  "CNAM",
+                  "GuardOrc1H \"Orc Warrior\" [CLAS:0002A477]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassVampire \"Vampire\" [CLAS:0002E00F]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassForswornShaman \"Forsworn Shaman\" [CLAS:00043BCC]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassForswornMissile \"Forsworn Missile\" [CLAS:00043BCD]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassAlikrMissile \"Alik'r Archer\" [CLAS:0006766C]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassThalmorMissile \"Thalmor Archer\" [CLAS:00072891]"
+                ]
+              ],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "Less Abs",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_muscular40\\textures\\actors\\character\\female\\femalebody_1_msn.dds",
+                  "femalebody_1_msn.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_muscular40\\textures\\actors\\character\\female\\femalebody_1_msn.dds",
+                  "femalebody_1_feet_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:14973",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": [
+                "build: thick",
+                "build: chubby",
+                "build: petite"
+              ]
+            },
+            {
+              "id": "BN.Y.M4",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [
+                "ImperialRace",
+                "ImperialRaceVampire",
+                "DarkElfRace",
+                "DarkElfRaceVampire",
+                "WoodElfRace",
+                "WoodElfRaceVampire"
+              ],
+              "allowedAttributes": [
+                [
+                  "CNAM\\FULL",
+                  "Warrior"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Thief"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Assassin"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Blacksmith"
+                ],
+                [
+                  "CNAM",
+                  "CombatSpellsword \"Spellsword\" [CLAS:00013177]"
+                ],
+                [
+                  "CNAM",
+                  "CombatWitchblade \"Witchblade\" [CLAS:00013178]"
+                ],
+                [
+                  "CNAM",
+                  "CombatNightblade \"Nightblade\" [CLAS:0001317C]"
+                ],
+                [
+                  "CNAM",
+                  "CombatRogue \"Rogue\" [CLAS:00013180]"
+                ],
+                [
+                  "CNAM",
+                  "CombatRanger \"Ranger\" [CLAS:00013181]"
+                ],
+                [
+                  "CNAM",
+                  "Lumberjack \"Lumberjack\" [CLAS:0001326E]"
+                ],
+                [
+                  "CNAM",
+                  "SoldierImperialNotGuard \"Imperial Soldier\" [CLAS:0001327F]"
+                ],
+                [
+                  "CNAM",
+                  "SoldierSonsSkyrimNotGuard \"Sons of Skyrim Soldier\" [CLAS:00013280]"
+                ],
+                [
+                  "CNAM",
+                  "CombatBarbarian \"Barbarian\" [CLAS:0001CE16]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassForsworn \"Forsworn\" [CLAS:00043BCB]"
+                ],
+                [
+                  "CNAM",
+                  "MQAncientNord \"Nord Hero\" [CLAS:0004FA49]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassAlikrMelee \"Alik'r Warrior\" [CLAS:0006766B]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassThalmorMelee \"Thalmor Warrior\" [CLAS:0007289D]"
+                ],
+                [
+                  "CNAM",
+                  "CWSoldierClass \"Soldier\" [CLAS:0010B1D8]"
+                ],
+                [
+                  "CNAM",
+                  "GuardOrc2H \"Orc Warrior\" [CLAS:0010E714]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassBanditMelee \"Bandit\" [CLAS:0001CE17]"
+                ],
+                [
+                  "CNAM",
+                  "GuardImperial \"Guard\" [CLAS:000253F2]"
+                ],
+                [
+                  "CNAM",
+                  "GuardSonsSkyrim \"Guard\" [CLAS:000253F3]"
+                ],
+                [
+                  "CNAM",
+                  "GuardOrc1H \"Orc Warrior\" [CLAS:0002A477]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassVampire \"Vampire\" [CLAS:0002E00F]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassForswornMissile \"Forsworn Missile\" [CLAS:00043BCD]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassAlikrMissile \"Alik'r Archer\" [CLAS:0006766C]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassThalmorMissile \"Thalmor Archer\" [CLAS:00072891]"
+                ],
+                [
+                  "CNAM",
+                  "Miner \"Miner\" [CLAS:0001326D]"
+                ]
+              ],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "More Abs",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_muscular80\\textures\\actors\\character\\female\\femalebody_1_msn.dds",
+                  "femalebody_1_msn.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_muscular80\\textures\\actors\\character\\female\\femalebody_1_msn.dds",
+                  "femalebody_1_feet_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:15024",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": [
+                "build: thick",
+                "build: chubby",
+                "build: petite"
+              ]
+            },
+            {
+              "id": "BN.Y.NM",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [
+                "ImperialRace",
+                "ImperialRaceVampire",
+                "DarkElfRace",
+                "DarkElfRaceVampire",
+                "WoodElfRace",
+                "WoodElfRaceVampire",
+                "OrcRace",
+                "OrcRaceVampire"
+              ],
+              "allowedAttributes": [],
+              "disallowedAttributes": [
+                [
+                  "CNAM\\FULL",
+                  "Warrior"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Thief"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Scout"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Warrior"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Blacksmith"
+                ],
+                [
+                  "CNAM",
+                  "CombatSpellsword \"Spellsword\" [CLAS:00013177]"
+                ],
+                [
+                  "CNAM",
+                  "CombatWitchblade \"Witchblade\" [CLAS:00013178]"
+                ],
+                [
+                  "CNAM",
+                  "CombatMystic \"Mystic\" [CLAS:0001317B]"
+                ],
+                [
+                  "CNAM",
+                  "CombatNightblade \"Nightblade\" [CLAS:0001317C]"
+                ],
+                [
+                  "CNAM",
+                  "CombatRogue \"Rogue\" [CLAS:00013180]"
+                ],
+                [
+                  "CNAM",
+                  "CombatRanger \"Ranger\" [CLAS:00013181]"
+                ],
+                [
+                  "CNAM",
+                  "CombatMonk \"Monk\" [CLAS:00013182]"
+                ],
+                [
+                  "CNAM",
+                  "Lumberjack \"Lumberjack\" [CLAS:0001326E]"
+                ],
+                [
+                  "CNAM",
+                  "SoldierImperialNotGuard \"Imperial Soldier\" [CLAS:0001327F]"
+                ],
+                [
+                  "CNAM",
+                  "SoldierSonsSkyrimNotGuard \"Sons of Skyrim Soldier\" [CLAS:00013280]"
+                ],
+                [
+                  "CNAM",
+                  "CombatBarbarian \"Barbarian\" [CLAS:0001CE16]"
+                ],
+                [
+                  "CNAM",
+                  "Blade \"Blade\" [CLAS:00021A74]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassForsworn \"Forsworn\" [CLAS:00043BCB]"
+                ],
+                [
+                  "CNAM",
+                  "MQAncientNord \"Nord Hero\" [CLAS:0004FA49]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassAlikrMelee \"Alik'r Warrior\" [CLAS:0006766B]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassThalmorMelee \"Thalmor Warrior\" [CLAS:0007289D]"
+                ],
+                [
+                  "CNAM",
+                  "CWSoldierClass \"Soldier\" [CLAS:0010B1D8]"
+                ],
+                [
+                  "CNAM",
+                  "GuardOrc2H \"Orc Warrior\" [CLAS:0010E714]"
+                ],
+                [
+                  "CNAM",
+                  "NPCclassBelrand \"Spellsword\" [CLAS:0010F7F9]"
+                ],
+                [
+                  "CNAM",
+                  "VendorFletcher \"Fletcher\" [CLAS:00013259]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassBanditMissile \"Bandit Archer\" [CLAS:00015BE7]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassBanditMelee \"Bandit\" [CLAS:0001CE17]"
+                ],
+                [
+                  "CNAM",
+                  "GuardImperial \"Guard\" [CLAS:000253F2]"
+                ],
+                [
+                  "CNAM",
+                  "GuardSonsSkyrim \"Guard\" [CLAS:000253F3]"
+                ],
+                [
+                  "CNAM",
+                  "GuardOrc1H \"Orc Warrior\" [CLAS:0002A477]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassForswornShaman \"Forsworn Shaman\" [CLAS:00043BCC]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassForswornMissile \"Forsworn Missile\" [CLAS:00043BCD]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassAlikrMissile \"Alik'r Archer\" [CLAS:0006766C]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassThalmorMissile \"Thalmor Archer\" [CLAS:00072891]"
+                ],
+                [
+                  "CNAM",
+                  "Miner \"Miner\" [CLAS:0001326D]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassPenitusOculatus \"Penitus Oculatus\" [CLAS:0007D98D]"
+                ]
+              ],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "No Muscle (CBBE Default)",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_noMus\\textures\\actors\\character\\female\\femalebody_1_msn.dds",
+                  "femalebody_1_msn.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_noMus\\textures\\actors\\character\\female\\femalebody_1_msn.dds",
+                  "femalebody_1_feet_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:15041",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": [
+                "build: powerful"
+              ]
+            },
+            {
+              "id": "BN.Y.SG",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [
+                "ImperialRace",
+                "ImperialRaceVampire",
+                "DarkElfRace",
+                "DarkElfRaceVampire",
+                "WoodElfRace",
+                "WoodElfRaceVampire"
+              ],
+              "allowedAttributes": [],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "SG Normal Map",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_SG\\textures\\actors\\character\\female\\femalebody_1_msn.dds",
+                  "femalebody_1_msn.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_SG\\textures\\actors\\character\\female\\femalebody_1_msn.dds",
+                  "femalebody_1_feet_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:15058",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": [
+                "build: petite"
+              ]
+            },
+            {
+              "id": "BN.Y.SS",
+              "enabled": true,
+              "distributionEnabled": true,
+              "allowedRaces": [],
+              "disallowedRaces": [
+                "ImperialRace",
+                "ImperialRaceVampire",
+                "DarkElfRace",
+                "DarkElfRaceVampire",
+                "WoodElfRace",
+                "WoodElfRaceVampire"
+              ],
+              "allowedAttributes": [
+                [
+                  "CNAM\\FULL",
+                  "Warrior"
+                ],
+                [
+                  "CNAM\\FULL",
+                  "Blacksmith"
+                ],
+                [
+                  "CNAM",
+                  "CombatSpellsword \"Spellsword\" [CLAS:00013177]"
+                ],
+                [
+                  "CNAM",
+                  "CombatWitchblade \"Witchblade\" [CLAS:00013178]"
+                ],
+                [
+                  "CNAM",
+                  "CombatNightblade \"Nightblade\" [CLAS:0001317C]"
+                ],
+                [
+                  "CNAM",
+                  "CombatRogue \"Rogue\" [CLAS:00013180]"
+                ],
+                [
+                  "CNAM",
+                  "CombatBarbarian \"Barbarian\" [CLAS:0001CE16]"
+                ],
+                [
+                  "CNAM",
+                  "Blade \"Blade\" [CLAS:00021A74]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassAlikrMelee \"Alik'r Warrior\" [CLAS:0006766B]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassThalmorMelee \"Thalmor Warrior\" [CLAS:0007289D]"
+                ],
+                [
+                  "CNAM",
+                  "GuardOrc2H \"Orc Warrior\" [CLAS:0010E714]"
+                ],
+                [
+                  "CNAM",
+                  "GuardOrc1H \"Orc Warrior\" [CLAS:0002A477]"
+                ],
+                [
+                  "CNAM",
+                  "EncClassPenitusOculatus \"Penitus Oculatus\" [CLAS:0007D98D]"
+                ]
+              ],
+              "disallowedAttributes": [],
+              "forceIfAttributes": [
+                [
+                  "FULL - Name",
+                  "Uthgerd the Unbroken"
+                ],
+                [
+                  "FULL - Name",
+                  "Aela the Huntress"
+                ],
+                [
+                  "FULL - Name",
+                  "Irileth"
+                ],
+                [
+                  "FULL - Name",
+                  "Borgakh the Steel Heart"
+                ],
+                [
+                  "FULL - Name",
+                  "Gormlaith Golden-Hilt"
+                ]
+              ],
+              "allowUnique": true,
+              "allowNonUnique": true,
+              "name": "SportySexy Normal Map",
+              "requiredSubgroups": [],
+              "excludedSubgroups": [],
+              "addKeywords": [],
+              "probabilityWeighting": 1,
+              "paths": [
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_SSM\\textures\\actors\\character\\female\\femalebody_1_msn.dds",
+                  "femalebody_1_msn.dds"
+                ],
+                [
+                  "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_SSM\\textures\\actors\\character\\female\\femalebody_1_msn.dds",
+                  "femalebody_1_feet_msn.dds"
+                ]
+              ],
+              "subgroups": [],
+              "$$hashKey": "object:15075",
+              "allowedBodyGenDescriptors": [],
+              "disallowedBodyGenDescriptors": [
+                "build: thick",
+                "build: chubby",
+                "build: petite"
+              ]
+            }
+          ],
+          "$$hashKey": "object:2278",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "BN.E",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "elder"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Elder",
+          "requiredSubgroups": [
+            "HN.CS.E"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\actors\\character\\femaleold\\femalebody_1_msn.dds",
+              "femalebody_1_msn.dds"
+            ],
+            [
+              "Skyrim.esm\\actors\\character\\femaleold\\femalebody_1_msn.dds",
+              "femalebody_1_feet_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:5112",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:4753",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "BS",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Subsurface",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "BS.S",
+          "enabled": false,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Standard",
+          "requiredSubgroups": [
+            "HS.S",
+            "HAS.S"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_sk\\textures\\actors\\character\\female\\femalebody_1_sk.dds",
+              "FemaleBody_1_sk.dds"
+            ],
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_sk\\textures\\actors\\character\\female\\femalebody_1_sk.dds",
+              "femalebody_1_feet_sk.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:17522",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "BS.NBS",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "No Bronze Shine",
+          "requiredSubgroups": [
+            "HS.NBS",
+            "HAS.NBS"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Demoniac 4K CBBE\\Options\\Skin_sk_fix\\textures\\actors\\character\\female\\femalebody_1_sk.dds",
+              "FemaleBody_1_sk.dds"
+            ],
+            [
+              "textures\\Demoniac 4K CBBE\\Options\\Skin_sk_fix\\textures\\actors\\character\\female\\femalebody_1_sk.dds",
+              "femalebody_1_feet_sk.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:17534",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:4764",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "BSP",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Body Specular",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "BSP.G",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [
+            "humanoidVampire"
+          ],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Glossy",
+          "requiredSubgroups": [
+            "HSP.G",
+            "HASP.G"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_G_4K\\textures\\actors\\character\\female\\femalebody_1_s.dds",
+              "femalebody_1_s.dds"
+            ],
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_G_4K\\textures\\actors\\character\\female\\femalebody_1_s.dds",
+              "femalebody_1_feet_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:9757",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "BSP.GB",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [
+            "humanoidVampire",
+            "NordRace"
+          ],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Goose Bumps",
+          "requiredSubgroups": [
+            "HSP.GB",
+            "HASP.GB"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_GB_4K\\textures\\actors\\character\\female\\femalebody_1_s.dds",
+              "femalebody_1_s.dds"
+            ],
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_GB_4K\\textures\\actors\\character\\female\\femalebody_1_s.dds",
+              "femalebody_1_feet_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:9758",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "BSP.NG",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Non-glossy",
+          "requiredSubgroups": [
+            "HSP.NG",
+            "HASP.NG"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_NG_4K\\textures\\actors\\character\\female\\femalebody_1_s.dds",
+              "femalebody_1_s.dds"
+            ],
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_NG_4K\\textures\\actors\\character\\female\\femalebody_1_s.dds",
+              "femalebody_1_feet_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:9759",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "BSP.SV1",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "CNAM\\FULL",
+              "Blacksmith"
+            ],
+            [
+              "CNAM",
+              "Miner \"Miner\" [CLAS:0001326D]"
+            ],
+            [
+              "CNAM",
+              "Lumberjack \"Lumberjack\" [CLAS:0001326E]"
+            ],
+            [
+              "CNAM",
+              "Farmer \"Farmer\" [CLAS:0001326C]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Sweaty V1",
+          "requiredSubgroups": [
+            "HSP.SV1",
+            "HASP.SV1"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_v1_4K\\textures\\actors\\character\\female\\femalebody_1_s.dds",
+              "femalebody_1_s.dds"
+            ],
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_v1_4K\\textures\\actors\\character\\female\\femalebody_1_s.dds",
+              "femalebody_1_feet_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:9760",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "BSP.SV2",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [
+            [
+              "CNAM\\FULL",
+              "Blacksmith"
+            ],
+            [
+              "CNAM",
+              "Miner \"Miner\" [CLAS:0001326D]"
+            ],
+            [
+              "CNAM",
+              "Lumberjack \"Lumberjack\" [CLAS:0001326E]"
+            ],
+            [
+              "CNAM",
+              "Farmer \"Farmer\" [CLAS:0001326C]"
+            ]
+          ],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Sweaty V2",
+          "requiredSubgroups": [
+            "HSP.SV2",
+            "HASP.SV2"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_v2_4K\\textures\\actors\\character\\female\\femalebody_1_s.dds",
+              "femalebody_1_s.dds"
+            ],
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_v2_4K\\textures\\actors\\character\\female\\femalebody_1_s.dds",
+              "femalebody_1_feet_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:9761",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:1541",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "HAD",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Diffuse",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HAD.FMS",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Fair Mature Skin",
+          "requiredSubgroups": [
+            "HD.FMS",
+            "BD.FMS",
+            "HN.CS"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FMS_4K\\textures\\actors\\character\\female\\femalehands_1.dds",
+              "femalehands_1.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4905",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HAD.FSC",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Fair Skin Complexion",
+          "requiredSubgroups": [
+            "HD.FSC",
+            "BD.FSC",
+            "HN.FSC"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_FSC_4K\\textures\\actors\\character\\female\\femalehands_1.dds",
+              "femalehands_1.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4906",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HAD.RG",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "RealGirl Skin",
+          "requiredSubgroups": [
+            "HD.RG",
+            "BD.RG",
+            "HN.CS"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RG_4K\\textures\\actors\\character\\female\\femalehands_1.dds",
+              "femalehands_1.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4907",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HAD.RSG",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Real SG Skin",
+          "requiredSubgroups": [
+            "HD.RSG",
+            "BD.RSG",
+            "HN.FSC"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_RSG_4K\\textures\\actors\\character\\female\\femalehands_1.dds",
+              "femalehands_1.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4908",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HAD.SG",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "SG Skin",
+          "requiredSubgroups": [
+            "HD.SG",
+            "BD.SG",
+            "HN.CS"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\Diffuse\\CBBE_d_SG_4K\\textures\\actors\\character\\female\\femalehands_1.dds",
+              "femalehands_1.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4909",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:4802",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "HAN",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Normal",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HAN.Y",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [
+            "elder"
+          ],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Young",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [
+            "BN.E"
+          ],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_n_base\\textures\\actors\\character\\female\\femalehands_1_msn.dds",
+              "femalehands_1_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4390",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HAN.E",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [
+            "elder"
+          ],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Elder",
+          "requiredSubgroups": [
+            "BN.E"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "Skyrim.esm\\Actors\\Character\\FemaleOld\\FemaleHands_1_msn.dds",
+              "femalehands_1_msn.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:4402",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:4814",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "HAS",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Subsurface",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HAS.S",
+          "enabled": false,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Standard",
+          "requiredSubgroups": [
+            "HS.S",
+            "BS.S"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\CBBE_sk\\textures\\actors\\character\\female\\femalehands_1_sk.dds",
+              "femalehands_1_sk.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:17568",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HAS.NBS",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "No Bronze Shine",
+          "requiredSubgroups": [
+            "HS.NBS",
+            "BS.NBS"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Demoniac 4K CBBE\\Options\\Skin_sk_fix\\textures\\actors\\character\\female\\femalehands_1_sk.dds",
+              "femalehands_1_sk.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:17580",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:4825",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "HASP",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Hands Specular",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [],
+      "subgroups": [
+        {
+          "id": "HASP.G",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Glossy",
+          "requiredSubgroups": [
+            "HSP.G",
+            "BSP.G"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_G_4K\\textures\\actors\\character\\female\\femalehands_1_s.dds",
+              "femalehands_1_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:9935",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HASP.GB",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Goose Bumps",
+          "requiredSubgroups": [
+            "HSP.GB",
+            "BSP.GB"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_GB_4K\\textures\\actors\\character\\female\\femalehands_1_s.dds",
+              "femalehands_1_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:9936",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HASP.NG",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Non-glossy",
+          "requiredSubgroups": [
+            "HSP.NG",
+            "BSP.NG"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_NG_4K\\textures\\actors\\character\\female\\femalehands_1_s.dds",
+              "femalehands_1_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:9937",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HASP.SV1",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Sweaty V1",
+          "requiredSubgroups": [
+            "HSP.SV1",
+            "BSP.SV1"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_v1_4K\\textures\\actors\\character\\female\\femalehands_1_s.dds",
+              "femalehands_1_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:9938",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "HASP.SV2",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Sweaty V2",
+          "requiredSubgroups": [
+            "HSP.SV2",
+            "BSP.SV2"
+          ],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\Demoniac 4K CBBE\\CBBE\\Specular\\CBBE_s_v1_4K\\textures\\actors\\character\\female\\femalehands_1_s.dds",
+              "femalehands_1_s.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:9939",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:1542",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
+    }
+  ],
+  "displayAssetPackAlerts": true
+}
