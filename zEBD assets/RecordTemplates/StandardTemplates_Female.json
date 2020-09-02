@@ -70,7 +70,38 @@
             "MOD2 - Model FileName": "Actors\\Character\\Character Assets\\MaleBody_1.NIF"
           },
           "Female world model": {
-            "MOD3 - Model FileName": "Actors\\Character\\Character Assets\\FemaleBody_1.NIF"
+            "MOD3 - Model FileName": "Actors\\Character\\Character Assets\\FemaleBody_1.NIF",
+            "MO3S - Alternate Textures":[
+              {
+                 "3D Name":"3BBB_etc",
+                 "New Texture":{
+                    "zEBDUniqueID":"SkinFemaleEtc",
+                    "EDID":"SkinFemaleEtc",
+                    "zEBDPosition":"New Texture",
+                    "zEBDPositionisArray":false,
+                    "zEBDSignature":"TXST",
+                    "OBND - Object Bounds":{
+                       "X1":0,
+                       "Y1":0,
+                       "Z1":0,
+                       "X2":0,
+                       "Y2":0,
+                       "Z2":0
+                    },
+                    "Textures (RGB/A)":{
+                       "TX00 - Difuse":"Actors\\Character\\Female\\FemaleBody_etc_v2_1.dds",
+                       "TX01 - Normal/Gloss":"Actors\\Character\\Female\\FemaleBody_etc_v2_1_msn.dds",
+                       "TX03 - Glow/Detail Map":"Actors\\Character\\Female\\FemaleBody_etc_v2_1_sk.dds",
+                       "TX07 - Backlight Mask/Specular":"Actors\\Character\\Female\\FemaleBody_etc_v2_1_S.dds"
+                    },
+                    "DNAM - Flags":[
+                       "Facegen Textures",
+                       "Has Model Space Normal Map"
+                    ]
+                 },
+                 "3D Index":2
+              }
+           ]
           },
           "Male 1st Person": {
             "MOD4 - Model FileName": "Actors\\Character\\Character Assets\\1stPersonMaleBody_1.NIF"
