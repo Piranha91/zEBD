@@ -6,7 +6,7 @@ let PG = require(modulePath + '\\lib\\PermutationGenerator.js')(logDir, fh);
 let RG = require(modulePath + '\\lib\\RecordGenerator.js')(logDir, fh);
 let deserializer = require(modulePath + "\\lib\\ObjectToRecord.js")(logDir, fh, xelib);
 let PO = require(modulePath + '\\lib\\PatcherOps.js')(logDir, fh, xelib);
-let BGI = require(modulePath + '\\lib\\BodyGenIntegration.js')(Aux, PO);
+let BGI = require(modulePath + '\\lib\\BodyGenIntegration.js')(Aux);
 
 ngapp.run(function(patcherService) {
 	patcherService.registerPatcher({
@@ -1113,7 +1113,7 @@ ngapp.run(function(patcherService) {
 													//if all the above don't fail, assign a permutation.
 													if (bApplyPermutationToCurrentNPC === true)
 													{
-														locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation(record, NPCinfo, locals.permutationsByRaceGender, locals.consistencyAssignments, settings.bEnableConsistency, userForcedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, NPClinkGroup, attributeCache, helpers.logMessage);
+														locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation_BodyGen(record, NPCinfo, locals.permutationsByRaceGender, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyAssignments, settings.bEnableConsistency, settings.bEnableBodyGenIntegration, userForcedAssignment, userBlockedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, attributeCache, helpers.logMessage);
 													}
 													if (locals.assignedPermutations[NPCinfo.formID] === undefined) // occurs if the NPC is incompatible with the assignment criteria for all generated permutations.
 													{
@@ -1139,9 +1139,13 @@ ngapp.run(function(patcherService) {
 												
 											}
 											
-											if (settings.bEnableBodyGenIntegration === true && userBlockedAssignment.bodygen === false)
+											if (settings.bEnableBodyGenIntegration === true && userBlockedAssignment.bodygen === false && locals.assignedBodyGen[NPCinfo.formID] === undefined) // reminder: locals.assignedBodyGen[NPCinfo.formID] can be assigned by PO.choosePermutation_BodyGen(...)
 											{
-												locals.assignedBodyGen[NPCinfo.formID] = BGI.assignMorphs(record, locals.bodyGenConfig, locals.BGcategorizedMorphs, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, locals.assignedPermutations[NPCinfo.formID], userForcedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCbodygen, NPClinkGroup, attributeCache, helpers.logMessage);
+												let chosenMorph = BGI.assignMorphs(record, locals.bodyGenConfig, locals.BGcategorizedMorphs, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, locals.assignedPermutations[NPCinfo.formID], userForcedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCbodygen, NPClinkGroup, false, attributeCache, helpers.logMessage);
+												if (chosenMorph !== undefined)
+												{
+													chosenMorph = locals.assignedBodyGen[NPCinfo.formID];
+												}
 											}
 
 											// store the NPC info

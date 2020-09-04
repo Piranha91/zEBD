@@ -1378,12 +1378,7 @@
               "enabled": true,
               "distributionEnabled": true,
               "allowedRaces": [],
-              "disallowedRaces": [
-                "OrcRace",
-                "OrcRaceVampire",
-                "HighElfRace",
-                "HighElfRaceVampire"
-              ],
+              "disallowedRaces": [],
               "allowedAttributes": [],
               "disallowedAttributes": [],
               "forceIfAttributes": [],
@@ -1416,14 +1411,7 @@
               "enabled": true,
               "distributionEnabled": true,
               "allowedRaces": [],
-              "disallowedRaces": [
-                "ImperialRace",
-                "ImperialRaceVampire",
-                "DarkElfRace",
-                "DarkElfRaceVampire",
-                "WoodElfRace",
-                "WoodElfRaceVampire"
-              ],
+              "disallowedRaces": [],
               "allowedAttributes": [],
               "disallowedAttributes": [],
               "forceIfAttributes": [],
@@ -1456,12 +1444,7 @@
               "enabled": true,
               "distributionEnabled": true,
               "allowedRaces": [],
-              "disallowedRaces": [
-                "OrcRace",
-                "OrcRaceVampire",
-                "HighElfRace",
-                "HighElfRaceVampire"
-              ],
+              "disallowedRaces": [],
               "allowedAttributes": [
                 [
                   "CNAM\\FULL",
@@ -1618,14 +1601,7 @@
               "enabled": true,
               "distributionEnabled": true,
               "allowedRaces": [],
-              "disallowedRaces": [
-                "ImperialRace",
-                "ImperialRaceVampire",
-                "DarkElfRace",
-                "DarkElfRaceVampire",
-                "WoodElfRace",
-                "WoodElfRaceVampire"
-              ],
+              "disallowedRaces": [],
               "allowedAttributes": [],
               "disallowedAttributes": [],
               "forceIfAttributes": [],
