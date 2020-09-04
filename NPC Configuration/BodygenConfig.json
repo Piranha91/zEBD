@@ -467,7 +467,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        50,
+        ""
+      ]
     },
     {
       "name": "ALT_B_Perfect80100",
@@ -490,7 +494,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        50
+      ]
     },
     {
       "name": "ALT_B_PrincessBody0030",
@@ -514,7 +522,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ALT_B_samsbodypreset70100",
@@ -537,7 +549,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ALT_Nipples",
@@ -558,7 +574,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ALT_T_DB0050",
@@ -582,7 +602,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ALT_T_Ken0035",
@@ -606,7 +630,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ARG_B_BBW6090",
@@ -630,7 +658,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ARG_B_Seductive60100",
@@ -654,7 +686,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ARG_B_THICC_0080",
@@ -677,7 +713,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ARG_T_Petite",
@@ -700,7 +740,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "BOS_B_Petite",
@@ -723,7 +767,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "BOS_B_skinny",
@@ -746,7 +794,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "BOS_B_Superslim",
@@ -769,7 +821,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "BOS_Nipples",
@@ -790,7 +846,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "BOS_T_Skinny",
@@ -811,7 +871,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "BOS_T_SuperSlim",
@@ -832,7 +896,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "BRE_B_Mage",
@@ -855,7 +923,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "BRE_B_SAB",
@@ -879,7 +951,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "BRE_B_UNP",
@@ -904,7 +980,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "BRE_T_Anime5080",
@@ -927,7 +1007,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "BRE_T_Juno_40100",
@@ -951,7 +1035,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "BRE_T_RS35100",
@@ -974,7 +1062,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "DUN_B_DarkElf",
@@ -997,7 +1089,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "DUN_B_Dva",
@@ -1021,7 +1117,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "DUN_B_SkCurvy",
@@ -1045,7 +1145,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "DUN_T_Athletic",
@@ -1070,7 +1174,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "DUN_T_DreamBody",
@@ -1093,7 +1201,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "DUN_T_Thief",
@@ -1116,7 +1228,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ELD_B_Olivia",
@@ -1139,7 +1255,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ELD_B_RDTP_OLD5075",
@@ -1163,7 +1283,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ELD_B_RDTP_OLD25",
@@ -1186,7 +1310,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ELD_Nipples",
@@ -1207,7 +1335,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ELD_T_DB-P2B2",
@@ -1231,7 +1363,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ELD_T_LF_172_1040",
@@ -1255,7 +1391,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ELD_T_LF_172_70100",
@@ -1279,7 +1419,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "IMP_Diff_Ave1550",
@@ -1303,7 +1447,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "IMP_Emily1030",
@@ -1326,7 +1474,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "IMP_Erica25",
@@ -1350,7 +1502,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "IMP_Erica70",
@@ -1374,7 +1530,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "IMP_Isla10",
@@ -1397,7 +1557,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "IMP_Isla55",
@@ -1421,7 +1585,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "IMP_Jessica25",
@@ -1445,7 +1613,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "IMP_Jessica70",
@@ -1469,7 +1641,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "IMP_Liara40",
@@ -1493,7 +1669,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "IMP_Liara65",
@@ -1517,7 +1697,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "IMP_Natural25",
@@ -1541,7 +1725,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "IMP_Natural70",
@@ -1564,7 +1752,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "IMP_Nipples",
@@ -1585,7 +1777,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "IMP_Slim20",
@@ -1609,7 +1805,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "IMP_Slim70",
@@ -1633,7 +1833,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "IMP_StC2040",
@@ -1657,7 +1861,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "KHA_B_Natural",
@@ -1680,7 +1888,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "KHA_B_skinny",
@@ -1703,7 +1915,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "KHA_B_Thief",
@@ -1727,7 +1943,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "KHA_Nipples",
@@ -1748,7 +1968,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "KHA_T_AMJ_Heavy",
@@ -1772,7 +1996,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "KHA_T_DM_Athletic",
@@ -1795,7 +2023,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "KHA_T_Mage",
@@ -1819,7 +2051,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_Ave40",
@@ -1842,7 +2078,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_Ave55",
@@ -1865,7 +2105,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_Ave70",
@@ -1888,7 +2132,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_B&S20",
@@ -1911,7 +2159,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_B&S50",
@@ -1935,7 +2187,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_B&S80",
@@ -1959,7 +2215,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_Busty2_0025",
@@ -1984,7 +2244,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_Busty2_3560",
@@ -2009,7 +2273,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_FAB30",
@@ -2032,7 +2300,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_FAB60",
@@ -2055,7 +2327,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_FAB90",
@@ -2078,7 +2354,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_NBoddi10",
@@ -2102,7 +2382,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_NBoddi35",
@@ -2126,7 +2410,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_NBoddi55",
@@ -2150,7 +2438,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_NBoddi80",
@@ -2175,7 +2467,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_Nipples",
@@ -2196,7 +2492,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_Perfect20",
@@ -2219,7 +2519,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_Perfect40",
@@ -2243,7 +2547,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_Reina3060",
@@ -2266,7 +2574,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_RS100",
@@ -2290,7 +2602,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_RS40",
@@ -2313,7 +2629,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_RS70",
@@ -2337,7 +2657,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_SB2_0020",
@@ -2360,7 +2684,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_SB2_3050",
@@ -2383,7 +2711,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_SB2_6080",
@@ -2408,7 +2740,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_Seductive00",
@@ -2432,7 +2768,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "NOR_Seductive30",
@@ -2456,7 +2796,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ORC_B_SB50100",
@@ -2479,7 +2823,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ORC_B_Strong2080",
@@ -2502,7 +2850,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ORC_B_Warrior50100",
@@ -2525,7 +2877,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ORC_T_Fetish30100",
@@ -2549,7 +2905,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ORC_T_Fetish_Enh00100",
@@ -2573,7 +2933,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "ORC_T_Ken0050",
@@ -2597,7 +2961,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "RED_B_BBW4075",
@@ -2622,7 +2990,11 @@
       "allowUnique": false,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "RED_B_Greek5080",
@@ -2645,7 +3017,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "RED_B_Seductive_3080",
@@ -2669,7 +3045,11 @@
       "allowUnique": false,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "RED_Nipples",
@@ -2690,7 +3070,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "RED_T_BS_3090",
@@ -2715,7 +3099,11 @@
       "allowUnique": false,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "RED_T_LF-18_60100",
@@ -2740,7 +3128,11 @@
       "allowUnique": false,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "RED_T_Seductive_4080",
@@ -2764,7 +3156,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "VAMPIRE",
@@ -2785,7 +3181,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Adelaisa70",
@@ -2803,7 +3203,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Adrianne80",
@@ -2821,7 +3225,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Aela10",
@@ -2839,7 +3247,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Annekke40",
@@ -2857,7 +3269,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Aranea40",
@@ -2875,7 +3291,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Beleval50",
@@ -2893,7 +3313,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Borgakh20",
@@ -2911,7 +3335,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Brelyna60",
@@ -2929,7 +3357,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Camilla55",
@@ -2947,7 +3379,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Carlotta60",
@@ -2965,7 +3401,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Delphine50",
@@ -2983,7 +3423,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Elisif50",
@@ -3001,7 +3445,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Eola30",
@@ -3019,7 +3467,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Frea40",
@@ -3037,7 +3489,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Gerdur80",
@@ -3055,7 +3511,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Grelka20",
@@ -3073,7 +3533,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Hulda50",
@@ -3091,7 +3555,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Idgrod30",
@@ -3109,7 +3577,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Illia40",
@@ -3127,7 +3599,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Ingjard60",
@@ -3145,7 +3621,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Ingun20",
@@ -3163,7 +3643,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Iona50",
@@ -3181,7 +3665,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Irileth80",
@@ -3199,7 +3687,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Jenassa20",
@@ -3217,7 +3709,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Jordis30",
@@ -3235,7 +3731,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Karliah100",
@@ -3253,7 +3753,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Lisette50",
@@ -3271,7 +3775,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Lydia70",
@@ -3289,7 +3797,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Maven50",
@@ -3307,7 +3819,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Mjoll0",
@@ -3325,7 +3841,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Morwen60",
@@ -3343,7 +3863,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Muiri0",
@@ -3361,7 +3885,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Njada60",
@@ -3379,7 +3907,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Rayya50",
@@ -3397,7 +3929,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Ria50",
@@ -3415,7 +3951,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Rikke60",
@@ -3433,7 +3973,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Sapphire70",
@@ -3451,7 +3995,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Senna100",
@@ -3469,7 +4017,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Serana60",
@@ -3487,7 +4039,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Sofia80",
@@ -3505,7 +4061,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Sylgja70",
@@ -3523,7 +4083,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Taarie70",
@@ -3541,7 +4105,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Temba70",
@@ -3559,7 +4127,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Toccata100",
@@ -3577,7 +4149,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Tonilia20",
@@ -3595,7 +4171,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Ugor80",
@@ -3613,7 +4193,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Uthgerd100",
@@ -3631,7 +4215,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Valerica100",
@@ -3649,7 +4237,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Vex50",
@@ -3667,7 +4259,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     },
     {
       "name": "$Ysolda80",
@@ -3685,7 +4281,11 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": false,
-      "probabilityWeighting": 1
+      "probabilityWeighting": 1,
+      "weightRange": [
+        "",
+        ""
+      ]
     }
   ],
   "templateGroups": [

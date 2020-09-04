@@ -461,19 +461,19 @@
             </label>
             <label>
             <span>Base Male Height</span>
-            <input class = "raceTextInput" type="text" ng-model="heightConfiguration[$index].heightMale" ng-change="validateHeightString(heightConfiguration[$index].heightMale)">
+            <input class = "raceTextInput" type="text" ng-model="heightConfiguration[$index].heightMale" ng-change="validateNumString(heightConfiguration[$index].heightMale, 'Height')">
             </label>
             <label>
             <span>Male Height +/-</span>
-            <input class = "raceTextInput" type="text" ng-model="heightConfiguration[$index].heightMaleRange" ng-change="validateHeightString(heightConfiguration[$index].heightMaleRange)">
+            <input class = "raceTextInput" type="text" ng-model="heightConfiguration[$index].heightMaleRange" ng-change="validateNumString(heightConfiguration[$index].heightMaleRange, 'Height')">
             </label>
             <label>
             <span>Base Female Height</span>
-            <input class = "raceTextInput" type="text" ng-model="heightConfiguration[$index].heightFemale" ng-change="validateHeightString(heightConfiguration[$index].heightFemale)">
+            <input class = "raceTextInput" type="text" ng-model="heightConfiguration[$index].heightFemale" ng-change="validateNumString(heightConfiguration[$index].heightFemale, 'Height')">
             </label>
             <label>
             <span>Female Height +/-</span>
-            <input class = "raceTextInput" type="text" ng-model="heightConfiguration[$index].heightFemaleRange" ng-change="validateHeightString(heightConfiguration[$index].heightFemaleRange)"> 
+            <input class = "raceTextInput" type="text" ng-model="heightConfiguration[$index].heightFemaleRange" ng-change="validateNumString(heightConfiguration[$index].heightFemaleRange, 'Height')"> 
             </label>
 
             <div class="remove-item" ng-click="removeHeightConfig($index)">
@@ -495,7 +495,7 @@
     <div>
         <label>
             <span>Height +/-</span>
-            <input type="text" style="width:15%" ng-model="heightGlobals.heightRangeGlobal" ng-change="validateHeightString(heightGlobals.heightRangeGlobal)">
+            <input type="text" style="width:15%" ng-model="heightGlobals.heightRangeGlobal" ng-change="validateNumString(heightGlobals.heightRangeGlobal, 'Height')">
             <button ng-click="applyGlobalHeightRange()">Apply To All</button>
         </label>
     </div>
@@ -737,6 +737,13 @@
                 </div>
             </ul>
 
+            <div class = "tooltip">
+                <span>Allowed Weight Range</span>
+                <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Miminal (box 1) and maximal values (box 2) (inclusive) for this morph to be assigned.</span>
+                <input type="number" ng-model="template.weightRange[0]">
+                <input type="number" ng-model="template.weightRange[1]">
+            </div>
+
             <label class = "tooltip">
                 <input type="checkbox" ng-model="template.allowRandom">
                 <span>Distribute to Random NPCs</span>
@@ -830,7 +837,7 @@
         </div>
         <div ng-if="settings.zEBD.changeHeight">
             <span>Forced Height</span>
-            <input type="text" ng-model="currentForcedNPC.forcedHeight" ng-change="validateHeightString(currentForcedNPC.forcedHeight)">
+            <input type="text" ng-model="currentForcedNPC.forcedHeight" ng-change="validateNumString(currentForcedNPC.forcedHeight, 'Height')">
         </div>
         <div ng-if="settings.zEBD.bEnableBodyGenIntegration">
              <span>Forced BodyGen Morphs</span>

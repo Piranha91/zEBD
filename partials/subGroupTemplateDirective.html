@@ -170,6 +170,13 @@
             </ul>
 
             <label class = "tooltip">
+                <span>Allowed Weight Range</span>
+                <span class="tooltiptext" ng-if = "btooltips">Miminal (box 1) and maximal values (box 2) (inclusive) for this subgroup to be assigned.</span>
+                <input type="number" ng-model="subgroup.weightRange[0]">
+                <input type="number" ng-model="subgroup.weightRange[1]">
+            </label>
+
+            <label class = "tooltip">
                 <span>Require Subgroups:
                     <span class="tooltiptext" ng-if = "btooltips">Other subgroup IDs that must be present in any permutation that receives this subgroup. May not be a parent or child of the current subgroup.</span>
                     <button class="TDButton" ng-click="addRequiredSubgroup($index)">Add New</button>

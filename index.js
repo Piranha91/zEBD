@@ -44,7 +44,7 @@ ngapp.run(function(patcherService) {
 					$scope.availableAssetPackNames = [];
 					$scope.availableSubgroups = [];
 					
-					$scope.consistencyAssignments = IO.loadConsistency(patcherSettings.loadPath, true);
+					$scope.consistencyRecords = IO.loadConsistency(patcherSettings.loadPath, true);
 
 					$scope.forcedNPCAssignments = IO.loadForceList(patcherSettings.loadPath);
 					$scope.blockList = IO.loadBlockList(patcherSettings.loadPath);
@@ -229,47 +229,47 @@ ngapp.run(function(patcherService) {
 
 					$scope.removeNPCinfoFromConsistency = function(currentNPC, mode)
 					{
-						if ($scope.consistencyAssignments === undefined || $scope.consistencyAssignments === null || $scope.consistencyAssignments.length === 0)
+						if ($scope.consistencyRecords === undefined || $scope.consistencyRecords === null || $scope.consistencyRecords.length === 0)
 						{
 							alert("No consistency file found.");
 							return;
 						}
 
-						currentNPC.consistencyIndex = findNPCAssignmentIndex($scope.consistencyAssignments, currentNPC);
+						currentNPC.consistencyIndex = findNPCAssignmentIndex($scope.consistencyRecords, currentNPC);
 
 						if (currentNPC.consistencyIndex > -1)
 						{
 							switch(mode)
 							{
 								case "assets":
-									if ($scope.consistencyAssignments[currentNPC.consistencyIndex].assignedAssetPack !== undefined)
+									if ($scope.consistencyRecords[currentNPC.consistencyIndex].assignedAssetPack !== undefined)
 									{
-										delete $scope.consistencyAssignments[currentNPC.consistencyIndex].assignedAssetPack;
+										delete $scope.consistencyRecords[currentNPC.consistencyIndex].assignedAssetPack;
 									}
-									if ($scope.consistencyAssignments[currentNPC.consistencyIndex].assignedPermutation !== undefined)
+									if ($scope.consistencyRecords[currentNPC.consistencyIndex].assignedPermutation !== undefined)
 									{
-										delete $scope.consistencyAssignments[currentNPC.consistencyIndex].assignedPermutation;
+										delete $scope.consistencyRecords[currentNPC.consistencyIndex].assignedPermutation;
 									}
 									break;
 								case "height":
-									if ($scope.consistencyAssignments[currentNPC.consistencyIndex].height !== undefined)
+									if ($scope.consistencyRecords[currentNPC.consistencyIndex].height !== undefined)
 									{
-										delete $scope.consistencyAssignments[currentNPC.consistencyIndex].height;
+										delete $scope.consistencyRecords[currentNPC.consistencyIndex].height;
 									}
 									break;
 								case "bodygen":
-									if ($scope.consistencyAssignments[currentNPC.consistencyIndex].assignedMorphs !== undefined)
+									if ($scope.consistencyRecords[currentNPC.consistencyIndex].assignedMorphs !== undefined)
 									{
-										delete $scope.consistencyAssignments[currentNPC.consistencyIndex].assignedMorphs;
+										delete $scope.consistencyRecords[currentNPC.consistencyIndex].assignedMorphs;
 									}
-									if ($scope.consistencyAssignments[currentNPC.consistencyIndex].assignedGroups !== undefined)
+									if ($scope.consistencyRecords[currentNPC.consistencyIndex].assignedGroups !== undefined)
 									{
-										delete $scope.consistencyAssignments[currentNPC.consistencyIndex].assignedGroups;
+										delete $scope.consistencyRecords[currentNPC.consistencyIndex].assignedGroups;
 									}
 									break;
 							}
 
-							IO.saveConsistency(patcherSettings.loadPath, $scope.consistencyAssignments);
+							IO.saveConsistency(patcherSettings.loadPath, $scope.consistencyRecords);
 							alert("Consistency updated.")
 						}
 						else
@@ -560,11 +560,11 @@ ngapp.run(function(patcherService) {
 						}
 					};
 					
-					$scope.validateHeightString = function(heightString)
+					$scope.validateNumString = function(numString, paramName)
 					{
-						if (heightString !== "" && isNaN(heightString) === true)
+						if (numString !== "" && isNaN(numString) === true)
 						{
-							alert("Height must be a number");
+							alert(paramName + " must be a number");
 						}
 					};
 
@@ -815,7 +815,7 @@ ngapp.run(function(patcherService) {
 						$scope.assetPackSettings = IO.loadAssetPackSettings(patcherSettings.loadPath, patcherSettings.displayAssetPackAlerts, [], false, true, false);
 						$scope.heightConfiguration = IO.loadHeightConfiguration(patcherSettings.loadPath);
 						$scope.bodyGenConfig = IO.loadBodyGenConfig(patcherSettings.loadPath);
-						$scope.consistencyAssignments = IO.loadConsistency(patcherSettings.loadPath, true);
+						$scope.consistencyRecords = IO.loadConsistency(patcherSettings.loadPath, true);
 						$scope.forcedNPCAssignments = IO.loadForceList(patcherSettings.loadPath);
 						$scope.blockList = IO.loadBlockList(patcherSettings.loadPath);
 					}
@@ -963,7 +963,7 @@ ngapp.run(function(patcherService) {
 						locals.bodyGenConfig = IO.loadBodyGenConfig(settings.loadPath);
 						locals.forcedNPCAssignments = IO.loadForceList(settings.loadPath);
 						locals.blockList = IO.loadBlockList(settings.loadPath);
-						locals.consistencyAssignments  = IO.loadConsistency(settings.loadPath, settings.bEnableConsistency);
+						locals.consistencyRecords  = IO.loadConsistency(settings.loadPath, settings.bEnableConsistency);
 						locals.LinkedNPCNameExclusions = IO.loadLinkedNPCNameExclusions(modulePath);
 						locals.linkedNPCList = IO.loadLinkGroups(modulePath);
 
@@ -1036,7 +1036,8 @@ ngapp.run(function(patcherService) {
 
 						if (settings.bEnableBodyGenIntegration === true)
 						{
-							BGI.formatMorphDescriptors(locals.bodyGenConfig.templates); 
+							BGI.formatMorphDescriptors(locals.bodyGenConfig.templates);
+							BGI.convertMorphWeightRangeToNum(locals.bodyGenConfig.templates);
 							locals.BGcategorizedMorphs = BGI.categorizeMorphs(locals.bodyGenConfig, locals.raceGroupDefinitions);
 						}
 
@@ -1057,7 +1058,7 @@ ngapp.run(function(patcherService) {
 										{
 											locals.filtered++;
 											let attributeCache = {};
-											let NPCinfo = PO.getNPCinfo(record, locals.consistencyAssignments, xelib);
+											let NPCinfo = PO.getNPCinfo(record, locals.consistencyRecords, xelib);
 											let NPClinkGroup = PO.findNPCinLinkedList(locals.linkedNPCList, NPCinfo);
 											let userForcedAssignment = PO.getUserForcedAssignment(NPCinfo, locals.forcedNPCAssignments, NPClinkGroup);
 											let userBlockedAssignment = PO.getBlocks(record, locals.blockList, NPCinfo, helpers.logMessage, xelib);
@@ -1113,7 +1114,7 @@ ngapp.run(function(patcherService) {
 													//if all the above don't fail, assign a permutation.
 													if (bApplyPermutationToCurrentNPC === true)
 													{
-														locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation_BodyGen(record, NPCinfo, locals.permutationsByRaceGender, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyAssignments, settings.bEnableConsistency, settings.bEnableBodyGenIntegration, userForcedAssignment, userBlockedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, attributeCache, helpers.logMessage);
+														locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation_BodyGen(record, NPCinfo, locals.permutationsByRaceGender, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyRecords, settings.bEnableConsistency, settings.bEnableBodyGenIntegration, userForcedAssignment, userBlockedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, attributeCache, helpers.logMessage);
 													}
 													if (locals.assignedPermutations[NPCinfo.formID] === undefined) // occurs if the NPC is incompatible with the assignment criteria for all generated permutations.
 													{
@@ -1130,7 +1131,7 @@ ngapp.run(function(patcherService) {
 												}
 												else
 												{
-													locals.assignedHeights[NPCinfo.formID] = PO.assignNPCheight(record, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, locals.heightConfiguration, userForcedAssignment, settings.changeNonDefaultHeight, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCheights, NPClinkGroup, helpers.logMessage);
+													locals.assignedHeights[NPCinfo.formID] = PO.assignNPCheight(record, NPCinfo, settings.bEnableConsistency, locals.consistencyRecords, locals.heightConfiguration, userForcedAssignment, settings.changeNonDefaultHeight, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCheights, NPClinkGroup, helpers.logMessage);
 													if (locals.assignedHeights[NPCinfo.formID] === undefined || locals.assignedHeights[NPCinfo.formID] === "NaN") // if there are no height settings for the given NPC's race
 													{
 														bApplyHeightSettingsToCurrentNPC = false;
@@ -1141,11 +1142,17 @@ ngapp.run(function(patcherService) {
 											
 											if (settings.bEnableBodyGenIntegration === true && userBlockedAssignment.bodygen === false && locals.assignedBodyGen[NPCinfo.formID] === undefined) // reminder: locals.assignedBodyGen[NPCinfo.formID] can be assigned by PO.choosePermutation_BodyGen(...)
 											{
-												let chosenMorph = BGI.assignMorphs(record, locals.bodyGenConfig, locals.BGcategorizedMorphs, NPCinfo, settings.bEnableConsistency, locals.consistencyAssignments, locals.assignedPermutations[NPCinfo.formID], userForcedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCbodygen, NPClinkGroup, false, attributeCache, helpers.logMessage);
+												let chosenMorph = BGI.assignMorphs(record, locals.bodyGenConfig, locals.BGcategorizedMorphs, NPCinfo, settings.bEnableConsistency, false, locals.consistencyRecords, undefined, userForcedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCbodygen, NPClinkGroup, false, attributeCache, helpers.logMessage);
 												if (chosenMorph !== undefined)
 												{
-													chosenMorph = locals.assignedBodyGen[NPCinfo.formID];
+													locals.assignedBodyGen[NPCinfo.formID] = chosenMorph;
 												}
+											}
+
+											//handle BodyGen consistency here. Because BGI.assignMorphs() can get called multiple times within PO.choosePermutation_BodyGen(), wait until the final morphs are selected before storing them in consistency. This way, if choosePermutation_BodyGen() fails to generate a valid morph, the original consistency morph can still be drawn
+											if (settings.bEnableBodyGenIntegration === true && userBlockedAssignment.bodygen === false && settings.bEnableConsistency === true)
+											{
+												BGI.updateBodyGenConsistencyRecord(locals.assignedBodyGen[NPCinfo.formID], record, NPCinfo, locals.consistencyRecords, xelib)
 											}
 
 											// store the NPC info
@@ -1221,7 +1228,7 @@ ngapp.run(function(patcherService) {
 					{
 						if (settings.bEnableConsistency === true)
 						{
-							IO.saveConsistency(settings.loadPath, locals.consistencyAssignments);
+							IO.saveConsistency(settings.loadPath, locals.consistencyRecords);
 						}
 						
 						if (settings.bVerboseMode === true)
