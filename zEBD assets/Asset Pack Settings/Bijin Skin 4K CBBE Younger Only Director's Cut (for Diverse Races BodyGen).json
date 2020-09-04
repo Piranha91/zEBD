@@ -2067,6 +2067,123 @@
       "$$hashKey": "object:1542",
       "allowedBodyGenDescriptors": [],
       "disallowedBodyGenDescriptors": []
+    },
+    {
+      "id": "E",
+      "enabled": true,
+      "distributionEnabled": true,
+      "allowedRaces": [],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "name": "Etc",
+      "requiredSubgroups": [],
+      "excludedSubgroups": [],
+      "addKeywords": [],
+      "probabilityWeighting": 1,
+      "paths": [
+        [
+          "textures\\etc\\00 base\\textures\\actors\\character\\female\\femalebody_etc_v2_1_msn.dds",
+          "femalebody_etc_v2_1_msn.dds"
+        ],
+        [
+          "textures\\etc\\00 base\\textures\\actors\\character\\female\\femalebody_etc_v2_1_s.dds",
+          "femalebody_etc_v2_1_s.dds"
+        ],
+        [
+          "textures\\etc\\00 base\\textures\\actors\\character\\female\\femalebody_etc_v2_1_sk.dds",
+          "femalebody_etc_v2_1_sk.dds"
+        ]
+      ],
+      "subgroups": [
+        {
+          "id": "E.R",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Red",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\etc\\10 red dark\\textures\\actors\\character\\female\\femalebody_etc_v2_1.dds",
+              "femalebody_etc_v2_1.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6148",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "E.P",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Pink",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\etc\\11 pink\\textures\\actors\\character\\female\\femalebody_etc_v2_1.dds",
+              "femalebody_etc_v2_1.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6179",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        },
+        {
+          "id": "E.PP",
+          "enabled": true,
+          "distributionEnabled": true,
+          "allowedRaces": [],
+          "disallowedRaces": [],
+          "allowedAttributes": [],
+          "disallowedAttributes": [],
+          "forceIfAttributes": [],
+          "allowUnique": true,
+          "allowNonUnique": true,
+          "name": "Pale Pink",
+          "requiredSubgroups": [],
+          "excludedSubgroups": [],
+          "addKeywords": [],
+          "probabilityWeighting": 1,
+          "paths": [
+            [
+              "textures\\etc\\12 pale pink\\textures\\actors\\character\\female\\femalebody_etc_v2_1.dds",
+              "femalebody_etc_v2_1.dds"
+            ]
+          ],
+          "subgroups": [],
+          "$$hashKey": "object:6210",
+          "allowedBodyGenDescriptors": [],
+          "disallowedBodyGenDescriptors": []
+        }
+      ],
+      "$$hashKey": "object:6104",
+      "allowedBodyGenDescriptors": [],
+      "disallowedBodyGenDescriptors": []
     }
   ],
   "displayAssetPackAlerts": true

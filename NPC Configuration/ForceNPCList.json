@@ -6,8 +6,15 @@
     "rootPlugin": "018Auri.esp",
     "race": "WoodElfRace",
     "gender": "female",
-    "forcedAssetPack": "Demoniac 4K CBBE (No Bronze Shine) No Age40Age50 Director's Cut (for Diverse Races BodyGen)",
-    "forcedSubgroups": [],
+    "forcedAssetPack": "Bijin Skins 4K CBBE Director's Cut (for Diverse Races BodyGen)",
+    "forcedSubgroups": [
+      {
+        "id": "BD.4KS",
+        "description": "BD.4KS: 4K Shaved",
+        "topLevelSubgroup": "BD",
+        "$$hashKey": "object:5546"
+      }
+    ],
     "forcedHeight": "",
     "forcedBodyGenMorphs": [],
     "displayString": "Auri (xx000D63)",
@@ -20,13 +27,12 @@
     "rootPlugin": "Skyrim.esm",
     "race": "NordRace",
     "gender": "female",
-    "forcedAssetPack": "The Pure CBBE 8K-4K Default Subsurface - Director's Cut (for Diverse Races BodyGen)",
+    "forcedAssetPack": "Bijin Skins 4K CBBE Director's Cut (for Diverse Races BodyGen)",
     "forcedSubgroups": [
       {
         "id": "HN.Y.W",
         "description": "HN.Y.W: Wood Elf",
-        "topLevelSubgroup": "HN",
-        "$$hashKey": "object:5523"
+        "topLevelSubgroup": "HN"
       }
     ],
     "forcedHeight": "",
@@ -91,8 +97,19 @@
     "rootPlugin": "Skyrim.esm",
     "race": "NordRace",
     "gender": "female",
-    "forcedAssetPack": "",
-    "forcedSubgroups": [],
+    "forcedAssetPack": "Bijin Skins 4K CBBE Director's Cut (for Diverse Races BodyGen)",
+    "forcedSubgroups": [
+      {
+        "id": "BN.Y.D",
+        "description": "BN.Y.D: Default",
+        "topLevelSubgroup": "BN"
+      },
+      {
+        "id": "BD.4KS",
+        "description": "BD.4KS: 4K Shaved",
+        "topLevelSubgroup": "BD"
+      }
+    ],
     "forcedHeight": "",
     "forcedBodyGenMorphs": [
       "$Aela10"
