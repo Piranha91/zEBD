@@ -1599,7 +1599,7 @@
               ],
               "disallowedBodyGenDescriptors": [],
               "weightRange": [
-                50,
+                null,
                 ""
               ]
             },
@@ -1800,7 +1800,7 @@
                 "build: chubby"
               ],
               "weightRange": [
-                50,
+                null,
                 ""
               ]
             }

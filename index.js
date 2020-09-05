@@ -709,6 +709,12 @@ ngapp.run(function(patcherService) {
 						IO.loadSelectedBodyGenMorphs($scope.forcedNPCAssignments, $scope.availableNPCs, $scope.bodyGenConfig.templates);
 					}
 
+					$scope.addBodyGenTemplate = function()
+					{
+						$scope.bodyGenConfig.templates.push(Aux.createBodyGenTemplate());
+					}
+
+					// Functions for block list
 					$scope.addNPCtoBlockList = function(currentNPC, mode)
 					{
 						let blockedNPC = findNPCinBlockList(currentNPC, $scope.blockList.blockedNPCs);
@@ -1142,7 +1148,7 @@ ngapp.run(function(patcherService) {
 											
 											if (settings.bEnableBodyGenIntegration === true && userBlockedAssignment.bodygen === false && locals.assignedBodyGen[NPCinfo.formID] === undefined) // reminder: locals.assignedBodyGen[NPCinfo.formID] can be assigned by PO.choosePermutation_BodyGen(...)
 											{
-												let chosenMorph = BGI.assignMorphs(record, locals.bodyGenConfig, locals.BGcategorizedMorphs, NPCinfo, settings.bEnableConsistency, false, locals.consistencyRecords, undefined, userForcedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCbodygen, NPClinkGroup, false, attributeCache, helpers.logMessage);
+												let chosenMorph = BGI.assignMorphs(record, locals.bodyGenConfig, locals.BGcategorizedMorphs, NPCinfo, settings.bEnableConsistency, locals.consistencyRecords, undefined, userForcedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCbodygen, NPClinkGroup, false, attributeCache, helpers.logMessage);
 												if (chosenMorph !== undefined)
 												{
 													locals.assignedBodyGen[NPCinfo.formID] = chosenMorph;
