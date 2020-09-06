@@ -465,7 +465,7 @@
       "probabilityWeighting": 1,
       "weightRange": [
         50,
-        ""
+        null
       ]
     },
     {
@@ -2156,8 +2156,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -2351,8 +2351,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {

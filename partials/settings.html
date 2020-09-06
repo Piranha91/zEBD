@@ -624,8 +624,9 @@
     <div  ng-if="displayTemplates">
         <div class="bgTemplate" ng-repeat="template in bodyGenConfig.templates track by $index">
             <label>
-                <span>{{template.name}} </span>
-                (Details<input type="checkbox" ng-model="BodyGenTemplateDisplay[$index].showDetails"/>)
+                <input type="text" ng-model="bodyGenConfig.templates[$index].name">
+                 (Details<input type="checkbox" ng-model="BodyGenTemplateDisplay[$index].showDetails"/>) 
+                <button ng-click="removeBodyGenTemplate($index)">Remove</button>
             </label>
             <label>
             <section ng-if="BodyGenTemplateDisplay[$index].showDetails">

@@ -709,6 +709,11 @@ ngapp.run(function(patcherService) {
 						IO.loadSelectedBodyGenMorphs($scope.forcedNPCAssignments, $scope.availableNPCs, $scope.bodyGenConfig.templates);
 					}
 
+					$scope.removeBodyGenTemplate = function(index)
+					{
+						$scope.bodyGenConfig.templates.splice(index, 1);
+					}
+					
 					$scope.addBodyGenTemplate = function()
 					{
 						$scope.bodyGenConfig.templates.push(Aux.createBodyGenTemplate());
