@@ -356,8 +356,8 @@
       "allowedBodyGenDescriptors": [],
       "disallowedBodyGenDescriptors": [],
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -907,8 +907,8 @@
       "allowedBodyGenDescriptors": [],
       "disallowedBodyGenDescriptors": [],
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -1002,8 +1002,8 @@
       "allowedBodyGenDescriptors": [],
       "disallowedBodyGenDescriptors": [],
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -1114,8 +1114,8 @@
       "allowedBodyGenDescriptors": [],
       "disallowedBodyGenDescriptors": [],
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -1390,8 +1390,8 @@
       "allowedBodyGenDescriptors": [],
       "disallowedBodyGenDescriptors": [],
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -1487,8 +1487,8 @@
       "allowedBodyGenDescriptors": [],
       "disallowedBodyGenDescriptors": [],
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -1562,8 +1562,8 @@
                 "chest: busty"
               ],
               "weightRange": [
-                "",
-                ""
+                null,
+                null
               ]
             },
             {
@@ -1600,7 +1600,7 @@
               "disallowedBodyGenDescriptors": [],
               "weightRange": [
                 null,
-                ""
+                null
               ]
             },
             {
@@ -1707,7 +1707,12 @@
                   "CNAM\tMiner \"Miner\" [CLAS:0001326D]"
                 ]
               ],
-              "disallowedAttributes": [],
+              "disallowedAttributes": [
+                [
+                  "EDID",
+                  "Sigrid"
+                ]
+              ],
               "forceIfAttributes": [
                 [
                   "FULL - Name",
@@ -1760,8 +1765,8 @@
                 "build: chubby"
               ],
               "weightRange": [
-                "",
-                ""
+                null,
+                null
               ]
             },
             {
@@ -1801,7 +1806,7 @@
               ],
               "weightRange": [
                 null,
-                ""
+                null
               ]
             }
           ],
@@ -1809,8 +1814,8 @@
           "allowedBodyGenDescriptors": [],
           "disallowedBodyGenDescriptors": [],
           "weightRange": [
-            "",
-            ""
+            null,
+            null
           ]
         }
       ],
@@ -1818,8 +1823,8 @@
       "allowedBodyGenDescriptors": [],
       "disallowedBodyGenDescriptors": [],
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -1921,8 +1926,8 @@
       "allowedBodyGenDescriptors": [],
       "disallowedBodyGenDescriptors": [],
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -2024,8 +2029,8 @@
       "allowedBodyGenDescriptors": [],
       "disallowedBodyGenDescriptors": [],
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -2055,8 +2060,8 @@
       "allowedBodyGenDescriptors": [],
       "disallowedBodyGenDescriptors": [],
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -2086,8 +2091,8 @@
       "allowedBodyGenDescriptors": [],
       "disallowedBodyGenDescriptors": [],
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -2181,8 +2186,8 @@
       "allowedBodyGenDescriptors": [],
       "disallowedBodyGenDescriptors": [],
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -2276,8 +2281,8 @@
       "allowedBodyGenDescriptors": [],
       "disallowedBodyGenDescriptors": [],
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -2409,8 +2414,8 @@
       "allowedBodyGenDescriptors": [],
       "disallowedBodyGenDescriptors": [],
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     }
   ],

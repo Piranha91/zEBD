@@ -1148,22 +1148,30 @@ ngapp.run(function(patcherService) {
 														bApplyHeightSettingsToCurrentNPC = false;
 													}
 												}
-												
 											}
 											
-											if (settings.bEnableBodyGenIntegration === true && userBlockedAssignment.bodygen === false && locals.assignedBodyGen[NPCinfo.formID] === undefined) // reminder: locals.assignedBodyGen[NPCinfo.formID] can be assigned by PO.choosePermutation_BodyGen(...)
+											if (settings.bEnableBodyGenIntegration === true && userBlockedAssignment.bodygen === false)
 											{
-												let chosenMorph = BGI.assignMorphs(record, locals.bodyGenConfig, locals.BGcategorizedMorphs, NPCinfo, settings.bEnableConsistency, locals.consistencyRecords, undefined, userForcedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCbodygen, NPClinkGroup, false, attributeCache, helpers.logMessage);
-												if (chosenMorph !== undefined)
+												if (locals.assignedBodyGen[NPCinfo.formID] === undefined) // reminder: locals.assignedBodyGen[NPCinfo.formID] can be assigned by PO.choosePermutation_BodyGen(...)
 												{
-													locals.assignedBodyGen[NPCinfo.formID] = chosenMorph;
+													let chosenMorph = BGI.assignMorphs(record, locals.bodyGenConfig, locals.BGcategorizedMorphs, NPCinfo, settings.bEnableConsistency, locals.consistencyRecords, undefined, userForcedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCbodygen, NPClinkGroup, false, attributeCache, helpers.logMessage);
+													if (chosenMorph !== undefined)
+													{
+														locals.assignedBodyGen[NPCinfo.formID] = chosenMorph;
+													}
 												}
-											}
 
-											//handle BodyGen consistency here. Because BGI.assignMorphs() can get called multiple times within PO.choosePermutation_BodyGen(), wait until the final morphs are selected before storing them in consistency. This way, if choosePermutation_BodyGen() fails to generate a valid morph, the original consistency morph can still be drawn
-											if (settings.bEnableBodyGenIntegration === true && userBlockedAssignment.bodygen === false && settings.bEnableConsistency === true)
-											{
-												BGI.updateBodyGenConsistencyRecord(locals.assignedBodyGen[NPCinfo.formID], record, NPCinfo, locals.consistencyRecords, xelib)
+												//handle BodyGen consistency here. Because BGI.assignMorphs() can get called multiple times within PO.choosePermutation_BodyGen(), wait until the final morphs are selected before storing them in consistency. This way, if choosePermutation_BodyGen() fails to generate a valid morph, the original consistency morph can still be drawn
+												if (settings.bEnableConsistency === true)
+												{
+													BGI.updateBodyGenConsistencyRecord(locals.assignedBodyGen[NPCinfo.formID], record, NPCinfo, locals.consistencyRecords, xelib);
+												}
+
+												// also update the BodyGen Linked Data here for the same reason as conssistency
+												if (locals.assignedBodyGen[NPCinfo.formID] !== undefined)
+												{
+													BGI.updateLinkedBodyGenData(locals.assignedBodyGen[NPCinfo.formID], settings.bLinkNPCsWithSameName, NPCinfo, locals.LinkedNPCNameExclusions, locals.linkedNPCbodygen, NPClinkGroup);
+												}
 											}
 
 											// store the NPC info

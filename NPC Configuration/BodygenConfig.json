@@ -2212,8 +2212,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
