@@ -411,6 +411,11 @@
         <display-subgroups data="assetPackSetting.subgroups" bgintegration = "settings.zEBD.bEnableBodyGenIntegration" bgdescriptors = "bodyGenConfig.templateDescriptors" racesandgroups = "racesAndGroups" btooltips = "settings.zEBD.btooltips"></display-subgroups>
         <button ng-click="addSubgroupTop($index)">Add New Subgroup</button>
 
+        <div class="tooltip">
+            <button ng-click="appendAssetPack($index)">Merge Subgroups from Config File</button>
+            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">The subgroups from the config file you select will be added to the subgroups of this config file, preserving hierarchy and merging where applicable.</span>
+        </div>
+
         <button ng-click="saveAssetPackSetting(assetPackSetting)">Save</button>
     </div>
 

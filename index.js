@@ -446,6 +446,11 @@ ngapp.run(function(patcherService) {
 						$scope.assetPackSettings.push(newSettings);
 					};
 
+					$scope.appendAssetPack = function(index)
+					{
+						IO.appendAssetPackSettings($scope.assetPackSettings[index]);
+					}
+
 					$scope.clearConsistency = function(mode)
 					{
 						let confirmation;
