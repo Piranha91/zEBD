@@ -988,9 +988,10 @@ ngapp.run(function(patcherService) {
 						{
 							if (settings.loadPermutations === true)
 							{
-								locals.permutations = IO.loadGeneratedPermutations(settings.loadPath);
-								RG.recordTemplates = IO.loadGeneratedRecords(settings.loadPath);
-								RG.maxPriority = IO.loadGeneratedRecordsMaxPriority(settings.loadPath);	
+								//locals.permutations = IO.loadGeneratedPermutations(settings.loadPath);
+								//RG.recordTemplates = IO.loadGeneratedRecords(settings.loadPath);
+								//RG.maxPriority = IO.loadGeneratedRecordsMaxPriority(settings.loadPath);
+								RG.maxPriority = IO.loadGeneratedPermutations_Records(modulePath, locals.permutations, RG.recordTemplates);	
 							}
 
 							if (settings.loadPermutations === false || locals.permutations === undefined || RG.recordTemplates === undefined || RG.maxPriority === undefined || locals.permutations.length === 0 || RG.recordTemplates.length === 0)
@@ -1010,8 +1011,9 @@ ngapp.run(function(patcherService) {
 							if (settings.savePermutations === true && locals.permutations.length > 0 && RG.recordTemplates.length > 0 && locals.loadedFromJSON === false)
 							{
 								helpers.logMessage("Saving permutations and records to JSON");
-								IO.saveGeneratedPermutations(settings.loadPath, locals.permutations);
-								IO.saveGeneratedRecords(settings.loadPath, RG.recordTemplates, RG.linkageList, RG.maxPriority);
+								IO.saveGeneratedPermutations_Records(modulePath, locals.permutations, RG.recordTemplates, RG.linkageList, RG.maxPriority);
+								//IO.saveGeneratedPermutations(settings.loadPath, locals.permutations);
+								//IO.saveGeneratedRecords(settings.loadPath, RG.recordTemplates, RG.linkageList, RG.maxPriority);
 							}
 
 							// create lists to narrow down permutation search space (speeds up patching)
