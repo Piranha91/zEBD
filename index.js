@@ -997,7 +997,7 @@ ngapp.run(function(patcherService) {
 							{
 								helpers.logMessage("Generating asset permutations.");
 								locals.permutations = PG.generateAssetPackPermutations(locals.assetPackSettings, locals.raceGroupDefinitions, settings, locals.trimPaths, helpers);
-								RG.generateRecords(locals.permutations, settings, locals.recordTemplates, helpers); // RG.recordTemplates and RG.maxPriority filled by reference within this function
+								RG.generateRecords(locals.permutations, settings, locals.recordTemplates, locals.assetPackSettings, helpers); // RG.recordTemplates and RG.maxPriority filled by reference within this function
 
 								locals.loadedFromJSON = false;
 							}
