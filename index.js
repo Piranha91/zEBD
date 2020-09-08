@@ -988,10 +988,9 @@ ngapp.run(function(patcherService) {
 						{
 							if (settings.loadPermutations === true)
 							{
-								//locals.permutations = IO.loadGeneratedPermutations(settings.loadPath);
-								//RG.recordTemplates = IO.loadGeneratedRecords(settings.loadPath);
-								//RG.maxPriority = IO.loadGeneratedRecordsMaxPriority(settings.loadPath);
-								RG.maxPriority = IO.loadGeneratedPermutations_Records(modulePath, locals.permutations, RG.recordTemplates);	
+								locals.permutations = []; // pre-initialize here; gets filled by reference
+								RG.recordTemplates = []; // pre-initialize here; gets filled by reference
+								RG.maxPriority = IO.loadGeneratedPermutations_Records(modulePath, locals.permutations, RG.recordTemplates, helpers.logMessage);	
 							}
 
 							if (settings.loadPermutations === false || locals.permutations === undefined || RG.recordTemplates === undefined || RG.maxPriority === undefined || locals.permutations.length === 0 || RG.recordTemplates.length === 0)
@@ -1002,8 +1001,9 @@ ngapp.run(function(patcherService) {
 
 								locals.loadedFromJSON = false;
 							}
-							else // link permutations load from JSON to records loaded from JSON
+							else 
 							{
+								// link permutations load from JSON to records loaded from JSON (they do not come pre-linked - this would entail a lot of coding for a patching time savings of just a few seconds)
 								RG.linkPermutationsToJSONRecords(locals.permutations, RG.recordTemplates, helpers.logMessage);
 								locals.loadedFromJSON = true;
 							}
@@ -1012,8 +1012,6 @@ ngapp.run(function(patcherService) {
 							{
 								helpers.logMessage("Saving permutations and records to JSON");
 								IO.saveGeneratedPermutations_Records(modulePath, locals.permutations, RG.recordTemplates, RG.linkageList, RG.maxPriority);
-								//IO.saveGeneratedPermutations(settings.loadPath, locals.permutations);
-								//IO.saveGeneratedRecords(settings.loadPath, RG.recordTemplates, RG.linkageList, RG.maxPriority);
 							}
 
 							// create lists to narrow down permutation search space (speeds up patching)
