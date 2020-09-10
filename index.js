@@ -972,7 +972,7 @@ ngapp.run(function(patcherService) {
 						locals.userKeywords = [];
 						locals.raceGroupDefinitions = IO.loadRestrictionGroupDefs(modulePath, settings.displayAssetPackAlerts);
 						locals.assetPackSettings = IO.loadAssetPackSettings(settings.loadPath, settings.displayAssetPackAlerts, locals.userKeywords, true, true, settings.bAbortIfPathWarnings);
-						locals.recordTemplates = IO.loadRecordTemplates(modulePath, locals.raceGroupDefinitions);
+						locals.recordTemplates = IO.loadRecordTemplates(modulePath, locals.raceGroupDefinitions, helpers.logMessage);
 						locals.trimPaths = IO.loadTrimPaths(modulePath);
 						locals.EBDassets = IO.loadEBDAssets(modulePath);
 						locals.heightConfiguration = IO.loadHeightConfiguration(settings.loadPath);
