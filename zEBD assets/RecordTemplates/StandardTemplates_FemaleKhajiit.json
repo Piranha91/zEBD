@@ -39,7 +39,7 @@
           "zEBDAddValidRaces": [
             "Additional Races"
           ],
-          "zEBDsupportedRaces": "humanoid",
+          "zEBDsupportedRaces": "khajiit",
           "EDID": "FemaleTorsoKhajiit",
           "BOD2 - Biped Body Template": {
             "First Person Flags": [
@@ -112,7 +112,7 @@
           "zEBDAddValidRaces": [
             "Additional Races"
           ],
-          "zEBDsupportedRaces": "humanoid",
+          "zEBDsupportedRaces": "khajiit",
           "EDID": "FemaleHandsKhajiit",
           "BOD2 - Biped Body Template": {
             "First Person Flags": [
@@ -181,7 +181,7 @@
           "zEBDAddValidRaces": [
             "Additional Races"
           ],
-          "zEBDsupportedRaces": "humanoid",
+          "zEBDsupportedRaces": "khajiit",
           "EDID": "FemaleFeetKhajiit",
           "BOD2 - Biped Body Template": {
             "First Person Flags": [
@@ -210,7 +210,7 @@
           "Female world model": {
             "MOD3 - Model FileName": "Actors\\Character\\Character Assets\\FemaleFeet_1.NIF"
           },
-          "NAM0 - Male Skin Texture": "SkinFeetMaleKhajiit [TXST:0E0022F6]",
+          "NAM0 - Male Skin Texture": "SkinBodyMaleKhajiit [TXST:00081B9F]",
           "NAM1 - Female Skin Texture":
           {
             "zEBDUniqueID": "SkinFemaleFeetKhajiit",
@@ -246,7 +246,7 @@
           "zEBDAddValidRaces": [
             "Additional Races"
           ],
-          "zEBDsupportedRaces": "humanoid",
+          "zEBDsupportedRaces": "khajiit",
           "EDID": "FemaleTailKhajiit",
           "BOD2 - Biped Body Template": {
             "First Person Flags": [
