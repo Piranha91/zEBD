@@ -983,36 +983,27 @@ ngapp.run(function(patcherService) {
 						locals.consistencyRecords  = IO.loadConsistency(settings.loadPath, settings.bEnableConsistency);
 						locals.LinkedNPCNameExclusions = IO.loadLinkedNPCNameExclusions(modulePath);
 						locals.linkedNPCList = IO.loadLinkGroups(modulePath);
+						locals.loadedFromJSON = false;
 
 						// generate permutations to assign to NPCs
 						if (settings.changeNPCappearance === true)
 						{
 							if (settings.loadPermutations === true)
 							{
-								locals.permutations = []; // pre-initialize here; gets filled by reference
-								RG.recordTemplates = []; // pre-initialize here; gets filled by reference
-								RG.maxPriority = IO.loadGeneratedPermutations_Records(modulePath, locals.permutations, RG.recordTemplates, helpers.logMessage);	
+								locals.loadedFromJSON = IO.loadGeneratedPermutations_Records(modulePath, locals, RG, helpers.logMessage);
 							}
 
-							if (settings.loadPermutations === false || locals.permutations === undefined || RG.recordTemplates === undefined || RG.maxPriority === undefined || locals.permutations.length === 0 || RG.recordTemplates.length === 0)
+							if (locals.loadedFromJSON === false)
 							{
 								helpers.logMessage("Generating asset permutations.");
 								locals.permutations = PG.generateAssetPackPermutations(locals.assetPackSettings, locals.raceGroupDefinitions, settings, locals.trimPaths, helpers);
 								RG.generateRecords(locals.permutations, settings, locals.recordTemplates, locals.assetPackSettings, helpers); // RG.recordTemplates and RG.maxPriority filled by reference within this function
-
-								locals.loadedFromJSON = false;
-							}
-							else 
-							{
-								// link permutations load from JSON to records loaded from JSON (they do not come pre-linked - this would entail a lot of coding for a patching time savings of just a few seconds)
-								RG.linkPermutationsToJSONRecords(locals.permutations, RG.recordTemplates, helpers.logMessage);
-								locals.loadedFromJSON = true;
 							}
 
-							if (settings.savePermutations === true && locals.permutations.length > 0 && RG.recordTemplates.length > 0 && locals.loadedFromJSON === false)
+							if (settings.savePermutations === true && locals.permutations.length > 0 && Object.keys(RG.recordTemplates).length > 0 && locals.loadedFromJSON === false)
 							{
 								helpers.logMessage("Saving permutations and records to JSON");
-								IO.saveGeneratedPermutations_Records(modulePath, locals.permutations, RG.recordTemplates, RG.linkageList, RG.maxPriority);
+								IO.saveGeneratedPermutations_Records(modulePath, locals.permutations, RG.recordTemplates, RG.maxPriority);
 							}
 
 							// create lists to narrow down permutation search space (speeds up patching)
