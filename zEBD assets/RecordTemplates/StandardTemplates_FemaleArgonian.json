@@ -272,7 +272,7 @@
           "NAM0 - Male Skin Texture": "SkinBodyMaleArgonian [TXST:0004E86F]",
           "NAM1 - Female Skin Texture":
           {
-            "zEBDUniqueID": "SkinFemaleTail",
+            "zEBDUniqueID": "SkinFemaleTailArgonian",
             "zEBDzEBDPosition": "NAM1 - Female Skin Texture",
             "zEBDSignature": "TXST",
             "EDID": "SkinFemaleFeet",

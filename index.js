@@ -911,6 +911,7 @@ ngapp.run(function(patcherService) {
 						bEnableBodyGenIntegration: false,
 						bLoadFromData: false,
 						loadPath: modulePath,
+						bLogOnlyAssignedPermutations: false,
 						patchableRaces: ["NordRace", "BretonRace", "DarkElfRace", "HighElfRace", "ImperialRace", "OrcRace", "RedguardRace", "WoodElfRace", "ElderRace", "NordRaceVampire", "BretonRaceVampire", "DarkElfRaceVampire", "HighElfRaceVampire", "ImperialRaceVampire", "OrcRaceVampire", "RedguardRaceVampire", "WoodElfRaceVampire", "ElderRaceVampire", "SnowElfRace", "DA13AfflictedRace", "KhajiitRace", "KhajiitRaceVampire", "ArgonianRace", "ArgonianRaceVampire"]
 					}
 			},
@@ -1262,7 +1263,7 @@ ngapp.run(function(patcherService) {
 
 						if (settings.changeNPCappearance === true && settings.bGeneratePermutationLog === true)
 						{
-							IO.generatePermutationLog(locals.permutations, logDir);
+							IO.generatePermutationLog(locals.permutations, logDir, RG.recordTemplates, settings.bLogOnlyAssignedPermutations);
 						}
 
 						if (settings.bEnableBodyGenIntegration === true)

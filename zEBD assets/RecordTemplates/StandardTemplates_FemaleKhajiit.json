@@ -272,7 +272,7 @@
           "NAM0 - Male Skin Texture": "SkinBodyMaleKhajiit [TXST:00081B9F]",
           "NAM1 - Female Skin Texture":
           {
-            "zEBDUniqueID": "SkinFemaleTail",
+            "zEBDUniqueID": "SkinFemaleTailKhajiit",
             "zEBDzEBDPosition": "NAM1 - Female Skin Texture",
             "zEBDSignature": "TXST",
             "EDID": "SkinFemaleFeet",
