@@ -464,8 +464,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        50,
-        null
+        35,
+        65
       ]
     },
     {
@@ -491,8 +491,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        50
+        75,
+        null
       ]
     },
     {
@@ -519,8 +519,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        35
       ]
     },
     {
@@ -546,8 +546,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        65,
+        null
       ]
     },
     {
@@ -599,8 +599,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        50,
+        null
       ]
     },
     {
@@ -627,8 +627,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        50
       ]
     },
     {
@@ -655,8 +655,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        60,
+        88
       ]
     },
     {
@@ -683,8 +683,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        60,
+        null
       ]
     },
     {
@@ -710,8 +710,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        80
       ]
     },
     {
@@ -764,8 +764,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        66,
+        null
       ]
     },
     {
@@ -791,8 +791,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        33,
+        66
       ]
     },
     {
@@ -818,8 +818,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        33
       ]
     },
     {
@@ -868,8 +868,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        50,
+        null
       ]
     },
     {
@@ -893,8 +893,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        50
       ]
     },
     {
@@ -920,8 +920,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -948,12 +948,12 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        50,
+        null
       ]
     },
     {
-      "name": "BRE_B_UNP",
+      "name": "BRE(&RED)_B_UNP",
       "params": "7B Lower@0.1:0.25, AnkleSize@1.0:0.0, AppleCheeks@0.2, Arms@0.4:0.0, Back@0.1, BigTorso@0.0:0.1, Butt@0.0:0.7, ButtClassic@0.5:0.35, ButtCrack@0.6:-1.0, ButtShape2@0.35:0.45, ButtSmall@1.0:0.6, CalfSize@0.5:0.8, ChestDepth@-0.2, ChubbyArms@0.0:0.25, ChubbyLegs@0.0:0.25, CrotchBack@0.5:1.0, ForearmSize@0.0:0.6, Groin@0.5:0.0, HipBone@1.0:0.75, HipForward@0.3:0.35, Hips@0.3:0.0, KneeHeight@0.4:0.5, KneeShape@0.8, LegShapeClassic@0.0:0.3, LegsThin@0.4:1.0, MuscleAbs@0.0:0.2, MuscleArms@0.0:0.3, MuscleLegs@0.0:0.3, MusclePecs@-1.0, ShoulderTweak@1.0, ShoulderWidth@0.5, Thighs@0.0:0.2, TummyTuck@0.8:0.0, WaistHeight@0.6:0.4, WideWaistLine@0.4:0.1, WristSize@1.0:0.0",
       "gender": "female",
       "groups": [
@@ -977,8 +977,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -1004,8 +1004,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -1032,8 +1032,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        40,
+        null
       ]
     },
     {
@@ -1059,8 +1059,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        33,
+        null
       ]
     },
     {
@@ -1086,8 +1086,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -1114,8 +1114,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        50,
+        null
       ]
     },
     {
@@ -1142,12 +1142,12 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        50,
+        null
       ]
     },
     {
-      "name": "DUN_T_Athletic",
+      "name": "DUN(&Red)_T_Athletic",
       "params": "AreolaSize@0.05:0.1, BreastFlatness2@0.15:0.0, BreastGravity2@0.0:0.15, BreastHeight@0.2, BreastPerkiness@0.6:0.5, Breasts@0.15:0.2, BreastsFantasy@0.08, BreastsNewSH@0.04, BreastsSmall2@0.0:0.15, BreastsTogether@0.25:0.35, BreastTopSlope@0.2:0.1, NippleDistance@0.1:0.3, NippleDown@0.18:0.1, NippleLength@0.05, NipplePerkiness@0.4:0.5, NipplePerkManga@0.5:0.6, NippleSize@0.25:0.3, NippleTip@0.15:0.1, PushUp@0.2:0.25",
       "gender": "female",
       "groups": [
@@ -1171,8 +1171,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        50
       ]
     },
     {
@@ -1198,8 +1198,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -1225,8 +1225,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -1280,8 +1280,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        50,
+        75
       ]
     },
     {
@@ -1307,8 +1307,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        25
       ]
     },
     {
@@ -1388,8 +1388,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        40
       ]
     },
     {
@@ -1416,8 +1416,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        70,
+        null
       ]
     },
     {
@@ -1442,10 +1442,10 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1,
+      "probabilityWeighting": 4,
       "weightRange": [
-        "",
-        ""
+        15,
+        50
       ]
     },
     {
@@ -1469,10 +1469,10 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1,
+      "probabilityWeighting": 4,
       "weightRange": [
-        "",
-        ""
+        null,
+        30
       ]
     },
     {
@@ -1499,8 +1499,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        30
       ]
     },
     {
@@ -1527,8 +1527,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        70,
+        null
       ]
     },
     {
@@ -1552,10 +1552,10 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1,
+      "probabilityWeighting": 4,
       "weightRange": [
-        "",
-        ""
+        null,
+        15
       ]
     },
     {
@@ -1582,8 +1582,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        50,
+        60
       ]
     },
     {
@@ -1610,8 +1610,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        20,
+        30
       ]
     },
     {
@@ -1638,8 +1638,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        70,
+        null
       ]
     },
     {
@@ -1666,8 +1666,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        30,
+        50
       ]
     },
     {
@@ -1692,10 +1692,10 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1,
+      "probabilityWeighting": 2,
       "weightRange": [
-        "",
-        ""
+        55,
+        75
       ]
     },
     {
@@ -1720,10 +1720,10 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1,
+      "probabilityWeighting": 3,
       "weightRange": [
-        "",
-        ""
+        15,
+        40
       ]
     },
     {
@@ -1747,10 +1747,10 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1,
+      "probabilityWeighting": 4,
       "weightRange": [
-        "",
-        ""
+        70,
+        null
       ]
     },
     {
@@ -1800,10 +1800,10 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1,
+      "probabilityWeighting": 3,
       "weightRange": [
-        "",
-        ""
+        null,
+        20
       ]
     },
     {
@@ -1828,10 +1828,10 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1,
+      "probabilityWeighting": 3,
       "weightRange": [
-        "",
-        ""
+        55,
+        70
       ]
     },
     {
@@ -1856,10 +1856,10 @@
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
-      "probabilityWeighting": 1,
+      "probabilityWeighting": 3,
       "weightRange": [
-        "",
-        ""
+        15,
+        45
       ]
     },
     {
@@ -1885,8 +1885,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        66,
+        null
       ]
     },
     {
@@ -1912,8 +1912,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        33
       ]
     },
     {
@@ -1940,8 +1940,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        33,
+        66
       ]
     },
     {
@@ -1993,8 +1993,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        66,
+        null
       ]
     },
     {
@@ -2020,8 +2020,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        66
       ]
     },
     {
@@ -2048,8 +2048,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        33,
+        null
       ]
     },
     {
@@ -2075,8 +2075,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        35,
+        45
       ]
     },
     {
@@ -2102,8 +2102,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        45,
+        65
       ]
     },
     {
@@ -2129,8 +2129,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        70,
+        null
       ]
     },
     {
@@ -2157,7 +2157,7 @@
       "probabilityWeighting": 1,
       "weightRange": [
         null,
-        null
+        20
       ]
     },
     {
@@ -2184,8 +2184,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        40,
+        60
       ]
     },
     {
@@ -2212,7 +2212,7 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        null,
+        80,
         null
       ]
     },
@@ -2241,8 +2241,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        25
       ]
     },
     {
@@ -2270,8 +2270,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        35,
+        80
       ]
     },
     {
@@ -2297,8 +2297,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        25,
+        35
       ]
     },
     {
@@ -2324,8 +2324,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        50,
+        70
       ]
     },
     {
@@ -2351,7 +2351,7 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        null,
+        90,
         null
       ]
     },
@@ -2379,8 +2379,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        15
       ]
     },
     {
@@ -2407,8 +2407,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        35
       ]
     },
     {
@@ -2435,8 +2435,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        45,
+        65
       ]
     },
     {
@@ -2464,8 +2464,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        80,
+        null
       ]
     },
     {
@@ -2516,8 +2516,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        10,
+        30
       ]
     },
     {
@@ -2544,8 +2544,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        30,
+        50
       ]
     },
     {
@@ -2571,8 +2571,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        30,
+        60
       ]
     },
     {
@@ -2599,8 +2599,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        90,
+        null
       ]
     },
     {
@@ -2626,8 +2626,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        30,
+        50
       ]
     },
     {
@@ -2654,8 +2654,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        70,
+        80
       ]
     },
     {
@@ -2681,8 +2681,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        25
       ]
     },
     {
@@ -2708,8 +2708,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        30,
+        50
       ]
     },
     {
@@ -2737,8 +2737,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        60,
+        80
       ]
     },
     {
@@ -2765,8 +2765,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        10
       ]
     },
     {
@@ -2793,8 +2793,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        15,
+        35
       ]
     },
     {
@@ -2820,8 +2820,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        50,
+        null
       ]
     },
     {
@@ -2847,8 +2847,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        20,
+        80
       ]
     },
     {
@@ -2874,8 +2874,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        50,
+        null
       ]
     },
     {
@@ -2902,8 +2902,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        30,
+        null
       ]
     },
     {
@@ -2930,8 +2930,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        50,
+        null
       ]
     },
     {
@@ -2958,12 +2958,12 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        50
       ]
     },
     {
-      "name": "RED_B_BBW4075",
+      "name": "(notOnly)RED_B_BBW4075",
       "params": "7B Lower@0.38:0.45, 7B Upper@0.38:0.45, AnkleSize@0.6:0.25, AppleCheeks@0.17:0.32, Arms@0.42:0.35, Back@0.5:0.59, BackArch@0.56:0.7, Belly@0.62:0.72, BigBelly@0.17:0.19, BigButt@0.53:0.69, BigTorso@0.48:0.55, Butt@0.62:0.72, ButtClassic@0.16:0.31, ButtCrack@0.8, ButtShape2@0.16:0.3, CalfSize@0.32:0.6, CalfSmooth@0.51:0.33, ChestDepth@0.63:0.7, ChestWidth@0.48:0.55, ChubbyArms@0.32:0.61, ChubbyButt@0.48:0.55, ChubbyLegs@0.38:0.45, ChubbyWaist@0.22:0.25, ForearmSize@0.16:0.29, HipBone@0.49:0.55, HipForward@0.41:0.46, Hips@0.19:0.35, HipUpperWidth@0.2:0.15, LegShapeClassic@0.62:0.72, LegsThin@0.23:0.21, MuscleAbs@0.62:0.72, MuscleArms@0.62:0.72, MuscleButt@0.48:0.55, MuscleLegs@0.74:0.78, RoundAss@0.1:0.19, ShoulderSmooth@0.3, ShoulderTweak@0.76:0.9, ShoulderWidth@0.36:0.15, SlimThighs@0.1, SternumHeight@0.4, Thighs@0.14:0.17, TummyTuck@0.2, Waist@0.58:0.65, WaistHeight@0.09:0.04, WideWaistLine@0.33:0.35, WristSize@0.6:0.25",
       "gender": "female",
       "groups": [
@@ -2980,15 +2980,72 @@
         "elven"
       ],
       "allowedAttributes": [],
-      "disallowedAttributes": [],
+      "disallowedAttributes": [
+        [
+          "CNAM\\FULL",
+          "Warrior"
+        ],
+        [
+          "CNAM\\FULL",
+          "Assassin"
+        ],
+        [
+          "CNAM\\FULL",
+          "Blacksmith"
+        ],
+        [
+          "CNAM",
+          "CombatSpellsword \"Spellsword\" [CLAS:00013177]"
+        ],
+        [
+          "CNAM",
+          "CombatWitchblade \"Witchblade\" [CLAS:00013178]"
+        ],
+        [
+          "CNAM",
+          "CombatNightblade \"Nightblade\" [CLAS:0001317C]"
+        ],
+        [
+          "CNAM",
+          "CombatRogue \"Rogue\" [CLAS:00013180]"
+        ],
+        [
+          "CNAM",
+          "CombatRanger \"Ranger\" [CLAS:00013181]"
+        ],
+        [
+          "CNAM",
+          "Lumberjack \"Lumberjack\" [CLAS:0001326E]"
+        ],
+        [
+          "CNAM",
+          "Blade \"Blade\" [CLAS:00021A74]"
+        ],
+        [
+          "CNAM",
+          "MQAncientNord \"Nord Hero\" [CLAS:0004FA49]"
+        ],
+        [
+          "CNAM",
+          "GuardOrc2H \"Orc Warrior\" [CLAS:0010E714]"
+        ],
+        [
+          "CNAM",
+          "Vigilant1hMeleeClass \"Vigilant\" [CLAS:0010BFEF]"
+        ],
+        [
+          "CNAM",
+          "Vigilant2hMeleeClass \"Vigilant\" [CLAS:0010BFF0]"
+        ]
+      ],
       "forceIfAttributes": [],
       "allowUnique": false,
       "allowNonUnique": true,
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        75,
+        null
       ]
     },
     {
@@ -3014,12 +3071,12 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        75
       ]
     },
     {
-      "name": "RED_B_Seductive_3080",
+      "name": "(notOnly)RED_B_Seductive_3080",
       "params": "7B Lower@0.31:0.41, 7B Upper@0.41:0.51, AnkleSize@0.7:0.2, AppleCheeks@0.27:0.46, Back@1.0, BackArch@0.22, Belly@0.73:0.92, BigBelly@0.45:0.54, ButtClassic@0.8:0.94, ButtShape2@0.41:0.59, CalfSize@0.48:0.85, CalfSmooth@0.27:0.08, ChubbyArms@0.03:0.07, ChubbyButt@0.22:0.43, ChubbyLegs@0.38:0.4, ChubbyWaist@0.16:0.15, HipBone@0.74:0.69, Hips@0.3:0.29, HipUpperWidth@0.01:0.03, KneeHeight@0.23:0.27, KneeShape@1.0, MuscleAbs@0.89:0.97, MuscleArms@0.85:0.96, MuscleButt@0.82:0.95, MuscleLegs@0.44:0.55, ShoulderTweak@1.0, ShoulderWidth@0.73:0.57, SlimThighs@0.23:0.07, Thighs@0.33:0.45, TummyTuck@-1.0, WaistHeight@0.46:0.47, WideWaistLine@0.07:0.18, WristSize@0.7:0.2",
       "gender": "female",
       "groups": [
@@ -3035,15 +3092,72 @@
         "elven"
       ],
       "allowedAttributes": [],
-      "disallowedAttributes": [],
+      "disallowedAttributes": [
+        [
+          "CNAM\\FULL",
+          "Warrior"
+        ],
+        [
+          "CNAM\\FULL",
+          "Assassin"
+        ],
+        [
+          "CNAM\\FULL",
+          "Blacksmith"
+        ],
+        [
+          "CNAM",
+          "CombatSpellsword \"Spellsword\" [CLAS:00013177]"
+        ],
+        [
+          "CNAM",
+          "CombatWitchblade \"Witchblade\" [CLAS:00013178]"
+        ],
+        [
+          "CNAM",
+          "CombatNightblade \"Nightblade\" [CLAS:0001317C]"
+        ],
+        [
+          "CNAM",
+          "CombatRogue \"Rogue\" [CLAS:00013180]"
+        ],
+        [
+          "CNAM",
+          "CombatRanger \"Ranger\" [CLAS:00013181]"
+        ],
+        [
+          "CNAM",
+          "Lumberjack \"Lumberjack\" [CLAS:0001326E]"
+        ],
+        [
+          "CNAM",
+          "Blade \"Blade\" [CLAS:00021A74]"
+        ],
+        [
+          "CNAM",
+          "MQAncientNord \"Nord Hero\" [CLAS:0004FA49]"
+        ],
+        [
+          "CNAM",
+          "GuardOrc2H \"Orc Warrior\" [CLAS:0010E714]"
+        ],
+        [
+          "CNAM",
+          "Vigilant1hMeleeClass \"Vigilant\" [CLAS:0010BFEF]"
+        ],
+        [
+          "CNAM",
+          "Vigilant2hMeleeClass \"Vigilant\" [CLAS:0010BFF0]"
+        ]
+      ],
       "forceIfAttributes": [],
       "allowUnique": false,
       "allowNonUnique": true,
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        80,
+        null
       ]
     },
     {
@@ -3072,7 +3186,7 @@
       ]
     },
     {
-      "name": "RED_T_BS_3090",
+      "name": "(notOnly)RED_T_BS_3090",
       "params": "BreastCenter@0.23:0.3, BreastCleavage@0.23:0.29, BreastGravity2@0.56:0.68, BreastHeight@-0.07:-0.23, BreastPerkiness@-0.03:-0.09, Breasts@-0.06:-0.18, BreastsNewSH@0.03:0.09, BreastsSmall@-0.06:-0.18, BreastsSmall2@-0.4:-0.62, BreastsTogether@0.65:0.54, BreastTopSlope@0.24:0.29, BreastWidth@0.03:0.02, DoubleMelon@-0.06:-0.18",
       "gender": "female",
       "groups": [
@@ -3089,19 +3203,76 @@
         "elven"
       ],
       "allowedAttributes": [],
-      "disallowedAttributes": [],
+      "disallowedAttributes": [
+        [
+          "CNAM\\FULL",
+          "Warrior"
+        ],
+        [
+          "CNAM\\FULL",
+          "Assassin"
+        ],
+        [
+          "CNAM\\FULL",
+          "Blacksmith"
+        ],
+        [
+          "CNAM",
+          "CombatSpellsword \"Spellsword\" [CLAS:00013177]"
+        ],
+        [
+          "CNAM",
+          "CombatWitchblade \"Witchblade\" [CLAS:00013178]"
+        ],
+        [
+          "CNAM",
+          "CombatNightblade \"Nightblade\" [CLAS:0001317C]"
+        ],
+        [
+          "CNAM",
+          "CombatRogue \"Rogue\" [CLAS:00013180]"
+        ],
+        [
+          "CNAM",
+          "CombatRanger \"Ranger\" [CLAS:00013181]"
+        ],
+        [
+          "CNAM",
+          "Lumberjack \"Lumberjack\" [CLAS:0001326E]"
+        ],
+        [
+          "CNAM",
+          "Blade \"Blade\" [CLAS:00021A74]"
+        ],
+        [
+          "CNAM",
+          "MQAncientNord \"Nord Hero\" [CLAS:0004FA49]"
+        ],
+        [
+          "CNAM",
+          "GuardOrc2H \"Orc Warrior\" [CLAS:0010E714]"
+        ],
+        [
+          "CNAM",
+          "Vigilant1hMeleeClass \"Vigilant\" [CLAS:0010BFEF]"
+        ],
+        [
+          "CNAM",
+          "Vigilant2hMeleeClass \"Vigilant\" [CLAS:0010BFF0]"
+        ]
+      ],
       "forceIfAttributes": [],
       "allowUnique": false,
       "allowNonUnique": true,
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        33,
+        70
       ]
     },
     {
-      "name": "RED_T_LF-18_60100",
+      "name": "(notOnly)RED_T_LF-18_60100",
       "params": "BreastCenter@0.48:0.46, BreastCenterBig@0.51:0.45, BreastCleavage@0.08:0.13, BreastGravity2@0.69:0.78, BreastHeight@0.13:0.05, BreastPerkiness@0.76:0.6, Breasts@0.43:0.6, BreastsFantasy@0.15:0.18, BreastsGone@-0.3:-0.5, BreastsNewSH@0.53:0.55, BreastsTogether@0.19:0.25, BreastTopSlope@0.89:0.92, BreastWidth@-0.69:-0.78, DoubleMelon@0.02:0.04",
       "gender": "female",
       "groups": [
@@ -3118,15 +3289,72 @@
         "elven"
       ],
       "allowedAttributes": [],
-      "disallowedAttributes": [],
+      "disallowedAttributes": [
+        [
+          "CNAM\\FULL",
+          "Warrior"
+        ],
+        [
+          "CNAM\\FULL",
+          "Assassin"
+        ],
+        [
+          "CNAM\\FULL",
+          "Blacksmith"
+        ],
+        [
+          "CNAM",
+          "CombatSpellsword \"Spellsword\" [CLAS:00013177]"
+        ],
+        [
+          "CNAM",
+          "CombatWitchblade \"Witchblade\" [CLAS:00013178]"
+        ],
+        [
+          "CNAM",
+          "CombatNightblade \"Nightblade\" [CLAS:0001317C]"
+        ],
+        [
+          "CNAM",
+          "CombatRogue \"Rogue\" [CLAS:00013180]"
+        ],
+        [
+          "CNAM",
+          "CombatRanger \"Ranger\" [CLAS:00013181]"
+        ],
+        [
+          "CNAM",
+          "Lumberjack \"Lumberjack\" [CLAS:0001326E]"
+        ],
+        [
+          "CNAM",
+          "Blade \"Blade\" [CLAS:00021A74]"
+        ],
+        [
+          "CNAM",
+          "MQAncientNord \"Nord Hero\" [CLAS:0004FA49]"
+        ],
+        [
+          "CNAM",
+          "GuardOrc2H \"Orc Warrior\" [CLAS:0010E714]"
+        ],
+        [
+          "CNAM",
+          "Vigilant1hMeleeClass \"Vigilant\" [CLAS:0010BFEF]"
+        ],
+        [
+          "CNAM",
+          "Vigilant2hMeleeClass \"Vigilant\" [CLAS:0010BFF0]"
+        ]
+      ],
       "forceIfAttributes": [],
       "allowUnique": false,
       "allowNonUnique": true,
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        70,
+        null
       ]
     },
     {
@@ -3153,8 +3381,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        50,
+        null
       ]
     },
     {
@@ -3168,7 +3396,9 @@
         "build: curvy",
         "chest: busty"
       ],
-      "allowedRaces": [],
+      "allowedRaces": [
+        "humanoidVampire"
+      ],
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
@@ -3178,8 +3408,8 @@
       "allowRandom": true,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -4281,6 +4511,34 @@
         "",
         ""
       ]
+    },
+    {
+      "name": "(ForOrc)BRE_B_SAB",
+      "params": "AnkleSize@1.0:0.0, AppleCheeks@0.3:0.4, Butt@0.1:0.2, ButtCrack@0.8:0.0, ButtShape2@0.1:0.2, HipForward@0.15, Hips@0.2, LegShapeClassic@0.25:0.4, MuscleAbs@0.1:0.2, RoundAss@0.05:0.15, ShoulderSmooth@0.7:1.0, ShoulderTweak@0.7:1.0, ShoulderWidth@0.7:1.0, SlimThighs@0.5:0.35, Waist@0.15:0.25, WaistHeight@0.05:0.1, WideWaistLine@0.0:0.1, WristSize@1.0:0.0",
+      "gender": "female",
+      "groups": [
+        "Bottom"
+      ],
+      "descriptors": [
+        "build: normal",
+        "hips: wide"
+      ],
+      "allowedRaces": [
+        "OrcRace",
+        "OrcRaceVampire"
+      ],
+      "disallowedRaces": [],
+      "allowedAttributes": [],
+      "disallowedAttributes": [],
+      "forceIfAttributes": [],
+      "weightRange": [
+        null,
+        30
+      ],
+      "allowUnique": true,
+      "allowNonUnique": true,
+      "allowRandom": true,
+      "probabilityWeighting": 1
     }
   ],
   "templateGroups": [
