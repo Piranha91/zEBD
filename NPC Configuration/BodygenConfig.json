@@ -476,12 +476,7 @@
       "disallowedRaces": [],
       "allowedAttributes": [],
       "disallowedAttributes": [],
-      "forceIfAttributes": [
-        [
-          "CNAM",
-          "CombatSorcerer \"Sorcerer\" [CLAS:00013179]"
-        ]
-      ],
+      "forceIfAttributes": [],
       "allowUnique": true,
       "allowNonUnique": true,
       "allowRandom": true,
@@ -4466,7 +4461,10 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "build: powerful",
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -4477,8 +4475,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -4488,7 +4486,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -4499,8 +4499,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {

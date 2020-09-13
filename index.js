@@ -6,7 +6,7 @@ let PG = require(modulePath + '\\lib\\PermutationGenerator.js')(logDir, fh);
 let RG = require(modulePath + '\\lib\\RecordGenerator.js')(logDir, fh);
 let deserializer = require(modulePath + "\\lib\\ObjectToRecord.js")(logDir, fh, xelib);
 let PO = require(modulePath + '\\lib\\PatcherOps.js')(logDir, fh, xelib);
-let BGI = require(modulePath + '\\lib\\BodyGenIntegration.js')(Aux);
+let BGI = require(modulePath + '\\lib\\BodyGenIntegration.js')();
 
 ngapp.run(function(patcherService) {
 	patcherService.registerPatcher({
@@ -1181,12 +1181,13 @@ ngapp.run(function(patcherService) {
 												return false;
 											}
 
+											helpers.addProgress(0.75);
 											return true;
 										}
 									},
 								patch: function (record)
 								{
-									helpers.addProgress(1);
+									helpers.addProgress(0.25);
 									let NPCformID = xelib.GetHexFormID(record);
 									
 									if (settings.changeNPCappearance === true && locals.assignedPermutations[NPCformID] !== undefined)
