@@ -1045,6 +1045,7 @@ ngapp.run(function(patcherService) {
 						if (settings.bEnableBodyGenIntegration === true)
 						{
 							BGI.formatMorphDescriptors(locals.bodyGenConfig.templates);
+							locals.bodyGenConfig.descriptorsByGroup = BGI.getDescriptorsByGroup(locals.bodyGenConfig.templates);
 							BGI.convertMorphWeightRangeToNum(locals.bodyGenConfig.templates);
 							locals.BGcategorizedMorphs = BGI.categorizeMorphs(locals.bodyGenConfig, locals.raceGroupDefinitions);
 						}
