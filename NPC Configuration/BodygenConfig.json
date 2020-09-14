@@ -3460,8 +3460,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -3471,7 +3471,10 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty",
+        "sides: straight"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -3482,8 +3485,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -3515,7 +3518,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -3526,8 +3531,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -3581,7 +3586,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -3592,8 +3599,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -3625,7 +3632,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "build: chubby"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -3636,8 +3645,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -3691,7 +3700,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -3702,8 +3713,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -3735,7 +3746,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -3746,8 +3759,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -3757,7 +3770,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -3768,8 +3783,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -3779,7 +3794,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -3790,8 +3807,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -3801,7 +3818,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -3812,8 +3831,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -3867,7 +3886,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -3878,8 +3899,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -3889,7 +3910,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -3900,8 +3923,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -3911,7 +3934,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -3922,8 +3947,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -3955,7 +3980,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "build: petite"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -3966,8 +3993,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -3977,7 +4004,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -3988,8 +4017,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -3999,7 +4028,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "build: petite"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -4010,8 +4041,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -4043,7 +4074,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -4054,8 +4087,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -4065,7 +4098,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -4076,8 +4111,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -4087,7 +4122,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -4098,8 +4135,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -4153,7 +4190,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "build: petite"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -4164,8 +4203,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -4175,7 +4214,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "build: thick"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -4186,8 +4227,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -4197,7 +4238,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -4208,8 +4251,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -4263,7 +4306,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -4274,8 +4319,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -4285,7 +4330,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -4296,8 +4343,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -4329,7 +4376,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -4340,8 +4389,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -4351,7 +4400,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -4362,8 +4413,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -4373,7 +4424,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -4384,8 +4437,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
@@ -4439,7 +4492,9 @@
       "groups": [
         "Unique"
       ],
-      "descriptors": [],
+      "descriptors": [
+        "chest: busty"
+      ],
       "allowedRaces": [],
       "disallowedRaces": [],
       "allowedAttributes": [],
@@ -4450,8 +4505,8 @@
       "allowRandom": false,
       "probabilityWeighting": 1,
       "weightRange": [
-        "",
-        ""
+        null,
+        null
       ]
     },
     {
