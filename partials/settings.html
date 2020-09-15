@@ -257,6 +257,25 @@
         </label>
         <br>
         <br>
+        <!--ALIAS-->
+        <label class="tooltip">
+            <span>Alias Races</span>
+            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">The race in box 1 will be interepreted by the patcher as the race in box 2 for the given task. Note that the NPC RACE entry in the plugin will not be altered.</span>
+        </label>
+        <div class="bgTemplate" ng-repeat="alias in settings.zEBD.raceAliases track by $index">
+            <select ng-model="settings.zEBD.raceAliases[$index].race" ng-options="rOption for rOption in availableRaces"></select>
+            <span> alias as </span>
+            <select ng-model="settings.zEBD.raceAliases[$index].aliasRace" ng-options="rOption for rOption in availableRaces"></select>
+            <br>
+            For: <input type="checkbox" ng-model="settings.zEBD.raceAliases[$index].bMale"/>Males <input type="checkbox" ng-model="settings.zEBD.raceAliases[$index].bFemale"/>Females
+            <br>
+            Apply to: <input type="checkbox" ng-model="settings.zEBD.raceAliases[$index].bApplyToAssets"/>Assets <input type="checkbox" ng-model="settings.zEBD.raceAliases[$index].bApplyToHeight"/>Height <input type="checkbox" ng-model="settings.zEBD.raceAliases[$index].bApplyToBodyGen"/>BodyGen 
+            <button ng-click="removeAlias($index)">Remove</button>
+        </div>
+        <button ng-click="addAlias()">Add new alias</button>
+        <br>
+        <br>
+        <!--/ALIAS-->
         <label class="tooltip">
             <span>Path Trimming</span>
             <button ng-click = "saveTrimPaths()">Save Path Trimming Settings</button>

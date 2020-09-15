@@ -1,4 +1,3 @@
-debugger;
 let logDir = modulePath + "\\Logs";
 let IO = require(modulePath + '\\lib\\IO.js')(logDir, fh, modulePath);
 let Aux = require(modulePath + '\\lib\\Auxilliary');
@@ -137,6 +136,22 @@ ngapp.run(function(patcherService) {
 					//
 
 					// misc settings
+					$scope.removeAlias = function(index)
+					{
+						patcherSettings.raceAliases.splice(index, 1);
+					}
+					$scope.addAlias = function()
+					{
+						let obj = {};
+						obj.race = "";
+						obj.aliasRace = "";
+						obj.bMale = false;
+						obj.bFemale = false;
+						obj.bApplyToAssets = false;
+						obj.bApplyToHeight = false;
+						obj.bApplyToBodyGen = false;
+						patcherSettings.raceAliases.push(obj);
+					}
 					$scope.removeTrimPath = function(index)
 					{
 						$scope.trimPaths.splice(index, 1);
@@ -574,7 +589,7 @@ ngapp.run(function(patcherService) {
 					};
 
 					// FUNCTIONS FOR BODYGEN INTEGRATION
-					$scope.saveBodyGenConfig = function() { IO.saveBodyGenConfig($scope.bodyGenConfig); };
+					$scope.saveBodyGenConfig = function() { IO.saveBodyGenConfig($scope.bodyGenConfig, patcherSettings.loadPath); };
 
 					$scope.addAllowedRaceBodyGen = function (index) { $scope.bodyGenConfig.templates[index].allowedRaces.push(""); };
 					$scope.removeAllowedRaceBodyGen = function(template, arrayIndex)
@@ -912,7 +927,8 @@ ngapp.run(function(patcherService) {
 						bLoadFromData: false,
 						loadPath: modulePath,
 						bLogOnlyAssignedPermutations: false,
-						patchableRaces: ["NordRace", "BretonRace", "DarkElfRace", "HighElfRace", "ImperialRace", "OrcRace", "RedguardRace", "WoodElfRace", "ElderRace", "NordRaceVampire", "BretonRaceVampire", "DarkElfRaceVampire", "HighElfRaceVampire", "ImperialRaceVampire", "OrcRaceVampire", "RedguardRaceVampire", "WoodElfRaceVampire", "ElderRaceVampire", "SnowElfRace", "DA13AfflictedRace", "KhajiitRace", "KhajiitRaceVampire", "ArgonianRace", "ArgonianRaceVampire"]
+						patchableRaces: ["NordRace", "BretonRace", "DarkElfRace", "HighElfRace", "ImperialRace", "OrcRace", "RedguardRace", "WoodElfRace", "ElderRace", "NordRaceVampire", "BretonRaceVampire", "DarkElfRaceVampire", "HighElfRaceVampire", "ImperialRaceVampire", "OrcRaceVampire", "RedguardRaceVampire", "WoodElfRaceVampire", "ElderRaceVampire", "SnowElfRace", "DA13AfflictedRace", "KhajiitRace", "KhajiitRaceVampire", "ArgonianRace", "ArgonianRaceVampire"],
+						raceAliases: []
 					}
 			},
 		// optional array of required filenames.  can omit if empty.
@@ -968,6 +984,8 @@ ngapp.run(function(patcherService) {
 							settings.changeNPCappearance = false;
 						}
 
+						// get alias list
+						settings.raceAliasesSorted = Aux.sortRaceAliases(settings.raceAliases);
 						// load info from JSON
 						helpers.logMessage("Loading info from JSON settings files");
 						locals.userKeywords = [];
@@ -1102,11 +1120,13 @@ ngapp.run(function(patcherService) {
 												}
 												else
 												{
-													let bRGvalid = bCheckNPCRaceGenderValid(NPCinfo, locals.patchableGenders, locals.permutationsByRaceGender);
+													// set race alias here to make sure an aliased NPC doesn't fail the following check
+													let bRGvalid = bCheckNPCRaceGenderValidforAssets(NPCinfo, locals.patchableGenders, locals.permutationsByRaceGender, settings.raceAliasesSorted);
 													if (bRGvalid === false)
 													{
 														bApplyPermutationToCurrentNPC = false;
 													}
+													
 
 													if (settings.changeNPCsWithWNAM === false && xelib.HasElement(record, "WNAM") === true)
 													{
@@ -1123,7 +1143,7 @@ ngapp.run(function(patcherService) {
 													//if all the above don't fail, assign a permutation.
 													if (bApplyPermutationToCurrentNPC === true)
 													{
-														locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation_BodyGen(record, NPCinfo, locals.permutationsByRaceGender, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyRecords, settings.bEnableConsistency, settings.bEnableBodyGenIntegration, userForcedAssignment, userBlockedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, attributeCache, helpers.logMessage);
+														locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation_BodyGen(record, NPCinfo, locals.permutationsByRaceGender, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyRecords, settings.bEnableConsistency, settings.bEnableBodyGenIntegration, userForcedAssignment, userBlockedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, settings.raceAliasesSorted, attributeCache, helpers.logMessage);
 													}
 													if (locals.assignedPermutations[NPCinfo.formID] === undefined) // occurs if the NPC is incompatible with the assignment criteria for all generated permutations.
 													{
@@ -1140,7 +1160,7 @@ ngapp.run(function(patcherService) {
 												}
 												else
 												{
-													locals.assignedHeights[NPCinfo.formID] = PO.assignNPCheight(record, NPCinfo, settings.bEnableConsistency, locals.consistencyRecords, locals.heightConfiguration, userForcedAssignment, settings.changeNonDefaultHeight, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCheights, NPClinkGroup, helpers.logMessage);
+													locals.assignedHeights[NPCinfo.formID] = PO.assignNPCheight(record, NPCinfo, settings.bEnableConsistency, locals.consistencyRecords, locals.heightConfiguration, userForcedAssignment, settings.changeNonDefaultHeight, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCheights, NPClinkGroup, settings.raceAliasesSorted, helpers.logMessage);
 													if (locals.assignedHeights[NPCinfo.formID] === undefined || locals.assignedHeights[NPCinfo.formID] === "NaN") // if there are no height settings for the given NPC's race
 													{
 														bApplyHeightSettingsToCurrentNPC = false;
@@ -1153,7 +1173,7 @@ ngapp.run(function(patcherService) {
 												// Assign BodyGen morphs if they haven't already been assigned by PO.choosePermutation_BodyGen(...)
 												if (locals.assignedBodyGen[NPCinfo.formID] === undefined)
 												{
-													let chosenMorph = BGI.assignMorphs(record, locals.bodyGenConfig, locals.BGcategorizedMorphs, NPCinfo, settings.bEnableConsistency, locals.consistencyRecords, undefined, userForcedAssignment, settings.bLinkNPCsWithSameName, locals.linkedNPCbodygen, NPClinkGroup, false, attributeCache, helpers.logMessage, {});
+													let chosenMorph = BGI.assignMorphs(record, locals.bodyGenConfig, locals.BGcategorizedMorphs, NPCinfo, settings.bEnableConsistency, locals.consistencyRecords, undefined, userForcedAssignment, settings.bLinkNPCsWithSameName, locals.linkedNPCbodygen, NPClinkGroup, false, settings.raceAliasesSorted, attributeCache, helpers.logMessage, {});
 													if (chosenMorph !== undefined)
 													{
 														locals.assignedBodyGen[NPCinfo.formID] = chosenMorph;
@@ -1274,12 +1294,15 @@ ngapp.run(function(patcherService) {
 	});
 });
 
-function bCheckNPCRaceGenderValid(NPCinfo, patchableGenders, permutationsByRaceGender)
-{
+function bCheckNPCRaceGenderValidforAssets(NPCinfo, patchableGenders, permutationsByRaceGender, raceAliasesSorted)
+{	
 	if (patchableGenders.includes(NPCinfo.gender) === false)
 	{
+		Aux.revertAliasRace(NPCinfo);
 		return false;
 	}
+
+	Aux.setAliasRace(NPCinfo, raceAliasesSorted, "assets");
 
 	// get rid of NPCs whose race and gender appear in permutations, but not in combination (e.g. argonian females when asset packs for humanoid females & male argonians are installed)
 	for (let i = 0; i < permutationsByRaceGender.length; i++)
@@ -1288,6 +1311,7 @@ function bCheckNPCRaceGenderValid(NPCinfo, patchableGenders, permutationsByRaceG
 		{
 			if (permutationsByRaceGender[i].permutations.length === 0)
 			{
+				Aux.revertAliasRace(NPCinfo);
 				return false
 			}
 			else
@@ -1296,6 +1320,7 @@ function bCheckNPCRaceGenderValid(NPCinfo, patchableGenders, permutationsByRaceG
 			}
 		}
 	}
+	Aux.revertAliasRace(NPCinfo);
 	return true;
 }
 
