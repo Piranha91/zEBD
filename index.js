@@ -1086,9 +1086,6 @@ ngapp.run(function(patcherService) {
 											locals.filtered++;
 											let attributeCache = {};
 											let NPCinfo = PO.getNPCinfo(record, locals.consistencyRecords, xelib);
-											let NPClinkGroup = PO.findNPCinLinkedList(locals.linkedNPCList, NPCinfo);
-											let userForcedAssignment = PO.getUserForcedAssignment(NPCinfo, locals.forcedNPCAssignments, NPClinkGroup);
-											let userBlockedAssignment = PO.getBlocks(record, locals.blockList, NPCinfo, helpers.logMessage, xelib);
 
 											if (NPCinfo.formID === "00000007" && settings.excludePC === true) // ignore player
 											{
@@ -1107,6 +1104,10 @@ ngapp.run(function(patcherService) {
 												helpers.addProgress(1);
 												return false;
 											}
+
+											let NPClinkGroup = PO.findNPCinLinkedList(locals.linkedNPCList, NPCinfo);
+											let userForcedAssignment = PO.getUserForcedAssignment(NPCinfo, locals.forcedNPCAssignments, NPClinkGroup);
+											let userBlockedAssignment = PO.getBlocks(record, locals.blockList, NPCinfo, helpers.logMessage, xelib);
 
 											let bApplyPermutationToCurrentNPC = settings.changeNPCappearance;
 											let bApplyHeightSettingsToCurrentNPC = settings.changeNPCHeight;
