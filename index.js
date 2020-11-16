@@ -2,7 +2,7 @@ debugger;
 let logDir = modulePath + "\\Logs";
 let IO = require(modulePath + '\\lib\\IO.js')(logDir, fh, modulePath);
 let Aux = require(modulePath + '\\lib\\Auxilliary');
-let PG = require(modulePath + '\\lib\\PermutationGenerator.js')(logDir, fh);
+let PG = require(modulePath + '\\lib\\PermutationGenerator.js')();
 let RG = require(modulePath + '\\lib\\RecordGenerator.js')(logDir, fh);
 let deserializer = require(modulePath + "\\lib\\ObjectToRecord.js")(logDir, fh, xelib);
 let PO = require(modulePath + '\\lib\\PatcherOps.js')(logDir, fh, xelib);
@@ -1014,6 +1014,7 @@ ngapp.run(function(patcherService) {
 							// create lists to narrow down permutation search space (speeds up patching)
 							PG.generateFlattenedAssetPackSettings(locals.assetPackSettings, locals.raceGroupDefinitions, settings);
 							locals.assetsByRaceGender = PO.generateAssetRaceGenderList(locals.assetPackSettings, settings.patchableRaces);
+							//PO.linkFlattenedRequiredSubgroups(locals.assetPackSettings);
 
 							//helpers.logMessage("Optimizing permutation distribution");
 							//locals.patchableGenders = PO.generatePatchableGenderList(locals.assetPackSettings);
