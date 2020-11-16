@@ -1,3 +1,4 @@
+debugger;
 let logDir = modulePath + "\\Logs";
 let IO = require(modulePath + '\\lib\\IO.js')(logDir, fh, modulePath);
 let Aux = require(modulePath + '\\lib\\Auxilliary');
@@ -1006,28 +1007,17 @@ ngapp.run(function(patcherService) {
 						// generate permutations to assign to NPCs
 						if (settings.changeNPCappearance === true)
 						{
-							if (settings.loadPermutations === true)
-							{
-								locals.loadedFromJSON = IO.loadGeneratedPermutations_Records(modulePath, locals, RG, helpers.logMessage);
-							}
-
-							if (locals.loadedFromJSON === false)
-							{
-								helpers.logMessage("Generating asset permutations.");
-								locals.permutations = PG.generateAssetPackPermutations(locals.assetPackSettings, locals.raceGroupDefinitions, settings, locals.trimPaths, helpers);
-								RG.generateRecords(locals.permutations, settings, locals.recordTemplates, locals.assetPackSettings, helpers); // RG.recordTemplates and RG.maxPriority filled by reference within this function
-							}
-
-							if (settings.savePermutations === true && locals.permutations.length > 0 && Object.keys(RG.recordTemplates).length > 0 && locals.loadedFromJSON === false)
-							{
-								helpers.logMessage("Saving permutations and records to JSON");
-								IO.saveGeneratedPermutations_Records(modulePath, locals.permutations, RG.recordTemplates, RG.maxPriority);
-							}
+							//helpers.logMessage("Generating asset permutations.");
+							//locals.permutations = PG.generateAssetPackPermutations(locals.assetPackSettings, locals.raceGroupDefinitions, settings, locals.trimPaths, helpers);
+							//RG.generateRecords(locals.permutations, settings, locals.recordTemplates, locals.assetPackSettings, helpers); // RG.recordTemplates and RG.maxPriority filled by reference within this function
 
 							// create lists to narrow down permutation search space (speeds up patching)
-							helpers.logMessage("Optimizing permutation distribution");
-							locals.patchableGenders = PO.generatePatchableGenderList(locals.permutations);
-							locals.permutationsByRaceGender = PG.permutationByRaceGender(locals.permutations, locals.patchableGenders, settings.patchableRaces);
+							PG.generateFlattenedAssetPackSettings(locals.assetPackSettings, locals.raceGroupDefinitions, settings);
+							locals.assetsByRaceGender = PO.generateAssetRaceGenderList(locals.assetPackSettings, settings.patchableRaces);
+
+							//helpers.logMessage("Optimizing permutation distribution");
+							//locals.patchableGenders = PO.generatePatchableGenderList(locals.assetPackSettings);
+							//locals.permutationsByRaceGender = PG.permutationByRaceGender(locals.permutations, locals.patchableGenders, settings.patchableRaces);
 
 							// create EDID -> FormID dictionary to speed up patching
 							locals.RNAMdict = PO.generateRaceEDIDFormIDdict(helpers.loadRecords);
@@ -1042,8 +1032,8 @@ ngapp.run(function(patcherService) {
 							locals.formIDdict = Aux.combineDictionaries([locals.EBDassetDict, locals.userKeywordDict]);
 
 							// write the generated asset records
-							helpers.logMessage("Writing the new NPC asset records to plugin");
-							PO.writeAssets(RG, patchFile, helpers.logMessage, settings.patchableRaces, locals.RNAMdict);
+							//helpers.logMessage("Writing the new NPC asset records to plugin");
+							//PO.writeAssets(RG, patchFile, helpers.logMessage, settings.patchableRaces, locals.RNAMdict);
 						}
 						// set up object to store permutations
 						locals.assignedPermutations = {};
@@ -1122,7 +1112,7 @@ ngapp.run(function(patcherService) {
 												else
 												{
 													// set race alias here to make sure an aliased NPC doesn't fail the following check
-													let bRGvalid = bCheckNPCRaceGenderValidforAssets(NPCinfo, locals.patchableGenders, locals.permutationsByRaceGender, settings.raceAliasesSorted);
+													let bRGvalid = bCheckNPCRaceGenderValidforAssets(NPCinfo, locals.assetsByRaceGender, settings.raceAliasesSorted);
 													if (bRGvalid === false)
 													{
 														bApplyPermutationToCurrentNPC = false;
@@ -1144,7 +1134,7 @@ ngapp.run(function(patcherService) {
 													//if all the above don't fail, assign a permutation.
 													if (bApplyPermutationToCurrentNPC === true)
 													{
-														locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation_BodyGen(record, NPCinfo, locals.permutationsByRaceGender, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyRecords, settings.bEnableConsistency, settings.bEnableBodyGenIntegration, userForcedAssignment, userBlockedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, settings.raceAliasesSorted, attributeCache, helpers.logMessage);
+														locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation_BodyGen(record, NPCinfo, locals.assetPackSettings, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyRecords, settings.bEnableConsistency, settings.bEnableBodyGenIntegration, userForcedAssignment, userBlockedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, settings.raceAliasesSorted, attributeCache, helpers.logMessage);
 													}
 													if (locals.assignedPermutations[NPCinfo.formID] === undefined) // occurs if the NPC is incompatible with the assignment criteria for all generated permutations.
 													{
@@ -1295,9 +1285,9 @@ ngapp.run(function(patcherService) {
 	});
 });
 
-function bCheckNPCRaceGenderValidforAssets(NPCinfo, patchableGenders, permutationsByRaceGender, raceAliasesSorted)
+function bCheckNPCRaceGenderValidforAssets(NPCinfo, assetsByRaceGender, raceAliasesSorted)
 {	
-	if (patchableGenders.includes(NPCinfo.gender) === false)
+	if (assetsByRaceGender[NPCinfo.gender] === undefined)
 	{
 		Aux.revertAliasRace(NPCinfo);
 		return false;
@@ -1306,21 +1296,11 @@ function bCheckNPCRaceGenderValidforAssets(NPCinfo, patchableGenders, permutatio
 	Aux.setAliasRace(NPCinfo, raceAliasesSorted, "assets");
 
 	// get rid of NPCs whose race and gender appear in permutations, but not in combination (e.g. argonian females when asset packs for humanoid females & male argonians are installed)
-	for (let i = 0; i < permutationsByRaceGender.length; i++)
+	if (assetsByRaceGender[NPCinfo.gender].includes(NPCinfo.race) === false)
 	{
-		if (permutationsByRaceGender[i].race === NPCinfo.race && permutationsByRaceGender[i].gender === NPCinfo.gender)
-		{
-			if (permutationsByRaceGender[i].permutations.length === 0)
-			{
-				Aux.revertAliasRace(NPCinfo);
-				return false
-			}
-			else
-			{
-				break;
-			}
-		}
+		return false;
 	}
+
 	Aux.revertAliasRace(NPCinfo);
 	return true;
 }
