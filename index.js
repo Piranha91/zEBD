@@ -1097,7 +1097,7 @@ ngapp.run(function(patcherService) {
 											}
 
 											let NPClinkGroup = PO.findNPCinLinkedList(locals.linkedNPCList, NPCinfo);
-											let userForcedAssignment = PO.getUserForcedAssignment(NPCinfo, locals.forcedNPCAssignments, NPClinkGroup);
+											let userForcedAssignment = PO.getUserForcedAssignment(NPCinfo, locals.forcedNPCAssignments, NPClinkGroup, locals.assetPackSettings);
 											let userBlockedAssignment = PO.getBlocks(record, locals.blockList, NPCinfo, helpers.logMessage, xelib);
 
 											let bApplyPermutationToCurrentNPC = settings.changeNPCappearance;
