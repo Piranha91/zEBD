@@ -1003,10 +1003,12 @@ ngapp.run(function(patcherService) {
 						locals.LinkedNPCNameExclusions = IO.loadLinkedNPCNameExclusions(modulePath);
 						locals.linkedNPCList = IO.loadLinkGroups(modulePath);
 						locals.loadedFromJSON = false;
+						locals.uniqueGeneratedRecords = [];
 
 						// generate permutations to assign to NPCs
 						if (settings.changeNPCappearance === true)
 						{
+							locals.permutations = [];
 							//helpers.logMessage("Generating asset permutations.");
 							//locals.permutations = PG.generateAssetPackPermutations(locals.assetPackSettings, locals.raceGroupDefinitions, settings, locals.trimPaths, helpers);
 							//RG.generateRecords(locals.permutations, settings, locals.recordTemplates, locals.assetPackSettings, helpers); // RG.recordTemplates and RG.maxPriority filled by reference within this function
@@ -1044,6 +1046,10 @@ ngapp.run(function(patcherService) {
 						locals.linkedNPCpermutations = [];
 						locals.linkedNPCheights = [];
 						locals.linkedNPCbodygen = [];
+
+						// set up objects to store record-related variables
+						locals.EDIDarray = [];
+						locals.maxPriority = RG.getMaxRecordDepth(locals.recordTemplates);
 
 						// fix height formats if necessary
 						if (settings.changeRaceHeight === true)
@@ -1135,7 +1141,11 @@ ngapp.run(function(patcherService) {
 													//if all the above don't fail, assign a permutation.
 													if (bApplyPermutationToCurrentNPC === true)
 													{
-														locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation_BodyGen(record, NPCinfo, locals.assetPackSettings, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyRecords, settings.bEnableConsistency, settings.bEnableBodyGenIntegration, userForcedAssignment, userBlockedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, settings.raceAliasesSorted, attributeCache, helpers.logMessage);
+														locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation_BodyGen(record, NPCinfo, locals.permutations, locals.assetPackSettings, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyRecords, settings.bEnableConsistency, settings.bEnableBodyGenIntegration, userForcedAssignment, userBlockedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, settings.raceAliasesSorted, attributeCache, helpers.logMessage);
+														if (locals.assignedPermutations[NPCinfo.formID].templates === undefined) // if the permutation already has templates, it has already been used for a different NPC and records don't need to be re-generated.
+														{
+															locals.assignedPermutations[NPCinfo.formID] = RG.updatePermutationWithRecords(NPCinfo, locals.assignedPermutations[NPCinfo.formID], locals.uniqueGeneratedRecords, locals.recordTemplates, settings, locals.assetPackSettings, helpers)
+														}
 													}
 													if (locals.assignedPermutations[NPCinfo.formID] === undefined) // occurs if the NPC is incompatible with the assignment criteria for all generated permutations.
 													{
@@ -1202,10 +1212,14 @@ ngapp.run(function(patcherService) {
 								{
 									helpers.addProgress(0.25);
 									let NPCformID = xelib.GetHexFormID(record);
-									
+
 									if (settings.changeNPCappearance === true && locals.assignedPermutations[NPCformID] !== undefined)
 									{
-										PO.applyPermutation(record, locals.assignedPermutations[NPCformID], locals.formIDdict, settings.updateHeadPartNames, xelib, helpers.copyToPatch, RG.recordTemplates);
+										if (locals.assignedPermutations[NPCformID].templatesToWrite !== undefined)
+										{
+											PO.writeAssets(locals.assignedPermutations[NPCformID].templatesToWrite, patchFile, locals.RNAMdict, locals.maxPriority, xelib, settings.patchableRaces, locals.EDIDarray);
+										}
+										//	PO.applyPermutation(record, locals.assignedPermutations[NPCformID], locals.formIDdict, settings.updateHeadPartNames, xelib, helpers.copyToPatch, RG.recordTemplates);
 									}
 									
 									if (settings.changeNPCHeight === true && locals.assignedHeights[NPCformID] !== undefined && locals.assignedHeights[NPCformID] !== NaN && locals.assignedHeights[NPCformID] !== NaN) // NaN and NaN are catch-alls in case of manual editing and misconfiguring of consistency file
@@ -1257,6 +1271,9 @@ ngapp.run(function(patcherService) {
 						],
 					finalize: function ()
 					{
+
+
+
 						if (settings.bEnableConsistency === true)
 						{
 							IO.saveConsistency(settings.loadPath, locals.consistencyRecords);
