@@ -1,0 +1,26 @@
+{
+    "HighElfRace": "00013743",
+    "ArgonianRace": "00013740",
+    "WoodElfRace": "00013749",
+    "BretonRace": "00013741",
+    "DarkElfRace": "00013742",
+    "ImperialRace": "00013744",   
+    "KhajiitRace": "00013745",
+    "NordRace": "00013746",
+    "OrcRace": "00013747",
+    "RedguardRace": "00013748",
+
+    "HighElfRaceVampire": "00088840",
+    "ArgonianRaceVampire": "0008883A",
+    "WoodElfRaceVampire": "00088884",
+    "BretonRaceVampire": "0008883C",
+    "DarkElfRaceVampire": "0008883D",
+    "ImperialRaceVampire": "00088844",
+    "KhajiitRaceVampire": "00088845",
+    "NordRaceVampire": "00088794",
+    "OrcRaceVampire": "000A82B9",
+    "RedguardRaceVampire": "00088846",
+
+    "ElderRace": "00067CD8",
+    "ElderRaceVampire": "000A82BA"
+}
