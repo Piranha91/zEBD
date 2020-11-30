@@ -49,11 +49,6 @@ ngapp.run(function(patcherService) {
 					$scope.forcedNPCAssignments = IO.loadForceList(patcherSettings.loadPath);
 					$scope.blockList = IO.loadBlockList(patcherSettings.loadPath);
 
-					if (patcherSettings.bVerboseMode === true)
-					{
-						IO.logVerbose("", true);
-					};
-
 					$scope.GUIobjects = {};
 					$scope.genderOptions = ["male", "female"];
 					$scope.heightDistOptions = ["uniform", "bell curve"];
@@ -929,7 +924,7 @@ ngapp.run(function(patcherService) {
 						loadPath: modulePath,
 						bLogOnlyAssignedPermutations: false,
 						patchableRaces: ["NordRace", "BretonRace", "DarkElfRace", "HighElfRace", "ImperialRace", "OrcRace", "RedguardRace", "WoodElfRace", "ElderRace", "NordRaceVampire", "BretonRaceVampire", "DarkElfRaceVampire", "HighElfRaceVampire", "ImperialRaceVampire", "OrcRaceVampire", "RedguardRaceVampire", "WoodElfRaceVampire", "ElderRaceVampire", "SnowElfRace", "DA13AfflictedRace", "KhajiitRace", "KhajiitRaceVampire", "ArgonianRace", "ArgonianRaceVampire"],
-						raceAliases: []
+						raceAliases: [],
 					}
 			},
 		// optional array of required filenames.  can omit if empty.
@@ -1016,7 +1011,8 @@ ngapp.run(function(patcherService) {
 
 							// create lists to narrow down permutation search space (speeds up patching)
 							PG.generateFlattenedAssetPackSettings(locals.assetPackSettings, locals.raceGroupDefinitions, settings);
-							locals.assetsByRaceGender = PO.generateAssetRaceGenderList(locals.assetPackSettings, settings.patchableRaces);
+							//locals.assetsByRaceGender = PO.generateAssetRaceGenderList(locals.assetPackSettings, settings.patchableRaces);
+							locals.assetsByRaceGender = PG.flattenedSubgroupsByRaceGender(locals.assetPackSettings, settings)
 							//PO.linkFlattenedRequiredSubgroups(locals.assetPackSettings);
 
 							//helpers.logMessage("Optimizing permutation distribution");
@@ -1038,6 +1034,8 @@ ngapp.run(function(patcherService) {
 							// write the generated asset records
 							//helpers.logMessage("Writing the new NPC asset records to plugin");
 							//PO.writeAssets(RG, patchFile, helpers.logMessage, settings.patchableRaces, locals.RNAMdict);
+
+							if (settings.bVerboseMode === true) { fh.jetpack.remove(modulePath + "\\Logs\\Failed asset assignments"); } // clear the failed assignment log from the previous run
 						}
 						// set up object to store permutations
 						locals.assignedPermutations = {};
@@ -1119,14 +1117,15 @@ ngapp.run(function(patcherService) {
 												}
 												else
 												{
-													// set race alias here to make sure an aliased NPC doesn't fail the following check
-													/*
-													let bRGvalid = bCheckNPCRaceGenderValidforAssets(NPCinfo, locals.assetsByRaceGender, settings.raceAliasesSorted);
-													if (bRGvalid === false)
+													// check if config files are available for NPCs of the current race/gender. If so, set these as the current config files												
+													Aux.setAliasRace(NPCinfo, settings.raceAliasesSorted, "assets");
+													let assetPackSettingsForCurrentNPC = locals.assetsByRaceGender[NPCinfo.gender][NPCinfo.race];
+													if (assetPackSettingsForCurrentNPC.length === 0)
 													{
 														bApplyPermutationToCurrentNPC = false;
-													}*/
-													
+													}
+													Aux.revertAliasRace(NPCinfo);
+													//
 
 													if (settings.changeNPCsWithWNAM === false && xelib.HasElement(record, "WNAM") === true)
 													{
@@ -1143,7 +1142,7 @@ ngapp.run(function(patcherService) {
 													//if all the above don't fail, assign a permutation.
 													if (bApplyPermutationToCurrentNPC === true)
 													{
-														locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation_BodyGen(record, NPCinfo, locals.permutations, locals.assetPackSettings, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyRecords, settings.bEnableConsistency, settings.bEnableBodyGenIntegration, userForcedAssignment, userBlockedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, settings.raceAliasesSorted, attributeCache, helpers.logMessage);	
+														locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation_BodyGen(record, NPCinfo, locals.permutations, assetPackSettingsForCurrentNPC, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyRecords, settings.bEnableConsistency, settings.bEnableBodyGenIntegration, userForcedAssignment, userBlockedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, settings.raceAliasesSorted, settings.bVerboseMode, attributeCache, helpers.logMessage, fh, modulePath);	
 													}
 													if (locals.assignedPermutations[NPCinfo.formID] === undefined) // occurs if the NPC is incompatible with the assignment criteria for all generated permutations.
 													{
@@ -1276,11 +1275,6 @@ ngapp.run(function(patcherService) {
 						if (settings.bEnableConsistency === true)
 						{
 							IO.saveConsistency(settings.loadPath, locals.consistencyRecords);
-						}
-						
-						if (settings.bVerboseMode === true)
-						{
-							IO.logVerbose("", true);
 						}
 
 						if (settings.changeNPCappearance === true && settings.bGeneratePermutationLog === true)
