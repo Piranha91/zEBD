@@ -909,7 +909,7 @@ ngapp.run(function(patcherService) {
 						bLinkNPCsWithSameName: true,
 						displayAssetPackAlerts: true,
 						patchFileName: 'zEBD.esp',
-						bVerboseMode: false,
+						bVerboseMode_Assets: false,
 						bAbortIfPathWarnings: true,
 						permutationBuildUpLogger: false,
 						updateHeadPartNames: true,
@@ -1035,7 +1035,7 @@ ngapp.run(function(patcherService) {
 							//helpers.logMessage("Writing the new NPC asset records to plugin");
 							//PO.writeAssets(RG, patchFile, helpers.logMessage, settings.patchableRaces, locals.RNAMdict);
 
-							if (settings.bVerboseMode === true) { fh.jetpack.remove(modulePath + "\\Logs\\Failed asset assignments"); } // clear the failed assignment log from the previous run
+							if (settings.bVerboseMode_Assets === true) { fh.jetpack.remove(modulePath + "\\Logs\\Failed asset assignments"); } // clear the failed assignment log from the previous run
 						}
 						// set up object to store permutations
 						locals.assignedPermutations = {};
@@ -1142,7 +1142,7 @@ ngapp.run(function(patcherService) {
 													//if all the above don't fail, assign a permutation.
 													if (bApplyPermutationToCurrentNPC === true)
 													{
-														locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation_BodyGen(record, NPCinfo, locals.permutations, assetPackSettingsForCurrentNPC, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyRecords, settings.bEnableConsistency, settings.bEnableBodyGenIntegration, userForcedAssignment, userBlockedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, settings.raceAliasesSorted, settings.bVerboseMode, attributeCache, helpers.logMessage, fh, modulePath);	
+														locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation_BodyGen(record, NPCinfo, locals.permutations, assetPackSettingsForCurrentNPC, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyRecords, settings.bEnableConsistency, settings.bEnableBodyGenIntegration, userForcedAssignment, userBlockedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, settings.raceAliasesSorted, settings.bVerboseMode_Assets, attributeCache, helpers.logMessage, fh, modulePath);	
 													}
 													if (locals.assignedPermutations[NPCinfo.formID] === undefined) // occurs if the NPC is incompatible with the assignment criteria for all generated permutations.
 													{
