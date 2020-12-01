@@ -819,7 +819,7 @@
     </div>
     
 </section>
-
+<!-- Specific NPC Assignments -->
 <section ng-if="currentSettingsDisplay === 'forcedNPCs'">
     <h3>Forced Assignment Menu</h3>
     <div>
@@ -893,8 +893,13 @@
         <button ng-click="removeNPCinfoFromConsistency(currentNPC, 'bodygen')">BodyGen</button>
         from consistency
     <div>
+    <label class="tooltip">
+        <input type="checkbox" ng-model="currentNPC.detailedVerboseLog" ng-change= "updateVerboseLoggedNPCs(currentNPC)"/>
+        <span>Write permutation generation log for selected NPC</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">If enabled, zEBD will write a detailed decision making log when generating a permutation for this NPC. Located in zEBD\Logs\Specific NPC Asset Assignments</span>
+    </label>
 </section>
-
+<!-- Block List -->
 <section ng-if="currentSettingsDisplay === 'blockList'">
     <div>
         <button ng-click="saveBlockList()">Save Block List</button>
