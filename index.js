@@ -909,12 +909,11 @@ ngapp.run(function(patcherService) {
 						bLinkNPCsWithSameName: true,
 						displayAssetPackAlerts: true,
 						patchFileName: 'zEBD.esp',
-						bVerboseMode_Assets: false,
+						bVerboseMode_Assets_Failed: false,
+						bVerboseMode_Assets_All: false,
 						bAbortIfPathWarnings: true,
 						permutationBuildUpLogger: false,
 						updateHeadPartNames: true,
-						savePermutations: false,
-						loadPermutations: false,
 						bGeneratePermutationLog: true,
 						changeNPCHeight: true,
 						changeRaceHeight: true,
@@ -922,7 +921,6 @@ ngapp.run(function(patcherService) {
 						bEnableBodyGenIntegration: false,
 						bLoadFromData: false,
 						loadPath: modulePath,
-						bLogOnlyAssignedPermutations: false,
 						patchableRaces: ["NordRace", "BretonRace", "DarkElfRace", "HighElfRace", "ImperialRace", "OrcRace", "RedguardRace", "WoodElfRace", "ElderRace", "NordRaceVampire", "BretonRaceVampire", "DarkElfRaceVampire", "HighElfRaceVampire", "ImperialRaceVampire", "OrcRaceVampire", "RedguardRaceVampire", "WoodElfRaceVampire", "ElderRaceVampire", "SnowElfRace", "DA13AfflictedRace", "KhajiitRace", "KhajiitRaceVampire", "ArgonianRace", "ArgonianRaceVampire"],
 						raceAliases: [],
 					}
@@ -976,6 +974,8 @@ ngapp.run(function(patcherService) {
 
 					initialize: function ()
 					{
+						settings.initDateString = Aux.generateDateString();
+
 						if (settings.changeTextures === false && settings.changeMeshes === false)
 						{
 							settings.changeNPCappearance = false;
@@ -1034,8 +1034,6 @@ ngapp.run(function(patcherService) {
 							// write the generated asset records
 							//helpers.logMessage("Writing the new NPC asset records to plugin");
 							//PO.writeAssets(RG, patchFile, helpers.logMessage, settings.patchableRaces, locals.RNAMdict);
-
-							if (settings.bVerboseMode_Assets === true) { fh.jetpack.remove(modulePath + "\\Logs\\Failed asset assignments"); } // clear the failed assignment log from the previous run
 						}
 						// set up object to store permutations
 						locals.assignedPermutations = {};
@@ -1142,7 +1140,7 @@ ngapp.run(function(patcherService) {
 													//if all the above don't fail, assign a permutation.
 													if (bApplyPermutationToCurrentNPC === true)
 													{
-														locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation_BodyGen(record, NPCinfo, locals.permutations, assetPackSettingsForCurrentNPC, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyRecords, settings.bEnableConsistency, settings.bEnableBodyGenIntegration, userForcedAssignment, userBlockedAssignment, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, settings.raceAliasesSorted, settings.bVerboseMode_Assets, attributeCache, helpers.logMessage, fh, modulePath);	
+														locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation_BodyGen(record, NPCinfo, locals.permutations, assetPackSettingsForCurrentNPC, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyRecords, userForcedAssignment, userBlockedAssignment, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, attributeCache, helpers.logMessage, fh, modulePath, settings);	
 													}
 													if (locals.assignedPermutations[NPCinfo.formID] === undefined) // occurs if the NPC is incompatible with the assignment criteria for all generated permutations.
 													{
@@ -1218,7 +1216,7 @@ ngapp.run(function(patcherService) {
 									{
 										if (locals.assignedPermutations[NPCformID].templatesToWrite !== undefined)
 										{
-											PO.writePermutationRecords(locals.assignedPermutations[NPCformID].templatesToWrite, patchFile, locals.RNAMdict, locals.maxPriority, xelib, settings.patchableRaces, locals.EDIDarray);
+											PO.writePermutationRecords(locals.assignedPermutations[NPCformID].templatesToWrite, patchFile, locals.RNAMdict, locals.maxPriority, xelib, settings.patchableRaces, locals.EDIDarray, locals.assignedPermutations[NPCformID].writtenRecords);
 										}
 										PO.applyPermutation(record, locals.assignedPermutations[NPCformID], locals.formIDdict, settings.updateHeadPartNames, xelib, helpers.copyToPatch);
 									}
