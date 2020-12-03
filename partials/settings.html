@@ -410,6 +410,12 @@
             <select ng-model="assetPackSetting.gender" ng-options="x for x in genderOptions"></select>
         </label>
 
+        <label class="tooltip">
+            <span class="input-label">Distribution Weighting</span>
+            <input style="width:12%" type="number" ng-model="assetPackSetting.probabilityWeighting">
+            <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Relative chance of an NPC receiving a permutation from this config file compared to other config files.</span>
+        </label>
+
         <label>
             <input type="checkbox" ng-model="assetPackSetting.displayAlerts"/>
             <span>Display alerts from this pack</span>

@@ -519,11 +519,6 @@ ngapp.run(function(patcherService) {
 						}
 					};
 
-					$scope.deleteSavedPermutations = function()
-					{
-						IO.deleteSavedPermutationsRecords(patcherSettings.loadPath);
-					}
-
 					// FUNCTIONS FOR HEIGHT CONFIGURATION
 					$scope.saveHeightConfig = function()
 					{
@@ -1043,9 +1038,6 @@ ngapp.run(function(patcherService) {
 							PG.generateFlattenedAssetPackSettings(locals.assetPackSettings, locals.raceGroupDefinitions, settings);
 							locals.assetsByRaceGender = PG.flattenedSubgroupsByRaceGender(locals.assetPackSettings, settings);
 
-							// get total asset pack weighting to determine assignment probabilities
-							PG.setAssetPackWeights(locals.assetPackSettings);
-
 							// create EDID -> FormID dictionary to speed up patching
 							locals.RNAMdict = PO.generateRaceEDIDFormIDdict(helpers.loadRecords, IO.loadDefaultRaceDict(modulePath));
 
@@ -1071,6 +1063,9 @@ ngapp.run(function(patcherService) {
 						// set up objects to store record-related variables
 						locals.EDIDarray = [];
 						locals.maxPriority = RG.getMaxRecordDepth(locals.recordTemplates);
+
+						// set up permutation assignment count log
+						locals.permAssignmentTracker = PG.initializePermAssignmentTracker(locals.assetPackSettings);
 
 						// fix height formats if necessary
 						if (settings.changeRaceHeight === true)
@@ -1164,7 +1159,7 @@ ngapp.run(function(patcherService) {
 													//if all the above don't fail, assign a permutation.
 													if (bApplyPermutationToCurrentNPC === true)
 													{
-														locals.assignedPermutations[NPCinfo.formID] = PG.choosePermutationAndBodyGen(record, NPCinfo, locals.permutations, assetPackSettingsForCurrentNPC, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyRecords, userForcedAssignment, userBlockedAssignment, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, attributeCache, helpers.logMessage, fh, modulePath, settings);	
+														locals.assignedPermutations[NPCinfo.formID] = PG.choosePermutationAndBodyGen(record, NPCinfo, locals.permutations, assetPackSettingsForCurrentNPC, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyRecords, userForcedAssignment, userBlockedAssignment, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, locals.permAssignmentTracker, attributeCache, helpers.logMessage, fh, modulePath, settings);	
 													}
 													if (locals.assignedPermutations[NPCinfo.formID] === undefined) // occurs if the NPC is incompatible with the assignment criteria for all generated permutations.
 													{
@@ -1301,7 +1296,7 @@ ngapp.run(function(patcherService) {
 
 						if (settings.changeNPCappearance === true && settings.bGeneratePermutationLog === true)
 						{
-							IO.generatePermutationLog(locals.permutations, logDir, RG.recordTemplates, settings.bLogOnlyAssignedPermutations);
+							IO.generatePermutationLog(locals.permutations, logDir, locals.permAssignmentTracker);
 						}
 
 						if (settings.bEnableBodyGenIntegration === true)
