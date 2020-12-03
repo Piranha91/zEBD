@@ -6,7 +6,9 @@ let PG = require(modulePath + '\\lib\\PermutationGenerator.js')();
 let RG = require(modulePath + '\\lib\\RecordGenerator.js')(logDir, fh);
 let deserializer = require(modulePath + "\\lib\\ObjectToRecord.js")(logDir, fh, xelib);
 let PO = require(modulePath + '\\lib\\PatcherOps.js')(logDir, fh, xelib);
+let HA = require(modulePath + '\\lib\\HeightAssignment.js')();
 let BGI = require(modulePath + '\\lib\\BodyGenIntegration.js')();
+let PS = require(modulePath + '\\lib\\PermutationSimulator.js')(modulePath, fh);
 
 ngapp.run(function(patcherService) {
 	patcherService.registerPatcher({
@@ -445,6 +447,11 @@ ngapp.run(function(patcherService) {
 							alert(otherAlerts);
 						}
 					};
+
+					$scope.simulateAssetPackSetting = function (packSetting)
+					{
+						PS.simulateAssetPackPermutations(packSetting, $scope.raceGroupDefinitions, patcherSettings);
+					}
 
 					$scope.validateAssetPackSettings = function()
 					{
@@ -1032,19 +1039,12 @@ ngapp.run(function(patcherService) {
 						if (settings.changeNPCappearance === true)
 						{
 							locals.permutations = [];
-							//helpers.logMessage("Generating asset permutations.");
-							//locals.permutations = PG.generateAssetPackPermutations(locals.assetPackSettings, locals.raceGroupDefinitions, settings, locals.trimPaths, helpers);
-							//RG.generateRecords(locals.permutations, settings, locals.recordTemplates, locals.assetPackSettings, helpers); // RG.recordTemplates and RG.maxPriority filled by reference within this function
-
 							// create lists to narrow down permutation search space (speeds up patching)
 							PG.generateFlattenedAssetPackSettings(locals.assetPackSettings, locals.raceGroupDefinitions, settings);
-							//locals.assetsByRaceGender = PO.generateAssetRaceGenderList(locals.assetPackSettings, settings.patchableRaces);
-							locals.assetsByRaceGender = PG.flattenedSubgroupsByRaceGender(locals.assetPackSettings, settings)
-							//PO.linkFlattenedRequiredSubgroups(locals.assetPackSettings);
+							locals.assetsByRaceGender = PG.flattenedSubgroupsByRaceGender(locals.assetPackSettings, settings);
 
-							//helpers.logMessage("Optimizing permutation distribution");
-							//locals.patchableGenders = PO.generatePatchableGenderList(locals.assetPackSettings);
-							//locals.permutationsByRaceGender = PG.permutationByRaceGender(locals.permutations, locals.patchableGenders, settings.patchableRaces);
+							// get total asset pack weighting to determine assignment probabilities
+							PG.setAssetPackWeights(locals.assetPackSettings);
 
 							// create EDID -> FormID dictionary to speed up patching
 							locals.RNAMdict = PO.generateRaceEDIDFormIDdict(helpers.loadRecords, IO.loadDefaultRaceDict(modulePath));
@@ -1057,11 +1057,8 @@ ngapp.run(function(patcherService) {
 							locals.userKeywords = RG.convertUserKeywordsToObjects(locals.userKeywords);
 							locals.userKeywordDict = deserializer.deserializeMatorJSONobjects(locals.userKeywords, patchFile);
 							locals.formIDdict = Aux.combineDictionaries([locals.EBDassetDict, locals.userKeywordDict]);
-
-							// write the generated asset records
-							//helpers.logMessage("Writing the new NPC asset records to plugin");
-							//PO.writeAssets(RG, patchFile, helpers.logMessage, settings.patchableRaces, locals.RNAMdict);
 						}
+
 						// set up object to store permutations
 						locals.assignedPermutations = {};
 						locals.assignedHeights = {};
@@ -1167,7 +1164,7 @@ ngapp.run(function(patcherService) {
 													//if all the above don't fail, assign a permutation.
 													if (bApplyPermutationToCurrentNPC === true)
 													{
-														locals.assignedPermutations[NPCinfo.formID] = PO.choosePermutation_BodyGen(record, NPCinfo, locals.permutations, assetPackSettingsForCurrentNPC, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyRecords, userForcedAssignment, userBlockedAssignment, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, attributeCache, helpers.logMessage, fh, modulePath, settings);	
+														locals.assignedPermutations[NPCinfo.formID] = PG.choosePermutationAndBodyGen(record, NPCinfo, locals.permutations, assetPackSettingsForCurrentNPC, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyRecords, userForcedAssignment, userBlockedAssignment, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, attributeCache, helpers.logMessage, fh, modulePath, settings);	
 													}
 													if (locals.assignedPermutations[NPCinfo.formID] === undefined) // occurs if the NPC is incompatible with the assignment criteria for all generated permutations.
 													{
@@ -1188,7 +1185,7 @@ ngapp.run(function(patcherService) {
 												}
 												else
 												{
-													locals.assignedHeights[NPCinfo.formID] = PO.assignNPCheight(record, NPCinfo, settings.bEnableConsistency, locals.consistencyRecords, locals.heightConfiguration, userForcedAssignment, settings.changeNonDefaultHeight, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCheights, NPClinkGroup, settings.raceAliasesSorted, helpers.logMessage);
+													locals.assignedHeights[NPCinfo.formID] = HA.assignNPCheight(record, NPCinfo, settings.bEnableConsistency, locals.consistencyRecords, locals.heightConfiguration, userForcedAssignment, settings.changeNonDefaultHeight, settings.bLinkNPCsWithSameName, locals.LinkedNPCNameExclusions, locals.linkedNPCheights, NPClinkGroup, settings.raceAliasesSorted, helpers.logMessage);
 													if (locals.assignedHeights[NPCinfo.formID] === undefined || locals.assignedHeights[NPCinfo.formID] === "NaN") // if there are no height settings for the given NPC's race
 													{
 														bApplyHeightSettingsToCurrentNPC = false;
@@ -1286,7 +1283,7 @@ ngapp.run(function(patcherService) {
 
 									if (settings.changeRaceHeight === true && Aux.heightConfigIncludesRace(locals.heightConfiguration, raceEDID))
 									{
-										PO.patchRaceHeight(record, raceEDID, locals.heightConfiguration)
+										HA.patchRaceHeight(record, raceEDID, locals.heightConfiguration)
 									}
 
 									helpers.addProgress(1);
@@ -1321,25 +1318,6 @@ ngapp.run(function(patcherService) {
 	});
 });
 
-function bCheckNPCRaceGenderValidforAssets(NPCinfo, assetsByRaceGender, raceAliasesSorted)
-{	
-	if (assetsByRaceGender[NPCinfo.gender] === undefined)
-	{
-		Aux.revertAliasRace(NPCinfo);
-		return false;
-	}
-
-	Aux.setAliasRace(NPCinfo, raceAliasesSorted, "assets");
-
-	// get rid of NPCs whose race and gender appear in permutations, but not in combination (e.g. argonian females when asset packs for humanoid females & male argonians are installed)
-	if (assetsByRaceGender[NPCinfo.gender].includes(NPCinfo.race) === false)
-	{
-		return false;
-	}
-
-	Aux.revertAliasRace(NPCinfo);
-	return true;
-}
 
 function jasonSays (fraction, logMessage, jason)
 {
