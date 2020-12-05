@@ -376,9 +376,9 @@
     </label>
     <br>
     <label class="tooltip">
-        <input type="checkbox" ng-model="settings.zEBD.bVerboseMode_Assets_Failed"/>
-        <span>Generate operation logs for NPCs that fail asset assignment</span>
-        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">If no permutations are compatible with an NPC, generates a log detailing the patcher's decision making, helping to pinpoint the reason. Located in zEBD\Logs\Failed Asset Assignments.</span>
+        <input type="checkbox" ng-model="settings.zEBD.bVerboseMode_Assets_Noncompliant"/>
+        <span>Generate operation logs for non-compliant NPCs</span>
+        <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">If no permutations are compatible with an NPC or a permutation/morph can't be assigned consistently with all rules, generates a log detailing the patcher's decision making, helping to pinpoint the reason. Located in zEBD\Logs\Noncompliant Asset Assignments.</span>
     </label>
     <br>
     <label class="tooltip">

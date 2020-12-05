@@ -1,4 +1,3 @@
-debugger;
 let logDir = modulePath + "\\Logs";
 let IO = require(modulePath + '\\lib\\IO.js')(logDir, fh, modulePath);
 let Aux = require(modulePath + '\\lib\\Auxilliary');
@@ -937,7 +936,7 @@ ngapp.run(function(patcherService) {
 						bLinkNPCsWithSameName: true,
 						displayAssetPackAlerts: true,
 						patchFileName: 'zEBD.esp',
-						bVerboseMode_Assets_Failed: true,
+						bVerboseMode_Assets_Noncompliant: true,
 						bVerboseMode_Assets_All: false,
 						verboseMode_NPClist: [],
 						bAbortIfPathWarnings: true,
@@ -1317,7 +1316,7 @@ ngapp.run(function(patcherService) {
 							{
 								warnStr += " and/or consistency";
 							}
-							warnStr += ". Please see the log(s) in " + modulePath + "\\Logs\\Failed Asset Assignments " + settings.initDateString;
+							warnStr += ". Please see the log(s) in " + modulePath + "\\Logs\\Noncompliant Asset Assignments " + settings.initDateString;
 							helpers.logMessage(warnStr);
 						}
 
