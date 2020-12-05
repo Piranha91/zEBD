@@ -937,7 +937,7 @@ ngapp.run(function(patcherService) {
 						bLinkNPCsWithSameName: true,
 						displayAssetPackAlerts: true,
 						patchFileName: 'zEBD.esp',
-						bVerboseMode_Assets_Failed: false,
+						bVerboseMode_Assets_Failed: true,
 						bVerboseMode_Assets_All: false,
 						verboseMode_NPClist: [],
 						bAbortIfPathWarnings: true,
@@ -1029,6 +1029,7 @@ ngapp.run(function(patcherService) {
 						locals.linkedNPCList = IO.loadLinkGroups(modulePath);
 						locals.loadedFromJSON = false;
 						locals.uniqueGeneratedRecords = [];
+						locals.toggleUserWarning = {};
 
 						// generate permutations to assign to NPCs
 						if (settings.changeNPCappearance === true)
@@ -1159,7 +1160,7 @@ ngapp.run(function(patcherService) {
 													//if all the above don't fail, assign a permutation.
 													if (bApplyPermutationToCurrentNPC === true)
 													{
-														locals.assignedPermutations[NPCinfo.formID] = PG.choosePermutationAndBodyGen(record, NPCinfo, locals.permutations, assetPackSettingsForCurrentNPC, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyRecords, userForcedAssignment, userBlockedAssignment, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, locals.permAssignmentTracker, attributeCache, helpers.logMessage, fh, modulePath, settings);	
+														locals.assignedPermutations[NPCinfo.formID] = PG.choosePermutationAndBodyGen(record, NPCinfo, locals.permutations, assetPackSettingsForCurrentNPC, locals.assignedBodyGen, locals.bodyGenConfig, locals.BGcategorizedMorphs, locals.consistencyRecords, userForcedAssignment, userBlockedAssignment, locals.LinkedNPCNameExclusions, locals.linkedNPCpermutations, locals.linkedNPCbodygen, NPClinkGroup, locals.permAssignmentTracker, locals.toggleUserWarning, attributeCache, helpers.logMessage, fh, modulePath, settings);	
 													}
 													if (locals.assignedPermutations[NPCinfo.formID] === undefined) // occurs if the NPC is incompatible with the assignment criteria for all generated permutations.
 													{
@@ -1302,6 +1303,22 @@ ngapp.run(function(patcherService) {
 						if (settings.bEnableBodyGenIntegration === true)
 						{
 							IO.generateBodyGenMorphs(locals.assignedBodyGen, locals.bodyGenConfig.templates, xelib.GetGlobal('DataPath'), settings.patchFileName);
+						}
+
+						if (locals.toggleUserWarning.toggle === true)
+						{
+							let warnStr = "One or more NPCs could not be assigned a permutation "
+							if (settings.bEnableBodyGenIntegration === true)
+							{
+								warnStr += "or morph ";
+							}
+							warnStr += "in compliance with all rules";
+							if (settings.bEnableConsistency === true)
+							{
+								warnStr += " and/or consistency";
+							}
+							warnStr += ". Please see the log(s) in " + modulePath + "\\Logs\\Failed Asset Assignments " + settings.initDateString;
+							helpers.logMessage(warnStr);
 						}
 
 						jasonSays(-1, helpers.logMessage, locals.Jason);
