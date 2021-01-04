@@ -1038,6 +1038,10 @@ ngapp.run(function(patcherService) {
 							PG.generateFlattenedAssetPackSettings(locals.assetPackSettings, locals.raceGroupDefinitions, settings);
 							locals.assetsByRaceGender = PG.flattenedSubgroupsByRaceGender(locals.assetPackSettings, settings);
 
+							// create record template maps
+							locals.excludedExtensions = RG.initializeExcludedExtensions(settings);
+							locals.pathMapByPathType = RG.generatePathMapByPathType(locals.assetPackSettings, locals.recordTemplates, locals.excludedExtensions)
+
 							// create EDID -> FormID dictionary to speed up patching
 							locals.RNAMdict = PO.generateRaceEDIDFormIDdict(helpers.loadRecords, IO.loadDefaultRaceDict(modulePath));
 
@@ -1167,7 +1171,7 @@ ngapp.run(function(patcherService) {
 													}
 													else if (locals.assignedPermutations[NPCinfo.formID].templates === undefined) // if the permutation already has templates, it has already been used for a different NPC and records don't need to be re-generated.
 													{
-														RG.updatePermutationWithRecords(NPCinfo, locals.assignedPermutations[NPCinfo.formID], locals.uniqueGeneratedRecords, locals.recordTemplates, settings, locals.assetPackSettings, locals.trimPaths);
+														RG.updatePermutationWithRecords(NPCinfo, locals.assignedPermutations[NPCinfo.formID], locals.uniqueGeneratedRecords, locals.recordTemplates, settings, locals.pathMapByPathType, locals.trimPaths, helpers.logMessage);
 													}
 												}
 											}
