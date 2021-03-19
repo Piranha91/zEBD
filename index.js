@@ -1236,7 +1236,6 @@ ngapp.run(function(patcherService) {
 								{
 									helpers.addProgress(0.25);
 									let NPCformID = xelib.GetHexFormID(record);
-
 									if (settings.changeNPCappearance === true && locals.assignedPermutations[NPCformID] !== undefined)
 									{
 										if (locals.assignedPermutations[NPCformID].templatesToWrite !== undefined)
