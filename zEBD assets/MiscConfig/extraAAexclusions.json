@@ -1,0 +1,44 @@
+[
+    {
+        "path": "Male world model\\MOD2",
+        "values":
+        [
+            "malebody_0.nif",
+            "malefeet_0.nif",
+            "malehands_0.nif",
+            "malehandsbeast_0.nif",
+            "malehandsargonian_0.nif",
+            "malebody_1.nif",
+            "malefeet_1.nif",
+            "malehands_1.nif",
+            "malehandsbeast_1.nif",
+            "malehandsargonian_1.nif",
+            "maletailargonian.nif",
+            "maletailkhajiit.nif",
+            "malebodywerewolf_1.nif",
+            "vampirelord.nif",
+            "werebear.nif"
+        ]
+    },
+    {
+        "path": "Female world model\\MOD3",
+        "values":
+        [
+            "femalebody_0.nif",
+            "femalefeet_0.nif",
+            "femalehands_0.nif",
+            "femalehandsbeast_0.nif",
+            "femalehandsargonian_0.nif",
+            "femalebody_1.nif",
+            "femalefeet_1.nif",
+            "femalehands_1.nif",
+            "femalehandsbeast_1.nif",
+            "femalehandsargonian_1.nif",
+            "femaletailargonian.nif",
+            "femaletailkhajiit.nif",
+            "malebodywerewolf_1.nif",
+            "vampirelordfemale.nif",
+            "werebear.nif"
+        ]
+    }
+]

@@ -93,7 +93,6 @@ ngapp.run(function(patcherService) {
 							}
 						}
 						setNPCverboseLogFlag(currentNPC, patcherSettings.verboseMode_NPClist);
-						let debug;
 					}
 
 					// patchable races
@@ -943,6 +942,7 @@ ngapp.run(function(patcherService) {
 						permutationBuildUpLogger: false,
 						updateHeadPartNames: true,
 						bGeneratePermutationLog: true,
+						forwardWNAM_AAs: true,
 						changeNPCHeight: true,
 						changeRaceHeight: true,
 						changeNonDefaultHeight: true,
@@ -1016,7 +1016,7 @@ ngapp.run(function(patcherService) {
 						locals.userKeywords = [];
 						locals.raceGroupDefinitions = IO.loadRestrictionGroupDefs(modulePath, settings.displayAssetPackAlerts);
 						locals.assetPackSettings = IO.loadAssetPackSettings(settings.loadPath, settings.displayAssetPackAlerts, locals.userKeywords, true, true, settings.bAbortIfPathWarnings);
-						locals.recordTemplates = IO.loadRecordTemplates(modulePath, locals.raceGroupDefinitions, helpers.logMessage);
+						locals.recordTemplates = IO.loadRecordTemplates(settings.loadPath, modulePath, locals.raceGroupDefinitions, helpers.logMessage);
 						locals.trimPaths = IO.loadTrimPaths(modulePath);
 						locals.EBDassets = IO.loadEBDAssets(modulePath);
 						locals.heightConfiguration = IO.loadHeightConfiguration(settings.loadPath);
@@ -1026,6 +1026,7 @@ ngapp.run(function(patcherService) {
 						locals.consistencyRecords  = IO.loadConsistency(settings.loadPath, settings.bEnableConsistency);
 						locals.LinkedNPCNameExclusions = IO.loadLinkedNPCNameExclusions(modulePath);
 						locals.linkedNPCList = IO.loadLinkGroups(modulePath);
+						locals.extraAAexclusions = IO.loadExtraAAexclusions(modulePath);
 						locals.loadedFromJSON = false;
 						locals.uniqueGeneratedRecords = [];
 						locals.toggleUserWarning = {};
@@ -1063,6 +1064,7 @@ ngapp.run(function(patcherService) {
 						locals.linkedNPCpermutations = [];
 						locals.linkedNPCheights = [];
 						locals.linkedNPCbodygen = [];
+						locals.modifiedWNAMs = {};
 
 						// set up objects to store record-related variables
 						locals.EDIDarray = [];
@@ -1241,7 +1243,7 @@ ngapp.run(function(patcherService) {
 										{
 											PO.writePermutationRecords(locals.assignedPermutations[NPCformID].templatesToWrite, patchFile, locals.RNAMdict, locals.maxPriority, xelib, settings.patchableRaces, locals.EDIDarray, locals.assignedPermutations[NPCformID].writtenRecords);
 										}
-										PO.applyPermutation(record, locals.assignedPermutations[NPCformID], locals.formIDdict, settings.updateHeadPartNames, xelib, helpers.copyToPatch);
+										PO.applyPermutation(record, locals.assignedPermutations[NPCformID], locals.formIDdict, settings.updateHeadPartNames, settings.forwardWNAM_AAs, locals.extraAAexclusions, locals.modifiedWNAMs, xelib, helpers.copyToPatch, patchFile);
 									}
 									
 									if (settings.changeNPCHeight === true && locals.assignedHeights[NPCformID] !== undefined && locals.assignedHeights[NPCformID] !== NaN && locals.assignedHeights[NPCformID] !== NaN) // NaN and NaN are catch-alls in case of manual editing and misconfiguring of consistency file
