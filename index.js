@@ -40,6 +40,7 @@ ngapp.run(function(patcherService) {
 					$scope.linkGroups = IO.loadLinkGroups(modulePath);
 					
 					$scope.BodyGenItemDisplay = updateBodyGenItemDisplay($scope.bodyGenConfig);
+					$scope.BodyGenTemplatesByGroup = updateBodyGenTemplatesByCategory($scope.bodyGenConfig);
 					$scope.allAssetPacks = generateAvailableAssetPacks($scope.assetPackSettings);
 					$scope.availableAssetPacks = [];
 					$scope.availableAssetPackNames = [];
@@ -641,6 +642,19 @@ ngapp.run(function(patcherService) {
 					$scope.removeForceIfAttributeBodyGen = function(template, arrayIndex)
 					{
 						template.forceIfAttributes.splice(arrayIndex, 1);
+					};
+
+					$scope.addRequiredTemplate = function (index) 
+					{ 
+						let blankReq = {};
+						blankReq.group = "";
+						blankReq.name = "";
+						$scope.bodyGenConfig.templates[index].requiredTemplates.push(blankReq); 
+					};
+
+					$scope.removeRequiredTemplate = function(template, arrayIndex)
+					{
+						template.requiredTemplates.splice(arrayIndex, 1);
 					};
 
 					$scope.addBelongGroupBodyGen = function (index) { $scope.bodyGenConfig.templates[index].groups.push(""); };
@@ -1376,6 +1390,25 @@ function updateBodyGenItemDisplay(bodyGenConfig)
 	}
 
 	return items;
+}
+
+function updateBodyGenTemplatesByCategory(bodyGenConfig)
+{
+	let templateNamesByGroup = {};
+	for (let i = 0; i < bodyGenConfig.templateGroups.length; i++)
+	{
+		templateNamesByGroup[bodyGenConfig.templateGroups[i]] = [];
+	}
+
+	for (let i = 0; i < bodyGenConfig.templates.length; i++)
+	{
+		for (let j = 0; j < bodyGenConfig.templates[i].groups.length; j++)
+		{
+			templateNamesByGroup[bodyGenConfig.templates[i].groups[j]].push(bodyGenConfig.templates[i].name);
+		}
+	}
+
+	return templateNamesByGroup;
 }
 
 function generateAvailableAssetPacks(assetPacks)

@@ -802,6 +802,21 @@
                     <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Multiplier dictating the relative chance of NPCs getting this template compared to other templates in the same group.</span>
                     <input type="number" ng-model="template.probabilityWeighting">
                 </label>
+                
+                <label class = "tooltip">
+                    <span>Required Templates
+                        <button class="TDButton" ng-click="addRequiredTemplate($index)">Add New</button>
+                    </span>
+                    <span class="tooltiptext" ng-if = "settings.zEBD.btooltips">Additional templates that must be assigned to an NPC if this template is assigned.</span>
+                </label>
+                <ul>
+                    <div class="requireTemplates" ng-repeat="BG in template.requiredTemplates track by $index">
+                        <select ng-model="template.requiredTemplates[$index].group" ng-options="tg for tg in bodyGenConfig.templateGroups"></select>
+                        <select ng-model="template.requiredTemplates[$index].name" ng-options="name for name in BodyGenTemplatesByGroup[template.requiredTemplates[$index].group]"></select>
+                        <button class="TDButton" ng-click="removeRequiredTemplate(template, $index)">Remove</button>
+                    </div>
+                </ul>
+                <br>
             </section> 
         </div>
         <button ng-click="addBodyGenTemplate()">Add new BodyGen morph template</button>
