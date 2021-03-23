@@ -716,6 +716,11 @@ ngapp.run(function(patcherService) {
 						$scope.BodyGenItemDisplay = updateBodyGenItemDisplay($scope.bodyGenConfig);
 					};
 
+					$scope.updateBodyGenTemplatesByCategory = function()
+					{
+						$scope.BodyGenTemplatesByGroup = updateBodyGenTemplatesByCategory($scope.bodyGenConfig);
+					}
+
 					$scope.addBodyGenFemaleConfig = function()
 					{
 						newcfg = {};
@@ -751,6 +756,7 @@ ngapp.run(function(patcherService) {
 					{
 						IO.loadSelectedBodyGenConfig($scope.bodyGenConfig);
 						$scope.BodyGenItemDisplay = updateBodyGenItemDisplay($scope.bodyGenConfig);
+						$scope.BodyGenTemplatesByGroup = updateBodyGenTemplatesByCategory($scope.bodyGenConfig);
 						$scope.categorizedMorphs = BGI.categorizeMorphs($scope.bodyGenConfig, $scope.raceGroupDefinitions);
 					};
 
@@ -773,6 +779,7 @@ ngapp.run(function(patcherService) {
 					$scope.addBodyGenTemplate = function()
 					{
 						$scope.bodyGenConfig.templates.push(Aux.createBodyGenTemplate());
+						$scope.BodyGenTemplatesByGroup = updateBodyGenTemplatesByCategory($scope.bodyGenConfig)
 					}
 
 					// Functions for block list

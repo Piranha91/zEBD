@@ -656,7 +656,7 @@
     <div  ng-if="displayTemplates">
         <div class="bgTemplate" ng-repeat="template in bodyGenConfig.templates track by $index">
             <label>
-                <input type="text" ng-model="bodyGenConfig.templates[$index].name">
+                <input type="text" ng-model="bodyGenConfig.templates[$index].name" ng-change="updateBodyGenTemplatesByCategory()">
                  (Details<input type="checkbox" ng-model="BodyGenTemplateDisplay[$index].showDetails"/>) 
                 <button ng-click="removeBodyGenTemplate($index)">Remove</button>
             </label>
@@ -684,7 +684,7 @@
                 </label>
                 <ul>
                     <div class="belongGroups" ng-repeat="BG in template.groups track by $index">
-                        <select ng-model="template.groups[$index]" ng-options="tg for tg in bodyGenConfig.templateGroups"></select>
+                        <select ng-model="template.groups[$index]" ng-options="tg for tg in bodyGenConfig.templateGroups" ng-change="updateBodyGenTemplatesByCategory()"></select>
                         <button class="TDButton" ng-click="removeBelongGroupBodyGen(template, $index)">Remove</button>
                     </div>
                 </ul>
