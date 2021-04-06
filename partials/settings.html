@@ -662,6 +662,7 @@
             </label>
             <label>
             <section ng-if="BodyGenTemplateDisplay[$index].showDetails">
+                Notes: <textarea class="inputLarge" ng-model="bodyGenConfig.templates[$index].notes"></textarea>
                 <label class = "tooltip">
                     <span>Gender</span>
                     <select ng-model="bodyGenConfig.templates[$index].gender" ng-options="x for x in genderOptions"></select>

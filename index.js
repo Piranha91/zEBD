@@ -56,7 +56,7 @@ ngapp.run(function(patcherService) {
 					$scope.heightDistOptions = ["uniform", "bell curve"];
 					$scope.heightGlobals = { distModeGlobal: 'uniform', heightRangeGlobal: "0.020000", currentHeightPreset: undefined };
 					$scope.bodyGenBool = ["AND", "OR"];
-					$scope.availableNPCs = loadAvailableNPCs(patcherSettings.verboseMode_NPClist);
+					$scope.availableNPCs = loadAvailableNPCs(patcherSettings.NPClist);
 					$scope.displayedNPCs = $scope.availableNPCs;
 					$scope.loadedPlugins = xelib.GetLoadedFileNames(true);
 					$scope.displayedPlugins = $scope.loadedPlugins;
@@ -80,20 +80,20 @@ ngapp.run(function(patcherService) {
 							let verboseNPCentry = {};
 							verboseNPCentry.formIDSignature = NPCsignature;
 							verboseNPCentry.rootPlugin = currentNPC.rootPlugin;
-							patcherSettings.verboseMode_NPClist.push(verboseNPCentry);
+							patcherSettings.NPClist.push(verboseNPCentry);
 						}
 						else
 						{
-							for (let i = 0; i < patcherSettings.verboseMode_NPClist.length; i++)
+							for (let i = 0; i < patcherSettings.NPClist.length; i++)
 							{
-								if (patcherSettings.verboseMode_NPClist[i].formIDSignature === NPCsignature && patcherSettings.verboseMode_NPClist[i].rootPlugin === currentNPC.rootPlugin)
+								if (patcherSettings.NPClist[i].formIDSignature === NPCsignature && patcherSettings.NPClist[i].rootPlugin === currentNPC.rootPlugin)
 								{
-									patcherSettings.verboseMode_NPClist.splice(i, 1);
+									patcherSettings.NPClist.splice(i, 1);
 									break;
 								}
 							}
 						}
-						setNPCverboseLogFlag(currentNPC, patcherSettings.verboseMode_NPClist);
+						setNPCverboseLogFlag(currentNPC, patcherSettings.NPClist);
 					}
 
 					// patchable races
@@ -958,7 +958,7 @@ ngapp.run(function(patcherService) {
 						patchFileName: 'zEBD.esp',
 						bVerboseMode_Assets_Noncompliant: true,
 						bVerboseMode_Assets_All: false,
-						verboseMode_NPClist: [],
+						NPClist: [],
 						bAbortIfPathWarnings: true,
 						permutationBuildUpLogger: false,
 						updateHeadPartNames: true,
@@ -1483,9 +1483,11 @@ function updateAvailableRacesAndGroups(races, groups)
 		dispList.push(groups[i].name);
 	}
 
-	for (let i = 0; i < races.length; i++)
+	let sortedRaces = races.sort();
+
+	for (let i = 0; i < sortedRaces.length; i++)
 	{
-		dispList.push(races[i]);
+		dispList.push(sortedRaces[i]);
 	}
 
 	return dispList;
@@ -1565,28 +1567,29 @@ function getBlankLinkGroup()
 	obj.NPCs = [];
 }
 
-function loadAvailableNPCs(verboseMode_NPClist)
+function loadAvailableNPCs(NPClist)
 {
 	let availableNPCs = fh.loadJsonFile(modulePath + "\\zEBD assets\\Base NPC List\\NPClist.json");
 	//perform modifications to available NPCs here
 	for (let i = 0; i < availableNPCs.length; i++)
 	{
-		setNPCverboseLogFlag(availableNPCs[i], verboseMode_NPClist);
+		setNPCverboseLogFlag(availableNPCs[i], NPClist);
+		availableNPCs[i].formIDSignature = Aux.generateFormIDsignature(availableNPCs[i].formID); // absent in the json file
 	}
 	return availableNPCs;
 }
 
-function setNPCverboseLogFlag(currentNPC, verboseMode_NPClist)
+function setNPCverboseLogFlag(currentNPC, NPClist)
 {
-	currentNPC.detailedVerboseLog = bverboseNPClogIncludes(currentNPC, verboseMode_NPClist);
+	currentNPC.detailedVerboseLog = bverboseNPClogIncludes(currentNPC, NPClist);
 }
 
-function bverboseNPClogIncludes(currentNPC, verboseMode_NPClist)
+function bverboseNPClogIncludes(currentNPC, NPClist)
 {
 	let NPCsignature = Aux.generateFormIDsignature(currentNPC.formID);
-	for (let i = 0; i < verboseMode_NPClist.length; i++)
+	for (let i = 0; i < NPClist.length; i++)
 	{
-		if(verboseMode_NPClist[i].formIDSignature === NPCsignature && verboseMode_NPClist[i].rootPlugin === currentNPC.rootPlugin)
+		if(NPClist[i].formIDSignature === NPCsignature && NPClist[i].rootPlugin === currentNPC.rootPlugin)
 		{
 			return true;
 		}
